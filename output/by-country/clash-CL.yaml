@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - xiaohe
+- name: 🇨🇱 CL 01 - xiaoyu
   type: vless
   server: platform109.golnamakcert.top
   port: 80
@@ -17,7 +17,7 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
-- name: 🇨🇱 CL 02 - xiaohe
+- name: 🇨🇱 CL 02 - xiaoyu
   type: vless
   server: platform108.golnamakcert.top
   port: 80
@@ -35,14 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - xiaohe
-  - 🇨🇱 CL 02 - xiaohe
+  - 🇨🇱 CL 01 - xiaoyu
+  - 🇨🇱 CL 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - xiaohe
-  - 🇨🇱 CL 02 - xiaohe
+  - 🇨🇱 CL 01 - xiaoyu
+  - 🇨🇱 CL 02 - xiaoyu
 rules:
 - MATCH,PROXIES
