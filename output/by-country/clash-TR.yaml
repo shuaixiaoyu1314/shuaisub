@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -39,51 +39,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  type: vless
-  server: 93.114.98.221
-  port: 443
-  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 00iwuafi1019.dopgangster.com
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  type: vless
-  server: 172.67.192.84
-  port: 2095
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /juvsrnmgdu8i0179k5
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  type: vmess
-  server: 103.215.218.158
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  type: vmess
-  server: 93.114.98.221
-  port: 2083
-  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -94,8 +51,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -107,40 +64,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  type: vless
-  server: 172.67.192.84
-  port: 2095
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /juvsrnmgdu8i0179k5+
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
-  type: vless
-  server: 188.114.98.16
-  port: 2082
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,13 +74,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -168,12 +84,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

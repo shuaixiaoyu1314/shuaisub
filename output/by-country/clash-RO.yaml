@@ -37,13 +37,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 04 - xiaoyu
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +45,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
   - 🇷🇴 RO 03 - xiaoyu
-  - 🇷🇴 RO 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +53,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
   - 🇷🇴 RO 03 - xiaoyu
-  - 🇷🇴 RO 04 - xiaoyu
 rules:
 - MATCH,PROXIES
