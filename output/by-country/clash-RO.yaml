@@ -5,32 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaoyu
-  type: vless
-  server: 45.85.118.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime55.workers.dev
 - name: 🇷🇴 RO 02 - xiaoyu
-  type: vless
-  server: 45.85.118.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-- name: 🇷🇴 RO 03 - xiaoyu
   type: ss
   server: 154.46.31.106
   port: 443
@@ -44,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
-  - 🇷🇴 RO 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
-  - 🇷🇴 RO 03 - xiaoyu
 rules:
 - MATCH,PROXIES

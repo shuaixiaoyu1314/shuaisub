@@ -19,7 +19,7 @@ proxies:
       Host: 131.123.37.199
 - name: 🇧🇬 BG 02 - xiaoyu
   type: vless
-  server: 131.123.41.177
+  server: 131.123.37.199
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /vless-test
     headers:
-      Host: 131.123.41.177
+      Host: 131.123.37.199
 - name: 🇧🇬 BG 03 - xiaoyu
   type: vless
   server: 131.123.41.31
@@ -45,6 +45,19 @@ proxies:
       Host: 131.123.41.31
 - name: 🇧🇬 BG 04 - xiaoyu
   type: vless
+  server: 131.123.41.31
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.41.31
+- name: 🇧🇬 BG 05 - xiaoyu
+  type: vless
   server: 131.123.41.177
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -56,7 +69,7 @@ proxies:
     path: /vless-test
     headers:
       Host: 131.123.41.177
-- name: 🇧🇬 BG 05 - xiaoyu
+- name: 🇧🇬 BG 06 - xiaoyu
   type: vless
   server: 131.123.37.199
   port: 8081
@@ -69,19 +82,6 @@ proxies:
     path: /vless-test
     headers:
       Host: 131.123.37.199
-- name: 🇧🇬 BG 06 - xiaoyu
-  type: vless
-  server: 131.123.41.31
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 131.123.41.31
 - name: 🇧🇬 BG 07 - xiaoyu
   type: vless
   server: 131.123.41.31
@@ -95,6 +95,19 @@ proxies:
     path: /vless-test
     headers:
       Host: 131.123.41.31
+- name: 🇧🇬 BG 08 - xiaoyu
+  type: vless
+  server: 131.123.41.177
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.41.177
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +120,7 @@ proxy-groups:
   - 🇧🇬 BG 05 - xiaoyu
   - 🇧🇬 BG 06 - xiaoyu
   - 🇧🇬 BG 07 - xiaoyu
+  - 🇧🇬 BG 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +133,6 @@ proxy-groups:
   - 🇧🇬 BG 05 - xiaoyu
   - 🇧🇬 BG 06 - xiaoyu
   - 🇧🇬 BG 07 - xiaoyu
+  - 🇧🇬 BG 08 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -35,65 +35,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 04 - xiaoyu
-  type: vless
-  server: 104.17.181.19
-  port: 8880
-  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lingering-sun-d7b5.49-56e.workers.dev
 - name: 🇲🇾 MY 05 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: d702b5e4-412d-4859-a528-3fc0b91f6fc0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: wild-math-3ef2.439.workers.dev
-- name: 🇲🇾 MY 06 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 07 - xiaoyu
-  type: vless
-  server: long-wildflower-3df6.341-165.workers.dev
-  port: 8880
-  uuid: 7db9bcc1-78f1-455d-944b-3363b867e670
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-wildflower-3df6.341-165.workers.dev
-- name: 🇲🇾 MY 08 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 09 - xiaoyu
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -113,10 +64,6 @@ proxy-groups:
   - 🇲🇾 MY 03 - xiaoyu
   - 🇲🇾 MY 04 - xiaoyu
   - 🇲🇾 MY 05 - xiaoyu
-  - 🇲🇾 MY 06 - xiaoyu
-  - 🇲🇾 MY 07 - xiaoyu
-  - 🇲🇾 MY 08 - xiaoyu
-  - 🇲🇾 MY 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,9 +74,5 @@ proxy-groups:
   - 🇲🇾 MY 03 - xiaoyu
   - 🇲🇾 MY 04 - xiaoyu
   - 🇲🇾 MY 05 - xiaoyu
-  - 🇲🇾 MY 06 - xiaoyu
-  - 🇲🇾 MY 07 - xiaoyu
-  - 🇲🇾 MY 08 - xiaoyu
-  - 🇲🇾 MY 09 - xiaoyu
 rules:
 - MATCH,PROXIES
