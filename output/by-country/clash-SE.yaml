@@ -5,18 +5,174 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: ss
-  server: 172.238.244.13
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  type: vless
+  server: 143.246.195.98
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.98
 - name: 🇸🇪 SE 02 - xiaoyu
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: 143.246.196.152
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.196.152
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: ss
+  server: 45.138.103.4
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
+  udp: true
+- name: 🇸🇪 SE 05 - xiaoyu
+  type: vless
+  server: 143.246.195.138
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.138
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 191.44.114.66
+  port: 443
+  uuid: 718b9643-20e3-4f9e-9f8d-87ce6801d55e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
+  servername: ai.android
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vless
+  server: 143.246.195.98
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.98
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 10 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 12 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 13 - xiaoyu
+  type: vless
+  server: 143.246.195.138
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.138
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 143.246.195.138
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.195.138
+- name: 🇸🇪 SE 15 - xiaoyu
+  type: ss
+  server: se1.auronvpn.site
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -25,6 +181,19 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
+  - 🇸🇪 SE 03 - xiaoyu
+  - 🇸🇪 SE 04 - xiaoyu
+  - 🇸🇪 SE 05 - xiaoyu
+  - 🇸🇪 SE 06 - xiaoyu
+  - 🇸🇪 SE 07 - xiaoyu
+  - 🇸🇪 SE 08 - xiaoyu
+  - 🇸🇪 SE 09 - xiaoyu
+  - 🇸🇪 SE 10 - xiaoyu
+  - 🇸🇪 SE 11 - xiaoyu
+  - 🇸🇪 SE 12 - xiaoyu
+  - 🇸🇪 SE 13 - xiaoyu
+  - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +201,18 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
+  - 🇸🇪 SE 03 - xiaoyu
+  - 🇸🇪 SE 04 - xiaoyu
+  - 🇸🇪 SE 05 - xiaoyu
+  - 🇸🇪 SE 06 - xiaoyu
+  - 🇸🇪 SE 07 - xiaoyu
+  - 🇸🇪 SE 08 - xiaoyu
+  - 🇸🇪 SE 09 - xiaoyu
+  - 🇸🇪 SE 10 - xiaoyu
+  - 🇸🇪 SE 11 - xiaoyu
+  - 🇸🇪 SE 12 - xiaoyu
+  - 🇸🇪 SE 13 - xiaoyu
+  - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
 rules:
 - MATCH,PROXIES
