@@ -48,6 +48,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇽 MX 05 - xiaoyu
+  type: vless
+  server: 45.164.20.85
+  port: 10226
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +65,7 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaoyu
   - 🇲🇽 MX 03 - xiaoyu
   - 🇲🇽 MX 04 - xiaoyu
+  - 🇲🇽 MX 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +75,6 @@ proxy-groups:
   - 🇲🇽 MX 02 - xiaoyu
   - 🇲🇽 MX 03 - xiaoyu
   - 🇲🇽 MX 04 - xiaoyu
+  - 🇲🇽 MX 05 - xiaoyu
 rules:
 - MATCH,PROXIES
