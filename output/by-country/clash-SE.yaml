@@ -5,65 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.98
-- name: 🇸🇪 SE 02 - xiaoyu
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
-- name: 🇸🇪 SE 03 - xiaoyu
+- name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 143.246.194.60
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: se5-node.rumedia-cdn.com
+  port: 2096
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: stf7697.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /cdn/v3/live
     headers:
-      Host: 143.246.194.60
+      Host: stf7697.rumedia-cdn.com
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: ss
+  server: 172.238.244.13
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
-  server: 143.246.194.60
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: se5-node.rumedia-cdn.com
+  port: 2096
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: stf7697.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /cdn/v3/live
     headers:
-      Host: 143.246.194.60
+      Host: stf7697.rumedia-cdn.com
 - name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: 143.246.194.60
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.194.60
-- name: 🇸🇪 SE 06 - xiaoyu
   type: vless
   server: 143.246.195.138
   port: 8081
@@ -76,13 +59,32 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.195.138
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: ss
-  server: 172.238.244.13
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
 - name: 🇸🇪 SE 08 - xiaoyu
   type: vless
   server: 143.246.194.60
@@ -97,6 +99,13 @@ proxies:
     headers:
       Host: 143.246.194.60
 - name: 🇸🇪 SE 09 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 10 - xiaoyu
   type: vless
   server: 143.246.195.98
   port: 8081
@@ -109,13 +118,6 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.195.98
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
 - name: 🇸🇪 SE 11 - xiaoyu
   type: vless
   server: 143.246.195.138
@@ -131,54 +133,6 @@ proxies:
       Host: 143.246.195.138
 - name: 🇸🇪 SE 12 - xiaoyu
   type: vless
-  server: 143.246.196.152
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.196.152
-- name: 🇸🇪 SE 13 - xiaoyu
-  type: ss
-  server: 45.138.103.4
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: N2YzM
-  udp: true
-- name: 🇸🇪 SE 14 - xiaoyu
-  type: vless
-  server: se5-node.rumedia-cdn.com
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf7697.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf7697.rumedia-cdn.com
-- name: 🇸🇪 SE 15 - xiaoyu
-  type: vless
-  server: se5-node.rumedia-cdn.com
-  port: 2096
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf7697.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf7697.rumedia-cdn.com
-- name: 🇸🇪 SE 16 - xiaoyu
-  type: vless
   server: 143.246.195.138
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -190,6 +144,39 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.195.138
+- name: 🇸🇪 SE 13 - xiaoyu
+  type: ss
+  server: 45.138.103.4
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
+  udp: true
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 143.246.196.152
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.196.152
+- name: 🇸🇪 SE 15 - xiaoyu
+  type: vless
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 143.246.194.60
 proxy-groups:
 - name: PROXIES
   type: select
@@ -210,7 +197,6 @@ proxy-groups:
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
   - 🇸🇪 SE 15 - xiaoyu
-  - 🇸🇪 SE 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -231,6 +217,5 @@ proxy-groups:
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
   - 🇸🇪 SE 15 - xiaoyu
-  - 🇸🇪 SE 16 - xiaoyu
 rules:
 - MATCH,PROXIES
