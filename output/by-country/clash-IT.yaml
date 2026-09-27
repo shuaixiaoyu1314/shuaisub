@@ -6,26 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaoyu
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 02 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
-  type: vless
   server: 158.180.231.216
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
@@ -37,7 +17,23 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 158.180.231.216
+      Host: bab-6.site
+- name: 🇮🇹 意大利 (Italy) 02 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -47,19 +43,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - xiaoyu
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 06 - xiaoyu
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: edge
 - name: 🇮🇹 意大利 (Italy) 07 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -70,12 +72,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 08 - xiaoyu
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇮🇹 意大利 (Italy) 09 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -95,7 +101,7 @@ proxies:
   reality-opts:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -130,18 +136,28 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 15 - xiaoyu
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: edge
 - name: 🇮🇹 意大利 (Italy) 16 - xiaoyu
   type: vless
+  server: 158.180.231.216
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇮🇹 意大利 (Italy) 17 - xiaoyu
+  type: vless
   server: 57.131.38.163
   port: 2053
   uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
@@ -151,23 +167,21 @@ proxies:
   reality-opts:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 17 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 18 - xiaoyu
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 158.180.231.216
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 - name: 🇮🇹 意大利 (Italy) 19 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -186,16 +200,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 21 - xiaoyu
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 22 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -205,13 +215,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 23 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 24 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -222,55 +231,52 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 25 - xiaoyu
   type: vless
-  server: 158.180.231.216
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 158.180.231.216
 - name: 🇮🇹 意大利 (Italy) 26 - xiaoyu
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 27 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 28 - xiaoyu
-  type: vless
-  server: 158.180.231.216
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇮🇹 意大利 (Italy) 29 - xiaoyu
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇮🇹 意大利 (Italy) 27 - xiaoyu
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 28 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 29 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 30 - xiaoyu
   type: vless
   server: 57.131.38.163
@@ -284,6 +290,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 31 - xiaoyu
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 32 - xiaoyu
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 33 - xiaoyu
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -291,7 +311,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 32 - xiaoyu
+- name: 🇮🇹 意大利 (Italy) 34 - xiaoyu
+  type: vless
+  server: 158.180.231.216
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 158.180.231.216
+- name: 🇮🇹 意大利 (Italy) 35 - xiaoyu
   type: vless
   server: 158.180.231.216
   port: 443
@@ -305,30 +339,6 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇮🇹 意大利 (Italy) 33 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 34 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 35 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 36 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -363,16 +373,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 40 - xiaoyu
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 41 - xiaoyu
   type: vless
   server: 57.131.38.163
@@ -384,8 +390,16 @@ proxies:
   reality-opts:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 43 - xiaoyu
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -440,6 +454,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 40 - xiaoyu
   - 🇮🇹 意大利 (Italy) 41 - xiaoyu
   - 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 43 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -487,5 +502,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 40 - xiaoyu
   - 🇮🇹 意大利 (Italy) 41 - xiaoyu
   - 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 43 - xiaoyu
 rules:
 - MATCH,PROXIES

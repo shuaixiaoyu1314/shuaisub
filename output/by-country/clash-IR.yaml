@@ -30,6 +30,19 @@ proxies:
     path: /eyurri
     headers:
       Host: afra4.nimbaha9.ir
+- name: 🇮🇷 IR 03 - xiaoyu
+  type: vless
+  server: afra4.nimbaha9.ir
+  port: 2052
+  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyurri
+    headers:
+      Host: afra4.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇮🇷 IR 01 - xiaoyu
   - 🇮🇷 IR 02 - xiaoyu
+  - 🇮🇷 IR 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇮🇷 IR 01 - xiaoyu
   - 🇮🇷 IR 02 - xiaoyu
+  - 🇮🇷 IR 03 - xiaoyu
 rules:
 - MATCH,PROXIES
