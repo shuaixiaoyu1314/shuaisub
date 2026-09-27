@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaoyu
+- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaoyu
   type: vless
-  server: chat.openai.com
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 208.103.161.249
+  port: 80
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /security=tls
     headers:
-      Host: vms.lifetime29.workers.dev
+      Host: kamran01-afgmdq-1.kamran-01.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
