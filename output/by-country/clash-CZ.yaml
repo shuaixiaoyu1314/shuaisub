@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇴 JO 01 - xiaoyu
+- name: 🇨🇿 CZ 01 - xiaoyu
   type: vless
-  server: 62.72.166.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 151.101.1.194
+  port: 80
+  uuid: 4ec76f45-6ad5-4045-b70e-2dc0dd103f2a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime40.workers.dev
+      Host: simorghfr.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇨🇿 CZ 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇨🇿 CZ 01 - xiaoyu
 rules:
 - MATCH,PROXIES
