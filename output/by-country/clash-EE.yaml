@@ -7,17 +7,26 @@ proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 02 - xiaoyu
+  type: vless
+  server: 94.183.170.65
+  port: 8081
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws/generate
     headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 02 - xiaoyu
+      Host: hys2.arkonsoft.top
+- name: 🇪🇪 EE 03 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -26,45 +35,24 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 EE 04 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 06 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -77,16 +65,12 @@ proxies:
 - name: 🇪🇪 EE 07 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 08 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -107,48 +91,51 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 10 - xiaoyu
   type: vless
-  server: 94.183.170.135
+  server: 93.89.220.7
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  reality-opts:
+    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+  servername: eh.vk.com
+  client-fingerprint: firefox
 - name: 🇪🇪 EE 11 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 12 - xiaoyu
-  type: vless
-  server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 13 - xiaoyu
+- name: 🇪🇪 EE 12 - xiaoyu
   type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 94.183.170.65
+  port: 8081
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws/generate
     headers:
-      Host: vms.lifetime59.workers.dev
+      Host: hys2.arkonsoft.top
+- name: 🇪🇪 EE 13 - xiaoyu
+  type: vless
+  server: 94.183.170.65
+  port: 8081
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws/generate
+    headers:
+      Host: 94.183.170.65
 - name: 🇪🇪 EE 14 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -161,32 +148,46 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 15 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 16 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 94.183.170.135
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 17 - xiaoyu
-  type: ss
-  server: 80.97.27.106
-  port: 114
-  cipher: chacha20-ietf-poly1305
-  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 18 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -203,12 +204,16 @@ proxies:
 - name: 🇪🇪 EE 19 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 20 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -221,16 +226,12 @@ proxies:
 - name: 🇪🇪 EE 21 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 22 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -246,17 +247,17 @@ proxies:
       Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 23 - xiaoyu
   type: vless
-  server: 94.183.170.65
-  port: 8081
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws/generate
+    path: /
     headers:
-      Host: 94.183.170.65
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 24 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -269,21 +270,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 25 - xiaoyu
   type: vless
-  server: netlivpn5002.whwbbb.workers.dev
+  server: 94.183.170.135
   port: 443
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: netlivpn5002.whwbbb.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: netlivpn5002.whwbbb.workers.dev
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 26 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -295,40 +295,42 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 27 - xiaoyu
   type: vless
-  server: www.speedtest.net
+  server: 94.183.170.135
   port: 443
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn5002.whwbbb.workers.dev
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn5002.whwbbb.workers.dev
-- name: 🇪🇪 EE 28 - xiaoyu
-  type: vless
-  server: 94.183.170.65
-  port: 8081
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws/generate
+    path: /
     headers:
-      Host: hys2.arkonsoft.top
-- name: 🇪🇪 EE 29 - xiaoyu
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 28 - xiaoyu
   type: vless
-  server: 94.183.170.135
+  server: 93.89.220.7
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  reality-opts:
+    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+  servername: eh.vk.com
+  client-fingerprint: ios
+- name: 🇪🇪 EE 29 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 30 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -354,29 +356,21 @@ proxies:
 - name: 🇪🇪 EE 32 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: 94.183.170.135
 - name: 🇪🇪 EE 33 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 34 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -385,20 +379,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 35 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /
     headers:
-      Host: netlivpn5002.whwbbb.workers.dev
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 36 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -419,43 +413,18 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 38 - xiaoyu
   type: vless
-  server: 94.183.170.65
-  port: 8081
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws/generate
+    path: /
     headers:
-      Host: hys2.arkonsoft.top
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 39 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn5002.whwbbb.workers.dev
-- name: 🇪🇪 EE 40 - xiaoyu
-  type: vless
-  server: 93.89.220.7
-  port: 8443
-  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
-  servername: eh.vk.com
-  client-fingerprint: firefox
-- name: 🇪🇪 EE 41 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -464,7 +433,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 42 - xiaoyu
+- name: 🇪🇪 EE 40 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 443
@@ -477,7 +446,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 43 - xiaoyu
+- name: 🇪🇪 EE 41 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -485,53 +454,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 44 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 45 - xiaoyu
-  type: vless
-  server: 93.89.220.7
-  port: 8443
-  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
-  servername: eh.vk.com
-  client-fingerprint: ios
-- name: 🇪🇪 EE 46 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 47 - xiaoyu
-  type: vless
-  server: 93.89.220.7
-  port: 8443
-  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
-  servername: eh.vk.com
-  client-fingerprint: ios
+  servername: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -578,12 +501,6 @@ proxy-groups:
   - 🇪🇪 EE 39 - xiaoyu
   - 🇪🇪 EE 40 - xiaoyu
   - 🇪🇪 EE 41 - xiaoyu
-  - 🇪🇪 EE 42 - xiaoyu
-  - 🇪🇪 EE 43 - xiaoyu
-  - 🇪🇪 EE 44 - xiaoyu
-  - 🇪🇪 EE 45 - xiaoyu
-  - 🇪🇪 EE 46 - xiaoyu
-  - 🇪🇪 EE 47 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -630,11 +547,5 @@ proxy-groups:
   - 🇪🇪 EE 39 - xiaoyu
   - 🇪🇪 EE 40 - xiaoyu
   - 🇪🇪 EE 41 - xiaoyu
-  - 🇪🇪 EE 42 - xiaoyu
-  - 🇪🇪 EE 43 - xiaoyu
-  - 🇪🇪 EE 44 - xiaoyu
-  - 🇪🇪 EE 45 - xiaoyu
-  - 🇪🇪 EE 46 - xiaoyu
-  - 🇪🇪 EE 47 - xiaoyu
 rules:
 - MATCH,PROXIES
