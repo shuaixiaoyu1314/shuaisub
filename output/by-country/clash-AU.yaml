@@ -6,6 +6,100 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   type: vless
+  server: 104.18.155.229
+  port: 443
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.genflix.co.id.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  type: vless
+  server: 89.116.180.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  type: vless
+  server: 23.227.39.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime17.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  type: vless
+  server: 208.103.161.5
+  port: 443
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  type: vless
+  server: 208.103.161.5
+  port: 443
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
+  type: vless
+  server: 89.116.161.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 07 - xiaoyu
+  type: vless
+  server: 103.169.142.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime38.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 08 - xiaoyu
+  type: vless
   server: 172.105.169.70
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -13,7 +107,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 172.105.169.70
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+- name: 🇦🇺 澳大利亚 (Australia) 09 - xiaoyu
+  type: vless
+  server: 103.169.142.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime38.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 10 - xiaoyu
   type: vless
   server: 172.105.169.70
   port: 443
@@ -29,6 +136,14 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 08 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 09 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +151,13 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 08 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 09 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 10 - xiaoyu
 rules:
 - MATCH,PROXIES

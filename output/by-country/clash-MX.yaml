@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇲🇽 MX 02 - xiaoyu
   type: vless
-  server: 45.164.20.85
+  server: 45.164.20.114
   port: 10226
   uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
   udp: true
@@ -22,15 +22,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇲🇽 MX 03 - xiaoyu
   type: vless
-  server: 45.164.20.114
-  port: 10226
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇽 MX 04 - xiaoyu
-  type: vless
-  server: 45.134.9.133
+  server: ul-mexico1.09vpn.com
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
@@ -41,7 +33,15 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 45.134.9.133
+      Host: ul-mexico1.09vpn.com
+- name: 🇲🇽 MX 04 - xiaoyu
+  type: vless
+  server: 45.164.20.85
+  port: 10226
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇲🇽 MX 05 - xiaoyu
   type: vless
   server: 45.134.9.133
@@ -58,7 +58,7 @@ proxies:
       Host: 45.134.9.133
 - name: 🇲🇽 MX 06 - xiaoyu
   type: vless
-  server: ul-mexico1.09vpn.com
+  server: 45.134.9.133
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
@@ -69,8 +69,16 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ul-mexico1.09vpn.com
+      Host: 45.134.9.133
 - name: 🇲🇽 MX 07 - xiaoyu
+  type: vless
+  server: 45.164.20.85
+  port: 10226
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇽 MX 08 - xiaoyu
   type: vless
   server: 45.164.20.114
   port: 10226
@@ -78,13 +86,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇽 MX 08 - xiaoyu
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-  udp: true
 - name: 🇲🇽 MX 09 - xiaoyu
   type: vless
   server: 45.164.20.85

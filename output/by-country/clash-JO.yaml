@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - xiaoyu
+- name: 🇯🇴 JO 01 - xiaoyu
   type: vless
-  server: 38.180.225.247
-  port: 2053
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  server: 62.72.166.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: yf.962456.xyz
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /
     headers:
-      Host: yf.962456.xyz
+      Host: vms.lifetime40.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - xiaoyu
+  - 🇯🇴 JO 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - xiaoyu
+  - 🇯🇴 JO 01 - xiaoyu
 rules:
 - MATCH,PROXIES
