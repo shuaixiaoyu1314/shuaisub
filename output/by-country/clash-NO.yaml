@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - xiaoyu
-  type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  type: ss
+  server: 80.242.57.97
+  port: 1
+  cipher: chacha20-ietf-poly1305
+  password: 9qGcNiZj4uCi7DGSjxlg5Q
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
-  client-fingerprint: qq
 - name: 🇳🇴 NO 02 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -27,7 +22,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇳🇴 NO 03 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -39,7 +34,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇳🇴 NO 04 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -51,7 +46,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇳🇴 NO 05 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -65,17 +60,12 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇳🇴 NO 06 - xiaoyu
-  type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
-  client-fingerprint: chrome
 - name: 🇳🇴 NO 07 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -87,19 +77,17 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇳🇴 NO 08 - xiaoyu
-  type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16291
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
-  client-fingerprint: qq
 - name: 🇳🇴 NO 09 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -111,7 +99,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇳🇴 NO 10 - xiaoyu
   type: vless
   server: 46.29.238.88
@@ -124,6 +112,140 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇳🇴 NO 11 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 12 - xiaoyu
+  type: vless
+  server: 91.190.155.173
+  port: 2083
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇳🇴 NO 13 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 14 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇳🇴 NO 15 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 16 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 17 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇳🇴 NO 18 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 19 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇳🇴 NO 20 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇳🇴 NO 21 - xiaoyu
+  type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +261,17 @@ proxy-groups:
   - 🇳🇴 NO 08 - xiaoyu
   - 🇳🇴 NO 09 - xiaoyu
   - 🇳🇴 NO 10 - xiaoyu
+  - 🇳🇴 NO 11 - xiaoyu
+  - 🇳🇴 NO 12 - xiaoyu
+  - 🇳🇴 NO 13 - xiaoyu
+  - 🇳🇴 NO 14 - xiaoyu
+  - 🇳🇴 NO 15 - xiaoyu
+  - 🇳🇴 NO 16 - xiaoyu
+  - 🇳🇴 NO 17 - xiaoyu
+  - 🇳🇴 NO 18 - xiaoyu
+  - 🇳🇴 NO 19 - xiaoyu
+  - 🇳🇴 NO 20 - xiaoyu
+  - 🇳🇴 NO 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +287,16 @@ proxy-groups:
   - 🇳🇴 NO 08 - xiaoyu
   - 🇳🇴 NO 09 - xiaoyu
   - 🇳🇴 NO 10 - xiaoyu
+  - 🇳🇴 NO 11 - xiaoyu
+  - 🇳🇴 NO 12 - xiaoyu
+  - 🇳🇴 NO 13 - xiaoyu
+  - 🇳🇴 NO 14 - xiaoyu
+  - 🇳🇴 NO 15 - xiaoyu
+  - 🇳🇴 NO 16 - xiaoyu
+  - 🇳🇴 NO 17 - xiaoyu
+  - 🇳🇴 NO 18 - xiaoyu
+  - 🇳🇴 NO 19 - xiaoyu
+  - 🇳🇴 NO 20 - xiaoyu
+  - 🇳🇴 NO 21 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇪 PE 01 - xiaoyu
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16322
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+- name: 🇴🇲 OM 01 - xiaoyu
+  type: ss
+  server: 130.94.81.180
+  port: 18415
+  cipher: aes-128-gcm
+  password: b667234b8d2e7eb34444857ea3a9b18a
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇪 PE 01 - xiaoyu
+  - 🇴🇲 OM 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇪 PE 01 - xiaoyu
+  - 🇴🇲 OM 01 - xiaoyu
 rules:
 - MATCH,PROXIES

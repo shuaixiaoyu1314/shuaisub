@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   type: vless
-  server: test.keoplentuio.xyz
+  server: 145.239.30.17
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
@@ -35,7 +35,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   type: vless
   server: test.keoplentuio.xyz
@@ -55,14 +55,21 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  type: ss
-  server: 213.142.150.136
-  port: 1468
-  cipher: aes-128-gcm
-  password: _j2fKtUJpe_fwdFPt_Ilpg
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -76,6 +83,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  type: vless
+  server: 202.133.90.105
+  port: 57680
+  uuid: 9807575f-5b45-4c68-a39d-95fa381e05e1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -100,6 +115,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,5 +129,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
 rules:
 - MATCH,PROXIES
