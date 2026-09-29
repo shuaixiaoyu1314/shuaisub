@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 02 - xiaoyu
+  type: vless
   server: 2.27.14.218
   port: 2096
   uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
@@ -17,32 +31,11 @@ proxies:
   ws-opts:
     path: /cdn/v3/live
     headers:
-      Host: 2.27.14.218
-- name: 🇸🇪 SE 02 - xiaoyu
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: stf7697.rumedia-cdn.com
 - name: 🇸🇪 SE 03 - xiaoyu
-  type: ss
-  server: 172.238.244.13
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇸🇪 SE 04 - xiaoyu
   type: vless
-  server: 103.71.22.26
-  port: 443
+  server: 103.71.22.234
+  port: 8443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
@@ -53,9 +46,23 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vless
+  server: 103.71.22.234
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 103.71.22.26
+  server: 2.26.17.128
   port: 443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
@@ -64,7 +71,7 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 06 - xiaoyu
@@ -83,33 +90,19 @@ proxies:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 07 - xiaoyu
   type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shephe.dpdns.org
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 09 - xiaoyu
   type: vless
   server: 103.71.22.234
   port: 8443
@@ -123,21 +116,7 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 12 - xiaoyu
+- name: 🇸🇪 SE 09 - xiaoyu
   type: vless
   server: 2.26.17.128
   port: 443
@@ -151,20 +130,62 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 13 - xiaoyu
+- name: 🇸🇪 SE 10 - xiaoyu
   type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vless
+  server: 2.26.17.128
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 12 - xiaoyu
+  type: vless
+  server: 2.26.17.128
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 13 - xiaoyu
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇸🇪 SE 14 - xiaoyu
   type: vless
   server: 2.26.17.128
@@ -180,6 +201,97 @@ proxies:
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 15 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 16 - xiaoyu
+  type: vless
+  server: 2.26.17.128
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 17 - xiaoyu
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 18 - xiaoyu
+  type: vless
+  server: 2.27.14.218
+  port: 2096
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf7697.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: 2.27.14.218
+- name: 🇸🇪 SE 19 - xiaoyu
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 20 - xiaoyu
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇪 SE 21 - xiaoyu
+  type: vless
+  server: 103.71.22.234
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 22 - xiaoyu
   type: vless
   server: 2.26.17.128
   port: 443
@@ -193,7 +305,28 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 16 - xiaoyu
+- name: 🇸🇪 SE 23 - xiaoyu
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 24 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 25 - xiaoyu
   type: vless
   server: 103.71.22.234
   port: 8443
@@ -207,6 +340,62 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇸🇪 SE 26 - xiaoyu
+  type: vless
+  server: 2.26.17.128
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 27 - xiaoyu
+  type: vless
+  server: 2.26.17.128
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 28 - xiaoyu
+  type: vless
+  server: 103.71.22.234
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇸🇪 SE 29 - xiaoyu
+  type: vless
+  server: 2.27.14.218
+  port: 2096
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf7697.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stf7697.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -228,6 +417,19 @@ proxy-groups:
   - 🇸🇪 SE 14 - xiaoyu
   - 🇸🇪 SE 15 - xiaoyu
   - 🇸🇪 SE 16 - xiaoyu
+  - 🇸🇪 SE 17 - xiaoyu
+  - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
+  - 🇸🇪 SE 21 - xiaoyu
+  - 🇸🇪 SE 22 - xiaoyu
+  - 🇸🇪 SE 23 - xiaoyu
+  - 🇸🇪 SE 24 - xiaoyu
+  - 🇸🇪 SE 25 - xiaoyu
+  - 🇸🇪 SE 26 - xiaoyu
+  - 🇸🇪 SE 27 - xiaoyu
+  - 🇸🇪 SE 28 - xiaoyu
+  - 🇸🇪 SE 29 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -249,5 +451,18 @@ proxy-groups:
   - 🇸🇪 SE 14 - xiaoyu
   - 🇸🇪 SE 15 - xiaoyu
   - 🇸🇪 SE 16 - xiaoyu
+  - 🇸🇪 SE 17 - xiaoyu
+  - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
+  - 🇸🇪 SE 21 - xiaoyu
+  - 🇸🇪 SE 22 - xiaoyu
+  - 🇸🇪 SE 23 - xiaoyu
+  - 🇸🇪 SE 24 - xiaoyu
+  - 🇸🇪 SE 25 - xiaoyu
+  - 🇸🇪 SE 26 - xiaoyu
+  - 🇸🇪 SE 27 - xiaoyu
+  - 🇸🇪 SE 28 - xiaoyu
+  - 🇸🇪 SE 29 - xiaoyu
 rules:
 - MATCH,PROXIES
