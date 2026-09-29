@@ -4,26 +4,47 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+- name: 🇲🇽 MX 01 (家宽) - xiaoyu
   type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 89.117.112.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  type: vless
+  server: damp-surf-aacf.296-8ed.workers.dev
+  port: 8880
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: damp-surf-aacf.296-8ed.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
   type: ss
   server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
   type: vless
   server: 60.248.219.54
   port: 443
@@ -37,58 +58,69 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.54
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  type: ss
-  server: 36.224.178.15
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇺🇸 美国 (United States) 05 (家宽) - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 06 (家宽) - xiaoyu
   type: vless
-  server: 211.229.56.86
-  port: 30021
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 123.714541.xyz
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  server: 89.116.180.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 🇮🇩 ID 07 (家宽) - xiaoyu
+  type: vless
+  server: 5.10.246.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaoyu
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇲🇽 MX 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 05 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 06 (家宽) - xiaoyu
+  - 🇮🇩 ID 07 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇲🇽 MX 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 05 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 06 (家宽) - xiaoyu
+  - 🇮🇩 ID 07 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

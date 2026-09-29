@@ -15,6 +15,58 @@ proxies:
   servername: 172.105.169.70
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   type: vless
+  server: cf1.466688.xyz
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime54.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  type: vless
+  server: 176.124.223.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime38.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  type: vless
+  server: 103.169.142.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime38.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  type: vless
+  server: 185.176.26.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime06.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
+  type: vless
   server: 172.105.169.70
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -29,6 +81,10 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +92,9 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

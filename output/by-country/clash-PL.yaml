@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+- name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 211.229.56.86
-  port: 30021
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 123.714541.xyz
+  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /Ra-vl
+    path: /sync
     headers:
-      Host: 123.714541.xyz
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇵🇱 PL 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇵🇱 PL 01 - xiaoyu
 rules:
 - MATCH,PROXIES
