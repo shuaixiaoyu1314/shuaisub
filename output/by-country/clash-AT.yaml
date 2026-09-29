@@ -5,33 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaoyu
-  type: vless
-  server: 132.243.203.214
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
 - name: 🇦🇹 AT 02 - xiaoyu
   type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 - name: 🇦🇹 AT 03 - xiaoyu
   type: vless
   server: 152.53.1.40
@@ -43,19 +34,21 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 04 - xiaoyu
   type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  server: 132.243.203.214
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇦🇹 AT 05 - xiaoyu
   type: vless
   server: 152.53.1.40
@@ -67,20 +60,8 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇹 AT 06 - xiaoyu
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: random
-- name: 🇦🇹 AT 07 - xiaoyu
   type: vless
   server: 132.243.203.214
   port: 8443
@@ -94,54 +75,7 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇦🇹 AT 08 - xiaoyu
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 AT 09 - xiaoyu
-  type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 10 - xiaoyu
-  type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 11 - xiaoyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 12 - xiaoyu
+- name: 🇦🇹 AT 07 - xiaoyu
   type: vless
   server: 173.242.63.235
   port: 8443
@@ -155,13 +89,114 @@ proxies:
     path: /+
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 13 - xiaoyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇹 AT 08 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 09 - xiaoyu
+  type: vless
+  server: 132.243.203.214
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇦🇹 AT 10 - xiaoyu
+  type: vless
+  server: 132.243.203.214
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇦🇹 AT 11 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 12 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 13 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 14 - xiaoyu
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 15 - xiaoyu
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -180,6 +215,8 @@ proxy-groups:
   - 🇦🇹 AT 11 - xiaoyu
   - 🇦🇹 AT 12 - xiaoyu
   - 🇦🇹 AT 13 - xiaoyu
+  - 🇦🇹 AT 14 - xiaoyu
+  - 🇦🇹 AT 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -198,5 +235,7 @@ proxy-groups:
   - 🇦🇹 AT 11 - xiaoyu
   - 🇦🇹 AT 12 - xiaoyu
   - 🇦🇹 AT 13 - xiaoyu
+  - 🇦🇹 AT 14 - xiaoyu
+  - 🇦🇹 AT 15 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaoyu
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
   type: vmess
   server: 66.163.118.73
@@ -31,76 +22,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
   type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
   type: vmess
-  server: mygptagent.org
+  server: 66.163.118.73
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -114,7 +44,7 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   type: vmess
   server: 66.163.118.73
   port: 22324
@@ -124,7 +54,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
+  type: vmess
+  server: 85.90.217.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -136,23 +86,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
   type: vmess
   server: 66.163.118.73
   port: 22324
@@ -162,7 +96,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 15 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
   type: vmess
   server: mygptagent.org
   port: 443
@@ -178,7 +124,33 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -190,23 +162,51 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 17 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 15 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 17 - xiaoyu
+  type: vless
+  server: 196.245.52.146
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+  servername: www.microsoft.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 19 - xiaoyu
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -218,33 +218,9 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 19 - xiaoyu
-  type: vless
-  server: 141.253.194.63
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
 - name: 🇪🇸 西班牙 (Spain) 20 - xiaoyu
   type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 21 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
+  server: mygptagent.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -258,6 +234,16 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 21 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 22 - xiaoyu
   type: vless
   server: 212.227.235.66
@@ -283,24 +269,60 @@ proxies:
 - name: 🇪🇸 西班牙 (Spain) 24 - xiaoyu
   type: vmess
   server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 25 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: es2.h1cloud.net
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+  servername: www.microsoft.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 26 - xiaoyu
+  type: vless
+  server: 141.253.194.63
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇪🇸 西班牙 (Spain) 27 - xiaoyu
+  type: vless
+  server: 141.253.194.63
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇪🇸 西班牙 (Spain) 28 - xiaoyu
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -311,41 +333,8 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 27 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 28 - xiaoyu
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 29 - xiaoyu
-  type: vless
-  server: 162.159.135.234
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime54.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 30 - xiaoyu
   type: vmess
   server: 66.163.118.73
   port: 22324
@@ -355,7 +344,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 31 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 30 - xiaoyu
   type: vmess
   server: 66.163.118.73
   port: 443
@@ -371,6 +360,22 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 31 - xiaoyu
+  type: vmess
+  server: 66.163.118.73
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select

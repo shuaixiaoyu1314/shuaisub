@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
   type: vless
-  server: 104.129.164.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime40.workers.dev
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 02 - xiaoyu
   type: vless
   server: 43.174.192.1

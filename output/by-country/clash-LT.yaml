@@ -6,82 +6,32 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaoyu
   type: vless
-  server: 88.216.66.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 213.183.55.153
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime04.workers.dev
+      Host: shephe.dpdns.org
 - name: 🇱🇹 LT 02 - xiaoyu
   type: vless
-  server: 89.116.180.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 213.183.55.153
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime09.workers.dev
-- name: 🇱🇹 LT 03 - xiaoyu
-  type: vless
-  server: 89.117.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇱🇹 LT 04 - xiaoyu
-  type: vless
-  server: 88.216.66.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇱🇹 LT 05 - xiaoyu
-  type: vless
-  server: 89.117.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇱🇹 LT 06 - xiaoyu
-  type: vless
-  server: 89.116.180.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime09.workers.dev
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,10 +39,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 LT 01 - xiaoyu
   - 🇱🇹 LT 02 - xiaoyu
-  - 🇱🇹 LT 03 - xiaoyu
-  - 🇱🇹 LT 04 - xiaoyu
-  - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,9 +46,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 LT 01 - xiaoyu
   - 🇱🇹 LT 02 - xiaoyu
-  - 🇱🇹 LT 03 - xiaoyu
-  - 🇱🇹 LT 04 - xiaoyu
-  - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
 rules:
 - MATCH,PROXIES
