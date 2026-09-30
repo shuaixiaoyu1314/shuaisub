@@ -5,83 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaoyu
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  server: 91.193.58.52
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
-  type: vless
-  server: 91.193.58.57
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaoyu
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaoyu
-  type: vless
-  server: 91.193.58.249
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
   type: vless
-  server: 91.193.58.45
+  server: 91.193.58.31
   port: 2096
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
@@ -95,96 +69,17 @@ proxies:
       Host: free-server.techsonic.dev
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
   type: vless
-  server: 91.193.58.132
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
-  type: vless
-  server: 91.193.58.45
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
-  type: vless
-  server: 91.193.58.85
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
-  type: vless
-  server: 91.193.58.132
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
-  type: vless
-  server: 104.24.0.1
-  port: 2053
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
-  type: vless
-  server: 91.193.58.125
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@VPNine1.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
   type: vless
   server: 91.193.58.250
   port: 2096
@@ -198,23 +93,50 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
+  type: ss
+  server: 82.38.31.211
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
   type: ss
   server: 149.102.132.184
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
   type: vless
-  server: 91.193.58.136
+  server: 91.193.58.31
   port: 2096
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
@@ -226,112 +148,102 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
   type: vless
-  server: 51.89.194.151
+  server: 46.250.240.80
   port: 2053
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-  servername: www.apple.com
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
   type: vless
-  server: 188.114.97.3
-  port: 443
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
+  server: 91.193.58.57
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  servername: free-server.techsonic.dev
   network: ws
   ws-opts:
-    path: /vl/nw8XNxNaLw6JVF1rAbo7z
+    path: /free-server.techsonic.dev
     headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+      Host: free-server.techsonic.dev
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
   type: ss
   server: 82.38.31.202
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - xiaoyu
-  type: vless
-  server: port2.axiomed.ir
+- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
+  type: vmess
+  server: 66.163.117.58
   port: 443
-  uuid: b825ccd6-f90c-4273-afe1-7f85b436a4a2
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev
+  servername: ''
   network: ws
   ws-opts:
-    path: /vl/6ayyVzPLRWVROzJKD82qZxn?ed=2560
+    path: /linkvws
     headers:
-      Host: ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 24 - xiaoyu
+      Host: ''
+- name: 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
   type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888fp=chrome
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
-  type: vless
-  server: 104.25.0.1
+  server: 46.250.250.149
   port: 2053
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
-  type: vless
-  server: 91.193.58.118
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 23 - xiaoyu
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 28 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 24 - xiaoyu
   type: vless
   server: 46.250.240.80
   port: 2053
@@ -343,53 +255,73 @@ proxies:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 29 - xiaoyu
-  type: vless
-  server: 91.193.58.218
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+- name: 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 28 - xiaoyu
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free-server.techsonic.dev
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /linkvws
     headers:
-      Host: free-server.techsonic.dev
+      Host: aksai.org
+- name: 🇬🇧 英国 (United Kingdom) 29 - xiaoyu
+  type: ss
+  server: 82.38.31.13
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 30 - xiaoyu
   type: vless
-  server: 51.89.194.151
-  port: 2053
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  server: 166.1.155.83
+  port: 443
+  uuid: f1bae2c1-f354-49d6-8ec2-43ea1cc2cd95
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: UDlM3OadeskS_9U-bhn4HWiH0BijsT22otsv-FzJERU
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 31 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 32 - xiaoyu
   type: ss
-  server: 82.38.31.195
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 144.24.231.47
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IS32OF3tLm5aphxvlM/79EAcIjV2Jry7tmTuO7F4Uew=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 33 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 32 - xiaoyu
   type: vmess
   server: pahobac.org
   port: 443
@@ -405,84 +337,17 @@ proxies:
     path: /linkvws
     headers:
       Host: pahobac.org
+- name: 🇬🇧 英国 (United Kingdom) 33 - xiaoyu
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 34 - xiaoyu
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 35 - xiaoyu
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 36 - xiaoyu
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 37 - xiaoyu
-  type: vless
-  server: 91.193.58.37
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 38 - xiaoyu
-  type: ss
-  server: 82.38.31.200
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 39 - xiaoyu
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 40 - xiaoyu
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 41 - xiaoyu
   type: vmess
   server: 66.163.117.58
   port: 443
@@ -498,76 +363,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇬🇧 英国 (United Kingdom) 42 - xiaoyu
-  type: vless
-  server: 91.193.58.255
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 43 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 44 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.132.223
-- name: 🇬🇧 英国 (United Kingdom) 45 - xiaoyu
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 46 - xiaoyu
-  type: vless
-  server: 104.27.110.232
-  port: 2053
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 47 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 35 - xiaoyu
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -579,175 +375,40 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 48 - xiaoyu
-  type: vless
-  server: 91.193.58.125
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 49 - xiaoyu
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇬🇧 英国 (United Kingdom) 50 - xiaoyu
-  type: vmess
-  server: 66.163.117.58
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇬🇧 英国 (United Kingdom) 51 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 36 - xiaoyu
   type: ss
-  server: 149.102.149.207
+  server: 144.24.231.47
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IS32OF3tLm5aphxvlM/79EAcIjV2Jry7tmTuO7F4Uew=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 37 - xiaoyu
+  type: ss
+  server: 149.102.132.184
   port: 80
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 52 - xiaoyu
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 53 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 38 - xiaoyu
   type: ss
-  server: 149.102.149.207
-  port: 80
+  server: 149.102.132.184
+  port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 54 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 39 - xiaoyu
   type: vless
-  server: 172.67.131.125
-  port: 443
-  uuid: 8d0f652c-3caa-4570-a138-668364f3d25e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/zInkY7qcXuM6P1AZTQ?ed=2560
-    headers:
-      Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 55 - xiaoyu
-  type: ss
-  server: 82.38.31.201
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 56 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 57 - xiaoyu
-  type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 58 - xiaoyu
-  type: vless
-  server: 91.193.58.108
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 59 - xiaoyu
-  type: vless
-  server: 172.67.131.125
-  port: 443
-  uuid: 8d0f652c-3caa-4570-a138-668364f3d25e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/zInkY7qcXuM6P1AZTQ?ed=2560
-    headers:
-      Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 60 - xiaoyu
-  type: vless
-  server: 104.16.0.1
+  server: 51.89.194.151
   port: 2053
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 61 - xiaoyu
-  type: vmess
-  server: 66.163.117.58
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇬🇧 英国 (United Kingdom) 62 - xiaoyu
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 40 - xiaoyu
   type: vless
   server: 186.190.211.188
   port: 443
@@ -756,137 +417,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 63 - xiaoyu
-  type: ss
-  server: 141.98.101.181
+- name: 🇬🇧 英国 (United Kingdom) 41 - xiaoyu
+  type: vless
+  server: 199.232.78.159
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 64 - xiaoyu
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 65 - xiaoyu
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 66 - xiaoyu
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 67 - xiaoyu
-  type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: aa7c2760-e4c3-4034-9455-40a8a584f64c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: ''
-- name: 🇬🇧 英国 (United Kingdom) 68 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 69 - xiaoyu
-  type: vmess
-  server: khasav.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khasav.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: khasav.org
-- name: 🇬🇧 英国 (United Kingdom) 70 - xiaoyu
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 71 - xiaoyu
-  type: vless
-  server: 91.193.58.231
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇬🇧 英国 (United Kingdom) 72 - xiaoyu
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 73 - xiaoyu
-  type: vless
-  server: 104.26.0.1
-  port: 2053
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 74 - xiaoyu
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 75 - xiaoyu
+      Host: pannn1.global.ssl.fastly.net
+- name: 🇬🇧 英国 (United Kingdom) 42 - xiaoyu
   type: vmess
   server: pahobac.org
   port: 443
@@ -902,9 +447,101 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇬🇧 英国 (United Kingdom) 76 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 43 - xiaoyu
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 44 - xiaoyu
+  type: vmess
+  server: pahobac.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pahobac.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
+- name: 🇬🇧 英国 (United Kingdom) 45 - xiaoyu
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 46 - xiaoyu
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 47 - xiaoyu
+  type: vmess
+  server: 66.163.117.58
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇬🇧 英国 (United Kingdom) 48 - xiaoyu
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 49 - xiaoyu
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇬🇧 英国 (United Kingdom) 50 - xiaoyu
   type: vless
-  server: 91.193.58.157
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 51 - xiaoyu
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 52 - xiaoyu
+  type: vless
+  server: 91.193.58.132
   port: 2096
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
@@ -916,6 +553,97 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
+- name: 🇬🇧 英国 (United Kingdom) 53 - xiaoyu
+  type: vless
+  server: 51.89.194.151
+  port: 2053
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 54 - xiaoyu
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 55 - xiaoyu
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: aa7c2760-e4c3-4034-9455-40a8a584f64c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
+- name: 🇬🇧 英国 (United Kingdom) 56 - xiaoyu
+  type: vless
+  server: 91.193.58.122
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇬🇧 英国 (United Kingdom) 57 - xiaoyu
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 58 - xiaoyu
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 59 - xiaoyu
+  type: vless
+  server: 51.89.194.151
+  port: 2053
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -980,23 +708,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 57 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 58 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 59 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 60 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 61 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 62 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 63 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 64 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 65 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 66 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 67 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 68 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 69 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 70 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 71 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 72 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 73 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 74 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 75 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 76 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1061,22 +772,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 57 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 58 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 59 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 60 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 61 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 62 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 63 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 64 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 65 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 66 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 67 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 68 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 69 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 70 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 71 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 72 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 73 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 74 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 75 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 76 - xiaoyu
 rules:
 - MATCH,PROXIES
