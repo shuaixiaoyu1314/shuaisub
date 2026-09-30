@@ -29,7 +29,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 03 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 04 - xiaoyu
@@ -74,6 +74,19 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇧🇷 BR 06 - xiaoyu
+  type: vless
+  server: 102.177.189.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +97,7 @@ proxy-groups:
   - 🇧🇷 BR 03 - xiaoyu
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
+  - 🇧🇷 BR 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +108,6 @@ proxy-groups:
   - 🇧🇷 BR 03 - xiaoyu
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
+  - 🇧🇷 BR 06 - xiaoyu
 rules:
 - MATCH,PROXIES

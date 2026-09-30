@@ -1,0 +1,97 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560
+    headers:
+      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+- name: 🇮🇶 IQ 02 - xiaoyu
+  type: vless
+  server: 172.67.200.31
+  port: 443
+  uuid: 513beae3-56e7-4954-a17e-930e06237b27
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/1NM75lSM9FVMO5loRH5RSHTFj1g?ed=2560+
+    headers:
+      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+- name: 🇮🇶 IQ 03 - xiaoyu
+  type: vless
+  server: 172.67.203.158
+  port: 443
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kRfp=chrome
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇮🇶 IQ 04 - xiaoyu
+  type: vless
+  server: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  port: 443
+  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/mzLc59gMyjrsaNojAJ6g04
+    headers:
+      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+- name: 🇮🇶 IQ 05 - xiaoyu
+  type: vless
+  server: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  port: 443
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/wufVnq4Dk8cyJO59lQ3WBXW8SFN435GD
+    headers:
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaoyu
+  - 🇮🇶 IQ 02 - xiaoyu
+  - 🇮🇶 IQ 03 - xiaoyu
+  - 🇮🇶 IQ 04 - xiaoyu
+  - 🇮🇶 IQ 05 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaoyu
+  - 🇮🇶 IQ 02 - xiaoyu
+  - 🇮🇶 IQ 03 - xiaoyu
+  - 🇮🇶 IQ 04 - xiaoyu
+  - 🇮🇶 IQ 05 - xiaoyu
+rules:
+- MATCH,PROXIES

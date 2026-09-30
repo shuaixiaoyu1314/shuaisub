@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇬🇷 GR 01 - xiaoyu
+  type: vless
+  server: 85.90.197.53
+  port: 443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇬🇷 GR 02 - xiaoyu
+  type: vless
+  server: 85.90.197.53
+  port: 443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇬🇷 GR 01 - xiaoyu
+  - 🇬🇷 GR 02 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇷 GR 01 - xiaoyu
+  - 🇬🇷 GR 02 - xiaoyu
+rules:
+- MATCH,PROXIES

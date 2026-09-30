@@ -15,6 +15,20 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇺🇦 UA 02 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
     path: /+
     headers:
       Host: edgetunnel-4uw.pages.dev
@@ -24,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - xiaoyu
+  - 🇺🇦 UA 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - xiaoyu
+  - 🇺🇦 UA 02 - xiaoyu
 rules:
 - MATCH,PROXIES

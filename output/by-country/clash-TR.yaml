@@ -6,39 +6,35 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  type: vless
-  server: 145.239.30.17
+  server: test.keoplentuio.xyz
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   type: vless
   server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  type: vless
+  server: 19990ed1bb252449.IROnlY4l.Ir
+  port: 443
+  uuid: bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew
+  servername: storage-p2.googleapis.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  type: vless
+  server: 169.40.32.73
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
@@ -58,42 +54,6 @@ proxies:
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  type: vless
-  server: 130.94.0.228
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
-  type: vless
-  server: 130.94.0.228
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -104,7 +64,27 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+  type: vless
+  server: 145.239.30.17
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
   type: vless
   server: 130.94.0.228
   port: 443
@@ -118,14 +98,32 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
   type: vless
-  server: 206.1.99.60
-  port: 19101
-  uuid: 2b8527d1-b4ab-4d3b-9863-409058552fec
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
   type: vless
   server: 130.94.0.228
@@ -151,7 +149,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
   type: vless
   server: 178.83.46.216
@@ -162,16 +160,18 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   type: vless
-  server: 19990ed1bb252449.IROnlY4l.Ir
+  server: 130.94.0.228
   port: 443
-  uuid: bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew
-  servername: storage-p2.googleapis.com
-  client-fingerprint: chrome
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
