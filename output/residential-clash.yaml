@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: vless
-  server: tight-recipe-11ad.252-068.workers.dev
-  port: 8880
-  uuid: efb0a3fe-af52-45c5-b397-1a6866d88d67
+  server: 188.114.97.6
+  port: 8080
+  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,10 +16,23 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: tight-recipe-11ad.252-068.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+      Host: icy-breeze-126c.211-eb3.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   type: vless
-  server: 60.248.219.54
+  server: themeforest.net
+  port: 8880
+  uuid: b8cd08fd-a19a-4ad0-b8ae-b664b89791da
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: sweet-scene-bffd.312-860.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  type: vless
+  server: 59.125.69.24
   port: 443
   uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
@@ -30,34 +43,20 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.54
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+      Host: 59.125.69.24
+- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaoyu
   type: vless
-  server: envato.com
-  port: 8880
-  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  server: 162.159.24.131
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /?ed=2560security=tls
     headers:
-      Host: shiny-mud-d9fa.466.workers.dev
-- name: 🇳🇱 荷兰 (Netherlands) 04 (家宽) - xiaoyu
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
   type: ss
   server: 211.174.113.172
@@ -65,25 +64,41 @@ proxies:
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
+- name: 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
+  type: vless
+  server: 154.17.228.81
+  port: 59686
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 123.714541.xyz
+  network: ws
+  ws-opts:
+    path: /Ra-vl
+    headers:
+      Host: 123.714541.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 04 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

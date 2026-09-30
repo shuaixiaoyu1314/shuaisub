@@ -6,45 +6,19 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaoyu
   type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 02 - xiaoyu
-  type: vless
-  server: 102.177.189.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🇿🇦 ZA 03 - xiaoyu
-  type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 04 - xiaoyu
-  type: vless
-  server: 102.177.189.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 🇿🇦 ZA 02 - xiaoyu
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🇿🇦 ZA 05 - xiaoyu
+- name: 🇿🇦 ZA 03 - xiaoyu
   type: ss
   server: 102.37.156.224
   port: 443
@@ -59,8 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xiaoyu
   - 🇿🇦 ZA 02 - xiaoyu
   - 🇿🇦 ZA 03 - xiaoyu
-  - 🇿🇦 ZA 04 - xiaoyu
-  - 🇿🇦 ZA 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xiaoyu
   - 🇿🇦 ZA 02 - xiaoyu
   - 🇿🇦 ZA 03 - xiaoyu
-  - 🇿🇦 ZA 04 - xiaoyu
-  - 🇿🇦 ZA 05 - xiaoyu
 rules:
 - MATCH,PROXIES

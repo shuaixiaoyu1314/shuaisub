@@ -47,6 +47,13 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 04 - xiaoyu
+  type: ss
+  server: 20.123.34.66
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
+  udp: true
+- name: 🇮🇪 IE 05 - xiaoyu
   type: vless
   server: 45.141.234.138
   port: 443
@@ -69,6 +76,7 @@ proxy-groups:
   - 🇮🇪 IE 02 - xiaoyu
   - 🇮🇪 IE 03 - xiaoyu
   - 🇮🇪 IE 04 - xiaoyu
+  - 🇮🇪 IE 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +86,6 @@ proxy-groups:
   - 🇮🇪 IE 02 - xiaoyu
   - 🇮🇪 IE 03 - xiaoyu
   - 🇮🇪 IE 04 - xiaoyu
+  - 🇮🇪 IE 05 - xiaoyu
 rules:
 - MATCH,PROXIES

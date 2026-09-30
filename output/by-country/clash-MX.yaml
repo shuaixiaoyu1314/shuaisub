@@ -15,19 +15,21 @@ proxies:
   reality-opts:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇲🇽 MX 02 - xiaoyu
   type: vless
-  server: 34.51.29.171
-  port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  server: ul-mexico1.09vpn.com
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  servername: ul-mexico1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 03 - xiaoyu
   type: vless
   server: 34.51.29.171
@@ -39,7 +41,7 @@ proxies:
   reality-opts:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇲🇽 MX 04 - xiaoyu
   type: vless
   server: 34.51.29.171
@@ -51,7 +53,7 @@ proxies:
   reality-opts:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
 - name: 🇲🇽 MX 05 - xiaoyu
   type: vless
   server: 34.51.29.171
@@ -76,6 +78,18 @@ proxies:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
   servername: www.cloudflare.com
   client-fingerprint: qq
+- name: 🇲🇽 MX 07 - xiaoyu
+  type: vless
+  server: 34.51.29.171
+  port: 443
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +101,7 @@ proxy-groups:
   - 🇲🇽 MX 04 - xiaoyu
   - 🇲🇽 MX 05 - xiaoyu
   - 🇲🇽 MX 06 - xiaoyu
+  - 🇲🇽 MX 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +113,6 @@ proxy-groups:
   - 🇲🇽 MX 04 - xiaoyu
   - 🇲🇽 MX 05 - xiaoyu
   - 🇲🇽 MX 06 - xiaoyu
+  - 🇲🇽 MX 07 - xiaoyu
 rules:
 - MATCH,PROXIES
