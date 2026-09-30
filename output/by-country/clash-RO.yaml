@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaoyu
+- name: 🇷🇴 RO 01 - xiaoyu
   type: ss
-  server: p2tun4.greewebservices.ir
-  port: 1040
+  server: 154.46.31.106
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: DUAd_9d2osCSYDNCWNJngw
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇮🇷 IR 02 - xiaoyu
+- name: 🇷🇴 RO 02 - xiaoyu
   type: ss
-  server: p2tun3.greewebservices.ir
-  port: 1030
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: DUAd_9d2osCSYDNCWNJngw
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaoyu
-  - 🇮🇷 IR 02 - xiaoyu
+  - 🇷🇴 RO 01 - xiaoyu
+  - 🇷🇴 RO 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaoyu
-  - 🇮🇷 IR 02 - xiaoyu
+  - 🇷🇴 RO 01 - xiaoyu
+  - 🇷🇴 RO 02 - xiaoyu
 rules:
 - MATCH,PROXIES

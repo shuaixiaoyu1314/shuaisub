@@ -6,6 +6,30 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaoyu
   type: vless
+  server: 35.240.62.249
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 02 - xiaoyu
+  type: vless
+  server: 35.240.62.249
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 03 - xiaoyu
+  type: vless
   server: 35.233.94.80
   port: 443
   uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
@@ -22,11 +46,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇪 BE 01 - xiaoyu
+  - 🇧🇪 BE 02 - xiaoyu
+  - 🇧🇪 BE 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇪 BE 01 - xiaoyu
+  - 🇧🇪 BE 02 - xiaoyu
+  - 🇧🇪 BE 03 - xiaoyu
 rules:
 - MATCH,PROXIES

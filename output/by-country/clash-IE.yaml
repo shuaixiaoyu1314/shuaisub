@@ -15,10 +15,17 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaoyu
+  type: ss
+  server: 20.123.34.66
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
+  udp: true
+- name: 🇮🇪 IE 03 - xiaoyu
   type: vless
   server: 45.141.234.138
   port: 443
@@ -32,13 +39,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 03 - xiaoyu
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
 - name: 🇮🇪 IE 04 - xiaoyu
   type: vless
   server: 45.141.234.138
@@ -50,7 +50,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 05 - xiaoyu
@@ -68,13 +68,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 06 - xiaoyu
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
-- name: 🇮🇪 IE 07 - xiaoyu
   type: vless
   server: 45.141.234.138
   port: 443
@@ -88,7 +81,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 08 - xiaoyu
+- name: 🇮🇪 IE 07 - xiaoyu
   type: vless
   server: 45.141.234.138
   port: 443
@@ -114,7 +107,6 @@ proxy-groups:
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
-  - 🇮🇪 IE 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,6 +119,5 @@ proxy-groups:
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
-  - 🇮🇪 IE 08 - xiaoyu
 rules:
 - MATCH,PROXIES
