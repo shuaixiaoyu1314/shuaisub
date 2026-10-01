@@ -6,71 +6,72 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vless
-  server: 77.232.140.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime61.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 46.29.163.78
-  port: 20999
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   type: vless
-  server: netra-85a0ca.shoameni19.workers.dev
-  port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560+
-    headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
   server: 78.159.246.110
@@ -86,133 +87,12 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: 185.148.107.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  type: ss
-  server: 195.58.48.137
-  port: 20999
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: vless
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  type: vless
-  server: 104.21.31.137
-  port: 443
-  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed=2560
-    headers:
-      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  type: vless
-  server: 185.148.107.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -226,16 +106,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -249,15 +119,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

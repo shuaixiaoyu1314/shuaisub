@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇴 JO 01 - xiaoyu
+- name: 🇲🇽 MX 01 (家宽) - xiaoyu
   type: vless
-  server: 62.72.166.30
+  server: 181.214.1.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime40.workers.dev
+      Host: vms.lifetime39.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇲🇽 MX 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇲🇽 MX 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

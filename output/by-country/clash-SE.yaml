@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 02 - xiaoyu
+  type: vless
   server: 34.51.187.118
   port: 443
   uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
@@ -16,7 +28,21 @@ proxies:
     public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇪 SE 02 - xiaoyu
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 144.31.243.120
   port: 8443
@@ -30,58 +56,34 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 03 - xiaoyu
+- name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 103.71.22.234
+  server: 144.31.243.120
   port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /fp=chrome
     headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: 34.51.187.118
-  port: 443
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 34.51.240.236
-  port: 443
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇸🇪 SE 07 - xiaoyu
   type: vless
   server: 144.31.243.120
@@ -93,133 +95,21 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇸🇪 SE 08 - xiaoyu
   type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 12 - xiaoyu
-  type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 13 - xiaoyu
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 14 - xiaoyu
-  type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 15 - xiaoyu
-  type: vless
-  server: 34.51.240.236
+  server: 34.51.187.118
   port: 443
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇸🇪 SE 16 - xiaoyu
-  type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -233,14 +123,6 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaoyu
   - 🇸🇪 SE 07 - xiaoyu
   - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
-  - 🇸🇪 SE 11 - xiaoyu
-  - 🇸🇪 SE 12 - xiaoyu
-  - 🇸🇪 SE 13 - xiaoyu
-  - 🇸🇪 SE 14 - xiaoyu
-  - 🇸🇪 SE 15 - xiaoyu
-  - 🇸🇪 SE 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -254,13 +136,5 @@ proxy-groups:
   - 🇸🇪 SE 06 - xiaoyu
   - 🇸🇪 SE 07 - xiaoyu
   - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
-  - 🇸🇪 SE 11 - xiaoyu
-  - 🇸🇪 SE 12 - xiaoyu
-  - 🇸🇪 SE 13 - xiaoyu
-  - 🇸🇪 SE 14 - xiaoyu
-  - 🇸🇪 SE 15 - xiaoyu
-  - 🇸🇪 SE 16 - xiaoyu
 rules:
 - MATCH,PROXIES

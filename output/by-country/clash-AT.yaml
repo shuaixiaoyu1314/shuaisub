@@ -15,21 +15,23 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /+
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇹 AT 02 - xiaoyu
   type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇹 AT 03 - xiaoyu
   type: vless
   server: 173.242.63.235
@@ -62,21 +64,19 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇦🇹 AT 06 - xiaoyu
   type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 - name: 🇦🇹 AT 07 - xiaoyu
   type: vless
   server: 173.242.63.235
@@ -107,34 +107,6 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇹 AT 09 - xiaoyu
   type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 10 - xiaoyu
-  type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇹 AT 11 - xiaoyu
-  type: vless
   server: 152.53.1.40
   port: 443
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
@@ -144,8 +116,8 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 AT 12 - xiaoyu
+  client-fingerprint: random
+- name: 🇦🇹 AT 10 - xiaoyu
   type: vless
   server: 173.242.63.235
   port: 8443
@@ -159,7 +131,49 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 11 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 12 - xiaoyu
+  type: vless
+  server: 185.112.249.201
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇹 AT 13 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 14 - xiaoyu
   type: vless
   server: 152.53.1.40
   port: 443
@@ -170,8 +184,22 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 AT 14 - xiaoyu
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 15 - xiaoyu
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇹 AT 16 - xiaoyu
   type: vless
   server: 173.242.63.235
   port: 8443
@@ -204,6 +232,8 @@ proxy-groups:
   - 🇦🇹 AT 12 - xiaoyu
   - 🇦🇹 AT 13 - xiaoyu
   - 🇦🇹 AT 14 - xiaoyu
+  - 🇦🇹 AT 15 - xiaoyu
+  - 🇦🇹 AT 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -223,5 +253,7 @@ proxy-groups:
   - 🇦🇹 AT 12 - xiaoyu
   - 🇦🇹 AT 13 - xiaoyu
   - 🇦🇹 AT 14 - xiaoyu
+  - 🇦🇹 AT 15 - xiaoyu
+  - 🇦🇹 AT 16 - xiaoyu
 rules:
 - MATCH,PROXIES

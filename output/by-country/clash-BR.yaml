@@ -6,34 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
   type: vless
-  server: 172.65.90.41
-  port: 2053
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: wzs.echo.net.eu.org
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 02 - xiaoyu
-  type: vmess
-  server: aksai.org
+  type: vless
+  server: 43.174.192.1
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: aksai.org
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vless
   server: 43.174.192.1
@@ -49,34 +47,54 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇧🇷 BR 04 - xiaoyu
-  type: vless
-  server: 43.174.192.1
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: aksai.org
 - name: 🇧🇷 BR 05 - xiaoyu
-  type: vless
-  server: 43.174.192.1
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: aksai.org
 - name: 🇧🇷 BR 06 - xiaoyu
+  type: vmess
+  server: 89.39.161.157
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 07 - xiaoyu
   type: vless
   server: 43.174.192.1
   port: 443
@@ -90,7 +108,37 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇧🇷 BR 07 - xiaoyu
+- name: 🇧🇷 BR 08 - xiaoyu
+  type: vless
+  server: 43.174.192.1
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇧🇷 BR 09 - xiaoyu
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇧🇷 BR 10 - xiaoyu
   type: vless
   server: 43.174.192.1
   port: 443
@@ -116,6 +164,9 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
+  - 🇧🇷 BR 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -128,5 +179,8 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
+  - 🇧🇷 BR 10 - xiaoyu
 rules:
 - MATCH,PROXIES

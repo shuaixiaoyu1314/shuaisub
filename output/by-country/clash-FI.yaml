@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - xiaoyu
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -15,15 +23,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaoyu
-  type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -35,7 +35,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -50,17 +50,41 @@ proxies:
   client-fingerprint: random
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
-  server: 37.143.129.161
-  port: 8443
-  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
-  servername: fi.aksay.pro
-  client-fingerprint: chrome
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 06 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 07 - xiaoyu
+  type: vless
+  server: 109.94.164.185
+  port: 10210
+  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
+  servername: firebaseperusertopics-pa.googleapis.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 08 - xiaoyu
   type: vless
   server: 35.228.61.63
   port: 443
@@ -71,30 +95,6 @@ proxies:
   reality-opts:
     public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
