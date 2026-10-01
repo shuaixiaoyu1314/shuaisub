@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaoyu
   type: vless
+  server: 45.134.9.133
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ul-mexico1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 45.134.9.133
+- name: 🇲🇽 MX 02 - xiaoyu
+  type: vless
   server: 34.51.119.243
   port: 443
   uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
@@ -16,35 +30,7 @@ proxies:
     public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇲🇽 MX 02 - xiaoyu
-  type: vless
-  server: 45.134.9.133
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 45.134.9.133
 - name: 🇲🇽 MX 03 - xiaoyu
-  type: vless
-  server: 45.134.9.133
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 45.134.9.133
-- name: 🇲🇽 MX 04 - xiaoyu
   type: vless
   server: ul-mexico1.09vpn.com
   port: 8443
@@ -58,6 +44,18 @@ proxies:
     path: /vless/
     headers:
       Host: ul-mexico1.09vpn.com
+- name: 🇲🇽 MX 04 - xiaoyu
+  type: vless
+  server: 34.51.119.243
+  port: 443
+  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
