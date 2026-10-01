@@ -19,6 +19,19 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
+- name: 🇵🇱 PL 03 - xiaoyu
+  type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
@@ -28,19 +41,32 @@ proxies:
   reality-opts:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 04 - xiaoyu
   type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
+- name: 🇵🇱 PL 05 - xiaoyu
+  type: vless
+  server: 34.118.43.106
+  port: 443
+  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: ios
+    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +75,8 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
+  - 🇵🇱 PL 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +85,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
+  - 🇵🇱 PL 05 - xiaoyu
 rules:
 - MATCH,PROXIES
