@@ -6,23 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - xiaoyu
   type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 03 - xiaoyu
-  type: vless
-  server: 35.228.61.63
+  server: 34.88.172.173
   port: 443
   uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
   udp: true
@@ -32,6 +28,14 @@ proxies:
     public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - xiaoyu
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 04 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -43,126 +47,22 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
-  server: 35.228.61.63
+  server: 146.185.143.174
   port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  uuid: 22fa3629-21b7-4904-b800-db850decb620
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇫🇮 FI 06 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 08 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
+  servername: fin.vip98.cfd
   network: ws
   ws-opts:
-    path: /fp=unsafe
+    path: /
     headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇫🇮 FI 10 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇫🇮 FI 11 - xiaoyu
-  type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 12 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇫🇮 FI 13 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 14 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 15 - xiaoyu
+      Host: fin.vip98.cfd
+- name: 🇫🇮 FI 06 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -174,19 +74,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 16 - xiaoyu
-  type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 17 - xiaoyu
+- name: 🇫🇮 FI 07 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -197,7 +85,27 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 08 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - xiaoyu
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -212,14 +120,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - xiaoyu
   - 🇫🇮 FI 08 - xiaoyu
   - 🇫🇮 FI 09 - xiaoyu
-  - 🇫🇮 FI 10 - xiaoyu
-  - 🇫🇮 FI 11 - xiaoyu
-  - 🇫🇮 FI 12 - xiaoyu
-  - 🇫🇮 FI 13 - xiaoyu
-  - 🇫🇮 FI 14 - xiaoyu
-  - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -234,13 +134,5 @@ proxy-groups:
   - 🇫🇮 FI 07 - xiaoyu
   - 🇫🇮 FI 08 - xiaoyu
   - 🇫🇮 FI 09 - xiaoyu
-  - 🇫🇮 FI 10 - xiaoyu
-  - 🇫🇮 FI 11 - xiaoyu
-  - 🇫🇮 FI 12 - xiaoyu
-  - 🇫🇮 FI 13 - xiaoyu
-  - 🇫🇮 FI 14 - xiaoyu
-  - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 rules:
 - MATCH,PROXIES

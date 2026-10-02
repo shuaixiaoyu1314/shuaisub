@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  server: 188.114.97.6
+  port: 8080
+  uuid: c6171ace-4580-45c7-b00f-5e6c56f48794
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,12 +16,12 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
+      Host: withered-cloud-1202.405-42c.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   type: vless
-  server: 172.64.94.251
+  server: withered-cloud-1202.405-42c.workers.dev
   port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  uuid: c6171ace-4580-45c7-b00f-5e6c56f48794
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,27 +29,7 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  type: vless
-  server: 172.67.69.129
-  port: 8880
-  uuid: d33cc776-9c57-4ea3-8c5a-6d85043029d7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: shiny-flower-c72d.105-161.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
+      Host: withered-cloud-1202.405-42c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
