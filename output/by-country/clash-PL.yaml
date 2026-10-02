@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
   server: 77.83.246.202
@@ -31,40 +30,42 @@ proxies:
   client-fingerprint: firefox
 - name: 🇵🇱 PL 03 - xiaoyu
   type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: pl.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
   client-fingerprint: firefox
 - name: 🇵🇱 PL 04 - xiaoyu
   type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 05 - xiaoyu
   type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 06 - xiaoyu
   type: vless
   server: 70.34.255.101
@@ -80,67 +81,18 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 07 - xiaoyu
   type: vless
-  server: 34.118.43.133
-  port: 443
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 08 - xiaoyu
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 09 - xiaoyu
-  type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 10 - xiaoyu
-  type: vless
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 11 - xiaoyu
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.255.101
-- name: 🇵🇱 PL 12 - xiaoyu
   type: vless
   server: 144.31.4.193
   port: 444
@@ -165,10 +117,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
   - 🇵🇱 PL 08 - xiaoyu
-  - 🇵🇱 PL 09 - xiaoyu
-  - 🇵🇱 PL 10 - xiaoyu
-  - 🇵🇱 PL 11 - xiaoyu
-  - 🇵🇱 PL 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -182,9 +130,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
   - 🇵🇱 PL 08 - xiaoyu
-  - 🇵🇱 PL 09 - xiaoyu
-  - 🇵🇱 PL 10 - xiaoyu
-  - 🇵🇱 PL 11 - xiaoyu
-  - 🇵🇱 PL 12 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -22,7 +22,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 02 - xiaoyu
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -37,6 +37,18 @@ proxies:
     headers:
       Host: ''
 - name: 🇧🇷 BR 03 - xiaoyu
+  type: vless
+  server: br.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: br.monkora.org
+  client-fingerprint: firefox
+- name: 🇧🇷 BR 04 - xiaoyu
   type: vmess
   server: 89.39.161.157
   port: 443
@@ -52,9 +64,9 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇧🇷 BR 04 - xiaoyu
+- name: 🇧🇷 BR 05 - xiaoyu
   type: vless
-  server: br.monkora.org
+  server: 147.45.116.19
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
@@ -63,26 +75,10 @@ proxies:
   reality-opts:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: br.monkora.org
-  client-fingerprint: firefox
-- name: 🇧🇷 BR 05 - xiaoyu
-  type: vmess
-  server: 89.39.161.157
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 06 - xiaoyu
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -97,6 +93,18 @@ proxies:
     headers:
       Host: aksai.org
 - name: 🇧🇷 BR 07 - xiaoyu
+  type: vless
+  server: br.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: br.monkora.org
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 08 - xiaoyu
   type: vmess
   server: aksai.org
   port: 443
@@ -112,7 +120,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇧🇷 BR 08 - xiaoyu
+- name: 🇧🇷 BR 09 - xiaoyu
   type: vmess
   server: 89.39.161.157
   port: 443
@@ -141,6 +149,7 @@ proxy-groups:
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
   - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +163,6 @@ proxy-groups:
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
   - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
 rules:
 - MATCH,PROXIES

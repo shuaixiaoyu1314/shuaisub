@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - xiaoyu
+- name: 🇶🇦 QA 01 - xiaoyu
   type: vless
-  server: geo.shkola112.site
+  server: 34.18.212.19
   port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: b6f775c2-70fd-4247-8d12-82cac46fdd50
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
+  reality-opts:
+    public-key: tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - xiaoyu
+  - 🇶🇦 QA 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - xiaoyu
+  - 🇶🇦 QA 01 - xiaoyu
 rules:
 - MATCH,PROXIES

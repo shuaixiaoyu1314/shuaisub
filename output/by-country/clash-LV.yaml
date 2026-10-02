@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
   type: vless
+  server: 85.159.228.223
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇱🇻 LV 02 - xiaoyu
+  type: vless
   server: lv.monkora.org
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
@@ -16,17 +28,33 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
+- name: 🇱🇻 LV 03 - xiaoyu
+  type: vless
+  server: 85.159.228.223
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
+  - 🇱🇻 LV 02 - xiaoyu
+  - 🇱🇻 LV 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
+  - 🇱🇻 LV 02 - xiaoyu
+  - 🇱🇻 LV 03 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaoyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 - name: 🇦🇹 AT 02 - xiaoyu
   type: vless
   server: 152.53.1.40
@@ -22,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇹 AT 03 - xiaoyu
   type: vless
   server: 152.53.1.40
@@ -34,45 +39,26 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇹 AT 04 - xiaoyu
   type: vless
-  server: 109.172.8.48
-  port: 8443
-  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.nihaoyun.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.nihaoyun.top
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 - name: 🇦🇹 AT 05 - xiaoyu
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 AT 06 - xiaoyu
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇦🇹 AT 03 - xiaoyu
   - 🇦🇹 AT 04 - xiaoyu
   - 🇦🇹 AT 05 - xiaoyu
-  - 🇦🇹 AT 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,6 +79,5 @@ proxy-groups:
   - 🇦🇹 AT 03 - xiaoyu
   - 🇦🇹 AT 04 - xiaoyu
   - 🇦🇹 AT 05 - xiaoyu
-  - 🇦🇹 AT 06 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -28,6 +28,18 @@ proxies:
     public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: 199.68.198.13
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
+  - 🇸🇪 SE 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
+  - 🇸🇪 SE 03 - xiaoyu
 rules:
 - MATCH,PROXIES
