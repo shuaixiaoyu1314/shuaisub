@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
+  server: se.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 02 - xiaoyu
+  type: vless
   server: 34.51.231.250
   port: 443
   uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
@@ -22,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - xiaoyu
+  - 🇸🇪 SE 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - xiaoyu
+  - 🇸🇪 SE 02 - xiaoyu
 rules:
 - MATCH,PROXIES

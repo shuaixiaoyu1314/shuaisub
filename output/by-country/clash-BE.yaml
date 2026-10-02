@@ -6,6 +6,66 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaoyu
   type: vless
+  server: 34.38.82.200
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇧🇪 BE 02 - xiaoyu
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇧🇪 BE 03 - xiaoyu
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇧🇪 BE 04 - xiaoyu
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇧🇪 BE 05 - xiaoyu
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇪 BE 06 - xiaoyu
+  type: vless
   server: 34.156.242.126
   port: 443
   uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
@@ -16,7 +76,19 @@ proxies:
     public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇪 BE 02 - xiaoyu
+- name: 🇧🇪 BE 07 - xiaoyu
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇧🇪 BE 08 - xiaoyu
   type: vless
   server: 34.38.82.200
   port: 443
@@ -35,6 +107,12 @@ proxy-groups:
   - AUTO
   - 🇧🇪 BE 01 - xiaoyu
   - 🇧🇪 BE 02 - xiaoyu
+  - 🇧🇪 BE 03 - xiaoyu
+  - 🇧🇪 BE 04 - xiaoyu
+  - 🇧🇪 BE 05 - xiaoyu
+  - 🇧🇪 BE 06 - xiaoyu
+  - 🇧🇪 BE 07 - xiaoyu
+  - 🇧🇪 BE 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +120,11 @@ proxy-groups:
   proxies:
   - 🇧🇪 BE 01 - xiaoyu
   - 🇧🇪 BE 02 - xiaoyu
+  - 🇧🇪 BE 03 - xiaoyu
+  - 🇧🇪 BE 04 - xiaoyu
+  - 🇧🇪 BE 05 - xiaoyu
+  - 🇧🇪 BE 06 - xiaoyu
+  - 🇧🇪 BE 07 - xiaoyu
+  - 🇧🇪 BE 08 - xiaoyu
 rules:
 - MATCH,PROXIES

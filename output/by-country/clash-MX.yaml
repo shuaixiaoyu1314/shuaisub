@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇲🇽 MX 02 - xiaoyu
   type: vless
-  server: ul-mexico1.09vpn.com
+  server: 45.134.9.133
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
@@ -29,7 +29,49 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ul-mexico1.09vpn.com
+      Host: 45.134.9.133
+- name: 🇲🇽 MX 03 - xiaoyu
+  type: vless
+  server: 131.196.252.66
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇲🇽 MX 04 - xiaoyu
+  type: vless
+  server: 131.196.252.97
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇲🇽 MX 05 - xiaoyu
+  type: vless
+  server: 131.196.252.66
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +79,9 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
+  - 🇲🇽 MX 03 - xiaoyu
+  - 🇲🇽 MX 04 - xiaoyu
+  - 🇲🇽 MX 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +89,8 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
+  - 🇲🇽 MX 03 - xiaoyu
+  - 🇲🇽 MX 04 - xiaoyu
+  - 🇲🇽 MX 05 - xiaoyu
 rules:
 - MATCH,PROXIES

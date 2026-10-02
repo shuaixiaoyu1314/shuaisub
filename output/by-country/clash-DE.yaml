@@ -5,27 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoyu
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
   type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: site.check-looks.space
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: site.check-looks.space
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 03 - xiaoyu
+  type: vless
+  server: 2.28.120.67
+  port: 80
+  uuid: 2d16e984-17ca-42e9-984a-94387d80a97a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2.28.120.67
+- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
   type: vless
   server: 81.95.4.189
   port: 443
@@ -39,175 +57,66 @@ proxies:
     path: /vws/
     headers:
       Host: 81.95.4.189
-- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 05 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
 - name: 🇩🇪 德国 (Germany) 06 - xiaoyu
   type: vless
-  server: 94.228.171.219
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  server: site.check-looks.space
+  port: 2083
+  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: germany.tofreedom.ru
+  servername: site.check-looks.space
   network: ws
   ws-opts:
-    path: /c7f5317cd04691bc
+    path: /
     headers:
-      Host: germany.tofreedom.ru
+      Host: site.check-looks.space
 - name: 🇩🇪 德国 (Germany) 07 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 08 - xiaoyu
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  server: freesocks.work
+  port: 2053
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
   network: ws
   ws-opts:
-    path: /vless/
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: ov-germany1.09vpn.com
+      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 09 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: pokerrr.global.ssl.fastly.net
 - name: 🇩🇪 德国 (Germany) 10 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
-  type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
-  type: ss
-  server: 130.61.42.148
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
-  type: vless
-  server: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  port: 443
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/1zCIGMyxlm8xzeGwdyy
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
   type: vmess
   server: 193.108.117.54
   port: 443
@@ -217,13 +126,62 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aidrivercat.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+  type: vless
+  server: 49.13.231.249
+  port: 33483
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 49.13.231.249
+- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
+  type: vless
+  server: 169.40.32.73
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
   type: vmess
   server: aidrivercat.org
   port: 443
@@ -239,35 +197,67 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
+- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 81.95.4.189
+- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+  type: vless
+  server: undef.network
+  port: 2052
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
+  type: vless
+  server: 62.192.153.132
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 20 - xiaoyu
   type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  server: germany.tofreedom.ru
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
+  servername: germany.tofreedom.ru
   network: ws
   ws-opts:
-    path: /
+    path: /c7f5317cd04691bc
     headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
+      Host: germany.tofreedom.ru
 - name: 🇩🇪 德国 (Germany) 21 - xiaoyu
-  type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
   type: vless
   server: rubifen.adaspoloandco.com
   port: 443
@@ -281,14 +271,7 @@ proxies:
     path: /GOrbEh
     headers:
       Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
   type: vless
   server: 81.95.4.189
   port: 443
@@ -302,6 +285,26 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
+  type: ss
+  server: 31.76.11.83
+  port: 11750
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+  udp: true
 - name: 🇩🇪 德国 (Germany) 25 - xiaoyu
   type: vless
   server: ov-germany1.09vpn.com
@@ -317,20 +320,6 @@ proxies:
       Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 26 - xiaoyu
   type: vless
-  server: 45.88.12.110
-  port: 2083
-  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mol.ultimagamest.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.88.12.110
-- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
-  type: vless
   server: ov-germany1.09vpn.com
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
@@ -342,27 +331,42 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 28 - xiaoyu
   type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  server: site.check-looks.space
+  port: 2083
+  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
+  servername: site.check-looks.space
   network: ws
   ws-opts:
-    path: /GOrbEh
+    path: /
     headers:
-      Host: rubifen.adaspoloandco.com
+      Host: site.check-looks.space
 - name: 🇩🇪 德国 (Germany) 29 - xiaoyu
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 30 - xiaoyu
   type: vless
   server: 57.129.41.216
@@ -380,20 +384,7 @@ proxies:
   type: vless
   server: 57.129.41.216
   port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
@@ -402,34 +393,21 @@ proxies:
     path: /vless/
     headers:
       Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
   type: vless
-  server: 81.95.4.189
+  server: 109.172.8.73
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
-  type: vless
-  server: 2.28.120.67
-  port: 80
-  uuid: 2d16e984-17ca-42e9-984a-94387d80a97a
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: www.nihaoyun.top
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 2.28.120.67
-- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
+      Host: www.nihaoyun.top
+- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
   type: vmess
   server: 185.177.229.128
   port: 22324
@@ -439,7 +417,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
   type: vless
   server: site.check-looks.space
   port: 2083
@@ -453,17 +443,68 @@ proxies:
     path: /
     headers:
       Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
+  type: vless
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
 - name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+  type: vless
+  server: site.check-looks.space
+  port: 2083
+  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: site.check-looks.space
+- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+  type: ss
+  server: 31.76.11.83
+  port: 11750
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
+  type: vless
+  server: de.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 41 - xiaoyu
+  type: vless
+  server: hikvision-plus.com
+  port: 2052
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
   type: vless
   server: 81.95.4.189
   port: 443
@@ -476,58 +517,24 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+      Host: 81.95.4.189
+- name: 🇩🇪 德国 (Germany) 43 - xiaoyu
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  server: site.check-looks.space
+  port: 2083
+  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 41 - xiaoyu
-  type: vless
-  server: 188.245.25.223
-  port: 8402
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: site.check-looks.space
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 43 - xiaoyu
-  type: vless
-  server: kvm1.avenone.ir
-  port: 8402
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: site.check-looks.space
 - name: 🇩🇪 德国 (Germany) 44 - xiaoyu
   type: vless
-  server: 94.228.171.219
+  server: germany.tofreedom.ru
   port: 8444
   uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
   udp: true
@@ -541,33 +548,19 @@ proxies:
       Host: germany.tofreedom.ru
 - name: 🇩🇪 德国 (Germany) 45 - xiaoyu
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
-  type: vmess
-  server: 193.108.117.54
+  server: 51.38.127.93
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aidrivercat.org
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /GOrbEh
     headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
   type: vless
   server: 162.55.242.208
   port: 2053
@@ -578,150 +571,70 @@ proxies:
   reality-opts:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
+  type: vless
+  server: freesocks.work
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
+  type: vless
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 139.162.149.105
 - name: 🇩🇪 德国 (Germany) 49 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 50 - xiaoyu
   type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  server: 130.61.42.148
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 51 - xiaoyu
   type: ss
-  server: 51.195.126.38
-  port: 8388
+  server: fast.jkerm.com
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+  password: ''
   udp: true
 - name: 🇩🇪 德国 (Germany) 52 - xiaoyu
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 53 - xiaoyu
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 54 - xiaoyu
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 55 - xiaoyu
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 56 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 57 - xiaoyu
-  type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 58 - xiaoyu
-  type: vless
-  server: 188.245.25.223
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 59 - xiaoyu
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 81.95.4.189
-- name: 🇩🇪 德国 (Germany) 60 - xiaoyu
   type: vless
   server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  port: 8443
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ov-germany1.09vpn.com
   network: ws
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 61 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 62 - xiaoyu
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 53 - xiaoyu
   type: vless
   server: site.check-looks.space
   port: 2083
@@ -735,97 +648,7 @@ proxies:
     path: /
     headers:
       Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 63 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 64 - xiaoyu
-  type: vless
-  server: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  port: 443
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/1zCIGMyxlm8xzeGwdyy
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇩🇪 德国 (Germany) 65 - xiaoyu
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 66 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 67 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 68 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 69 - xiaoyu
-  type: ss
-  server: 31.76.11.83
-  port: 11750
-  cipher: chacha20-ietf-poly1305
-  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 70 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 54 - xiaoyu
   type: vless
   server: 162.55.242.208
   port: 2053
@@ -836,49 +659,18 @@ proxies:
   reality-opts:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 71 - xiaoyu
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 81.95.4.189
-- name: 🇩🇪 德国 (Germany) 72 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 55 - xiaoyu
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 73 - xiaoyu
-  type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 74 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 56 - xiaoyu
   type: vless
   server: 94.228.171.219
   port: 8444
@@ -892,76 +684,20 @@ proxies:
     path: /c7f5317cd04691bc
     headers:
       Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 75 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 76 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 57 - xiaoyu
   type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  server: apadana.gamingnet.ir
+  port: 33483
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 77 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 78 - xiaoyu
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 79 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 80 - xiaoyu
+      Host: apadana.gamingnet.ir
+- name: 🇩🇪 德国 (Germany) 58 - xiaoyu
   type: vless
   server: site.check-looks.space
   port: 2083
@@ -975,269 +711,28 @@ proxies:
     path: /
     headers:
       Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 81 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 59 - xiaoyu
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.comfreenettirgermanylimburg
-- name: 🇩🇪 德国 (Germany) 82 - xiaoyu
-  type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 83 - xiaoyu
-  type: vless
-  server: 188.245.25.223
-  port: 8402
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 84 - xiaoyu
-  type: vless
-  server: 45.88.12.122
-  port: 2083
-  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.88.12.122
-- name: 🇩🇪 德国 (Germany) 85 - xiaoyu
-  type: vless
-  server: port2.axiomed.ir
+  server: 104.21.77.12
   port: 443
-  uuid: d443c411-85e4-4e0e-8251-2294d7e7ae0b
+  uuid: 26168a04-a91c-48fc-b8d0-3ba5a4e719c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
+  servername: 2yijonkovdic86iq5ebnd1moqqf.yyuz0mhr4awg8vw-wwycuu4.workers.dev
   network: ws
   ws-opts:
-    path: /vl/II2kyrr06FWkCZfkFs?ed=2560+
+    path: /vl/17NBgz64AfwQ4Dd6qdNR?ed=2560
     headers:
-      Host: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
-- name: 🇩🇪 德国 (Germany) 86 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 87 - xiaoyu
+      Host: 2yijonkovdic86iq5ebnd1moqqf.yyuz0mhr4awg8vw-wwycuu4.workers.dev
+- name: 🇩🇪 德国 (Germany) 60 - xiaoyu
   type: ss
-  server: 209.46.102.22
+  server: 51.195.126.38
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  password: 2YdE4lFOid5a
   udp: true
-- name: 🇩🇪 德国 (Germany) 88 - xiaoyu
-  type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 89 - xiaoyu
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 90 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 91 - xiaoyu
-  type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 92 - xiaoyu
-  type: vless
-  server: cctvhikvision.center
-  port: 2052
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 93 - xiaoyu
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 94 - xiaoyu
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 95 - xiaoyu
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 96 - xiaoyu
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/qAuPpP8UsUmtA5NiXmiGs
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇩🇪 德国 (Germany) 97 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 98 - xiaoyu
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 443
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 99 - xiaoyu
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 100 - xiaoyu
-  type: vless
-  server: port2.axiomed.ir
-  port: 443
-  uuid: d443c411-85e4-4e0e-8251-2294d7e7ae0b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/II2kyrr06FWkCZfkFs?ed=2560
-    headers:
-      Host: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
-- name: 🇩🇪 德国 (Germany) 101 - xiaoyu
-  type: vless
-  server: 188.114.97.3
-  port: 443
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/nw8XNxNaLw6JVF1rAbo7z
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇩🇪 德国 (Germany) 102 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 61 - xiaoyu
   type: vless
   server: 81.95.4.189
   port: 443
@@ -1251,124 +746,15 @@ proxies:
     path: /vws/
     headers:
       Host: 81.95.4.189
-- name: 🇩🇪 德国 (Germany) 103 - xiaoyu
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 62 - xiaoyu
+  type: vless
+  server: 159.100.13.40
+  port: 8081
+  uuid: b4090350-b91f-4920-b5c0-c3ffd2798534
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 104 - xiaoyu
-  type: vless
-  server: 2.28.120.67
-  port: 80
-  uuid: 2d16e984-17ca-42e9-984a-94387d80a97a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2.28.120.67
-- name: 🇩🇪 德国 (Germany) 105 - xiaoyu
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 106 - xiaoyu
-  type: vless
-  server: 45.88.12.122
-  port: 2083
-  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.88.12.122
-- name: 🇩🇪 德国 (Germany) 107 - xiaoyu
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 108 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 109 - xiaoyu
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 110 - xiaoyu
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 111 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 112 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 63 - xiaoyu
   type: vless
   server: site.check-looks.space
   port: 2083
@@ -1382,79 +768,19 @@ proxies:
     path: /
     headers:
       Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 113 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 64 - xiaoyu
   type: vless
-  server: rubifen.adaspoloandco.com
+  server: 62.192.153.132
   port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 114 - xiaoyu
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 115 - xiaoyu
-  type: ss
-  server: 130.61.42.148
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 116 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 117 - xiaoyu
-  type: vless
-  server: 45.88.12.110
-  port: 2083
-  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mol.ultimagamest.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.88.12.110
-- name: 🇩🇪 德国 (Germany) 118 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 119 - xiaoyu
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 65 - xiaoyu
   type: vless
   server: 81.95.4.189
   port: 443
@@ -1468,7 +794,34 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 120 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 66 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 67 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 68 - xiaoyu
   type: vless
   server: ov-germany1.09vpn.com
   port: 80
@@ -1481,20 +834,7 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 121 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 122 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 69 - xiaoyu
   type: vmess
   server: 185.177.229.128
   port: 22324
@@ -1504,78 +844,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 123 - xiaoyu
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 124 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 70 - xiaoyu
   type: vless
-  server: 188.114.97.1
+  server: 162.55.242.208
   port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 125 - xiaoyu
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 71 - xiaoyu
   type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 126 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 127 - xiaoyu
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 128 - xiaoyu
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 72 - xiaoyu
   type: vmess
   server: aidrivercat.org
   port: 443
@@ -1591,7 +884,290 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇩🇪 德国 (Germany) 129 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 73 - xiaoyu
+  type: vless
+  server: be.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 74 - xiaoyu
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 75 - xiaoyu
+  type: vless
+  server: germany.tofreedom.ru
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany.tofreedom.ru
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 76 - xiaoyu
+  type: vless
+  server: 2.28.120.67
+  port: 80
+  uuid: 2d16e984-17ca-42e9-984a-94387d80a97a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2.28.120.67
+- name: 🇩🇪 德国 (Germany) 77 - xiaoyu
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 78 - xiaoyu
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 79 - xiaoyu
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 80 - xiaoyu
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pokerrr.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 81 - xiaoyu
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 82 - xiaoyu
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 83 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 81.95.4.189
+- name: 🇩🇪 德国 (Germany) 84 - xiaoyu
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 85 - xiaoyu
+  type: vless
+  server: hikvision-plus.com
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 86 - xiaoyu
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 87 - xiaoyu
+  type: vless
+  server: 94.228.171.219
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany.tofreedom.ru
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 88 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 89 - xiaoyu
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 90 - xiaoyu
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 91 - xiaoyu
+  type: vless
+  server: germany.tofreedom.ru
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany.tofreedom.ru
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 92 - xiaoyu
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 93 - xiaoyu
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 94 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 95 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 96 - xiaoyu
   type: vless
   server: 57.129.41.216
   port: 80
@@ -1604,9 +1180,124 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 130 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 97 - xiaoyu
+  type: vless
+  server: germany.tofreedom.ru
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany.tofreedom.ru
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 98 - xiaoyu
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 99 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 100 - xiaoyu
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 101 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 102 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 103 - xiaoyu
   type: vmess
-  server: 216.106.187.60
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 104 - xiaoyu
+  type: vless
+  server: freesocks.work
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 105 - xiaoyu
+  type: vmess
+  server: 31.76.11.83
+  port: 23325
+  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 106 - xiaoyu
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 107 - xiaoyu
+  type: vmess
+  server: 185.177.229.129
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -1614,7 +1305,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 131 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 108 - xiaoyu
   type: vless
   server: 57.129.41.216
   port: 80
@@ -1626,8 +1317,70 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 132 - xiaoyu
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 109 - xiaoyu
+  type: vless
+  server: 161.35.192.122
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇩🇪 德国 (Germany) 110 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 111 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 112 - xiaoyu
+  type: vless
+  server: 2.58.66.198
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 113 - xiaoyu
+  type: vless
+  server: 31.76.11.83
+  port: 26150
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 114 - xiaoyu
   type: vmess
   server: 185.177.229.128
   port: 22324
@@ -1637,7 +1390,119 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 133 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 115 - xiaoyu
+  type: vmess
+  server: 216.106.187.60
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kentspark.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kentspark.org
+- name: 🇩🇪 德国 (Germany) 116 - xiaoyu
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: 2e8cd1fa-0dcc-4402-bb99-be3d623fc1d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pokerrr.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 117 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 118 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 119 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 120 - xiaoyu
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 121 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 122 - xiaoyu
+  type: vless
+  server: freesocks.work
+  port: 2052
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 123 - xiaoyu
   type: vmess
   server: 185.177.229.129
   port: 22324
@@ -1647,50 +1512,244 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 134 - xiaoyu
-  type: ss
-  server: 130.61.149.187
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3dnhV7bixKH/zZxV1pUukqQJUgb0FLew7bx7u8qXaq0=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 135 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 124 - xiaoyu
   type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
+  server: 161.35.192.122
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: site.check-looks.space
+  servername: www.nihaoyun.top
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 136 - xiaoyu
+      Host: www.nihaoyun.top
+- name: 🇩🇪 德国 (Germany) 125 - xiaoyu
   type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 137 - xiaoyu
-  type: vless
-  server: 188.245.25.223
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 126 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 127 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 128 - xiaoyu
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rubifen.adaspoloandco.com
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 129 - xiaoyu
+  type: vless
+  server: 31.76.119.123
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 130 - xiaoyu
+  type: vless
+  server: 31.76.11.83
+  port: 26150
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 131 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 132 - xiaoyu
+  type: vless
+  server: freesocks.work
+  port: 2052
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 133 - xiaoyu
+  type: ss
+  server: 130.61.183.214
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JQQd0gBS8xVNjdAUMSvEUAySTuqYpod/ZyiIjkNvDfE=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 134 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 135 - xiaoyu
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 136 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 137 - xiaoyu
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 - name: 🇩🇪 德国 (Germany) 138 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 139 - xiaoyu
+  type: vless
+  server: 94.228.171.219
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: germany.tofreedom.ru
+  network: ws
+  ws-opts:
+    path: /c7f5317cd04691bc
+    headers:
+      Host: germany.tofreedom.ru
+- name: 🇩🇪 德国 (Germany) 140 - xiaoyu
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pokerrr.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 141 - xiaoyu
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 142 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 143 - xiaoyu
   type: vless
   server: 139.162.149.105
   port: 80
@@ -1703,6 +1762,119 @@ proxies:
     path: /
     headers:
       Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 144 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 145 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 146 - xiaoyu
+  type: vless
+  server: 109.172.8.48
+  port: 8443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇩🇪 德国 (Germany) 147 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 148 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 149 - xiaoyu
+  type: vless
+  server: 2.28.120.67
+  port: 80
+  uuid: 2d16e984-17ca-42e9-984a-94387d80a97a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2.28.120.67
+- name: 🇩🇪 德国 (Germany) 150 - xiaoyu
+  type: vless
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 151 - xiaoyu
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 152 - xiaoyu
+  type: vless
+  server: 81dfbc47661b59f3.sddsask.ir
+  port: 8080
+  uuid: 08117346-6de0-407c-a53b-89b6c6e1e2f4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 81dfbc47661b59f3.sddsask.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1846,6 +2018,20 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 136 - xiaoyu
   - 🇩🇪 德国 (Germany) 137 - xiaoyu
   - 🇩🇪 德国 (Germany) 138 - xiaoyu
+  - 🇩🇪 德国 (Germany) 139 - xiaoyu
+  - 🇩🇪 德国 (Germany) 140 - xiaoyu
+  - 🇩🇪 德国 (Germany) 141 - xiaoyu
+  - 🇩🇪 德国 (Germany) 142 - xiaoyu
+  - 🇩🇪 德国 (Germany) 143 - xiaoyu
+  - 🇩🇪 德国 (Germany) 144 - xiaoyu
+  - 🇩🇪 德国 (Germany) 145 - xiaoyu
+  - 🇩🇪 德国 (Germany) 146 - xiaoyu
+  - 🇩🇪 德国 (Germany) 147 - xiaoyu
+  - 🇩🇪 德国 (Germany) 148 - xiaoyu
+  - 🇩🇪 德国 (Germany) 149 - xiaoyu
+  - 🇩🇪 德国 (Germany) 150 - xiaoyu
+  - 🇩🇪 德国 (Germany) 151 - xiaoyu
+  - 🇩🇪 德国 (Germany) 152 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1989,5 +2175,19 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 136 - xiaoyu
   - 🇩🇪 德国 (Germany) 137 - xiaoyu
   - 🇩🇪 德国 (Germany) 138 - xiaoyu
+  - 🇩🇪 德国 (Germany) 139 - xiaoyu
+  - 🇩🇪 德国 (Germany) 140 - xiaoyu
+  - 🇩🇪 德国 (Germany) 141 - xiaoyu
+  - 🇩🇪 德国 (Germany) 142 - xiaoyu
+  - 🇩🇪 德国 (Germany) 143 - xiaoyu
+  - 🇩🇪 德国 (Germany) 144 - xiaoyu
+  - 🇩🇪 德国 (Germany) 145 - xiaoyu
+  - 🇩🇪 德国 (Germany) 146 - xiaoyu
+  - 🇩🇪 德国 (Germany) 147 - xiaoyu
+  - 🇩🇪 德国 (Germany) 148 - xiaoyu
+  - 🇩🇪 德国 (Germany) 149 - xiaoyu
+  - 🇩🇪 德国 (Germany) 150 - xiaoyu
+  - 🇩🇪 德国 (Germany) 151 - xiaoyu
+  - 🇩🇪 德国 (Germany) 152 - xiaoyu
 rules:
 - MATCH,PROXIES
