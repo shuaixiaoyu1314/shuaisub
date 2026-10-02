@@ -5,6 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: patient-cake-39c7.44-e7a.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  type: vless
+  server: 172.64.94.251
+  port: 8880
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: withered-morning-aa51.64-c79.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  type: vless
+  server: 172.67.69.129
+  port: 8880
+  uuid: d33cc776-9c57-4ea3-8c5a-6d85043029d7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: shiny-flower-c72d.105-161.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
   type: ss
   server: ce1fc2d8.krkt.hkssip.com
   port: 49642
@@ -17,11 +56,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
