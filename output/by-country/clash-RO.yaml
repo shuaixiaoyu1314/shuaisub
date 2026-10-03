@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaoyu
-  type: vless
-  server: 206.1.103.51
-  port: 43314
-  uuid: 2ec4b7a7-2b04-494c-a1a1-d5afc5985377
+- name: 🇷🇴 RO 01 - xiaoyu
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaoyu
+  - 🇷🇴 RO 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaoyu
+  - 🇷🇴 RO 01 - xiaoyu
 rules:
 - MATCH,PROXIES

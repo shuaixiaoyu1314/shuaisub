@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
-  server: 94.143.231.146
+  server: sub.merky.top
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -20,28 +20,46 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 34.51.231.250
+  server: 94.143.231.146
   port: 443
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: 34.51.231.250
+  server: 94.143.231.146
   port: 443
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +68,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
+  - 🇸🇪 SE 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +77,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
+  - 🇸🇪 SE 04 - xiaoyu
 rules:
 - MATCH,PROXIES

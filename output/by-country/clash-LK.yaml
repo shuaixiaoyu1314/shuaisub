@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - xiaoyu
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -19,9 +19,9 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - xiaoyu
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: cdn.zoom.us
   port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: cloud.ghostdev.lk
 - name: 🇱🇰 LK 03 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
@@ -45,9 +45,9 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 04 - xiaoyu
   type: vless
-  server: cloud.ghostdev.lk
+  server: free.sahanwickramasinghe.me
   port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
   tls: false
   skip-cert-verify: true
@@ -55,15 +55,16 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: m.zoom.us
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 05 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  port: 8443
+  uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: zoom.us
   network: ws
   ws-opts:
     path: /
@@ -98,20 +99,6 @@ proxies:
 - name: 🇱🇰 LK 08 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 8443
-  uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zoom.us
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 09 - xiaoyu
-  type: vless
-  server: support.zoom.us
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -122,9 +109,22 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 09 - xiaoyu
+  type: vless
+  server: cloud.ghostdev.lk
+  port: 80
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cloud.ghostdev.lk
 - name: 🇱🇰 LK 10 - xiaoyu
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -137,7 +137,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 11 - xiaoyu
   type: vless
-  server: support.zoom.us
+  server: free.sahanwickramasinghe.me
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -151,32 +151,6 @@ proxies:
 - name: 🇱🇰 LK 12 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 13 - xiaoyu
-  type: vless
-  server: cloud.ghostdev.lk
-  port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: m.zoom.us
-- name: 🇱🇰 LK 14 - xiaoyu
-  type: vless
-  server: free.sahanwickramasinghe.me
   port: 8443
   uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
   udp: true
@@ -188,7 +162,7 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 15 - xiaoyu
+- name: 🇱🇰 LK 13 - xiaoyu
   type: vless
   server: support.zoom.us
   port: 80
@@ -201,9 +175,22 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 16 - xiaoyu
+- name: 🇱🇰 LK 14 - xiaoyu
   type: vless
-  server: cdn.zoom.us
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 15 - xiaoyu
+  type: vless
+  server: cloud.ghostdev.lk
   port: 80
   uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   udp: true
@@ -214,9 +201,22 @@ proxies:
     path: /
     headers:
       Host: cloud.ghostdev.lk
-- name: 🇱🇰 LK 17 - xiaoyu
+- name: 🇱🇰 LK 16 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 17 - xiaoyu
+  type: vless
+  server: support.zoom.us
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -229,9 +229,9 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 18 - xiaoyu
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: cloud.ghostdev.lk
   port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   udp: true
   tls: false
   skip-cert-verify: true
@@ -239,7 +239,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: cloud.ghostdev.lk
 - name: 🇱🇰 LK 19 - xiaoyu
   type: vless
   server: support.zoom.us
@@ -256,22 +256,8 @@ proxies:
 - name: 🇱🇰 LK 20 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
-  port: 8443
-  uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zoom.us
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 21 - xiaoyu
-  type: vless
-  server: cloud.ghostdev.lk
   port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
   tls: false
   skip-cert-verify: true
@@ -279,7 +265,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cloud.ghostdev.lk
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 21 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 22 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
@@ -308,6 +307,19 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 24 - xiaoyu
   type: vless
+  server: cloud.ghostdev.lk
+  port: 80
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: m.zoom.us
+- name: 🇱🇰 LK 25 - xiaoyu
+  type: vless
   server: free.sahanwickramasinghe.me
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
@@ -319,7 +331,21 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 25 - xiaoyu
+- name: 🇱🇰 LK 26 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 8443
+  uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zoom.us
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 27 - xiaoyu
   type: vless
   server: free.sahanwickramasinghe.me
   port: 80
@@ -362,6 +388,8 @@ proxy-groups:
   - 🇱🇰 LK 23 - xiaoyu
   - 🇱🇰 LK 24 - xiaoyu
   - 🇱🇰 LK 25 - xiaoyu
+  - 🇱🇰 LK 26 - xiaoyu
+  - 🇱🇰 LK 27 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -392,5 +420,7 @@ proxy-groups:
   - 🇱🇰 LK 23 - xiaoyu
   - 🇱🇰 LK 24 - xiaoyu
   - 🇱🇰 LK 25 - xiaoyu
+  - 🇱🇰 LK 26 - xiaoyu
+  - 🇱🇰 LK 27 - xiaoyu
 rules:
 - MATCH,PROXIES

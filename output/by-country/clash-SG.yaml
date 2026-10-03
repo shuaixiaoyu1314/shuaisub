@@ -6,550 +6,17 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaoyu
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp+
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fpflow=
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crimson-lab-6cab.402-311.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaoyu
-  type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaoyu
-  type: vless
-  server: lucky-field-0220.191-de2.workers.dev
-  port: 8880
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lucky-field-0220.191-de2.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaoyu
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: 7db9bcc1-78f1-455d-944b-3363b867e670
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-wildflower-3df6.341-165.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaoyu
-  type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaoyu
-  type: vless
-  server: 170.114.45.6
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaoyu
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 12 - xiaoyu
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaoyu
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaoyu
-  type: vless
-  server: crimson-lab-6cab.402-311.workers.dev
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 17 - xiaoyu
-  type: vless
-  server: frosty-bread-788f.398.workers.dev
-  port: 8880
-  uuid: 392ed37c-c0cd-472e-8765-a94677005b0b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: frosty-bread-788f.398.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 18 - xiaoyu
-  type: vless
-  server: lucky-field-0220.191-de2.workers.dev
-  port: 8880
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucky-field-0220.191-de2.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 19 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 20 - xiaoyu
-  type: vless
-  server: www.zsu.gov.ua
-  port: 8880
-  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: blue-breeze-e33c.261.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 21 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - xiaoyu
-  type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 23 - xiaoyu
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
-  type: vless
-  server: 108.165.100.62
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: blue-breeze-e33c.261.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: long-firefly-a226.216-ce0.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 28 - xiaoyu
-  type: vless
-  server: 104.18.43.76
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 29 - xiaoyu
-  type: vless
-  server: 104.18.31.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 30 - xiaoyu
-  type: vless
-  server: long-firefly-a226.216-ce0.workers.dev
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - xiaoyu
-  type: vless
-  server: 172.65.90.53
-  port: 8880
-  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: blue-breeze-e33c.261.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 32 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fpsecurity=tls
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 33 - xiaoyu
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 34 - xiaoyu
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 35 - xiaoyu
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 36 - xiaoyu
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 37 - xiaoyu
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 38 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - xiaoyu
-  type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 40 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 41 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 42 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 43 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 44 - xiaoyu
   type: vless
   server: 104.16.10.199
   port: 443
@@ -563,7 +30,34 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 45 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaoyu
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 2096
@@ -577,35 +71,40 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 46 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaoyu
   type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  server: free-server.techsonic.dev
+  port: 443
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aka.ms
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaoyu
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 47 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaoyu
   type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 48 - xiaoyu
-  type: vless
-  server: 104.21.5.75
+  server: 104.16.156.227
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -617,9 +116,9 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 49 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaoyu
   type: vless
-  server: free-server.techsonic.dev
+  server: 104.17.70.206
   port: 2096
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
@@ -631,31 +130,46 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 50 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 7db9bcc1-78f1-455d-944b-3363b867e670
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: long-wildflower-3df6.341-165.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-wildflower-3df6.341-165.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 51 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 52 - xiaoyu
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 12 - xiaoyu
+  type: vless
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaoyu
+  type: vless
+  server: 170.114.46.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaoyu
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -666,71 +180,34 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 53 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 54 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 15 - xiaoyu
   type: vless
-  server: 27.50.49.47
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 55 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
+  server: 172.64.150.28
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 56 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 16 - xiaoyu
   type: vless
-  server: 104.18.31.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /fp
     headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 57 - xiaoyu
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 58 - xiaoyu
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 17 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -740,24 +217,58 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 59 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 18 - xiaoyu
   type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 19 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 20 - xiaoyu
+  type: vless
+  server: 136.85.105.209
+  port: 443
+  uuid: 50cbda48-00ce-4688-8b3d-0177ab8f177c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: GqyMciP_v8rJZKLJd-EgzQmWbi_Qx_c_n1f-nlPkaEA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - xiaoyu
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /fpflow=
     headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 60 - xiaoyu
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 22 - xiaoyu
   type: vless
-  server: 5.223.41.121
+  server: 5.223.41.179
   port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -765,8 +276,30 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 61 - xiaoyu
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 23 - xiaoyu
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
   type: vless
   server: 199.34.228.7
   port: 8443
@@ -780,87 +313,127 @@ proxies:
     path: /dula?Telegram-WangCai2fp=chrome
     headers:
       Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 62 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
   type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 63 - xiaoyu
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 27 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 28 - xiaoyu
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 29 - xiaoyu
+  type: vless
+  server: 172.64.150.28
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /fp
+    path: /fpflow=-udp443
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 64 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 30 - xiaoyu
   type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 65 - xiaoyu
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 31 - xiaoyu
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 66 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 67 - xiaoyu
-  type: vless
-  server: 198.20.133.86
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 68 - xiaoyu
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 32 - xiaoyu
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 33 - xiaoyu
+  type: vless
+  server: 185.207.199.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula?Telegram-WangCai2
+    headers:
+      Host: speed.dulacloud.store
+- name: 🇸🇬 新加坡 (Singapore) 34 - xiaoyu
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 35 - xiaoyu
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -868,33 +441,39 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 69 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 36 - xiaoyu
   type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: e9d9f06f-d5dd-460a-998f-52efc4732636
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 37 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: bitter-meadow-1d60.313-0f9.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 70 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 667a035b-6656-4a4f-a74c-8cd6a679f8d4
+- name: 🇸🇬 新加坡 (Singapore) 38 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: winter-mode-7f4e.89-136.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 71 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 39 - xiaoyu
   type: vless
   server: 5.223.41.125
   port: 80
@@ -907,7 +486,7 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 72 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 40 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 2096
@@ -921,48 +500,19 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 73 - xiaoyu
-  type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+- name: 🇸🇬 新加坡 (Singapore) 41 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 74 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 42 - xiaoyu
   type: vless
-  server: 104.18.31.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 75 - xiaoyu
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-sky-9aaa.224-8b4.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 76 - xiaoyu
-  type: vless
-  server: 104.16.10.235
+  server: 104.16.10.191
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -974,7 +524,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 77 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 43 - xiaoyu
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -984,11 +534,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 78 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 44 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 45 - xiaoyu
   type: vless
-  server: fancy-king-6fb5.33-615.workers.dev
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+  server: 170.114.45.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 46 - xiaoyu
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
   udp: true
   tls: false
   skip-cert-verify: true
@@ -996,21 +569,38 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 79 - xiaoyu
-  type: vless
-  server: 104.18.30.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 47 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 80 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 48 - xiaoyu
+  type: vless
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 49 - xiaoyu
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 50 - xiaoyu
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -1020,30 +610,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 81 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 51 - xiaoyu
+  type: vless
+  server: 154.194.0.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 82 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 83 - xiaoyu
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula?Telegram-WangCai2
+    headers:
+      Host: speed.dulacloud.store
+- name: 🇸🇬 新加坡 (Singapore) 52 - xiaoyu
   type: vless
   server: 5.223.41.164
   port: 80
@@ -1056,59 +640,23 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 84 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 53 - xiaoyu
   type: vless
-  server: 104.18.0.181
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 85 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 86 - xiaoyu
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 (Singapore) 54 - xiaoyu
   type: vless
-  server: crimson-lab-6cab.402-311.workers.dev
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 87 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 88 - xiaoyu
-  type: vless
-  server: damp-sky-9aaa.224-8b4.workers.dev
-  port: 8880
-  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1116,10 +664,24 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: damp-sky-9aaa.224-8b4.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 89 - xiaoyu
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 55 - xiaoyu
   type: vless
-  server: 188.114.97.6
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 56 - xiaoyu
+  type: vless
+  server: 104.21.70.21
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -1127,10 +689,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ?ed
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 90 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 57 - xiaoyu
   type: vless
   server: 5.223.41.179
   port: 80
@@ -1143,248 +705,7 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 91 - xiaoyu
-  type: vless
-  server: 5.223.41.179
-  port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 92 - xiaoyu
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 93 - xiaoyu
-  type: vless
-  server: 104.24.152.211
-  port: 8880
-  uuid: a7b8b48e-1000-46f5-a974-f6606d94f3b4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: misty-hill-4b94.146-c18.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 94 - xiaoyu
-  type: vless
-  server: 5.223.41.179
-  port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 95 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 96 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 97 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 98 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 99 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 100 - xiaoyu
-  type: vless
-  server: silent-cherry-7112.257.workers.dev
-  port: 8880
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cherry-7112.257.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 101 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 102 - xiaoyu
-  type: vless
-  server: 104.24.152.211
-  port: 8880
-  uuid: a7b8b48e-1000-46f5-a974-f6606d94f3b4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: misty-hill-4b94.146-c18.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 103 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 104 - xiaoyu
-  type: vless
-  server: lucky-field-0220.191-de2.workers.dev
-  port: 8880
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucky-field-0220.191-de2.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 105 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-cherry-7112.257.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 106 - xiaoyu
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 107 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 108 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp+
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 109 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 110 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 58 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 2096
@@ -1398,35 +719,231 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 111 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 59 - xiaoyu
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 60 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 61 - xiaoyu
+  type: vless
+  server: 104.17.70.206
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 62 - xiaoyu
+  type: vless
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 63 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 64 - xiaoyu
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 65 - xiaoyu
+  type: vless
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 66 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 443
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: crimson-lab-6cab.402-311.workers.dev
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 112 - xiaoyu
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 67 - xiaoyu
   type: vless
-  server: 104.21.70.21
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 68 - xiaoyu
+  type: vless
+  server: 172.67.71.187
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 69 - xiaoyu
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 70 - xiaoyu
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 71 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 72 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 73 - xiaoyu
+  type: vless
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 74 - xiaoyu
+  type: vless
+  server: 104.18.26.90
   port: 443
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fancy-haze-ab00.236-68b.workers.dev
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 113 - xiaoyu
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 75 - xiaoyu
+  type: vless
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 76 - xiaoyu
+  type: vless
+  server: 170.114.45.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 77 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1436,7 +953,177 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 114 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 78 - xiaoyu
+  type: vless
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 79 - xiaoyu
+  type: vless
+  server: 5.223.41.164
+  port: 80
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 80 - xiaoyu
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 81 - xiaoyu
+  type: ss
+  server: 45.128.12.20
+  port: 14249
+  cipher: chacha20-ietf-poly1305
+  password: 9epp3o9ng8ej59uv
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 82 - xiaoyu
+  type: ss
+  server: 129.150.59.74
+  port: 14384
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 83 - xiaoyu
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fpfp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 84 - xiaoyu
+  type: vless
+  server: 170.114.45.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 85 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 86 - xiaoyu
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 87 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 88 - xiaoyu
+  type: vless
+  server: 5.223.41.164
+  port: 80
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 89 - xiaoyu
+  type: vless
+  server: 170.114.45.6
+  port: 80
+  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+- name: 🇸🇬 新加坡 (Singapore) 90 - xiaoyu
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 91 - xiaoyu
+  type: vless
+  server: 104.19.178.244
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 92 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 93 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 443
@@ -1445,22 +1132,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 115 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 94 - xiaoyu
   type: vless
-  server: fancy-king-6fb5.33-615.workers.dev
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 116 - xiaoyu
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 95 - xiaoyu
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1468,33 +1156,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 117 - xiaoyu
-  type: vless
-  server: long-firefly-a226.216-ce0.workers.dev
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 118 - xiaoyu
-  type: vless
-  server: damp-sky-9aaa.224-8b4.workers.dev
-  port: 8880
-  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-sky-9aaa.224-8b4.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 119 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 96 - xiaoyu
   type: vless
   server: 170.114.46.6
   port: 80
@@ -1507,19 +1169,288 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 120 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 97 - xiaoyu
   type: vless
-  server: shiny-salad-e491.479.workers.dev
-  port: 8880
-  uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 98 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 99 - xiaoyu
+  type: vless
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: shiny-salad-e491.479.workers.dev
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 100 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 101 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 102 - xiaoyu
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp=random
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 103 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 104 - xiaoyu
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 105 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 106 - xiaoyu
+  type: vless
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 107 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 108 - xiaoyu
+  type: vless
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 109 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 110 - xiaoyu
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 111 - xiaoyu
+  type: vless
+  server: 104.21.5.75
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 112 - xiaoyu
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 113 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 114 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 115 - xiaoyu
+  type: vless
+  server: 104.16.10.233
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 116 - xiaoyu
+  type: vless
+  server: 104.16.10.10
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 117 - xiaoyu
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 118 - xiaoyu
+  type: vless
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 119 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 120 - xiaoyu
+  type: vless
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
 - name: 🇸🇬 新加坡 (Singapore) 121 - xiaoyu
   type: vless
   server: 5.223.41.125
@@ -1535,7 +1466,7 @@ proxies:
       Host: 5.223.41.125
 - name: 🇸🇬 新加坡 (Singapore) 122 - xiaoyu
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1544,29 +1475,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 123 - xiaoyu
-  type: vless
-  server: 104.18.43.76
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 124 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 125 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 2096
@@ -1580,25 +1488,11 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 126 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 124 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: f989cbf4-40d2-41d2-8a00-1fe4e29b2192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancient-rice-c180.455-8ad.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: ancient-rice-c180.455-8ad.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 127 - xiaoyu
-  type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1606,8 +1500,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 128 - xiaoyu
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 125 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1617,19 +1511,57 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 129 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 126 - xiaoyu
   type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 127 - xiaoyu
+  type: vless
+  server: 188.42.88.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula?Telegram-WangCai2
+    headers:
+      Host: speed.dulacloud.store
+- name: 🇸🇬 新加坡 (Singapore) 128 - xiaoyu
+  type: vless
+  server: 170.114.46.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /free-server.techsonic.dev
     headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 129 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 130 - xiaoyu
   type: vmess
   server: 149.88.23.202
@@ -1641,30 +1573,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 131 - xiaoyu
-  type: vless
-  server: 35.185.179.62
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 132 - xiaoyu
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 132 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 133 - xiaoyu
   type: vless
   server: 217.217.254.126
@@ -1678,128 +1605,10 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 134 - xiaoyu
-  type: ss
-  server: 139.180.220.175
-  port: 8388
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 135 - xiaoyu
   type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 136 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 137 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 138 - xiaoyu
-  type: vless
-  server: free-server.techsonic.dev
-  port: 443
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 139 - xiaoyu
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 140 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: autumn-dawn-fa6b.337-272.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 141 - xiaoyu
-  type: vless
-  server: 104.18.11.118
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 142 - xiaoyu
-  type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: e9d9f06f-d5dd-460a-998f-52efc4732636
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: bitter-meadow-1d60.313-0f9.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 143 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 667a035b-6656-4a4f-a74c-8cd6a679f8d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: winter-mode-7f4e.89-136.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 144 - xiaoyu
-  type: vless
-  server: 104.16.156.227
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   tls: true
   skip-cert-verify: true
@@ -1809,61 +1618,9 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 145 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 146 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 147 - xiaoyu
-  type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 148 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 149 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 135 - xiaoyu
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1871,59 +1628,75 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 150 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 136 - xiaoyu
   type: vless
-  server: 5.223.41.179
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 137 - xiaoyu
+  type: vless
+  server: support.zoom.us
   port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /free-server.techsonic.dev
     headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 151 - xiaoyu
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 138 - xiaoyu
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 139 - xiaoyu
   type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
+  server: 170.114.45.6
+  port: 80
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /free-server.techsonic.dev
     headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 152 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 140 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 153 - xiaoyu
-  type: vless
-  server: www.glassdoor.com
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+- name: 🇸🇬 新加坡 (Singapore) 141 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 154 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 142 - xiaoyu
   type: vless
   server: free-server.techsonic.dev
   port: 2096
@@ -1937,37 +1710,37 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 155 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 143 - xiaoyu
   type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: f7cc1898-52f8-4e8e-9a90-320fc7fdadb8
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 144 - xiaoyu
+  type: vless
+  server: 104.16.10.199
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: raspy-truth-565b.394-8bb.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 156 - xiaoyu
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 145 - xiaoyu
   type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 157 - xiaoyu
-  type: vless
-  server: misty-hill-4b94.146-c18.workers.dev
-  port: 8880
-  uuid: a7b8b48e-1000-46f5-a974-f6606d94f3b4
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1975,8 +1748,90 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: misty-hill-4b94.146-c18.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 158 - xiaoyu
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 146 - xiaoyu
+  type: vless
+  server: 35.185.179.62
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 147 - xiaoyu
+  type: vless
+  server: 216.38.170.8
+  port: 26502
+  uuid: 593c2ff4-f051-4859-8449-b0130e2991df
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8
+    headers:
+      Host: www.baidu.com
+- name: 🇸🇬 新加坡 (Singapore) 148 - xiaoyu
+  type: ss
+  server: 139.180.220.175
+  port: 8388
+  cipher: aes-256-gcm
+  password: qpSevKaUXYQKvSjp
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 149 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 150 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 151 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 152 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 153 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 154 - xiaoyu
   type: vless
   server: 5.223.41.93
   port: 80
@@ -1989,7 +1844,7 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 159 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 155 - xiaoyu
   type: vless
   server: 5.223.41.51
   port: 80
@@ -2002,11 +1857,38 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 160 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 156 - xiaoyu
   type: vless
-  server: 104.18.43.76
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  server: 104.18.0.181
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 157 - xiaoyu
+  type: vless
+  server: 104.16.10.234
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 158 - xiaoyu
+  type: vless
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
   udp: true
   tls: false
   skip-cert-verify: true
@@ -2014,23 +1896,47 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 159 - xiaoyu
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 160 - xiaoyu
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 161 - xiaoyu
   type: vless
-  server: 104.18.11.118
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /sg-melbi
     headers:
-      Host: small-cake-e99b.390-a20.workers.dev
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🇸🇬 新加坡 (Singapore) 162 - xiaoyu
   type: vless
-  server: 170.114.45.6
+  server: 170.114.46.6
   port: 80
   uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
   udp: true
@@ -2053,30 +1959,31 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 164 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: 5.223.41.125
 - name: 🇸🇬 新加坡 (Singapore) 165 - xiaoyu
   type: vless
-  server: www.ipget.net
-  port: 8880
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
+  server: 188.42.88.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: speed.dulacloud.store
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /dula?Telegram-WangCai2fp=chrome
     headers:
-      Host: silent-cherry-7112.257.workers.dev
+      Host: speed.dulacloud.store
 - name: 🇸🇬 新加坡 (Singapore) 166 - xiaoyu
   type: vmess
   server: 149.88.23.207
@@ -2088,577 +1995,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 167 - xiaoyu
-  type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
 - name: 🇸🇬 新加坡 (Singapore) 168 - xiaoyu
   type: vless
-  server: 104.16.10.233
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 169 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 170 - xiaoyu
-  type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 171 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 172 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 173 - xiaoyu
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 174 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 175 - xiaoyu
-  type: vless
-  server: long-firefly-a226.216-ce0.workers.dev
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 176 - xiaoyu
-  type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 177 - xiaoyu
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 178 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 179 - xiaoyu
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: damp-sky-9aaa.224-8b4.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 180 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 181 - xiaoyu
-  type: vless
-  server: 104.16.10.191
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 182 - xiaoyu
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 183 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 184 - xiaoyu
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 185 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 186 - xiaoyu
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 187 - xiaoyu
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 188 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 189 - xiaoyu
-  type: vless
-  server: 104.26.15.4
-  port: 443
-  uuid: 1e534c59-85c2-4042-a407-e491f68cb3a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/Z8Ag5xQbwmhIHsvyDj3?ed=2560
-    headers:
-      Host: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 190 - xiaoyu
-  type: vless
-  server: 149.104.29.237
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇸🇬 新加坡 (Singapore) 191 - xiaoyu
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 192 - xiaoyu
-  type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 193 - xiaoyu
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 194 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 195 - xiaoyu
-  type: vless
-  server: 104.27.82.154
-  port: 8880
-  uuid: 94ed4a58-dcf4-43cb-afc1-f158e14ec42d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-surf-cc74.345-604.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 196 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 197 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 198 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 199 - xiaoyu
-  type: vless
-  server: 104.16.10.199
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 200 - xiaoyu
-  type: vless
-  server: fancy-king-6fb5.33-615.workers.dev
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 201 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 202 - xiaoyu
-  type: vless
-  server: 104.17.44.17
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 203 - xiaoyu
-  type: vless
-  server: 104.18.0.181
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 204 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 205 - xiaoyu
-  type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 206 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 207 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 208 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 209 - xiaoyu
-  type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: f35fb51f-8d34-49ec-80cb-7d04ffc1a69b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: damp-sky-9aaa.224-8b4.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 210 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: old-tooth-d793.447-02e.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 211 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 212 - xiaoyu
-  type: vless
   server: 5.223.41.121
   port: 80
   uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
@@ -2670,74 +2017,7 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 213 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 214 - xiaoyu
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 215 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 216 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 217 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 218 - xiaoyu
-  type: vless
-  server: 154.194.0.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 219 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 169 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -2747,20 +2027,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 220 - xiaoyu
-  type: vless
-  server: rapid-base-6c9e.45-d79.workers.dev
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 221 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 170 - xiaoyu
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -2770,312 +2037,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 222 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 171 - xiaoyu
   type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 223 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 224 - xiaoyu
-  type: vless
-  server: 5.223.41.179
-  port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 225 - xiaoyu
-  type: vless
-  server: fancy-haze-ab00.236-68b.workers.dev
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 226 - xiaoyu
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 227 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 228 - xiaoyu
-  type: vless
-  server: quiet-feather-19f3.410-a69.workers.dev
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 229 - xiaoyu
-  type: vless
-  server: www.zsu.gov.ua
-  port: 8880
-  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: orange-lab-896e.365-80b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 230 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 231 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 232 - xiaoyu
-  type: vless
-  server: 185.207.199.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 233 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fpflow=-udp443
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 234 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 235 - xiaoyu
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 236 - xiaoyu
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 237 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 238 - xiaoyu
-  type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 239 - xiaoyu
-  type: vless
-  server: 170.114.46.6
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 240 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 241 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 242 - xiaoyu
-  type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: f7cc1898-52f8-4e8e-9a90-320fc7fdadb8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: raspy-truth-565b.394-8bb.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 243 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 244 - xiaoyu
-  type: vless
-  server: 188.114.97.6
+  server: 104.16.10.198
   port: 443
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: long-firefly-a226.216-ce0.workers.dev
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 245 - xiaoyu
-  type: vless
-  server: crimson-lab-6cab.402-311.workers.dev
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 246 - xiaoyu
-  type: ss
-  server: 45.128.12.20
-  port: 14249
-  cipher: chacha20-ietf-poly1305
-  password: 9epp3o9ng8ej59uv
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 247 - xiaoyu
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 172 - xiaoyu
   type: vless
   server: 170.114.45.6
   port: 80
@@ -3088,20 +2064,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 248 - xiaoyu
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 249 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 173 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -3111,81 +2074,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 250 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 174 - xiaoyu
   type: vless
-  server: 172.65.90.53
-  port: 8880
-  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: orange-lab-896e.365-80b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 251 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 252 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: long-firefly-a226.216-ce0.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 253 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 254 - xiaoyu
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 96a32aaa-ebd9-4824-aa04-e9678011d9b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-tooth-d793.447-02e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 255 - xiaoyu
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 256 - xiaoyu
-  type: vless
-  server: 170.114.46.6
+  server: support.zoom.us
   port: 80
   uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
   udp: true
@@ -3196,94 +2087,34 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 257 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 175 - xiaoyu
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 176 - xiaoyu
   type: vless
-  server: 104.21.70.21
+  server: 188.114.97.6
   port: 8080
-  uuid: e06b6255-1c90-4db0-bd8c-7704df82b27c
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /fp
     headers:
-      Host: silent-cherry-7112.257.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 258 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 259 - xiaoyu
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 260 - xiaoyu
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 261 - xiaoyu
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 177 - xiaoyu
   type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 262 - xiaoyu
-  type: vless
-  server: 172.65.90.53
-  port: 8880
-  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: orange-lab-896e.365-80b.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 263 - xiaoyu
-  type: vless
-  server: 104.17.70.206
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 264 - xiaoyu
-  type: vless
-  server: 5.223.41.179
+  server: 5.223.41.164
   port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -3291,8 +2122,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 265 - xiaoyu
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 178 - xiaoyu
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -3305,34 +2136,7 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 266 - xiaoyu
-  type: vless
-  server: 104.17.70.206
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 267 - xiaoyu
-  type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 268 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 179 - xiaoyu
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -3344,159 +2148,20 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 269 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 270 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 180 - xiaoyu
   type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 271 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 272 - xiaoyu
-  type: vless
-  server: 104.19.178.244
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 273 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 274 - xiaoyu
-  type: vless
-  server: quiet-feather-19f3.410-a69.workers.dev
-  port: 8880
-  uuid: 486ebf01-0b45-4c38-9ef6-198aa0f9d2c3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-feather-19f3.410-a69.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 275 - xiaoyu
-  type: vless
-  server: 172.67.71.187
-  port: 8080
+  server: 172.64.150.28
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 276 - xiaoyu
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 277 - xiaoyu
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 278 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 279 - xiaoyu
-  type: vless
-  server: 104.16.10.10
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 280 - xiaoyu
-  type: vless
-  server: 47.237.74.17
-  port: 16263
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 281 - xiaoyu
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 282 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 181 - xiaoyu
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -3506,45 +2171,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 283 - xiaoyu
-  type: vless
-  server: 172.64.144.180
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyipsecurity=tls
-    headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 284 - xiaoyu
-  type: vless
-  server: 104.18.31.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 285 - xiaoyu
-  type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -3731,110 +2357,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 179 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 180 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 181 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 182 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 183 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 184 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 185 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 186 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 187 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 188 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 189 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 190 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 191 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 192 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 193 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 194 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 195 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 196 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 197 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 198 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 199 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 200 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 201 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 202 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 203 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 204 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 205 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 206 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 207 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 208 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 209 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 210 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 211 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 212 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 213 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 214 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 215 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 216 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 217 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 218 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 219 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 220 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 221 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 222 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 223 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 224 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 225 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 226 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 227 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 228 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 229 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 230 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 231 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 232 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 233 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 234 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 235 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 236 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 237 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 238 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 239 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 240 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 241 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 242 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 243 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 244 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 245 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 246 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 247 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 248 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 249 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 250 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 251 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 252 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 253 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 254 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 255 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 256 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 257 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 258 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 259 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 260 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 261 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 262 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 263 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 264 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 265 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 266 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 267 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 268 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 269 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 270 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 271 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 272 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 273 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 274 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 275 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 276 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 277 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 278 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 279 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 280 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 281 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 282 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 283 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 284 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 285 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -4021,109 +2543,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 179 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 180 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 181 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 182 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 183 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 184 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 185 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 186 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 187 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 188 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 189 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 190 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 191 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 192 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 193 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 194 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 195 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 196 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 197 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 198 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 199 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 200 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 201 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 202 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 203 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 204 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 205 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 206 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 207 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 208 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 209 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 210 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 211 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 212 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 213 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 214 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 215 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 216 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 217 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 218 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 219 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 220 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 221 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 222 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 223 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 224 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 225 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 226 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 227 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 228 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 229 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 230 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 231 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 232 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 233 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 234 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 235 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 236 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 237 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 238 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 239 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 240 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 241 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 242 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 243 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 244 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 245 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 246 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 247 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 248 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 249 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 250 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 251 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 252 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 253 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 254 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 255 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 256 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 257 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 258 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 259 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 260 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 261 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 262 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 263 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 264 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 265 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 266 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 267 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 268 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 269 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 270 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 271 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 272 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 273 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 274 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 275 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 276 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 277 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 278 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 279 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 280 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 281 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 282 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 283 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 284 - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 285 - xiaoyu
 rules:
 - MATCH,PROXIES
