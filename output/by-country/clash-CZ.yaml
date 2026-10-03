@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
   type: vless
+  server: 85.137.165.97
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
+- name: 🇨🇿 CZ 02 - xiaoyu
+  type: vless
   server: cz.monkora.org
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
@@ -16,7 +30,31 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
-- name: 🇨🇿 CZ 02 - xiaoyu
+- name: 🇨🇿 CZ 03 - xiaoyu
+  type: vless
+  server: 86.54.82.184
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 CZ 04 - xiaoyu
+  type: vless
+  server: cz.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 CZ 05 - xiaoyu
   type: vless
   server: 86.54.82.184
   port: 443
@@ -35,6 +73,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +83,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 rules:
 - MATCH,PROXIES

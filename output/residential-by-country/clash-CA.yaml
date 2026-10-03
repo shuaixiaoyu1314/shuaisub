@@ -7,27 +7,42 @@ proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2082
+  port: 8080
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560+
+    path: /?ed=2560security=tls
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

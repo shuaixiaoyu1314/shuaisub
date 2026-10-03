@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇮🇱 IL 02 - xiaoyu
   type: vless
   server: 34.165.56.30
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇮🇱 IL 03 - xiaoyu
   type: vless
   server: 34.165.56.30
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: edge
 - name: 🇮🇱 IL 04 - xiaoyu
   type: vless
   server: 34.165.56.30
@@ -63,7 +63,7 @@ proxies:
   reality-opts:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇮🇱 IL 06 - xiaoyu
   type: vless
   server: 34.165.56.30
@@ -75,7 +75,7 @@ proxies:
   reality-opts:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 IL 07 - xiaoyu
   type: vless
   server: 34.165.56.30
@@ -88,6 +88,18 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
   client-fingerprint: safari
+- name: 🇮🇱 IL 08 - xiaoyu
+  type: vless
+  server: 34.165.56.30
+  port: 443
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +112,7 @@ proxy-groups:
   - 🇮🇱 IL 05 - xiaoyu
   - 🇮🇱 IL 06 - xiaoyu
   - 🇮🇱 IL 07 - xiaoyu
+  - 🇮🇱 IL 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +125,6 @@ proxy-groups:
   - 🇮🇱 IL 05 - xiaoyu
   - 🇮🇱 IL 06 - xiaoyu
   - 🇮🇱 IL 07 - xiaoyu
+  - 🇮🇱 IL 08 - xiaoyu
 rules:
 - MATCH,PROXIES

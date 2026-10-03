@@ -5,10 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaoyu
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 02 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  port: 8080
+  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,8 +26,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 02 - xiaoyu
+      Host: long-firefly-a226.216-ce0.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 2052
@@ -30,16 +40,6 @@ proxies:
     path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaoyu
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaoyu
   type: vmess
   server: 66.163.113.176
@@ -52,237 +52,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 05 - xiaoyu
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - xiaoyu
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 07 - xiaoyu
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaoyu
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 09 - xiaoyu
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaoyu
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaoyu
-  type: vless
-  server: 148.113.196.75
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ov-canada1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - xiaoyu
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 14 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaoyu
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaoyu
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 18 - xiaoyu
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 20 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 21 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaoyu
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 23 - xiaoyu
-  type: vmess
-  server: 23.162.200.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 24 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - xiaoyu
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 2052
@@ -295,64 +83,17 @@ proxies:
     path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 27 - xiaoyu
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 28 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 08 - xiaoyu
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 30 - xiaoyu
-  type: ss
-  server: 51.222.155.32
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 31 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 32 - xiaoyu
-  type: ss
-  server: 51.222.155.113
-  port: 5601
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 33 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 09 - xiaoyu
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -362,108 +103,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 34 - xiaoyu
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 35 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 36 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 37 - xiaoyu
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 38 - xiaoyu
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 39 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 40 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 41 - xiaoyu
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 42 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 43 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaoyu
   type: vmess
   server: 134.195.198.147
   port: 443
@@ -479,22 +119,9 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇨🇦 加拿大 (Canada) 44 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 45 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 11 - xiaoyu
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -502,7 +129,50 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 46 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaoyu
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 14 - xiaoyu
+  type: vmess
+  server: 158.51.121.123
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇨🇦 加拿大 (Canada) 15 - xiaoyu
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 16 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 2086
@@ -512,10 +182,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 47 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 17 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -525,14 +195,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 48 - xiaoyu
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaoyu
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 49 - xiaoyu
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 20 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 2052
@@ -542,42 +225,50 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 21 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 50 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 22 - xiaoyu
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 51 - xiaoyu
-  type: vless
-  server: ca.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: ca.monkora.org
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 52 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 23 - xiaoyu
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 53 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 24 - xiaoyu
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 25 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -590,45 +281,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 54 - xiaoyu
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 26 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 55 - xiaoyu
-  type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 56 - xiaoyu
-  type: vless
-  server: 23.95.76.164
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: ca.monkora.org
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 57 - xiaoyu
+      Host: withered-morning-aa51.64-c79.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 27 - xiaoyu
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -638,19 +304,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 58 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 28 - xiaoyu
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 59 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
+  server: 198.57.27.190
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -658,7 +314,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 60 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 29 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -668,7 +324,46 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 61 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 30 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 31 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 9b7d9618-29a6-45e9-9eca-dcc7ad42f974
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: shrill-frost-6da5.155-dec.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 32 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: c18fd69e-92ba-446e-981b-213dbb551593
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: billowing-wind-5b29.133-323.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 33 - xiaoyu
   type: vless
   server: ov-canada1.09vpn.com
   port: 8443
@@ -682,27 +377,19 @@ proxies:
     path: /vless/
     headers:
       Host: ov-canada1.09vpn.com
-- name: 🇨🇦 加拿大 (Canada) 62 - xiaoyu
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 34 - xiaoyu
+  type: vless
+  server: 23.95.76.164
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 63 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 64 - xiaoyu
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 35 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -712,23 +399,66 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 65 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 36 - xiaoyu
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 37 - xiaoyu
+  type: vmess
+  server: 158.51.121.123
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇨🇦 加拿大 (Canada) 38 - xiaoyu
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 39 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2086
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560+
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 66 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 40 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 41 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2095
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -738,7 +468,52 @@ proxies:
     path: /?ed=2560
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 67 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 42 - xiaoyu
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 43 - xiaoyu
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 44 - xiaoyu
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 45 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 46 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -748,6 +523,247 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 47 - xiaoyu
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 48 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: withered-morning-aa51.64-c79.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 49 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 50 - xiaoyu
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 51 - xiaoyu
+  type: vmess
+  server: 134.195.198.147
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inna.cfd
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: inna.cfd
+- name: 🇨🇦 加拿大 (Canada) 52 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 53 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 54 - xiaoyu
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 55 - xiaoyu
+  type: ss
+  server: 138.199.48.82
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 56 - xiaoyu
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇨🇦 加拿大 (Canada) 57 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: f55a75a7-5aa6-4df7-814a-99da0edb5c86
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: autumn-cloud-ab5e.229-601.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 58 - xiaoyu
+  type: vless
+  server: 172.67.142.169
+  port: 443
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: youxuanku.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: youxuanku.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 59 - xiaoyu
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 60 - xiaoyu
+  type: vmess
+  server: 158.51.121.123
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇨🇦 加拿大 (Canada) 61 - xiaoyu
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 62 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 63 - xiaoyu
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 64 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 9b7d9618-29a6-45e9-9eca-dcc7ad42f974
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: shrill-frost-6da5.155-dec.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 65 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 66 - xiaoyu
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: seribus.org
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🇨🇦 加拿大 (Canada) 67 - xiaoyu
+  type: vless
+  server: ca.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 68 - xiaoyu
   type: vmess
   server: 134.195.196.211
@@ -769,27 +785,42 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 70 - xiaoyu
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 71 - xiaoyu
   type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 71 - xiaoyu
+  type: vless
+  server: 23.95.76.164
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 72 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 73 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  port: 8880
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
   udp: true
   tls: false
   skip-cert-verify: true
@@ -797,8 +828,52 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 73 - xiaoyu
+      Host: withered-morning-aa51.64-c79.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 74 - xiaoyu
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 75 - xiaoyu
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 76 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: icy-breeze-126c.211-eb3.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 77 - xiaoyu
+  type: vless
+  server: 104.21.63.28
+  port: 443
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: youxuanku.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: youxuanku.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 78 - xiaoyu
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -809,66 +884,15 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 74 - xiaoyu
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 75 - xiaoyu
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: canadajji.global.ssl.fastly.net.
-- name: 🇨🇦 加拿大 (Canada) 76 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 77 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 78 - xiaoyu
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: canadajji.global.ssl.fastly.net
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 79 - xiaoyu
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 80 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -878,13 +902,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 80 - xiaoyu
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 81 - xiaoyu
   type: vmess
   server: 134.195.196.211
@@ -896,47 +913,55 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 82 - xiaoyu
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 83 - xiaoyu
   type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 83 - xiaoyu
-  type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 84 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  port: 8880
+  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: new.106-79e.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 85 - xiaoyu
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 86 - xiaoyu
   type: vmess
   server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 86 - xiaoyu
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -953,6 +978,364 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 88 - xiaoyu
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 89 - xiaoyu
+  type: vless
+  server: patient-moon-c61f.ggfsa55.workers.dev
+  port: 443
+  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: patient-moon-c61f.ggfsa55.workers.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: patient-moon-c61f.ggfsa55.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 90 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 91 - xiaoyu
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 92 - xiaoyu
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 93 - xiaoyu
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 94 - xiaoyu
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 95 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 96 - xiaoyu
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 97 - xiaoyu
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 98 - xiaoyu
+  type: vless
+  server: 23.227.39.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime17.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 99 - xiaoyu
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 100 - xiaoyu
+  type: vless
+  server: 148.113.196.75
+  port: 8443
+  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ov-canada1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 148.113.196.75
+- name: 🇨🇦 加拿大 (Canada) 101 - xiaoyu
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 102 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 103 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 104 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 105 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 106 - xiaoyu
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 107 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 108 - xiaoyu
+  type: vmess
+  server: 158.51.121.123
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇨🇦 加拿大 (Canada) 109 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 110 - xiaoyu
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 111 - xiaoyu
+  type: ss
+  server: 51.222.155.113
+  port: 5601
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 112 - xiaoyu
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 113 - xiaoyu
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 114 - xiaoyu
+  type: vless
+  server: 172.67.169.188
+  port: 443
+  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: patient-moon-c61f.ggfsa55.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: patient-moon-c61f.ggfsa55.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 115 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 116 - xiaoyu
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 117 - xiaoyu
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 118 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 119 - xiaoyu
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 120 - xiaoyu
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 121 - xiaoyu
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: canadajji.global.ssl.fastly.net
+- name: 🇨🇦 加拿大 (Canada) 122 - xiaoyu
   type: vmess
   server: 134.195.198.147
   port: 443
@@ -968,9 +1351,19 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇨🇦 加拿大 (Canada) 89 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 123 - xiaoyu
   type: vmess
-  server: 158.51.121.63
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 124 - xiaoyu
+  type: vmess
+  server: 134.195.198.214
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -978,14 +1371,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 90 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 125 - xiaoyu
   type: ss
   server: 185.156.47.97
   port: 9443
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 91 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 126 - xiaoyu
   type: vmess
   server: 134.195.198.214
   port: 22324
@@ -995,79 +1388,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 92 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 93 - xiaoyu
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 94 - xiaoyu
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 95 - xiaoyu
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 96 - xiaoyu
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 97 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 127 - xiaoyu
   type: vless
   server: 188.114.97.6
-  port: 2052
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 98 - xiaoyu
+      Host: zcbse.jipk.pt9.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 128 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1077,35 +1411,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 99 - xiaoyu
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 100 - xiaoyu
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 101 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 129 - xiaoyu
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1115,103 +1421,11 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 102 - xiaoyu
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 103 - xiaoyu
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 104 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 130 - xiaoyu
   type: vless
-  server: 188.114.97.6
+  server: 23.227.60.30
   port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 105 - xiaoyu
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 106 - xiaoyu
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 107 - xiaoyu
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 108 - xiaoyu
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 109 - xiaoyu
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 110 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -1219,33 +1433,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 111 - xiaoyu
+      Host: vms.lifetime18.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 131 - xiaoyu
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 112 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 113 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
+  server: 158.51.123.42
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -1253,101 +1444,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 114 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seribus.org
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🇨🇦 加拿大 (Canada) 115 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 116 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 117 - xiaoyu
-  type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 118 - xiaoyu
-  type: vmess
-  server: 158.51.121.123
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 119 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 120 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 121 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 132 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 2086
@@ -1360,73 +1457,35 @@ proxies:
     path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 122 - xiaoyu
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 123 - xiaoyu
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 124 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 133 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: ca.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 134 - xiaoyu
+  type: vmess
+  server: 23.162.200.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 125 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 126 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 127 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 128 - xiaoyu
+      Host: ''
+- name: 🇨🇦 加拿大 (Canada) 135 - xiaoyu
   type: vmess
   server: 66.163.113.176
   port: 22324
@@ -1436,81 +1495,11 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 129 - xiaoyu
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 130 - xiaoyu
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 131 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 132 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 133 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 134 - xiaoyu
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 135 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
 - name: 🇨🇦 加拿大 (Canada) 136 - xiaoyu
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -1527,95 +1516,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 138 - xiaoyu
-  type: vmess
-  server: khasav.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khasav.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: khasav.org
-- name: 🇨🇦 加拿大 (Canada) 139 - xiaoyu
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 140 - xiaoyu
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 141 - xiaoyu
-  type: vmess
-  server: 158.51.121.63
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 142 - xiaoyu
-  type: vmess
-  server: 134.195.198.147
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: inna.cfd
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: inna.cfd
-- name: 🇨🇦 加拿大 (Canada) 143 - xiaoyu
-  type: ss
-  server: 138.199.48.82
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 144 - xiaoyu
-  type: ss
-  server: 51.222.155.113
-  port: 5601
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 145 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 199.232.78.159
+  port: 443
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: ne4d3.thir.mn8.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 146 - xiaoyu
+      Host: canadajji.global.ssl.fastly.net.
+- name: 🇨🇦 加拿大 (Canada) 139 - xiaoyu
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -1625,9 +1539,78 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 140 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 141 - xiaoyu
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 142 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 143 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 144 - xiaoyu
+  type: vless
+  server: xstack.mahanfixe.workers.dev
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xstack.mahanfixe.workers.dev
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 145 - xiaoyu
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 146 - xiaoyu
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 147 - xiaoyu
   type: vmess
-  server: 158.51.123.42
+  server: 198.57.27.190
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -1637,28 +1620,45 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 148 - xiaoyu
   type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: ''
+- name: 🇨🇦 加拿大 (Canada) 149 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 149 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 150 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: xstack.mahanfixe.workers.dev
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xstack.mahanfixe.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 150 - xiaoyu
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 151 - xiaoyu
   type: vmess
   server: 66.163.113.176
   port: 22324
@@ -1668,6 +1668,55 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 152 - xiaoyu
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 153 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: all.speedtest03.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: all.speedtest03.ccwu.cc
+- name: 🇨🇦 加拿大 (Canada) 154 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 155 - xiaoyu
+  type: vless
+  server: ca.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: ca.monkora.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1823,6 +1872,11 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 148 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 149 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 150 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 151 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 152 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 153 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 154 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 155 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1978,5 +2032,10 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 148 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 149 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 150 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 151 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 152 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 153 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 154 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 155 - xiaoyu
 rules:
 - MATCH,PROXIES

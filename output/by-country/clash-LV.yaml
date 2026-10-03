@@ -6,29 +6,19 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
   type: vless
-  server: 85.159.228.223
+  server: 91.108.189.38
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
+  servername: aio.eth0.dpdns.org
+  network: ws
+  ws-opts:
+    path: /aioproxybot/94.23.144.99-2053
+    headers:
+      Host: aio.eth0.dpdns.org
 - name: 🇱🇻 LV 02 - xiaoyu
-  type: vless
-  server: lv.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-- name: 🇱🇻 LV 03 - xiaoyu
   type: vless
   server: 85.159.228.223
   port: 443
@@ -40,6 +30,20 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: chrome
+- name: 🇱🇻 LV 03 - xiaoyu
+  type: vless
+  server: 91.108.189.38
+  port: 443
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aio.eth0.dpdns.org
+  network: ws
+  ws-opts:
+    path: /aioproxybot/94.23.144.99-2053
+    headers:
+      Host: aio.eth0.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
