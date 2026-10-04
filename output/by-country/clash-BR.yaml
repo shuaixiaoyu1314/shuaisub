@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -38,22 +38,6 @@ proxies:
       Host: ''
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vmess
-  server: 89.39.161.157
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇧🇷 BR 04 - xiaoyu
-  type: vmess
   server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -68,9 +52,25 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
+- name: 🇧🇷 BR 04 - xiaoyu
+  type: vmess
+  server: 89.39.161.157
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
 - name: 🇧🇷 BR 05 - xiaoyu
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -87,22 +87,6 @@ proxies:
 - name: 🇧🇷 BR 06 - xiaoyu
   type: vmess
   server: 89.39.161.157
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇧🇷 BR 07 - xiaoyu
-  type: vmess
-  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -127,7 +111,6 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
-  - 🇧🇷 BR 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -139,6 +122,5 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
-  - 🇧🇷 BR 07 - xiaoyu
 rules:
 - MATCH,PROXIES

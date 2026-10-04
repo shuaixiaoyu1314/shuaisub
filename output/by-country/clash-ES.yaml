@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaoyu
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -14,7 +21,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   type: vless
   server: 212.227.235.66
   port: 2053
@@ -26,37 +52,6 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
-  type: vless
-  server: 196.245.52.146
-  port: 25535
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
-  type: vless
-  server: es2.h1cloud.net
-  port: 25535
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-  servername: www.microsoft.com
-  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
   type: vless
   server: 212.227.235.66
@@ -68,7 +63,7 @@ proxies:
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
   type: vmess
   server: 85.90.217.42
@@ -80,100 +75,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: vmess
+  server: 85.90.217.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 15 - xiaoyu
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 16 - xiaoyu
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 17 - xiaoyu
   type: vless
   server: es2.h1cloud.net
   port: 25535
@@ -185,13 +96,121 @@ proxies:
     public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
   servername: www.microsoft.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
+  type: vmess
+  server: 85.90.217.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
+  type: vless
+  server: es2.h1cloud.net
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
   type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
+- name: 🇪🇸 西班牙 (Spain) 15 - xiaoyu
+  type: vless
+  server: 196.245.52.146
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 17 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  type: vless
+  server: 85.90.217.42
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 85.90.217.42
+- name: 🇪🇸 西班牙 (Spain) 19 - xiaoyu
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 20 - xiaoyu
+  type: vmess
+  server: 85.90.217.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,6 +234,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 16 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 17 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 19 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -238,5 +259,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 16 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 17 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 19 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 20 - xiaoyu
 rules:
 - MATCH,PROXIES
