@@ -5,34 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: 2f142ede-d555-4ceb-b005-7df31b484be3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: bitter-pine-001c.450-e0e.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  type: vless
-  server: yellow-breeze-989b.348-9b8.workers.dev
-  port: 8880
-  uuid: f9a53aa5-774e-4556-b2b7-d8b57b423b97
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-breeze-989b.348-9b8.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
   type: ss
-  server: 211.174.113.172
+  server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
@@ -43,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

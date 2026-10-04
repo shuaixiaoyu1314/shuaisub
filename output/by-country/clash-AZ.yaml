@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇿 AZ 01 - xiaoyu
+  type: vless
+  server: az.xelnivo.ir
+  port: 45642
+  uuid: 688fcedc-c730-47fb-9fc0-b5962a38788e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇦🇿 AZ 02 - xiaoyu
+  type: vless
+  server: az.xelnivo.ir
+  port: 45642
+  uuid: 688fcedc-c730-47fb-9fc0-b5962a38788e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
+  servername: play.google.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇿 AZ 01 - xiaoyu
+  - 🇦🇿 AZ 02 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇿 AZ 01 - xiaoyu
+  - 🇦🇿 AZ 02 - xiaoyu
+rules:
+- MATCH,PROXIES
