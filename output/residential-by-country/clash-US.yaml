@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   type: vless
-  server: 103.21.220.248
-  port: 29608
+  server: 154.9.30.191
+  port: 18376
   uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
   udp: true
   tls: true
@@ -18,17 +18,33 @@ proxies:
     path: /Ra-vl
     headers:
       Host: 123.714541.xyz
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  type: vless
+  server: 69.63.221.116
+  port: 25517
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
