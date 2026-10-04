@@ -6,55 +6,13 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -66,7 +24,31 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
@@ -74,6 +56,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -85,7 +87,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
   type: vless
   server: test.keoplentuio.xyz
@@ -95,90 +97,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  type: vmess
+  server: 206.1.103.179
+  port: 58413
+  uuid: 5d456b70-0c63-488e-b245-32f694854390
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
-    headers:
-      Host: wzs.echo.net.eu.org
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
@@ -186,29 +114,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
-- name: 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
-  type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -220,51 +126,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 21 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 22 - xiaoyu
-  type: ss
-  server: tutaim.azad0namah.ir
-  port: 5566
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:d8C1FciKoaFD6xRFbCYyFQ==
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 23 - xiaoyu
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -282,17 +143,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -310,16 +160,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 21 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 22 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 23 - xiaoyu
 rules:
 - MATCH,PROXIES

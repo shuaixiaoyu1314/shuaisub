@@ -12,56 +12,6 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 02 - xiaoyu
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 03 - xiaoyu
-  type: vless
-  server: 34.35.58.153
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇿🇦 ZA 04 - xiaoyu
-  type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-  udp: true
-- name: 🇿🇦 ZA 05 - xiaoyu
-  type: vless
-  server: 34.35.58.153
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 ZA 06 - xiaoyu
-  type: vless
-  server: 34.35.58.153
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇿🇦 ZA 07 - xiaoyu
   type: vless
   server: 34.35.174.85
   port: 443
@@ -73,30 +23,30 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 ZA 08 - xiaoyu
-  type: vless
-  server: 34.35.58.153
+- name: 🇿🇦 ZA 03 - xiaoyu
+  type: ss
+  server: 102.37.156.224
   port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇿🇦 ZA 09 - xiaoyu
-  type: vless
-  server: 34.35.58.153
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+- name: 🇿🇦 ZA 04 - xiaoyu
+  type: ss
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
   udp: true
-  tls: true
+- name: 🇿🇦 ZA 05 - xiaoyu
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16266
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,10 +57,6 @@ proxy-groups:
   - 🇿🇦 ZA 03 - xiaoyu
   - 🇿🇦 ZA 04 - xiaoyu
   - 🇿🇦 ZA 05 - xiaoyu
-  - 🇿🇦 ZA 06 - xiaoyu
-  - 🇿🇦 ZA 07 - xiaoyu
-  - 🇿🇦 ZA 08 - xiaoyu
-  - 🇿🇦 ZA 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,9 +67,5 @@ proxy-groups:
   - 🇿🇦 ZA 03 - xiaoyu
   - 🇿🇦 ZA 04 - xiaoyu
   - 🇿🇦 ZA 05 - xiaoyu
-  - 🇿🇦 ZA 06 - xiaoyu
-  - 🇿🇦 ZA 07 - xiaoyu
-  - 🇿🇦 ZA 08 - xiaoyu
-  - 🇿🇦 ZA 09 - xiaoyu
 rules:
 - MATCH,PROXIES

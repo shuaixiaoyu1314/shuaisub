@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - xiaoyu
-  type: ss
-  server: 45.144.172.123
-  port: 20998
-  cipher: aes-256-gcm
-  password: 78235e7dc55e9ad1
+- name: 🇨🇴 CO 01 - xiaoyu
+  type: vless
+  server: 157.137.220.63
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - xiaoyu
+  - 🇨🇴 CO 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - xiaoyu
+  - 🇨🇴 CO 01 - xiaoyu
 rules:
 - MATCH,PROXIES

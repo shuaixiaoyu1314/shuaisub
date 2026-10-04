@@ -6,43 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
   type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 02 - xiaoyu
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 103.86.49.57
-- name: 🇹🇭 TH 03 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 04 - xiaoyu
-  type: vless
   server: v2ray.simspeedup.com
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -54,20 +17,49 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 05 - xiaoyu
+- name: 🇹🇭 TH 02 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 443
+  server: v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 03 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 04 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 05 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇭 TH 06 - xiaoyu
   type: vless
   server: 104.18.26.90
@@ -83,18 +75,15 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 07 - xiaoyu
-  type: vless
-  server: support.zoom.us.v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 TH 08 - xiaoyu
   type: vless
   server: v2ray.simspeedup.com
@@ -120,73 +109,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 10 - xiaoyu
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 11 - xiaoyu
-  type: vless
-  server: 104.18.31.170
-  port: 8880
-  uuid: 243ad93d-9732-4e19-9784-8b1a642cff70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fancy-king-6fb5.33-615.workers.dev
-- name: 🇹🇭 TH 12 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 13 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 14 - xiaoyu
-  type: vless
-  server: support.zoom.us.v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 TH 15 - xiaoyu
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -199,7 +123,61 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 16 - xiaoyu
+- name: 🇹🇭 TH 11 - xiaoyu
+  type: vless
+  server: 104.16.111.193
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 12 - xiaoyu
+  type: vless
+  server: 162.159.192.125
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 13 - xiaoyu
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 14 - xiaoyu
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 15 - xiaoyu
   type: vless
   server: 103.86.49.57
   port: 80
@@ -212,7 +190,7 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 17 - xiaoyu
+- name: 🇹🇭 TH 16 - xiaoyu
   type: vless
   server: support.zoom.us.v2ray.simspeedup.com
   port: 80
@@ -225,22 +203,32 @@ proxies:
     path: /ws
     headers:
       Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 TH 18 - xiaoyu
+- name: 🇹🇭 TH 17 - xiaoyu
   type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 73ae7d45-1046-4cc5-9741-199375b620f1
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: round-resonance-a84c.13-531.workers.dev
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 18 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇭 TH 19 - xiaoyu
   type: vless
-  server: 162.159.192.125
+  server: 104.16.10.185
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -264,74 +252,18 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: 103.86.49.57
 - name: 🇹🇭 TH 21 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
 - name: 🇹🇭 TH 22 - xiaoyu
-  type: vless
-  server: 104.18.11.118
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: 🇹🇭 TH 23 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 24 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 56eba3f8-94f8-48f2-920b-d79bb042d0bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lingering-glade-21ce.61-b6f.workers.dev
-- name: 🇹🇭 TH 25 - xiaoyu
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 26 - xiaoyu
   type: vless
   server: 103.86.49.57
   port: 80
@@ -344,202 +276,6 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 27 - xiaoyu
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 28 - xiaoyu
-  type: vless
-  server: 104.18.26.90
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 29 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 30 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 31 - xiaoyu
-  type: vless
-  server: lingering-sun-d7b5.49-56e.workers.dev
-  port: 8880
-  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lingering-sun-d7b5.49-56e.workers.dev
-- name: 🇹🇭 TH 32 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 33 - xiaoyu
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 34 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 35 - xiaoyu
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 36 - xiaoyu
-  type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: f7cc1898-52f8-4e8e-9a90-320fc7fdadb8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: raspy-truth-565b.394-8bb.workers.dev
-- name: 🇹🇭 TH 37 - xiaoyu
-  type: vless
-  server: 104.16.10.9
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 38 - xiaoyu
-  type: vless
-  server: 104.18.188.234
-  port: 8880
-  uuid: 52fb52b1-82de-4c6f-b7d3-599ce5d57f1c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-disk-1ae9.138-c4c.workers.dev
-- name: 🇹🇭 TH 39 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 40 - xiaoyu
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 73ae7d45-1046-4cc5-9741-199375b620f1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: round-resonance-a84c.13-531.workers.dev
-- name: 🇹🇭 TH 41 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 42 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -567,26 +303,6 @@ proxy-groups:
   - 🇹🇭 TH 20 - xiaoyu
   - 🇹🇭 TH 21 - xiaoyu
   - 🇹🇭 TH 22 - xiaoyu
-  - 🇹🇭 TH 23 - xiaoyu
-  - 🇹🇭 TH 24 - xiaoyu
-  - 🇹🇭 TH 25 - xiaoyu
-  - 🇹🇭 TH 26 - xiaoyu
-  - 🇹🇭 TH 27 - xiaoyu
-  - 🇹🇭 TH 28 - xiaoyu
-  - 🇹🇭 TH 29 - xiaoyu
-  - 🇹🇭 TH 30 - xiaoyu
-  - 🇹🇭 TH 31 - xiaoyu
-  - 🇹🇭 TH 32 - xiaoyu
-  - 🇹🇭 TH 33 - xiaoyu
-  - 🇹🇭 TH 34 - xiaoyu
-  - 🇹🇭 TH 35 - xiaoyu
-  - 🇹🇭 TH 36 - xiaoyu
-  - 🇹🇭 TH 37 - xiaoyu
-  - 🇹🇭 TH 38 - xiaoyu
-  - 🇹🇭 TH 39 - xiaoyu
-  - 🇹🇭 TH 40 - xiaoyu
-  - 🇹🇭 TH 41 - xiaoyu
-  - 🇹🇭 TH 42 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -614,25 +330,5 @@ proxy-groups:
   - 🇹🇭 TH 20 - xiaoyu
   - 🇹🇭 TH 21 - xiaoyu
   - 🇹🇭 TH 22 - xiaoyu
-  - 🇹🇭 TH 23 - xiaoyu
-  - 🇹🇭 TH 24 - xiaoyu
-  - 🇹🇭 TH 25 - xiaoyu
-  - 🇹🇭 TH 26 - xiaoyu
-  - 🇹🇭 TH 27 - xiaoyu
-  - 🇹🇭 TH 28 - xiaoyu
-  - 🇹🇭 TH 29 - xiaoyu
-  - 🇹🇭 TH 30 - xiaoyu
-  - 🇹🇭 TH 31 - xiaoyu
-  - 🇹🇭 TH 32 - xiaoyu
-  - 🇹🇭 TH 33 - xiaoyu
-  - 🇹🇭 TH 34 - xiaoyu
-  - 🇹🇭 TH 35 - xiaoyu
-  - 🇹🇭 TH 36 - xiaoyu
-  - 🇹🇭 TH 37 - xiaoyu
-  - 🇹🇭 TH 38 - xiaoyu
-  - 🇹🇭 TH 39 - xiaoyu
-  - 🇹🇭 TH 40 - xiaoyu
-  - 🇹🇭 TH 41 - xiaoyu
-  - 🇹🇭 TH 42 - xiaoyu
 rules:
 - MATCH,PROXIES

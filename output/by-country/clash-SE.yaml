@@ -20,32 +20,32 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 172.234.97.206
+  port: 8443
+  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: stsr.hospitaldt.ir
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: 172.234.97.206
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: stsr.hospitaldt.ir
+  port: 8443
+  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
+  servername: stsr.hospitaldt.ir
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: stsr.hospitaldt.ir
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: sub.merky.top
@@ -61,34 +61,6 @@ proxies:
     headers:
       Host: sub.merky.top
 - name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 07 - xiaoyu
   type: vless
   server: sub.merky.top
   port: 443
@@ -112,8 +84,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,7 +94,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
 rules:
 - MATCH,PROXIES
