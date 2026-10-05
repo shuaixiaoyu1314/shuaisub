@@ -4,9 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: vless
-  server: argo6.5671234.xyz
+  server: log.bpminecraft.com
+  port: 8880
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  type: vless
+  server: 45.192.201.140
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -18,20 +31,6 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
-  type: vless
-  server: 154.9.30.191
-  port: 18376
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 123.714541.xyz
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   type: vless
   server: hinet1.2yly.com
@@ -43,22 +42,8 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 103.180.20.108
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
   type: vless
   server: 60.248.219.78
   port: 443
@@ -72,34 +57,64 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
   type: ss
-  server: 211.174.113.172
+  server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
+  type: vless
+  server: 103.180.20.108
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 103.180.20.108
+- name: 🇺🇸 美国 (United States) 07 (家宽) - xiaoyu
+  type: vless
+  server: 69.63.221.116
+  port: 25517
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 07 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 07 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

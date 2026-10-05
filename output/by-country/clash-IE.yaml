@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaoyu
-  type: ss
-  server: 20.107.219.181
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 2fGnKgP8k8EHFuvj
-  udp: true
-- name: 🇮🇪 IE 02 - xiaoyu
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -25,20 +18,20 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - xiaoyu
+- name: 🇮🇪 IE 02 - xiaoyu
   type: vless
-  server: 85.159.229.122
-  port: 443
-  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray.aizgl.com
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /xray-ws
+    path: /fp=chrome
     headers:
-      Host: v2ray.aizgl.com
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - xiaoyu
   - 🇮🇪 IE 02 - xiaoyu
-  - 🇮🇪 IE 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - xiaoyu
   - 🇮🇪 IE 02 - xiaoyu
-  - 🇮🇪 IE 03 - xiaoyu
 rules:
 - MATCH,PROXIES

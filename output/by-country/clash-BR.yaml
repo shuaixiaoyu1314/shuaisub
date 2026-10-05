@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 185.148.106.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: aksai.org
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: aksai.org
+      Host: vms.lifetime54.workers.dev
 - name: 🇧🇷 BR 02 - xiaoyu
   type: vmess
   server: 89.39.161.157
@@ -38,7 +35,7 @@ proxies:
       Host: ''
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -46,15 +43,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇧🇷 BR 04 - xiaoyu
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -78,13 +75,29 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 06 - xiaoyu
+  type: vmess
+  server: 89.39.161.157
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
   servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇧🇷 BR 06 - xiaoyu
+- name: 🇧🇷 BR 07 - xiaoyu
   type: vmess
   server: 89.39.161.157
   port: 443
@@ -111,6 +124,7 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
+  - 🇧🇷 BR 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,5 +136,6 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
+  - 🇧🇷 BR 07 - xiaoyu
 rules:
 - MATCH,PROXIES

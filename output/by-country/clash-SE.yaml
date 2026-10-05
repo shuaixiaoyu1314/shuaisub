@@ -6,48 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: psf-2.weedly.top
+  port: 80
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: stigmata.ir
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: psf-2.weedly.top
+  port: 80
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
+      Host: stigmata.ir
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
   server: psf-2.weedly.top
   port: 80
   uuid: 33016f3d-8509-493c-bd8b-d26447d48135
@@ -59,88 +43,6 @@ proxies:
     path: /
     headers:
       Host: stigmata.ir
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stigmata.ir
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stigmata.ir
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,13 +51,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
-  - 🇸🇪 SE 04 - xiaoyu
-  - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
-  - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,12 +59,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaoyu
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
-  - 🇸🇪 SE 04 - xiaoyu
-  - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
-  - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
 rules:
 - MATCH,PROXIES
