@@ -5,57 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16280
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇿 CZ 02 - xiaoyu
-  type: vless
-  server: soskeynets-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-  port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/ERYN0G44hia16zhR+
-    headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-- name: 🇨🇿 CZ 03 - xiaoyu
-  type: vless
-  server: 88.216.66.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇨🇿 CZ 04 - xiaoyu
-  type: vless
-  server: 172.66.47.45
-  port: 443
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ezaccess-project-f62c30.pages.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-- name: 🇨🇿 CZ 05 - xiaoyu
   type: vless
   server: 95.182.95.178
   port: 443
@@ -66,7 +15,21 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 02 - xiaoyu
+  type: vless
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -76,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
-  - 🇨🇿 CZ 03 - xiaoyu
-  - 🇨🇿 CZ 04 - xiaoyu
-  - 🇨🇿 CZ 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
-  - 🇨🇿 CZ 03 - xiaoyu
-  - 🇨🇿 CZ 04 - xiaoyu
-  - 🇨🇿 CZ 05 - xiaoyu
 rules:
 - MATCH,PROXIES
