@@ -20,7 +20,7 @@ proxies:
       Host: geo.shkola112.site
 - name: 🇬🇪 GE 02 - xiaoyu
   type: vless
-  server: geo.shkola112.site
+  server: 172.67.159.161
   port: 443
   uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   udp: true
@@ -34,91 +34,7 @@ proxies:
       Host: geo.shkola112.site
 - name: 🇬🇪 GE 03 - xiaoyu
   type: vless
-  server: 172.67.159.161
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 04 - xiaoyu
-  type: vless
-  server: 172.67.159.161
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 05 - xiaoyu
-  type: vless
-  server: 104.21.50.89
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 06 - xiaoyu
-  type: vless
   server: geo.shkola112.site
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 07 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 08 - xiaoyu
-  type: vless
-  server: geo.shkola112.site
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 GE 09 - xiaoyu
-  type: vless
-  server: 104.21.50.89
   port: 443
   uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   udp: true
@@ -138,12 +54,6 @@ proxy-groups:
   - 🇬🇪 GE 01 - xiaoyu
   - 🇬🇪 GE 02 - xiaoyu
   - 🇬🇪 GE 03 - xiaoyu
-  - 🇬🇪 GE 04 - xiaoyu
-  - 🇬🇪 GE 05 - xiaoyu
-  - 🇬🇪 GE 06 - xiaoyu
-  - 🇬🇪 GE 07 - xiaoyu
-  - 🇬🇪 GE 08 - xiaoyu
-  - 🇬🇪 GE 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,11 +62,5 @@ proxy-groups:
   - 🇬🇪 GE 01 - xiaoyu
   - 🇬🇪 GE 02 - xiaoyu
   - 🇬🇪 GE 03 - xiaoyu
-  - 🇬🇪 GE 04 - xiaoyu
-  - 🇬🇪 GE 05 - xiaoyu
-  - 🇬🇪 GE 06 - xiaoyu
-  - 🇬🇪 GE 07 - xiaoyu
-  - 🇬🇪 GE 08 - xiaoyu
-  - 🇬🇪 GE 09 - xiaoyu
 rules:
 - MATCH,PROXIES

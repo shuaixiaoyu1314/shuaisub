@@ -61,13 +61,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 05 - xiaoyu
-  type: ss
-  server: 20.166.33.115
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: xyn9JRjicrWOWqAJ
-  udp: true
-- name: 🇮🇪 IE 06 - xiaoyu
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -81,6 +74,26 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 06 - xiaoyu
+  type: vless
+  server: 66.235.200.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: 🇮🇪 IE 07 - xiaoyu
+  type: ss
+  server: 20.166.33.115
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: xyn9JRjicrWOWqAJ
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +105,7 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaoyu
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
+  - 🇮🇪 IE 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,5 +117,6 @@ proxy-groups:
   - 🇮🇪 IE 04 - xiaoyu
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
+  - 🇮🇪 IE 07 - xiaoyu
 rules:
 - MATCH,PROXIES
