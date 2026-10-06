@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-ee
+    headers:
+      Host: tgmansion.site
 - name: 🇪🇪 EE 02 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -50,56 +55,6 @@ proxies:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 05 - xiaoyu
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 07 - xiaoyu
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: 194.26.141.148
-- name: 🇪🇪 EE 08 - xiaoyu
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: tgmansion.site
-- name: 🇪🇪 EE 09 - xiaoyu
-  type: vless
   server: 31.56.187.26
   port: 443
   uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
@@ -112,7 +67,16 @@ proxies:
     path: /aioproxybot/94.23.144.99-2053
     headers:
       Host: aio.eth0.dpdns.org
-- name: 🇪🇪 EE 10 - xiaoyu
+- name: 🇪🇪 EE 06 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 443
@@ -125,9 +89,31 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 11 - xiaoyu
+- name: 🇪🇪 EE 08 - xiaoyu
   type: vless
-  server: 77.72.85.247
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 09 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 94.183.170.135
+- name: 🇪🇪 EE 10 - xiaoyu
+  type: vless
+  server: 194.26.141.148
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -139,9 +125,22 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 11 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 12 - xiaoyu
   type: vless
-  server: 77.72.85.246
+  server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -155,15 +154,6 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 13 - xiaoyu
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 14 - xiaoyu
-  type: vless
   server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -176,16 +166,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 15 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 16 - xiaoyu
+- name: 🇪🇪 EE 14 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 443
@@ -198,58 +179,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 17 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 18 - xiaoyu
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 19 - xiaoyu
-  type: vless
-  server: ee10.zazazuza.ru
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: ee10.zazazuza.ru
-- name: 🇪🇪 EE 20 - xiaoyu
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 21 - xiaoyu
+- name: 🇪🇪 EE 15 - xiaoyu
   type: vless
   server: 77.72.85.246
   port: 8443
@@ -263,16 +193,63 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: 77.72.85.246
-- name: 🇪🇪 EE 22 - xiaoyu
+- name: 🇪🇪 EE 16 - xiaoyu
   type: vless
-  server: 94.183.170.135
+  server: 194.26.141.148
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 23 - xiaoyu
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: 194.26.141.148
+- name: 🇪🇪 EE 17 - xiaoyu
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 18 - xiaoyu
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 19 - xiaoyu
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 20 - xiaoyu
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -286,7 +263,29 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: 77.72.85.247
-- name: 🇪🇪 EE 24 - xiaoyu
+- name: 🇪🇪 EE 21 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 22 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 23 - xiaoyu
   type: vless
   server: ee10.zazazuza.ru
   port: 8443
@@ -300,19 +299,34 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: ee10.zazazuza.ru
-- name: 🇪🇪 EE 25 - xiaoyu
+- name: 🇪🇪 EE 24 - xiaoyu
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 94.183.170.135
+      Host: 194.26.141.148
+- name: 🇪🇪 EE 25 - xiaoyu
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: 77.72.85.246
 - name: 🇪🇪 EE 26 - xiaoyu
   type: vless
   server: ee10.zazazuza.ru
@@ -326,21 +340,20 @@ proxies:
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
-      Host: fdghyt.com
+      Host: ee10.zazazuza.ru
 - name: 🇪🇪 EE 27 - xiaoyu
   type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: fdghyt.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 28 - xiaoyu
   type: vless
   server: 77.72.85.247
@@ -357,77 +370,53 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 29 - xiaoyu
   type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: fdghyt.com
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 30 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 31 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 32 - xiaoyu
-  type: vless
-  server: 194.26.141.148
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: 194.26.141.148
-- name: 🇪🇪 EE 33 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 34 - xiaoyu
-  type: vless
-  server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 35 - xiaoyu
+- name: 🇪🇪 EE 32 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 33 - xiaoyu
   type: vless
   server: 194.26.141.148
   port: 8443
@@ -441,18 +430,45 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 34 - xiaoyu
+  type: vless
+  server: ee10.zazazuza.ru
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 35 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 36 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 37 - xiaoyu
   type: vless
-  server: 77.72.85.247
+  server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -463,24 +479,23 @@ proxies:
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
-      Host: fdghyt.com
+      Host: ee10.zazazuza.ru
 - name: 🇪🇪 EE 38 - xiaoyu
   type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: crt.dodopanel.biz
   network: ws
   ws-opts:
-    path: /vless-ws
+    path: /
     headers:
-      Host: 141.0.187.16
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 39 - xiaoyu
   type: vless
-  server: 194.26.141.148
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -505,8 +520,39 @@ proxies:
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
-      Host: fdghyt.com
+      Host: 77.72.85.247
 - name: 🇪🇪 EE 41 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 42 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 43 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 44 - xiaoyu
   type: vless
   server: 141.0.187.16
   port: 2083
@@ -520,7 +566,21 @@ proxies:
     path: /vless-ws
     headers:
       Host: 141.0.187.16
-- name: 🇪🇪 EE 42 - xiaoyu
+- name: 🇪🇪 EE 45 - xiaoyu
+  type: vless
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
+- name: 🇪🇪 EE 46 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -529,7 +589,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 43 - xiaoyu
+- name: 🇪🇪 EE 47 - xiaoyu
+  type: vless
+  server: ee10.zazazuza.ru
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 48 - xiaoyu
   type: vless
   server: 194.26.141.148
   port: 8443
@@ -543,21 +617,16 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 44 - xiaoyu
+- name: 🇪🇪 EE 49 - xiaoyu
   type: vless
-  server: ee10.zazazuza.ru
+  server: 94.183.170.135
   port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: ee10.zazazuza.ru
-- name: 🇪🇪 EE 45 - xiaoyu
+  servername: 94.183.170.135
+- name: 🇪🇪 EE 50 - xiaoyu
   type: vless
   server: 94.183.170.135
   port: 443
@@ -570,73 +639,9 @@ proxies:
     path: /
     headers:
       Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 46 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 47 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 48 - xiaoyu
-  type: vless
-  server: ee10.zazazuza.ru
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 49 - xiaoyu
-  type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 50 - xiaoyu
-  type: vless
-  server: ee10.zazazuza.ru
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
 - name: 🇪🇪 EE 51 - xiaoyu
   type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -659,7 +664,7 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 53 - xiaoyu
   type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -684,7 +689,7 @@ proxies:
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 194.26.141.148
+      Host: fdghyt.com
 - name: 🇪🇪 EE 55 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -696,7 +701,39 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 56 - xiaoyu
   type: vless
-  server: ee10.zazazuza.ru
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 57 - xiaoyu
+  type: vless
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: 194.26.141.148
+- name: 🇪🇪 EE 58 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 59 - xiaoyu
+  type: vless
+  server: 194.26.141.148
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -708,7 +745,16 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 57 - xiaoyu
+- name: 🇪🇪 EE 60 - xiaoyu
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 61 - xiaoyu
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -722,68 +768,34 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 58 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 59 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.183.170.135
-- name: 🇪🇪 EE 60 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 61 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 62 - xiaoyu
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 63 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 94.183.170.135
+      Host: fdghyt.com
+- name: 🇪🇪 EE 63 - xiaoyu
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 64 - xiaoyu
   type: vless
   server: 94.183.170.135
@@ -806,10 +818,10 @@ proxies:
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 77.72.85.247
+      Host: fdghyt.com
 - name: 🇪🇪 EE 66 - xiaoyu
   type: vless
-  server: 77.72.85.246
+  server: 194.26.141.148
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -838,24 +850,23 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 69 - xiaoyu
   type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: 77.72.85.246
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 70 - xiaoyu
   type: vless
-  server: ee10.zazazuza.ru
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -869,20 +880,6 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 71 - xiaoyu
   type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 72 - xiaoyu
-  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -890,6 +887,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 72 - xiaoyu
+  type: vless
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
 - name: 🇪🇪 EE 73 - xiaoyu
   type: vless
   server: 77.72.85.246
@@ -907,32 +918,24 @@ proxies:
 - name: 🇪🇪 EE 74 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 75 - xiaoyu
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 76 - xiaoyu
   type: vless
-  server: 77.72.85.246
+  server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -944,32 +947,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 77 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 78 - xiaoyu
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1051,8 +1028,6 @@ proxy-groups:
   - 🇪🇪 EE 74 - xiaoyu
   - 🇪🇪 EE 75 - xiaoyu
   - 🇪🇪 EE 76 - xiaoyu
-  - 🇪🇪 EE 77 - xiaoyu
-  - 🇪🇪 EE 78 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1134,7 +1109,5 @@ proxy-groups:
   - 🇪🇪 EE 74 - xiaoyu
   - 🇪🇪 EE 75 - xiaoyu
   - 🇪🇪 EE 76 - xiaoyu
-  - 🇪🇪 EE 77 - xiaoyu
-  - 🇪🇪 EE 78 - xiaoyu
 rules:
 - MATCH,PROXIES
