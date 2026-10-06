@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -23,6 +16,13 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: ss
+  server: 176.32.39.52
+  port: 10550
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
   server: 45.12.75.242
@@ -34,13 +34,84 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
   servername: ya.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: us5.h1cloud.net
+  port: 25178
+  uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UTK3fM9wiII4uIcBYUYJwppN1HezxBPhxPfIxDHZqj4
+  servername: www.icloud.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: ss
+  server: 194.87.68.140
+  port: 10771
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: ss
+  server: 46.17.42.141
+  port: 10550
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: ss
+  server: 194.87.196.13
+  port: 10550
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  type: ss
+  server: 46.17.45.31
+  port: 10550
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -51,6 +122,14 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +139,13 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

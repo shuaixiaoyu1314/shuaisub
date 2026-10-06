@@ -4,35 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  type: vless
-  server: 59.125.69.23
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  type: vless
-  server: 172.66.152.4
+  server: 45.192.201.140
   port: 443
   uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   udp: true
@@ -44,7 +25,33 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  type: vless
+  server: 60.248.219.54
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.54
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -57,90 +64,26 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
-  type: vless
-  server: 104.17.181.19
-  port: 8880
-  uuid: efb0a3fe-af52-45c5-b397-1a6866d88d67
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tight-recipe-11ad.252-068.workers.dev
-- name: 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
-  type: vless
-  server: 172.64.229.2
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoyu
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 09 (家宽) - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 103.180.20.108
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoyu
-  - 🇨🇦 加拿大 (Canada) 09 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 06 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoyu
-  - 🇨🇦 加拿大 (Canada) 09 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
