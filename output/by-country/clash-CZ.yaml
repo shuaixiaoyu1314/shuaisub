@@ -32,6 +32,48 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 03 - xiaoyu
+  type: vless
+  server: netra-85a0ca.shoameni19.workers.dev
+  port: 443
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netra-85a0ca.shoameni19.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui+
+    headers:
+      Host: netra-85a0ca.shoameni19.workers.dev
+- name: 🇨🇿 CZ 04 - xiaoyu
+  type: vless
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 05 - xiaoyu
+  type: vless
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +81,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +91,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 rules:
 - MATCH,PROXIES

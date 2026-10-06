@@ -6,25 +6,37 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: ss
-  server: 211.174.113.172
+  server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   type: vless
-  server: 104.24.5.245
-  port: 443
-  uuid: 2f142ede-d555-4ceb-b005-7df31b484be3
+  server: 162.159.140.78
+  port: 8880
+  uuid: c18fd69e-92ba-446e-981b-213dbb551593
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bitter-pine-001c.450-e0e.workers.dev
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: bitter-pine-001c.450-e0e.workers.dev
+      Host: billowing-wind-5b29.133-323.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  type: vless
+  server: 104.16.98.215
+  port: 8880
+  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-mud-d9fa.466.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
