@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoyu
   type: vless
-  server: 45.131.6.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime61.workers.dev
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -30,17 +29,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇨🇭 CH 04 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -54,27 +48,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 05 - xiaoyu
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 06 - xiaoyu
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 07 - xiaoyu
+- name: 🇨🇭 CH 06 - xiaoyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -86,7 +66,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇭 CH 08 - xiaoyu
+- name: 🇨🇭 CH 07 - xiaoyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -98,26 +78,6 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇨🇭 CH 09 - xiaoyu
-  type: vless
-  server: 185.18.250.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime47.workers.dev
-- name: 🇨🇭 CH 10 - xiaoyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -130,9 +90,6 @@ proxy-groups:
   - 🇨🇭 CH 05 - xiaoyu
   - 🇨🇭 CH 06 - xiaoyu
   - 🇨🇭 CH 07 - xiaoyu
-  - 🇨🇭 CH 08 - xiaoyu
-  - 🇨🇭 CH 09 - xiaoyu
-  - 🇨🇭 CH 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -145,8 +102,5 @@ proxy-groups:
   - 🇨🇭 CH 05 - xiaoyu
   - 🇨🇭 CH 06 - xiaoyu
   - 🇨🇭 CH 07 - xiaoyu
-  - 🇨🇭 CH 08 - xiaoyu
-  - 🇨🇭 CH 09 - xiaoyu
-  - 🇨🇭 CH 10 - xiaoyu
 rules:
 - MATCH,PROXIES
