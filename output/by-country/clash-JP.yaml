@@ -5,253 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaoyu
-  type: vless
-  server: jpba.osaip.net
-  port: 443
-  uuid: 2a73bd11-43d4-4af2-a46f-d8cb519fa2b3
+  type: vmess
+  server: or.521166.xyz
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oNBTLH-mw1gk3nDF74ATS7cpvb3eLVePL5iQHscEp3Y
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: chrome
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 02 - xiaoyu
   type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  server: 104.17.50.227
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /tyxyws
     headers:
-      Host: plain-darkness-90ea.259.workers.dev
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 04 - xiaoyu
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
-  type: vless
-  server: jeffsubs.com
-  port: 443
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jeffsubs.com
-  network: ws
-  ws-opts:
-    path: /nnuyws
-    headers:
-      Host: jeffsubs.com
-- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 07 - xiaoyu
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
-  type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: join
-- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
-  type: vless
-  server: 152.69.195.67
-  port: 47878
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
-  type: vless
-  server: 141.11.139.215
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
   type: vless
   server: 162.159.254.3
   port: 443
@@ -265,9 +48,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 04 - xiaoyu
   type: vless
-  server: 104.16.10.104
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -279,22 +62,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
   type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 25 - xiaoyu
-  type: vless
-  server: 152.69.200.216
+  server: 104.19.12.94
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -306,36 +76,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - xiaoyu
-  type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 28 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
   type: vless
   server: 137.220.221.179
   port: 443
@@ -343,7 +84,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 07 - xiaoyu
   type: vless
   server: 154.31.114.162
   port: 8443
@@ -357,9 +98,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
   type: vless
-  server: 104.18.153.10
+  server: 104.17.169.13
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -371,9 +112,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
   type: vless
-  server: 172.67.217.240
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -385,21 +126,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - xiaoyu
-  type: vless
-  server: 167.179.103.224
-  port: 443
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s3ws.ragingbull.de5.net
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s3ws.ragingbull.de5.net
-- name: 🇯🇵 日本 (Japan) 33 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -414,7 +141,149 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: none
-- name: 🇯🇵 日本 (Japan) 34 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
+  type: vless
+  server: 104.21.6.186
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
+  type: vless
+  server: 104.16.10.9
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
+  type: vless
+  server: jeffsubs.com
+  port: 443
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jeffsubs.com
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
+  type: vless
+  server: 104.16.10.9
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
   type: vless
   server: 137.220.221.179
   port: 443
@@ -422,20 +291,290 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 35 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: yellow-mouse-fcce.400-318.workers.dev
+      Host: none
+- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 24 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - xiaoyu
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 26 - xiaoyu
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 27 - xiaoyu
+  type: vless
+  server: 104.16.10.234
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 29 - xiaoyu
+  type: vless
+  server: 104.16.10.104
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 30 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 31 - xiaoyu
+  type: vless
+  server: 104.18.37.127
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 32 - xiaoyu
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 33 - xiaoyu
+  type: vless
+  server: jeffsubs.com
+  port: 443
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jeffsubs.com
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 34 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 35 - xiaoyu
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 36 - xiaoyu
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 37 - xiaoyu
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 38 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: join
+- name: 🇯🇵 日本 (Japan) 39 - xiaoyu
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 40 - xiaoyu
+  type: vless
+  server: jeffsubs.com
+  port: 443
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jeffsubs.com
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 41 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 42 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 43 - xiaoyu
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -450,43 +589,37 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 37 - xiaoyu
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 38 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 39 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 44 - xiaoyu
   type: vless
-  server: 141.11.139.215
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: ccc.010304.xyz
-- name: 🇯🇵 日本 (Japan) 40 - xiaoyu
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 45 - xiaoyu
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 46 - xiaoyu
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 47 - xiaoyu
   type: vmess
   server: 172.111.146.64
   port: 80
@@ -500,44 +633,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 41 - xiaoyu
-  type: vless
-  server: 104.19.12.94
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 42 - xiaoyu
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 43 - xiaoyu
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 44 - xiaoyu
+      Host: zoom.us
+- name: 🇯🇵 日本 (Japan) 48 - xiaoyu
   type: vless
   server: 104.19.164.155
   port: 443
@@ -551,21 +648,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 45 - xiaoyu
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 46 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 49 - xiaoyu
   type: vless
   server: 188.114.97.6
   port: 443
@@ -579,48 +662,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 47 - xiaoyu
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 48 - xiaoyu
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
 - name: 🇯🇵 日本 (Japan) 50 - xiaoyu
   type: vmess
   server: 168.138.43.75
@@ -635,61 +676,85 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 51 - xiaoyu
   type: vless
-  server: 172.111.146.64
-  port: 80
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 52 - xiaoyu
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-- name: 🇯🇵 日本 (Japan) 53 - xiaoyu
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: yellow-mouse-fcce.400-318.workers.dev
-- name: 🇯🇵 日本 (Japan) 54 - xiaoyu
-  type: vless
-  server: 167.179.103.224
+  server: 104.16.111.102
   port: 443
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: s3ws.ragingbull.de5.net
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /wsrb7k2m
+    path: /tyxyws
     headers:
-      Host: s3ws.ragingbull.de5.net
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 52 - xiaoyu
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 53 - xiaoyu
+  type: vless
+  server: 104.17.210.74
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 54 - xiaoyu
+  type: vless
+  server: 104.16.10.72
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 55 - xiaoyu
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 56 - xiaoyu
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 57 - xiaoyu
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -704,21 +769,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 56 - xiaoyu
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 57 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 58 - xiaoyu
   type: vless
   server: 172.111.146.64
   port: 80
@@ -731,91 +782,44 @@ proxies:
     path: /vless/
     headers:
       Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 58 - xiaoyu
-  type: vless
-  server: 167.179.103.224
-  port: 443
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s3ws.ragingbull.de5.net
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s3ws.ragingbull.de5.net
 - name: 🇯🇵 日本 (Japan) 59 - xiaoyu
-  type: vless
-  server: 104.16.10.84
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /vmess/
     headers:
-      Host: jp3.yohototo.top
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 60 - xiaoyu
-  type: vless
-  server: 104.16.10.234
+  type: ss
+  server: 149.22.87.241
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 61 - xiaoyu
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cctv13.m3u8
     headers:
-      Host: jp3.yohototo.top
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 62 - xiaoyu
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 63 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 64 - xiaoyu
   type: vless
   server: 162.159.254.3
   port: 443
@@ -829,22 +833,118 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 63 - xiaoyu
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 64 - xiaoyu
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
 - name: 🇯🇵 日本 (Japan) 65 - xiaoyu
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /tyxyws
     headers:
-      Host: ''
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 66 - xiaoyu
+  type: vless
+  server: 104.16.10.63
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 67 - xiaoyu
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 68 - xiaoyu
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 69 - xiaoyu
+  type: vless
+  server: 104.16.10.104
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 70 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 71 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 72 - xiaoyu
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -858,8 +958,245 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 67 - xiaoyu
+      Host: none
+- name: 🇯🇵 日本 (Japan) 73 - xiaoyu
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 74 - xiaoyu
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 75 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 76 - xiaoyu
+  type: vless
+  server: 104.16.10.22
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 77 - xiaoyu
+  type: vless
+  server: 152.69.195.67
+  port: 47878
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 78 - xiaoyu
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 79 - xiaoyu
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 80 - xiaoyu
+  type: vless
+  server: 104.19.48.107
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 81 - xiaoyu
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 82 - xiaoyu
+  type: vmess
+  server: 140.238.55.84
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 140.238.55.84
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: 140.238.55.84
+- name: 🇯🇵 日本 (Japan) 83 - xiaoyu
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 84 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 85 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 86 - xiaoyu
+  type: vless
+  server: 104.18.153.10
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 87 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 88 - xiaoyu
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 89 - xiaoyu
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 90 - xiaoyu
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -874,7 +1211,165 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 68 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 91 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 92 - xiaoyu
+  type: vless
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 93 - xiaoyu
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 94 - xiaoyu
+  type: vless
+  server: 152.69.195.67
+  port: 47878
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 95 - xiaoyu
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 96 - xiaoyu
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 97 - xiaoyu
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 98 - xiaoyu
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 99 - xiaoyu
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 100 - xiaoyu
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 101 - xiaoyu
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 102 - xiaoyu
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 103 - xiaoyu
   type: vless
   server: 104.16.10.48
   port: 443
@@ -888,7 +1383,78 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 69 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 104 - xiaoyu
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 105 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
+- name: 🇯🇵 日本 (Japan) 106 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
+- name: 🇯🇵 日本 (Japan) 107 - xiaoyu
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 108 - xiaoyu
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 109 - xiaoyu
   type: vless
   server: 152.69.195.67
   port: 47878
@@ -896,7 +1462,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 70 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 110 - xiaoyu
+  type: vless
+  server: 143.20.156.116
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 111 - xiaoyu
   type: vless
   server: 137.220.221.179
   port: 443
@@ -904,6 +1484,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 112 - xiaoyu
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 172.111.146.64
 proxy-groups:
 - name: PROXIES
   type: select
@@ -979,6 +1572,48 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 68 - xiaoyu
   - 🇯🇵 日本 (Japan) 69 - xiaoyu
   - 🇯🇵 日本 (Japan) 70 - xiaoyu
+  - 🇯🇵 日本 (Japan) 71 - xiaoyu
+  - 🇯🇵 日本 (Japan) 72 - xiaoyu
+  - 🇯🇵 日本 (Japan) 73 - xiaoyu
+  - 🇯🇵 日本 (Japan) 74 - xiaoyu
+  - 🇯🇵 日本 (Japan) 75 - xiaoyu
+  - 🇯🇵 日本 (Japan) 76 - xiaoyu
+  - 🇯🇵 日本 (Japan) 77 - xiaoyu
+  - 🇯🇵 日本 (Japan) 78 - xiaoyu
+  - 🇯🇵 日本 (Japan) 79 - xiaoyu
+  - 🇯🇵 日本 (Japan) 80 - xiaoyu
+  - 🇯🇵 日本 (Japan) 81 - xiaoyu
+  - 🇯🇵 日本 (Japan) 82 - xiaoyu
+  - 🇯🇵 日本 (Japan) 83 - xiaoyu
+  - 🇯🇵 日本 (Japan) 84 - xiaoyu
+  - 🇯🇵 日本 (Japan) 85 - xiaoyu
+  - 🇯🇵 日本 (Japan) 86 - xiaoyu
+  - 🇯🇵 日本 (Japan) 87 - xiaoyu
+  - 🇯🇵 日本 (Japan) 88 - xiaoyu
+  - 🇯🇵 日本 (Japan) 89 - xiaoyu
+  - 🇯🇵 日本 (Japan) 90 - xiaoyu
+  - 🇯🇵 日本 (Japan) 91 - xiaoyu
+  - 🇯🇵 日本 (Japan) 92 - xiaoyu
+  - 🇯🇵 日本 (Japan) 93 - xiaoyu
+  - 🇯🇵 日本 (Japan) 94 - xiaoyu
+  - 🇯🇵 日本 (Japan) 95 - xiaoyu
+  - 🇯🇵 日本 (Japan) 96 - xiaoyu
+  - 🇯🇵 日本 (Japan) 97 - xiaoyu
+  - 🇯🇵 日本 (Japan) 98 - xiaoyu
+  - 🇯🇵 日本 (Japan) 99 - xiaoyu
+  - 🇯🇵 日本 (Japan) 100 - xiaoyu
+  - 🇯🇵 日本 (Japan) 101 - xiaoyu
+  - 🇯🇵 日本 (Japan) 102 - xiaoyu
+  - 🇯🇵 日本 (Japan) 103 - xiaoyu
+  - 🇯🇵 日本 (Japan) 104 - xiaoyu
+  - 🇯🇵 日本 (Japan) 105 - xiaoyu
+  - 🇯🇵 日本 (Japan) 106 - xiaoyu
+  - 🇯🇵 日本 (Japan) 107 - xiaoyu
+  - 🇯🇵 日本 (Japan) 108 - xiaoyu
+  - 🇯🇵 日本 (Japan) 109 - xiaoyu
+  - 🇯🇵 日本 (Japan) 110 - xiaoyu
+  - 🇯🇵 日本 (Japan) 111 - xiaoyu
+  - 🇯🇵 日本 (Japan) 112 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1054,5 +1689,47 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 68 - xiaoyu
   - 🇯🇵 日本 (Japan) 69 - xiaoyu
   - 🇯🇵 日本 (Japan) 70 - xiaoyu
+  - 🇯🇵 日本 (Japan) 71 - xiaoyu
+  - 🇯🇵 日本 (Japan) 72 - xiaoyu
+  - 🇯🇵 日本 (Japan) 73 - xiaoyu
+  - 🇯🇵 日本 (Japan) 74 - xiaoyu
+  - 🇯🇵 日本 (Japan) 75 - xiaoyu
+  - 🇯🇵 日本 (Japan) 76 - xiaoyu
+  - 🇯🇵 日本 (Japan) 77 - xiaoyu
+  - 🇯🇵 日本 (Japan) 78 - xiaoyu
+  - 🇯🇵 日本 (Japan) 79 - xiaoyu
+  - 🇯🇵 日本 (Japan) 80 - xiaoyu
+  - 🇯🇵 日本 (Japan) 81 - xiaoyu
+  - 🇯🇵 日本 (Japan) 82 - xiaoyu
+  - 🇯🇵 日本 (Japan) 83 - xiaoyu
+  - 🇯🇵 日本 (Japan) 84 - xiaoyu
+  - 🇯🇵 日本 (Japan) 85 - xiaoyu
+  - 🇯🇵 日本 (Japan) 86 - xiaoyu
+  - 🇯🇵 日本 (Japan) 87 - xiaoyu
+  - 🇯🇵 日本 (Japan) 88 - xiaoyu
+  - 🇯🇵 日本 (Japan) 89 - xiaoyu
+  - 🇯🇵 日本 (Japan) 90 - xiaoyu
+  - 🇯🇵 日本 (Japan) 91 - xiaoyu
+  - 🇯🇵 日本 (Japan) 92 - xiaoyu
+  - 🇯🇵 日本 (Japan) 93 - xiaoyu
+  - 🇯🇵 日本 (Japan) 94 - xiaoyu
+  - 🇯🇵 日本 (Japan) 95 - xiaoyu
+  - 🇯🇵 日本 (Japan) 96 - xiaoyu
+  - 🇯🇵 日本 (Japan) 97 - xiaoyu
+  - 🇯🇵 日本 (Japan) 98 - xiaoyu
+  - 🇯🇵 日本 (Japan) 99 - xiaoyu
+  - 🇯🇵 日本 (Japan) 100 - xiaoyu
+  - 🇯🇵 日本 (Japan) 101 - xiaoyu
+  - 🇯🇵 日本 (Japan) 102 - xiaoyu
+  - 🇯🇵 日本 (Japan) 103 - xiaoyu
+  - 🇯🇵 日本 (Japan) 104 - xiaoyu
+  - 🇯🇵 日本 (Japan) 105 - xiaoyu
+  - 🇯🇵 日本 (Japan) 106 - xiaoyu
+  - 🇯🇵 日本 (Japan) 107 - xiaoyu
+  - 🇯🇵 日本 (Japan) 108 - xiaoyu
+  - 🇯🇵 日本 (Japan) 109 - xiaoyu
+  - 🇯🇵 日本 (Japan) 110 - xiaoyu
+  - 🇯🇵 日本 (Japan) 111 - xiaoyu
+  - 🇯🇵 日本 (Japan) 112 - xiaoyu
 rules:
 - MATCH,PROXIES
