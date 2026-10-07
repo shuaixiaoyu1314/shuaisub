@@ -19,19 +19,12 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 02 - xiaoyu
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 20.223.236.165
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: CNL3mxdfZKiPKizL
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 03 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -43,7 +36,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaoyu
@@ -57,7 +50,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 05 - xiaoyu
@@ -85,7 +78,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 07 - xiaoyu
@@ -99,17 +92,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /+
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 08 - xiaoyu
-  type: ss
-  server: 20.223.236.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: CNL3mxdfZKiPKizL
-  udp: true
-- name: 🇮🇪 IE 09 - xiaoyu
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -120,7 +106,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -136,7 +122,6 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
-  - 🇮🇪 IE 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,6 +135,5 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
-  - 🇮🇪 IE 09 - xiaoyu
 rules:
 - MATCH,PROXIES

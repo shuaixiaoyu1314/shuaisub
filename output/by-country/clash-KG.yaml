@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇬 KG 01 - xiaoyu
+  type: vless
+  server: anydesk.com
+  port: 8880
+  uuid: 1399f473-ffb5-4942-b05c-7dd3fc0007fb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: round-truth-dcf1.34-719.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇬 KG 01 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇬 KG 01 - xiaoyu
+rules:
+- MATCH,PROXIES

@@ -14,12 +14,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
+      Host: ''
 - name: 🇧🇷 BR 02 - xiaoyu
   type: vmess
   server: 89.39.161.157
@@ -30,15 +30,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
+      Host: ''
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -54,7 +54,7 @@ proxies:
       Host: aksai.org
 - name: 🇧🇷 BR 04 - xiaoyu
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -78,15 +78,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇧🇷 BR 06 - xiaoyu
   type: vmess
-  server: 89.39.161.157
+  server: aksai.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -100,6 +100,67 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
+- name: 🇧🇷 BR 07 - xiaoyu
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 08 - xiaoyu
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 09 - xiaoyu
+  type: vmess
+  server: 89.39.161.157
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 10 - xiaoyu
+  type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime19.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,6 +172,10 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
+  - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
+  - 🇧🇷 BR 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,5 +187,9 @@ proxy-groups:
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
+  - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
+  - 🇧🇷 BR 09 - xiaoyu
+  - 🇧🇷 BR 10 - xiaoyu
 rules:
 - MATCH,PROXIES

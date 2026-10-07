@@ -17,40 +17,29 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - xiaoyu
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?ed=2056
-    headers:
-      Host: uol258ehdmsohzh.global.ssl.fastly.net
 - name: 🇫🇮 FI 03 - xiaoyu
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 31608e93-a701-4604-b8de-c55baa393937
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uol258ehdmsohzh.global.ssl.fastly.net
-- name: 🇫🇮 FI 04 - xiaoyu
   type: ss
   server: 185.103.110.68
   port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 04 - xiaoyu
+  type: vmess
+  server: finla2.povrak.ir
+  port: 58179
+  uuid: b85ba3bc-bac6-4cfc-b8be-fe16a7dac1b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
   server: 144.31.99.252
@@ -76,7 +65,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 07 - xiaoyu
   type: ss
   server: 45.149.114.171
@@ -95,66 +84,23 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 09 - xiaoyu
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 144.31.99.252
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇫🇮 FI 10 - xiaoyu
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 31608e93-a701-4604-b8de-c55baa393937
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?ed=2056/?TELEGRAM--BYA--CHANEL---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCANfp=firefox
-    headers:
-      Host: uol258ehdmsohzh.global.ssl.fastly.net
-- name: 🇫🇮 FI 11 - xiaoyu
-  type: vless
-  server: 144.31.99.252
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇫🇮 FI 12 - xiaoyu
-  type: vmess
-  server: fisgww.povrak.ir
-  port: 58179
-  uuid: e71635b8-53b8-45bc-871d-428efe6eaf7c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 13 - xiaoyu
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 14 - xiaoyu
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -165,34 +111,56 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 15 - xiaoyu
-  type: vless
-  server: 144.31.99.252
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇫🇮 FI 16 - xiaoyu
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 17 - xiaoyu
+- name: 🇫🇮 FI 11 - xiaoyu
   type: ss
   server: 185.103.110.68
   port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 12 - xiaoyu
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 13 - xiaoyu
+  type: vmess
+  server: fisgww.povrak.ir
+  port: 58179
+  uuid: b85ba3bc-bac6-4cfc-b8be-fe16a7dac1b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 14 - xiaoyu
+  type: vless
+  server: 144.31.99.252
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇫🇮 FI 15 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -213,8 +181,6 @@ proxy-groups:
   - 🇫🇮 FI 13 - xiaoyu
   - 🇫🇮 FI 14 - xiaoyu
   - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -235,7 +201,5 @@ proxy-groups:
   - 🇫🇮 FI 13 - xiaoyu
   - 🇫🇮 FI 14 - xiaoyu
   - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 rules:
 - MATCH,PROXIES
