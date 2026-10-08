@@ -15,24 +15,11 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇱 IL 02 - xiaoyu
   type: vless
-  server: 185.193.29.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇮🇱 IL 03 - xiaoyu
-  type: vless
   server: 185.253.75.119
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -43,34 +30,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 04 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 05 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /+
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -80,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
-  - 🇮🇱 IL 03 - xiaoyu
-  - 🇮🇱 IL 04 - xiaoyu
-  - 🇮🇱 IL 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
-  - 🇮🇱 IL 03 - xiaoyu
-  - 🇮🇱 IL 04 - xiaoyu
-  - 🇮🇱 IL 05 - xiaoyu
 rules:
 - MATCH,PROXIES
