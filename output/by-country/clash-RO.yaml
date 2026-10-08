@@ -11,17 +11,58 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
+- name: 🇷🇴 RO 02 - xiaoyu
+  type: vless
+  server: 46.183.16.4
+  port: 2087
+  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ro1.b0w.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 46.183.16.4
+- name: 🇷🇴 RO 03 - xiaoyu
+  type: vless
+  server: 46.183.16.4
+  port: 2087
+  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ro1.b0w.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 46.183.16.4
+- name: 🇷🇴 RO 04 - xiaoyu
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - xiaoyu
+  - 🇷🇴 RO 02 - xiaoyu
+  - 🇷🇴 RO 03 - xiaoyu
+  - 🇷🇴 RO 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - xiaoyu
+  - 🇷🇴 RO 02 - xiaoyu
+  - 🇷🇴 RO 03 - xiaoyu
+  - 🇷🇴 RO 04 - xiaoyu
 rules:
 - MATCH,PROXIES

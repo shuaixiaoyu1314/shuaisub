@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16280
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: ade.axiomed.ir
+  port: 443
+  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+    headers:
+      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

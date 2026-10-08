@@ -5,94 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
-  type: vless
-  server: 217.19.4.61
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  type: vmess
+  server: 188.130.154.174
+  port: 2083
+  uuid: 74c17cae-bf8b-4cda-8cdd-cf7983bf0a49
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇱🇻 LV 02 - xiaoyu
-  type: vless
-  server: 217.19.4.61
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇱🇻 LV 03 - xiaoyu
-  type: vless
-  server: 217.60.62.30
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇱🇻 LV 04 - xiaoyu
-  type: vless
-  server: 217.19.4.61
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇱🇻 LV 05 - xiaoyu
-  type: vless
-  server: 217.19.4.61
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
-  - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
-  - 🇱🇻 LV 04 - xiaoyu
-  - 🇱🇻 LV 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
-  - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
-  - 🇱🇻 LV 04 - xiaoyu
-  - 🇱🇻 LV 05 - xiaoyu
 rules:
 - MATCH,PROXIES

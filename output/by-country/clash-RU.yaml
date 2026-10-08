@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
-  server: 37.139.42.221
+  server: apis.stroymatdv.cc
   port: 443
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
   udp: true
@@ -20,31 +20,7 @@ proxies:
       Host: apis.stroymatdv.cc
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 37.139.42.221
+  server: apis.stroymatdv.cc
   port: 443
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
   udp: true
@@ -56,7 +32,21 @@ proxies:
     path: /amsws
     headers:
       Host: apis.stroymatdv.cc
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: vless
+  server: 45.9.13.99
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -68,27 +58,102 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: ss
-  server: 176.32.39.52
-  port: 20880
+  server: 46.17.42.141
+  port: 50660
   cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  password: 6b39ae3234dfd68b
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: q4x8.vpnpolar.online
+  network: ws
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: q4x8.vpnpolar.online
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: apis.stroymatdv.cc
+  port: 443
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apis.stroymatdv.cc
+  network: ws
+  ws-opts:
+    path: /amsws
+    headers:
+      Host: apis.stroymatdv.cc
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: ss
+  server: 194.87.68.140
+  port: 50660
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: ss
+  server: 46.17.41.166
+  port: 50660
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: ss
+  server: 46.17.45.31
+  port: 50660
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  type: vless
+  server: apis.stroymatdv.cc
+  port: 443
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apis.stroymatdv.cc
+  network: ws
+  ws-opts:
+    path: /amsws
+    headers:
+      Host: apis.stroymatdv.cc
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  type: vless
+  server: apis.stroymatdv.cc
+  port: 443
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apis.stroymatdv.cc
+  network: ws
+  ws-opts:
+    path: /amsws
+    headers:
+      Host: apis.stroymatdv.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +167,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,5 +185,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
 rules:
 - MATCH,PROXIES

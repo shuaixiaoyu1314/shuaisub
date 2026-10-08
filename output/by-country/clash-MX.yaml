@@ -19,20 +19,6 @@ proxies:
     headers:
       Host: ul-mexico1.09vpn.com
 - name: 🇲🇽 MX 02 - xiaoyu
-  type: ss
-  server: 82.27.100.120
-  port: 18777
-  cipher: aes-128-gcm
-  password: ce5b082224eb630984b36e839c7363cd
-  udp: true
-- name: 🇲🇽 MX 03 - xiaoyu
-  type: ss
-  server: 82.27.100.120
-  port: 18777
-  cipher: aes-128-gcm
-  password: ce5b082224eb630984b36e839c7363cd
-  udp: true
-- name: 🇲🇽 MX 04 - xiaoyu
   type: vless
   server: 45.134.9.133
   port: 8443
@@ -46,13 +32,6 @@ proxies:
     path: /vless/
     headers:
       Host: 45.134.9.133
-- name: 🇲🇽 MX 05 - xiaoyu
-  type: ss
-  server: 147.78.1.141
-  port: 16672
-  cipher: aes-128-gcm
-  password: 67c57ae584eecd70396fcd7ca7521130
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
-  - 🇲🇽 MX 03 - xiaoyu
-  - 🇲🇽 MX 04 - xiaoyu
-  - 🇲🇽 MX 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
-  - 🇲🇽 MX 03 - xiaoyu
-  - 🇲🇽 MX 04 - xiaoyu
-  - 🇲🇽 MX 05 - xiaoyu
 rules:
 - MATCH,PROXIES
