@@ -6,29 +6,76 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
   type: vless
-  server: ade.axiomed.ir
+  server: frosty-pond-7436.shhabbyat914.workers.dev
   port: 443
-  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
   network: ws
   ws-opts:
-    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+    path: /NmrU9ImDG7jA7oFEem+
     headers:
-      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+      Host: frosty-pond-7436.shhabbyat914.workers.dev
+- name: 🇨🇿 CZ 02 - xiaoyu
+  type: vless
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: misty-tooth-78ca.fobogah414-e7b.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
+- name: 🇨🇿 CZ 03 - xiaoyu
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇨🇿 CZ 04 - xiaoyu
+  type: vless
+  server: 172.64.155.209
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
+  - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
+  - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
 rules:
 - MATCH,PROXIES

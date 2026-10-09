@@ -4,28 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - xiaoyu
-  type: vmess
-  server: 188.130.154.174
-  port: 2083
-  uuid: 74c17cae-bf8b-4cda-8cdd-cf7983bf0a49
-  alterId: 0
-  cipher: auto
+- name: 🇯🇴 JO 01 - xiaoyu
+  type: vless
+  server: 62.72.166.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime40.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - xiaoyu
+  - 🇯🇴 JO 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - xiaoyu
+  - 🇯🇴 JO 01 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -19,12 +19,19 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 02 - xiaoyu
-  type: ss
-  server: 20.123.11.204
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: H0gtOZkrqraldrhM
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 03 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -36,23 +43,22 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaoyu
   type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 188.114.97.6
+  port: 8080
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: vms.lifetime40.workers.dev
 - name: 🇮🇪 IE 05 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -64,7 +70,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /+
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 06 - xiaoyu
@@ -92,7 +98,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 08 - xiaoyu
@@ -120,16 +126,9 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 10 - xiaoyu
-  type: ss
-  server: 20.123.11.204
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: t1eiTbNnl7rpe1il
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,7 +143,6 @@ proxy-groups:
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
   - 🇮🇪 IE 09 - xiaoyu
-  - 🇮🇪 IE 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,6 +157,5 @@ proxy-groups:
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
   - 🇮🇪 IE 09 - xiaoyu
-  - 🇮🇪 IE 10 - xiaoyu
 rules:
 - MATCH,PROXIES

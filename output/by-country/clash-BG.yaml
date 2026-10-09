@@ -32,6 +32,19 @@ proxies:
     path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 03 - xiaoyu
+  type: vless
+  server: 77.232.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime61.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - xiaoyu
   - 🇧🇬 BG 02 - xiaoyu
+  - 🇧🇬 BG 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - xiaoyu
   - 🇧🇬 BG 02 - xiaoyu
+  - 🇧🇬 BG 03 - xiaoyu
 rules:
 - MATCH,PROXIES

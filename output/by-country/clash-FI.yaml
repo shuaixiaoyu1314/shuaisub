@@ -6,28 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
-  server: 95.216.27.15
+  server: test.keoplentuio.xyz
   port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -41,13 +32,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - xiaoyu
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 05 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -58,8 +42,22 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - xiaoyu
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
 - name: 🇫🇮 FI 06 - xiaoyu
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 07 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -71,28 +69,39 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 FI 07 - xiaoyu
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
 - name: 🇫🇮 FI 08 - xiaoyu
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 09 - xiaoyu
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 10 - xiaoyu
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 11 - xiaoyu
   type: ss
   server: 185.103.110.66
   port: 18280
@@ -114,6 +123,7 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaoyu
   - 🇫🇮 FI 09 - xiaoyu
   - 🇫🇮 FI 10 - xiaoyu
+  - 🇫🇮 FI 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,5 +139,6 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaoyu
   - 🇫🇮 FI 09 - xiaoyu
   - 🇫🇮 FI 10 - xiaoyu
+  - 🇫🇮 FI 11 - xiaoyu
 rules:
 - MATCH,PROXIES

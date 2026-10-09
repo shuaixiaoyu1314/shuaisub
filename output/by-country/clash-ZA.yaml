@@ -6,24 +6,30 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xiaoyu
   type: ss
-  server: 20.164.212.146
+  server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: e6UqAb4130ycM7qM
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 - name: 🇿🇦 ZA 02 - xiaoyu
+  type: vless
+  server: 102.177.189.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
+- name: 🇿🇦 ZA 03 - xiaoyu
   type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 03 - xiaoyu
-  type: ss
-  server: 20.164.212.146
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e6UqAb4130ycM7qM
   udp: true
 - name: 🇿🇦 ZA 04 - xiaoyu
   type: vless
@@ -37,20 +43,6 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 ZA 05 - xiaoyu
-  type: ss
-  server: 20.164.212.146
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e6UqAb4130ycM7qM
-  udp: true
-- name: 🇿🇦 ZA 06 - xiaoyu
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +52,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - xiaoyu
   - 🇿🇦 ZA 03 - xiaoyu
   - 🇿🇦 ZA 04 - xiaoyu
-  - 🇿🇦 ZA 05 - xiaoyu
-  - 🇿🇦 ZA 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +61,5 @@ proxy-groups:
   - 🇿🇦 ZA 02 - xiaoyu
   - 🇿🇦 ZA 03 - xiaoyu
   - 🇿🇦 ZA 04 - xiaoyu
-  - 🇿🇦 ZA 05 - xiaoyu
-  - 🇿🇦 ZA 06 - xiaoyu
 rules:
 - MATCH,PROXIES

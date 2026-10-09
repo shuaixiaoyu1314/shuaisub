@@ -32,6 +32,20 @@ proxies:
     path: /vless/
     headers:
       Host: 45.134.9.133
+- name: 🇲🇽 MX 03 - xiaoyu
+  type: vless
+  server: 131.196.253.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
+  - 🇲🇽 MX 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
+  - 🇲🇽 MX 03 - xiaoyu
 rules:
 - MATCH,PROXIES
