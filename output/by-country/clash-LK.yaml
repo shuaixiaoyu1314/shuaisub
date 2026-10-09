@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇴 DO 01 - xiaoyu
+- name: 🇱🇰 LK 01 - xiaoyu
   type: vless
-  server: 181.36.229.212
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  server: support.zoom.us
+  port: 80
+  uuid: 2d7a04af-3ac8-40e7-aff0-9f58b2be6405
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: x.m-90.xyz
   network: ws
   ws-opts:
-    path: t.me/TEAMNETGRATISCOL
+    path: /
     headers:
-      Host: x.m-90.xyz
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇴 DO 01 - xiaoyu
+  - 🇱🇰 LK 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇴 DO 01 - xiaoyu
+  - 🇱🇰 LK 01 - xiaoyu
 rules:
 - MATCH,PROXIES
