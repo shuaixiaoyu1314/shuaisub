@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 179.237.108.163
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
 - name: 🇨🇭 CH 02 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -25,28 +32,32 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - xiaoyu
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 179.237.108.163
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
 - name: 🇨🇭 CH 04 - xiaoyu
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 146.70.233.51
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
 - name: 🇨🇭 CH 05 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -70,8 +81,22 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 07 - xiaoyu
+  type: vless
+  server: 103.63.30.163
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 08 - xiaoyu
   type: vless
   server: 146.70.233.51
   port: 443
@@ -85,20 +110,150 @@ proxies:
     path: /t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇨🇭 CH 08 - xiaoyu
+- name: 🇨🇭 CH 09 - xiaoyu
   type: vless
-  server: 185.18.250.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 185.237.225.47
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: x.m-90.xyz
   network: ws
   ws-opts:
-    path: /
+    path: t.me/TEAMNETGRATISCOL
     headers:
-      Host: vms.lifetime47.workers.dev
-- name: 🇨🇭 CH 09 - xiaoyu
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 10 - xiaoyu
+  type: vless
+  server: 185.237.225.47
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 11 - xiaoyu
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 12 - xiaoyu
+  type: vless
+  server: 194.154.29.81
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 13 - xiaoyu
+  type: vless
+  server: 103.63.30.163
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 14 - xiaoyu
+  type: vless
+  server: 103.63.30.163
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 15 - xiaoyu
+  type: vless
+  server: 194.154.29.81
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 16 - xiaoyu
+  type: vless
+  server: 194.154.29.81
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 17 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 18 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 19 - xiaoyu
+  type: vless
+  server: 83.228.193.177
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 20 - xiaoyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -124,6 +279,17 @@ proxy-groups:
   - 🇨🇭 CH 07 - xiaoyu
   - 🇨🇭 CH 08 - xiaoyu
   - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
+  - 🇨🇭 CH 13 - xiaoyu
+  - 🇨🇭 CH 14 - xiaoyu
+  - 🇨🇭 CH 15 - xiaoyu
+  - 🇨🇭 CH 16 - xiaoyu
+  - 🇨🇭 CH 17 - xiaoyu
+  - 🇨🇭 CH 18 - xiaoyu
+  - 🇨🇭 CH 19 - xiaoyu
+  - 🇨🇭 CH 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -138,5 +304,16 @@ proxy-groups:
   - 🇨🇭 CH 07 - xiaoyu
   - 🇨🇭 CH 08 - xiaoyu
   - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
+  - 🇨🇭 CH 13 - xiaoyu
+  - 🇨🇭 CH 14 - xiaoyu
+  - 🇨🇭 CH 15 - xiaoyu
+  - 🇨🇭 CH 16 - xiaoyu
+  - 🇨🇭 CH 17 - xiaoyu
+  - 🇨🇭 CH 18 - xiaoyu
+  - 🇨🇭 CH 19 - xiaoyu
+  - 🇨🇭 CH 20 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -25,20 +25,6 @@ proxies:
     path: /beeline
     headers:
       Host: w2p6.vpnpolar.online
-- name: 🇦🇹 AT 03 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w2p6.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: w2p6.vpnpolar.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - xiaoyu
   - 🇦🇹 AT 02 - xiaoyu
-  - 🇦🇹 AT 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - xiaoyu
   - 🇦🇹 AT 02 - xiaoyu
-  - 🇦🇹 AT 03 - xiaoyu
 rules:
 - MATCH,PROXIES

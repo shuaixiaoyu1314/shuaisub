@@ -4,35 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
   type: vless
-  server: 104.18.189.234
-  port: 8880
-  uuid: a5c7e18f-1701-46ed-8f42-00eb078d9445
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-snow-b87b.292-455.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: white-bush-712e.498-f8f.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  type: vless
-  server: 59.125.69.24
+  server: 60.248.219.54
   port: 443
   uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
@@ -43,8 +17,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 59.125.69.24
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+      Host: 60.248.219.54
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -56,40 +30,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05 (家宽) - xiaoyu
-  type: vless
-  server: 8.6.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇮🇩 ID 07 (家宽) - xiaoyu
-  type: vless
-  server: 154.194.12.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -108,26 +49,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
-  - 🇮🇩 ID 07 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
-  - 🇮🇩 ID 07 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaoyu
   type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ul-mexico1.09vpn.com
-- name: 🇲🇽 MX 02 - xiaoyu
-  type: vless
   server: 45.134.9.133
   port: 8443
   uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
@@ -32,20 +18,20 @@ proxies:
     path: /vless/
     headers:
       Host: 45.134.9.133
-- name: 🇲🇽 MX 03 - xiaoyu
+- name: 🇲🇽 MX 02 - xiaoyu
   type: vless
-  server: 131.196.253.141
-  port: 443
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  server: ul-mexico1.09vpn.com
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kclx.eu.org
+  servername: ul-mexico1.09vpn.com
   network: ws
   ws-opts:
-    path: /154.16.10.34-8080
+    path: /vless/
     headers:
-      Host: kclx.eu.org
+      Host: ul-mexico1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
-  - 🇲🇽 MX 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
-  - 🇲🇽 MX 03 - xiaoyu
 rules:
 - MATCH,PROXIES

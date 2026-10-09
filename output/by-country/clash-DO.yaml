@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - xiaoyu
+- name: 🇩🇴 DO 01 - xiaoyu
   type: vless
-  server: 141.133.174.173
+  server: 181.36.229.212
   port: 443
   uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇨🇿 CZ 02 - xiaoyu
+- name: 🇩🇴 DO 02 - xiaoyu
   type: vless
-  server: 141.133.174.173
+  server: 181.36.229.212
   port: 443
   uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   udp: true
@@ -37,14 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
+  - 🇩🇴 DO 01 - xiaoyu
+  - 🇩🇴 DO 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
+  - 🇩🇴 DO 01 - xiaoyu
+  - 🇩🇴 DO 02 - xiaoyu
 rules:
 - MATCH,PROXIES

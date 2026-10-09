@@ -34,17 +34,32 @@ proxies:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 03 - xiaoyu
   type: vless
-  server: 77.232.140.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: vms.lifetime61.workers.dev
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 04 - xiaoyu
+  type: vless
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +68,7 @@ proxy-groups:
   - 🇧🇬 BG 01 - xiaoyu
   - 🇧🇬 BG 02 - xiaoyu
   - 🇧🇬 BG 03 - xiaoyu
+  - 🇧🇬 BG 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +77,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - xiaoyu
   - 🇧🇬 BG 02 - xiaoyu
   - 🇧🇬 BG 03 - xiaoyu
+  - 🇧🇬 BG 04 - xiaoyu
 rules:
 - MATCH,PROXIES
