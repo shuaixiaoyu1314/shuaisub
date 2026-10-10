@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+- name: 🇱🇻 LV 01 - xiaoyu
   type: vless
-  server: 103.169.142.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 194.26.229.35
+  port: 443
+  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: mioline.save-files.online
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/clip/segment/8c7eea6f
     headers:
-      Host: vms.lifetime38.workers.dev
+      Host: mioline.save-files.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+  - 🇱🇻 LV 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+  - 🇱🇻 LV 01 - xiaoyu
 rules:
 - MATCH,PROXIES

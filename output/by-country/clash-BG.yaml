@@ -15,7 +15,7 @@ proxies:
   servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 02 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 04 - xiaoyu
@@ -60,6 +60,34 @@ proxies:
     path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 05 - xiaoyu
+  type: vless
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 06 - xiaoyu
+  type: vless
+  server: 194.226.121.119
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: drive.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +97,8 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaoyu
   - 🇧🇬 BG 03 - xiaoyu
   - 🇧🇬 BG 04 - xiaoyu
+  - 🇧🇬 BG 05 - xiaoyu
+  - 🇧🇬 BG 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +108,7 @@ proxy-groups:
   - 🇧🇬 BG 02 - xiaoyu
   - 🇧🇬 BG 03 - xiaoyu
   - 🇧🇬 BG 04 - xiaoyu
+  - 🇧🇬 BG 05 - xiaoyu
+  - 🇧🇬 BG 06 - xiaoyu
 rules:
 - MATCH,PROXIES

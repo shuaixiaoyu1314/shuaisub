@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇴 JO 01 - xiaoyu
+- name: 🇧🇷 BR 01 - xiaoyu
   type: vless
-  server: 62.72.166.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 35.199.90.53
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime40.workers.dev
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇧🇷 BR 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇴 JO 01 - xiaoyu
+  - 🇧🇷 BR 01 - xiaoyu
 rules:
 - MATCH,PROXIES
