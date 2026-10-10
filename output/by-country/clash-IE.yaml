@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaoyu
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
+- name: 🇮🇪 IE 02 - xiaoyu
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -15,16 +22,9 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /+
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 02 - xiaoyu
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
 - name: 🇮🇪 IE 03 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -50,16 +50,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 05 - xiaoyu
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 06 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -71,23 +78,16 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 07 - xiaoyu
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 08 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -127,7 +127,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 11 - xiaoyu
@@ -141,7 +141,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
