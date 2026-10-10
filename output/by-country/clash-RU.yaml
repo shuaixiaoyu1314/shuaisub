@@ -5,116 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: ss
-  server: 194.87.196.107
-  port: 40440
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cosmo-pulse.ru
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vless
-  server: 87.228.71.197
-  port: 443
-  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ap2.directly.chat
-  network: ws
-  ws-opts:
-    path: /md/1
-    headers:
-      Host: ap2.directly.chat
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 84.23.52.65
-  port: 443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seo.video-save.online
-  network: ws
-  ws-opts:
-    path: /api/v3/stream/manifest/54dea6bc
-    headers:
-      Host: seo.video-save.online
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: vless
-  server: 185.147.27.116
-  port: 443
-  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ap2.directly.chat
-  network: ws
-  ws-opts:
-    path: /md/1
-    headers:
-      Host: ap2.directly.chat
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: 194.26.229.39
-  port: 443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ost.tmk-videos.online
-  network: ws
-  ws-opts:
-    path: /hls/live/broadcast/e75ebceb
-    headers:
-      Host: ost.tmk-videos.online
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: vless
   server: 91.215.43.248
   port: 443
@@ -128,6 +18,110 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: ss
+  server: 46.29.166.27
+  port: 20221
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: 45.133.151.163
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 79.174.92.222
+  port: 443
+  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
+  servername: m.vk.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: ss
+  server: 46.17.41.166
+  port: 30111
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: ss
+  server: 46.17.41.166
+  port: 30111
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   type: vless
   server: 91.215.43.248
@@ -144,7 +138,21 @@ proxies:
       Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   type: vless
-  server: ee.h1cloud.net
+  server: 185.147.27.115
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  type: vless
+  server: 45.133.151.163
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
@@ -153,19 +161,52 @@ proxies:
   reality-opts:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   type: vless
-  server: 79.174.92.222
+  server: 185.147.27.216
   port: 443
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  type: vless
+  server: 45.133.151.163
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-  servername: m.vk.com
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,6 +226,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -204,5 +249,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

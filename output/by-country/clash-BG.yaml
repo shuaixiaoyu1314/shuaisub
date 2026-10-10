@@ -15,7 +15,7 @@ proxies:
   servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 02 - xiaoyu
@@ -76,7 +76,77 @@ proxies:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 06 - xiaoyu
   type: vless
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 07 - xiaoyu
+  type: vless
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 08 - xiaoyu
+  type: vless
+  server: 31.40.204.131
+  port: 443
+  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+- name: 🇧🇬 BG 09 - xiaoyu
+  type: vless
+  server: cloud.korroh.com
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloud.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: cloud.korroh.com
+- name: 🇧🇬 BG 10 - xiaoyu
+  type: vless
   server: 194.226.121.119
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: drive.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
+- name: 🇧🇬 BG 11 - xiaoyu
+  type: vless
+  server: drive.korroh.com
   port: 443
   uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
   udp: true
@@ -99,6 +169,11 @@ proxy-groups:
   - 🇧🇬 BG 04 - xiaoyu
   - 🇧🇬 BG 05 - xiaoyu
   - 🇧🇬 BG 06 - xiaoyu
+  - 🇧🇬 BG 07 - xiaoyu
+  - 🇧🇬 BG 08 - xiaoyu
+  - 🇧🇬 BG 09 - xiaoyu
+  - 🇧🇬 BG 10 - xiaoyu
+  - 🇧🇬 BG 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +185,10 @@ proxy-groups:
   - 🇧🇬 BG 04 - xiaoyu
   - 🇧🇬 BG 05 - xiaoyu
   - 🇧🇬 BG 06 - xiaoyu
+  - 🇧🇬 BG 07 - xiaoyu
+  - 🇧🇬 BG 08 - xiaoyu
+  - 🇧🇬 BG 09 - xiaoyu
+  - 🇧🇬 BG 10 - xiaoyu
+  - 🇧🇬 BG 11 - xiaoyu
 rules:
 - MATCH,PROXIES
