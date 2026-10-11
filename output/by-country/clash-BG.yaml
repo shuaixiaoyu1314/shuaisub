@@ -15,7 +15,7 @@ proxies:
   servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 02 - xiaoyu
@@ -71,7 +71,7 @@ proxies:
   servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 06 - xiaoyu
@@ -89,6 +89,13 @@ proxies:
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
 - name: 🇧🇬 BG 07 - xiaoyu
+  type: ss
+  server: 185.121.179.122
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ''
+  udp: true
+- name: 🇧🇬 BG 08 - xiaoyu
   type: vless
   server: 31.40.204.131
   port: 443
@@ -102,34 +109,19 @@ proxies:
     path: /
     headers:
       Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
-- name: 🇧🇬 BG 08 - xiaoyu
-  type: vless
-  server: cloud.korroh.com
-  port: 443
-  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloud.korroh.com
-  network: ws
-  ws-opts:
-    path: /remote.php/dav/89f7661a0011ce46
-    headers:
-      Host: cloud.korroh.com
 - name: 🇧🇬 BG 09 - xiaoyu
   type: vless
-  server: 194.226.121.119
-  port: 443
-  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  server: 104.16.215.234
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: drive.korroh.com
   network: ws
   ws-opts:
-    path: /remote.php/dav/89f7661a0011ce46
+    path: /
     headers:
-      Host: drive.korroh.com
+      Host: vms.lifetime39.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
