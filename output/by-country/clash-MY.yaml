@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaoyu
   type: vless
-  server: 136.0.254.60
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 02 - xiaoyu
-  type: vless
   server: platform128.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -30,9 +17,9 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 03 - xiaoyu
+- name: 🇲🇾 MY 02 - xiaoyu
   type: vless
-  server: platform101.golnamakcert.top
+  server: 45.195.69.230
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -40,10 +27,36 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform103
     headers:
-      Host: platform101.halalkhor.info
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 03 - xiaoyu
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.golnamakcert.top
 - name: 🇲🇾 MY 04 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 05 - xiaoyu
   type: vless
   server: platform117.golnamakcert.top
   port: 80
@@ -55,8 +68,34 @@ proxies:
   ws-opts:
     path: /platform117
     headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 05 - xiaoyu
+      Host: platform117.golnamakcert.top
+- name: 🇲🇾 MY 06 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.golnamakcert.top
+- name: 🇲🇾 MY 07 - xiaoyu
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 08 - xiaoyu
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -66,9 +105,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 06 - xiaoyu
+- name: 🇲🇾 MY 09 - xiaoyu
   type: vless
-  server: platform103.golnamakcert.top
+  server: 23.27.200.125
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -76,10 +115,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform109
     headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 07 - xiaoyu
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 10 - xiaoyu
   type: vless
   server: platform109.golnamakcert.top
   port: 80
@@ -92,7 +131,20 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 08 - xiaoyu
+- name: 🇲🇾 MY 11 - xiaoyu
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.golnamakcert.top
+- name: 🇲🇾 MY 12 - xiaoyu
   type: vless
   server: 166.88.35.245
   port: 80
@@ -104,60 +156,34 @@ proxies:
   ws-opts:
     path: /platform117
     headers:
-      Host: 166.88.35.245
-- name: 🇲🇾 MY 09 - xiaoyu
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: '%5B%27platform115.halalkhor.info%27%5D'
-- name: 🇲🇾 MY 10 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 11 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 12 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 13 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.golnamakcert.top
+- name: 🇲🇾 MY 14 - xiaoyu
+  type: vless
+  server: 155.254.60.222
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 15 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -171,35 +197,9 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 14 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 15 - xiaoyu
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 16 - xiaoyu
   type: vless
-  server: 155.254.60.222
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -207,12 +207,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform118
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 17 - xiaoyu
   type: vless
-  server: 166.88.35.245
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -220,9 +220,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform115
     headers:
-      Host: platform117.halalkhor.info
+      Host: '%5B%27platform115.halalkhor.info%27%5D'
 - name: 🇲🇾 MY 18 - xiaoyu
   type: vless
   server: platform102.golnamakcert.top
@@ -238,7 +238,7 @@ proxies:
       Host: platform102.halalkhor.info
 - name: 🇲🇾 MY 19 - xiaoyu
   type: vless
-  server: platform118.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -246,169 +246,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform101
     headers:
-      Host: platform118.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 20 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 21 - xiaoyu
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 22 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 23 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 24 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 25 - xiaoyu
-  type: vless
-  server: 166.88.35.27
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 26 - xiaoyu
-  type: vless
-  server: 166.88.35.27
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: 166.88.35.27
-- name: 🇲🇾 MY 27 - xiaoyu
-  type: vless
-  server: 166.88.35.27
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 28 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.golnamakcert.top
-- name: 🇲🇾 MY 29 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 30 - xiaoyu
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.golnamakcert.top
-- name: 🇲🇾 MY 31 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.golnamakcert.top
-- name: 🇲🇾 MY 32 - xiaoyu
   type: vless
   server: 166.88.35.245
   port: 80
@@ -421,226 +262,7 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 33 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.golnamakcert.top
-- name: 🇲🇾 MY 34 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.golnamakcert.top
-- name: 🇲🇾 MY 35 - xiaoyu
-  type: vless
-  server: 166.88.35.199
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 36 - xiaoyu
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.golnamakcert.top
-- name: 🇲🇾 MY 37 - xiaoyu
-  type: vless
-  server: 136.0.254.60
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 38 - xiaoyu
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.golnamakcert.top
-- name: 🇲🇾 MY 39 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 40 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 41 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 42 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 43 - xiaoyu
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 44 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 45 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 46 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.golnamakcert.top
-- name: 🇲🇾 MY 47 - xiaoyu
-  type: vless
-  server: 166.88.35.27
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 48 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 49 - xiaoyu
-  type: vless
-  server: 166.88.35.199
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 50 - xiaoyu
+- name: 🇲🇾 MY 21 - xiaoyu
   type: vless
   server: platform101.golnamakcert.top
   port: 80
@@ -653,7 +275,46 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 51 - xiaoyu
+- name: 🇲🇾 MY 22 - xiaoyu
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.golnamakcert.top
+- name: 🇲🇾 MY 23 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 24 - xiaoyu
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 25 - xiaoyu
   type: vless
   server: platform102.golnamakcert.top
   port: 80
@@ -666,17 +327,20 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 52 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+- name: 🇲🇾 MY 26 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 53 - xiaoyu
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.golnamakcert.top
+- name: 🇲🇾 MY 27 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -690,9 +354,22 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 54 - xiaoyu
+- name: 🇲🇾 MY 28 - xiaoyu
   type: vless
-  server: 166.88.35.245
+  server: 155.254.60.222
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 29 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -703,9 +380,23 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 55 - xiaoyu
+- name: 🇲🇾 MY 30 - xiaoyu
   type: vless
-  server: 45.195.69.230
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 31 - xiaoyu
+  type: vless
+  server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -713,10 +404,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform106
     headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 56 - xiaoyu
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 32 - xiaoyu
   type: vless
   server: platform103.golnamakcert.top
   port: 80
@@ -729,7 +420,7 @@ proxies:
     path: /platform103
     headers:
       Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 57 - xiaoyu
+- name: 🇲🇾 MY 33 - xiaoyu
   type: vless
   server: 166.88.35.199
   port: 80
@@ -742,20 +433,7 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 58 - xiaoyu
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 59 - xiaoyu
+- name: 🇲🇾 MY 34 - xiaoyu
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -765,9 +443,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 60 - xiaoyu
+- name: 🇲🇾 MY 35 - xiaoyu
   type: vless
-  server: 45.195.69.230
+  server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -775,10 +453,88 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform106
     headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 61 - xiaoyu
+      Host: platform106.golnamakcert.top
+- name: 🇲🇾 MY 36 - xiaoyu
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 37 - xiaoyu
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 38 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 39 - xiaoyu
+  type: vless
+  server: 166.88.35.27
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 40 - xiaoyu
+  type: vless
+  server: 166.88.35.27
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: 166.88.35.27
+- name: 🇲🇾 MY 41 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 42 - xiaoyu
   type: vless
   server: platform109.golnamakcert.top
   port: 80
@@ -791,33 +547,7 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 62 - xiaoyu
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 63 - xiaoyu
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 64 - xiaoyu
+- name: 🇲🇾 MY 43 - xiaoyu
   type: vless
   server: platform102.golnamakcert.top
   port: 80
@@ -830,6 +560,273 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 44 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 45 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 46 - xiaoyu
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 47 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 48 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 49 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 50 - xiaoyu
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.golnamakcert.top
+- name: 🇲🇾 MY 51 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 52 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 53 - xiaoyu
+  type: vless
+  server: 45.195.69.230
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 54 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 55 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: '%5B%27platform109.halalkhor.info%27%5D'
+- name: 🇲🇾 MY 56 - xiaoyu
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 57 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 58 - xiaoyu
+  type: vless
+  server: 166.88.35.245
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: 166.88.35.245
+- name: 🇲🇾 MY 59 - xiaoyu
+  type: vless
+  server: 45.195.69.230
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 60 - xiaoyu
+  type: vless
+  server: 45.194.27.124
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 61 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.golnamakcert.top
+- name: 🇲🇾 MY 62 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 63 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.golnamakcert.top
+- name: 🇲🇾 MY 64 - xiaoyu
+  type: vless
+  server: 155.254.60.222
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
 - name: 🇲🇾 MY 65 - xiaoyu
   type: vless
   server: platform118.golnamakcert.top
@@ -845,71 +842,6 @@ proxies:
       Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 66 - xiaoyu
   type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 67 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 68 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: '%5B%27platform109.halalkhor.info%27%5D'
-- name: 🇲🇾 MY 69 - xiaoyu
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.golnamakcert.top
-- name: 🇲🇾 MY 70 - xiaoyu
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.golnamakcert.top
-- name: 🇲🇾 MY 71 - xiaoyu
-  type: vless
   server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -921,9 +853,9 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 72 - xiaoyu
+- name: 🇲🇾 MY 67 - xiaoyu
   type: vless
-  server: platform103.golnamakcert.top
+  server: 45.195.69.230
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -933,10 +865,10 @@ proxies:
   ws-opts:
     path: /platform103
     headers:
-      Host: platform103.golnamakcert.top
-- name: 🇲🇾 MY 73 - xiaoyu
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 68 - xiaoyu
   type: vless
-  server: 155.254.60.222
+  server: 136.0.254.60
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -944,10 +876,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform118
     headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 74 - xiaoyu
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 69 - xiaoyu
   type: vless
   server: 45.194.27.124
   port: 80
@@ -959,10 +891,10 @@ proxies:
   ws-opts:
     path: /platform101
     headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 75 - xiaoyu
+      Host: 45.194.27.124
+- name: 🇲🇾 MY 70 - xiaoyu
   type: vless
-  server: 23.27.200.125
+  server: 166.88.35.27
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -970,10 +902,49 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform115
     headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 76 - xiaoyu
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 71 - xiaoyu
+  type: vless
+  server: 136.0.254.60
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 72 - xiaoyu
+  type: vless
+  server: 166.88.35.199
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 73 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 74 - xiaoyu
   type: vless
   server: 136.0.254.60
   port: 80
@@ -986,9 +957,9 @@ proxies:
     path: /platform118
     headers:
       Host: 136.0.254.60
-- name: 🇲🇾 MY 77 - xiaoyu
+- name: 🇲🇾 MY 75 - xiaoyu
   type: vless
-  server: platform109.golnamakcert.top
+  server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -996,9 +967,35 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform117
     headers:
-      Host: platform109.golnamakcert.top
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 76 - xiaoyu
+  type: vless
+  server: 166.88.35.199
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 77 - xiaoyu
+  type: vless
+  server: 155.254.60.222
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: 155.254.60.222
 - name: 🇲🇾 MY 78 - xiaoyu
   type: vless
   server: 45.195.69.230
@@ -1027,6 +1024,19 @@ proxies:
       Host: platform103.halalkhor.info
 - name: 🇲🇾 MY 80 - xiaoyu
   type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 81 - xiaoyu
+  type: vless
   server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -1038,48 +1048,9 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 81 - xiaoyu
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.golnamakcert.top
 - name: 🇲🇾 MY 82 - xiaoyu
   type: vless
-  server: 45.194.27.124
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: 45.194.27.124
-- name: 🇲🇾 MY 83 - xiaoyu
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: 45.195.69.230
-- name: 🇲🇾 MY 84 - xiaoyu
-  type: vless
-  server: 166.88.35.199
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -1089,21 +1060,8 @@ proxies:
   ws-opts:
     path: /platform102
     headers:
-      Host: 166.88.35.199
-- name: 🇲🇾 MY 85 - xiaoyu
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: '%5B%27platform103.halalkhor.info%27%5D'
-- name: 🇲🇾 MY 86 - xiaoyu
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 83 - xiaoyu
   type: vless
   server: 23.27.200.125
   port: 80
@@ -1116,7 +1074,7 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 87 - xiaoyu
+- name: 🇲🇾 MY 84 - xiaoyu
   type: vless
   server: platform128.golnamakcert.top
   port: 80
@@ -1129,150 +1087,7 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 88 - xiaoyu
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 89 - xiaoyu
-  type: vless
-  server: 155.254.60.222
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 90 - xiaoyu
-  type: vless
-  server: 45.194.27.124
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 91 - xiaoyu
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 92 - xiaoyu
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 93 - xiaoyu
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.golnamakcert.top
-- name: 🇲🇾 MY 94 - xiaoyu
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 95 - xiaoyu
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.golnamakcert.top
-- name: 🇲🇾 MY 96 - xiaoyu
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 97 - xiaoyu
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.golnamakcert.top
-- name: 🇲🇾 MY 98 - xiaoyu
-  type: vless
-  server: 155.254.60.222
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 99 - xiaoyu
+- name: 🇲🇾 MY 85 - xiaoyu
   type: vless
   server: platform118.golnamakcert.top
   port: 80
@@ -1285,21 +1100,7 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 100 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 101 - xiaoyu
+- name: 🇲🇾 MY 86 - xiaoyu
   type: vless
   server: platform102.golnamakcert.top
   port: 80
@@ -1312,74 +1113,19 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.golnamakcert.top
-- name: 🇲🇾 MY 102 - xiaoyu
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+- name: 🇲🇾 MY 87 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 103 - xiaoyu
+- name: 🇲🇾 MY 88 - xiaoyu
   type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 104 - xiaoyu
-  type: vless
-  server: 45.194.27.124
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 105 - xiaoyu
-  type: vless
-  server: 155.254.60.222
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: 155.254.60.222
-- name: 🇲🇾 MY 106 - xiaoyu
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 107 - xiaoyu
-  type: vless
-  server: platform103.golnamakcert.top
+  server: 45.195.69.230
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -1389,8 +1135,8 @@ proxies:
   ws-opts:
     path: /platform103
     headers:
-      Host: platform103.golnamakcert.top
-- name: 🇲🇾 MY 108 - xiaoyu
+      Host: 45.195.69.230
+- name: 🇲🇾 MY 89 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -1404,9 +1150,76 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 109 - xiaoyu
+- name: 🇲🇾 MY 90 - xiaoyu
   type: vless
-  server: 136.0.254.60
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 91 - xiaoyu
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.golnamakcert.top
+- name: 🇲🇾 MY 92 - xiaoyu
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 93 - xiaoyu
+  type: vless
+  server: 155.254.60.222
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 94 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 95 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -1417,20 +1230,7 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 110 - xiaoyu
-  type: vless
-  server: 166.88.35.199
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 111 - xiaoyu
+- name: 🇲🇾 MY 96 - xiaoyu
   type: vless
   server: platform109.golnamakcert.top
   port: 80
@@ -1443,6 +1243,200 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 97 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: '%5B%27platform103.halalkhor.info%27%5D'
+- name: 🇲🇾 MY 98 - xiaoyu
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 99 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 100 - xiaoyu
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.golnamakcert.top
+- name: 🇲🇾 MY 101 - xiaoyu
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 102 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 103 - xiaoyu
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 104 - xiaoyu
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 105 - xiaoyu
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 106 - xiaoyu
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 107 - xiaoyu
+  type: vless
+  server: 166.88.35.199
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: 166.88.35.199
+- name: 🇲🇾 MY 108 - xiaoyu
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 109 - xiaoyu
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.golnamakcert.top
+- name: 🇲🇾 MY 110 - xiaoyu
+  type: vless
+  server: 45.194.27.124
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 111 - xiaoyu
+  type: vless
+  server: 166.88.35.199
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
 - name: 🇲🇾 MY 112 - xiaoyu
   type: vless
   server: platform106.golnamakcert.top
@@ -1458,6 +1452,110 @@ proxies:
       Host: platform106.halalkhor.info
 - name: 🇲🇾 MY 113 - xiaoyu
   type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 114 - xiaoyu
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.golnamakcert.top
+- name: 🇲🇾 MY 115 - xiaoyu
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 116 - xiaoyu
+  type: vless
+  server: 166.88.35.27
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 117 - xiaoyu
+  type: vless
+  server: 45.194.27.124
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 118 - xiaoyu
+  type: vless
+  server: 136.0.254.60
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 119 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.golnamakcert.top
+- name: 🇲🇾 MY 120 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 121 - xiaoyu
+  type: vless
   server: 166.88.35.245
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -1469,7 +1567,46 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 114 - xiaoyu
+- name: 🇲🇾 MY 122 - xiaoyu
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.golnamakcert.top
+- name: 🇲🇾 MY 123 - xiaoyu
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.golnamakcert.top
+- name: 🇲🇾 MY 124 - xiaoyu
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 125 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -1480,12 +1617,25 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 115 - xiaoyu
+- name: 🇲🇾 MY 126 - xiaoyu
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇲🇾 MY 127 - xiaoyu
+  type: vless
+  server: 166.88.35.245
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -1496,9 +1646,9 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 116 - xiaoyu
+- name: 🇲🇾 MY 128 - xiaoyu
   type: vless
-  server: platform102.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -1506,61 +1656,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform115
     headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 117 - xiaoyu
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.golnamakcert.top
-- name: 🇲🇾 MY 118 - xiaoyu
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 119 - xiaoyu
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.golnamakcert.top
-- name: 🇲🇾 MY 120 - xiaoyu
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
+      Host: platform115.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1686,6 +1784,14 @@ proxy-groups:
   - 🇲🇾 MY 118 - xiaoyu
   - 🇲🇾 MY 119 - xiaoyu
   - 🇲🇾 MY 120 - xiaoyu
+  - 🇲🇾 MY 121 - xiaoyu
+  - 🇲🇾 MY 122 - xiaoyu
+  - 🇲🇾 MY 123 - xiaoyu
+  - 🇲🇾 MY 124 - xiaoyu
+  - 🇲🇾 MY 125 - xiaoyu
+  - 🇲🇾 MY 126 - xiaoyu
+  - 🇲🇾 MY 127 - xiaoyu
+  - 🇲🇾 MY 128 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1811,5 +1917,13 @@ proxy-groups:
   - 🇲🇾 MY 118 - xiaoyu
   - 🇲🇾 MY 119 - xiaoyu
   - 🇲🇾 MY 120 - xiaoyu
+  - 🇲🇾 MY 121 - xiaoyu
+  - 🇲🇾 MY 122 - xiaoyu
+  - 🇲🇾 MY 123 - xiaoyu
+  - 🇲🇾 MY 124 - xiaoyu
+  - 🇲🇾 MY 125 - xiaoyu
+  - 🇲🇾 MY 126 - xiaoyu
+  - 🇲🇾 MY 127 - xiaoyu
+  - 🇲🇾 MY 128 - xiaoyu
 rules:
 - MATCH,PROXIES

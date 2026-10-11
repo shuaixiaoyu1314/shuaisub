@@ -6,127 +6,33 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 02 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 03 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 04 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 05 - xiaoyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 06 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 08 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 8443
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /ws-cdn1-vless
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 09 - xiaoyu
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 02 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 10 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 11 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 12 - xiaoyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 13 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 14 - xiaoyu
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 03 - xiaoyu
   type: vless
   server: pl-1-1.unturned-rust-dead.lol
   port: 443
@@ -138,24 +44,138 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
+- name: 🇵🇱 PL 04 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 06 - xiaoyu
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 07 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 08 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 09 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 10 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 11 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 12 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 13 - xiaoyu
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 14 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 15 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 16 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 17 - xiaoyu
   type: vless
   server: pl.flen-vpn.xyz
@@ -167,14 +187,31 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 18 - xiaoyu
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: pl-1-1.unturned-rust-dead.lol
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
 - name: 🇵🇱 PL 19 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 20 - xiaoyu
   type: vless
   server: pl.flen-vpn.xyz
   port: 8443
@@ -183,15 +220,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 20 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 - name: 🇵🇱 PL 21 - xiaoyu
   type: vless
   server: pl.flen-vpn.xyz
@@ -203,100 +231,19 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 22 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 23 - xiaoyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 24 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 8443
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /ws-cdn1-vless
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 25 - xiaoyu
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 26 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 27 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 28 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 29 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 30 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 31 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 32 - xiaoyu
+      Host: my.kempekl.online
+- name: 🇵🇱 PL 23 - xiaoyu
   type: vless
   server: 80.47.12.94
   port: 443
@@ -308,7 +255,7 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
-- name: 🇵🇱 PL 33 - xiaoyu
+- name: 🇵🇱 PL 24 - xiaoyu
   type: vless
   server: pl.flen-vpn.xyz
   port: 8443
@@ -317,254 +264,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 34 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 35 - xiaoyu
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 PL 36 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 37 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 8443
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 38 - xiaoyu
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 PL 39 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 8443
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 40 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 41 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 42 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 43 - xiaoyu
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 PL 44 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 45 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 46 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 47 - xiaoyu
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 PL 48 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 49 - xiaoyu
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 PL 50 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 8443
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 PL 51 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 52 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 53 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 54 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2083
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 55 - xiaoyu
-  type: vless
-  server: pl.flen-vpn.xyz
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 56 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 57 - xiaoyu
+- name: 🇵🇱 PL 25 - xiaoyu
   type: vless
   server: 2.26.225.89
   port: 8443
@@ -573,16 +273,46 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 58 - xiaoyu
+- name: 🇵🇱 PL 26 - xiaoyu
   type: vless
-  server: 95.85.253.241
-  port: 2053
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 59 - xiaoyu
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 27 - xiaoyu
+  type: vless
+  server: 80.47.12.94
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+- name: 🇵🇱 PL 28 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 29 - xiaoyu
+  type: vless
+  server: pl.flen-vpn.xyz
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 30 - xiaoyu
   type: vless
   server: pl-1-1.unturned-rust-dead.lol
   port: 443
@@ -594,33 +324,6 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: pl-1-1.unturned-rust-dead.lol
   client-fingerprint: random
-- name: 🇵🇱 PL 60 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 61 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
-- name: 🇵🇱 PL 62 - xiaoyu
-  type: vless
-  server: 95.85.253.241
-  port: 2087
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 95.85.253.241
 proxy-groups:
 - name: PROXIES
   type: select
@@ -656,38 +359,6 @@ proxy-groups:
   - 🇵🇱 PL 28 - xiaoyu
   - 🇵🇱 PL 29 - xiaoyu
   - 🇵🇱 PL 30 - xiaoyu
-  - 🇵🇱 PL 31 - xiaoyu
-  - 🇵🇱 PL 32 - xiaoyu
-  - 🇵🇱 PL 33 - xiaoyu
-  - 🇵🇱 PL 34 - xiaoyu
-  - 🇵🇱 PL 35 - xiaoyu
-  - 🇵🇱 PL 36 - xiaoyu
-  - 🇵🇱 PL 37 - xiaoyu
-  - 🇵🇱 PL 38 - xiaoyu
-  - 🇵🇱 PL 39 - xiaoyu
-  - 🇵🇱 PL 40 - xiaoyu
-  - 🇵🇱 PL 41 - xiaoyu
-  - 🇵🇱 PL 42 - xiaoyu
-  - 🇵🇱 PL 43 - xiaoyu
-  - 🇵🇱 PL 44 - xiaoyu
-  - 🇵🇱 PL 45 - xiaoyu
-  - 🇵🇱 PL 46 - xiaoyu
-  - 🇵🇱 PL 47 - xiaoyu
-  - 🇵🇱 PL 48 - xiaoyu
-  - 🇵🇱 PL 49 - xiaoyu
-  - 🇵🇱 PL 50 - xiaoyu
-  - 🇵🇱 PL 51 - xiaoyu
-  - 🇵🇱 PL 52 - xiaoyu
-  - 🇵🇱 PL 53 - xiaoyu
-  - 🇵🇱 PL 54 - xiaoyu
-  - 🇵🇱 PL 55 - xiaoyu
-  - 🇵🇱 PL 56 - xiaoyu
-  - 🇵🇱 PL 57 - xiaoyu
-  - 🇵🇱 PL 58 - xiaoyu
-  - 🇵🇱 PL 59 - xiaoyu
-  - 🇵🇱 PL 60 - xiaoyu
-  - 🇵🇱 PL 61 - xiaoyu
-  - 🇵🇱 PL 62 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -723,37 +394,5 @@ proxy-groups:
   - 🇵🇱 PL 28 - xiaoyu
   - 🇵🇱 PL 29 - xiaoyu
   - 🇵🇱 PL 30 - xiaoyu
-  - 🇵🇱 PL 31 - xiaoyu
-  - 🇵🇱 PL 32 - xiaoyu
-  - 🇵🇱 PL 33 - xiaoyu
-  - 🇵🇱 PL 34 - xiaoyu
-  - 🇵🇱 PL 35 - xiaoyu
-  - 🇵🇱 PL 36 - xiaoyu
-  - 🇵🇱 PL 37 - xiaoyu
-  - 🇵🇱 PL 38 - xiaoyu
-  - 🇵🇱 PL 39 - xiaoyu
-  - 🇵🇱 PL 40 - xiaoyu
-  - 🇵🇱 PL 41 - xiaoyu
-  - 🇵🇱 PL 42 - xiaoyu
-  - 🇵🇱 PL 43 - xiaoyu
-  - 🇵🇱 PL 44 - xiaoyu
-  - 🇵🇱 PL 45 - xiaoyu
-  - 🇵🇱 PL 46 - xiaoyu
-  - 🇵🇱 PL 47 - xiaoyu
-  - 🇵🇱 PL 48 - xiaoyu
-  - 🇵🇱 PL 49 - xiaoyu
-  - 🇵🇱 PL 50 - xiaoyu
-  - 🇵🇱 PL 51 - xiaoyu
-  - 🇵🇱 PL 52 - xiaoyu
-  - 🇵🇱 PL 53 - xiaoyu
-  - 🇵🇱 PL 54 - xiaoyu
-  - 🇵🇱 PL 55 - xiaoyu
-  - 🇵🇱 PL 56 - xiaoyu
-  - 🇵🇱 PL 57 - xiaoyu
-  - 🇵🇱 PL 58 - xiaoyu
-  - 🇵🇱 PL 59 - xiaoyu
-  - 🇵🇱 PL 60 - xiaoyu
-  - 🇵🇱 PL 61 - xiaoyu
-  - 🇵🇱 PL 62 - xiaoyu
 rules:
 - MATCH,PROXIES
