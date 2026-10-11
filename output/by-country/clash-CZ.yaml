@@ -6,122 +6,29 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
   type: vless
-  server: 85.137.165.97
+  server: 95.182.95.178
   port: 443
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kclx.eu.org
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /154.16.10.34-8080
+    path: /fp=chrome
     headers:
-      Host: kclx.eu.org
-- name: 🇨🇿 CZ 02 - xiaoyu
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: purple-disk-f68d.14-360.workers.dev
-- name: 🇨🇿 CZ 03 - xiaoyu
-  type: vless
-  server: 188.114.96.9
-  port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-  network: ws
-  ws-opts:
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj+
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-- name: 🇨🇿 CZ 04 - xiaoyu
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 8d032cfc-4a8c-4769-bd29-4fa0ade77b14
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-frog-a2a2.245.workers.dev
-- name: 🇨🇿 CZ 05 - xiaoyu
-  type: vless
-  server: summer-butterfly-cbc8.26-971.workers.dev
-  port: 8880
-  uuid: 28201cd6-c2a9-4703-a31b-eaf31ecb18fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: summer-butterfly-cbc8.26-971.workers.dev
-- name: 🇨🇿 CZ 06 - xiaoyu
-  type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: misty-tooth-78ca.fobogah414-e7b.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
-- name: 🇨🇿 CZ 07 - xiaoyu
-  type: vless
-  server: 45.130.125.126
-  port: 443
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
-  - 🇨🇿 CZ 03 - xiaoyu
-  - 🇨🇿 CZ 04 - xiaoyu
-  - 🇨🇿 CZ 05 - xiaoyu
-  - 🇨🇿 CZ 06 - xiaoyu
-  - 🇨🇿 CZ 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
-  - 🇨🇿 CZ 03 - xiaoyu
-  - 🇨🇿 CZ 04 - xiaoyu
-  - 🇨🇿 CZ 05 - xiaoyu
-  - 🇨🇿 CZ 06 - xiaoyu
-  - 🇨🇿 CZ 07 - xiaoyu
 rules:
 - MATCH,PROXIES

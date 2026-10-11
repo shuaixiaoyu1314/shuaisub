@@ -5,197 +5,116 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: vless
-  server: 45.142.120.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: 104.21.56.202
-  port: 8880
-  uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-cell-d20c.78-107.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: ss
   server: 46.29.166.27
   port: 20221
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 46.29.166.27
+  port: 20221
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: ios
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.kempekl.online
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: vless
-  server: 79.174.92.222
-  port: 443
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-  servername: m.vk.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: vless
-  server: 77.232.140.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime61.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   type: vless
-  server: 104.26.7.214
-  port: 8880
-  uuid: df5dc160-3764-4e6b-805d-1286ea701310
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dawn-mode-a061.444-a0e.workers.dev
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: safari
 - name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: vless
-  server: 104.21.88.129
-  port: 8880
-  uuid: ef770523-8eb5-403f-9e95-06b328719c87
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-sunset-d12e.201-98c.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  type: vless
-  server: netra-85a0ca.shoameni19.workers.dev
-  port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560+
-    headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  type: vless
-  server: 77.232.140.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime61.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  type: vless
-  server: 104.21.96.1
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  type: vless
-  server: ee.h1cloud.net
+  server: 45.133.151.163
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
@@ -205,99 +124,6 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
-  type: vless
-  server: long-breeze-5552.250-271.workers.dev
-  port: 8880
-  uuid: 2145ee90-d933-4975-b4fe-8fa5365937f0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: long-breeze-5552.250-271.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  type: vless
-  server: 104.21.31.137
-  port: 443
-  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?edfp=chrome
-    headers:
-      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
-  type: vless
-  server: 77.75.199.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
-  type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
-  type: vless
-  server: www.wto.org
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-f.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
-  type: vless
-  server: 188.114.96.9
-  port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-  network: ws
-  ws-opts:
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -314,19 +140,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -343,18 +156,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
 rules:
 - MATCH,PROXIES
