@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - xiaoyu
   type: vless
-  server: 80.209.238.60
-  port: 443
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-  servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: vms.lifetime05.workers.dev
 - name: 🇱🇹 LT 02 - xiaoyu
   type: vless
   server: b58e68t.lt1.h1clayd.click
@@ -27,19 +28,20 @@ proxies:
   reality-opts:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇱🇹 LT 03 - xiaoyu
   type: vless
-  server: b58e68t.lt1.h1clayd.click
-  port: 443
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 88.216.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-  servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime06.workers.dev
 - name: 🇱🇹 LT 04 - xiaoyu
   type: vless
   server: b58e68t.lt1.h1clayd.click
@@ -54,16 +56,17 @@ proxies:
   client-fingerprint: firefox
 - name: 🇱🇹 LT 05 - xiaoyu
   type: vless
-  server: 80.209.238.60
-  port: 443
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  server: 88.216.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-  servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime06.workers.dev
 - name: 🇱🇹 LT 06 - xiaoyu
   type: vless
   server: b58e68t.lt1.h1clayd.click
@@ -90,6 +93,32 @@ proxies:
   client-fingerprint: random
 - name: 🇱🇹 LT 08 - xiaoyu
   type: vless
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇱🇹 LT 09 - xiaoyu
+  type: vless
+  server: 88.216.67.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇱🇹 LT 10 - xiaoyu
+  type: vless
   server: b58e68t.lt1.h1clayd.click
   port: 443
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
@@ -99,7 +128,59 @@ proxies:
   reality-opts:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇱🇹 LT 11 - xiaoyu
+  type: vless
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇱🇹 LT 12 - xiaoyu
+  type: vless
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇱🇹 LT 13 - xiaoyu
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇱🇹 LT 14 - xiaoyu
+  type: vless
+  server: 89.117.112.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +194,12 @@ proxy-groups:
   - 🇱🇹 LT 06 - xiaoyu
   - 🇱🇹 LT 07 - xiaoyu
   - 🇱🇹 LT 08 - xiaoyu
+  - 🇱🇹 LT 09 - xiaoyu
+  - 🇱🇹 LT 10 - xiaoyu
+  - 🇱🇹 LT 11 - xiaoyu
+  - 🇱🇹 LT 12 - xiaoyu
+  - 🇱🇹 LT 13 - xiaoyu
+  - 🇱🇹 LT 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +213,11 @@ proxy-groups:
   - 🇱🇹 LT 06 - xiaoyu
   - 🇱🇹 LT 07 - xiaoyu
   - 🇱🇹 LT 08 - xiaoyu
+  - 🇱🇹 LT 09 - xiaoyu
+  - 🇱🇹 LT 10 - xiaoyu
+  - 🇱🇹 LT 11 - xiaoyu
+  - 🇱🇹 LT 12 - xiaoyu
+  - 🇱🇹 LT 13 - xiaoyu
+  - 🇱🇹 LT 14 - xiaoyu
 rules:
 - MATCH,PROXIES

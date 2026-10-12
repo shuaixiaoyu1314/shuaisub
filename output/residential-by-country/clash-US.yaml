@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  type: vless
+  server: white-disk-79ed.476.workers.dev
+  port: 8880
+  uuid: d593c88a-496b-4889-968c-6af644021467
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: white-disk-79ed.476.workers.dev
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  type: vless
+  server: 172.67.209.127
+  port: 8880
+  uuid: a9fb0f8c-89e9-44ee-9574-a310c5bd259c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: autumn-leaf-eefd.119-38e.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+rules:
+- MATCH,PROXIES
