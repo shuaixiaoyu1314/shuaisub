@@ -41,18 +41,18 @@ proxies:
   udp: true
 - name: 🇮🇩 ID 04 - xiaoyu
   type: vless
-  server: 147.139.189.225
-  port: 443
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 43.173.1.153
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: proxy-1cu.pages.dev
+      Host: ccc.010304.xyz
 - name: 🇮🇩 ID 05 - xiaoyu
   type: vless
   server: 43.173.1.153
@@ -74,20 +74,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8C5valhOd8vfwaTXUSZ6Zyb0Ip34lRR5z7P8az
   udp: true
-- name: 🇮🇩 ID 07 - xiaoyu
-  type: vless
-  server: 43.173.1.153
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,7 +85,6 @@ proxy-groups:
   - 🇮🇩 ID 04 - xiaoyu
   - 🇮🇩 ID 05 - xiaoyu
   - 🇮🇩 ID 06 - xiaoyu
-  - 🇮🇩 ID 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,6 +96,5 @@ proxy-groups:
   - 🇮🇩 ID 04 - xiaoyu
   - 🇮🇩 ID 05 - xiaoyu
   - 🇮🇩 ID 06 - xiaoyu
-  - 🇮🇩 ID 07 - xiaoyu
 rules:
 - MATCH,PROXIES

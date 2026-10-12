@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
   type: vless
-  server: 45.130.125.207
-  port: 8443
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /
     headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+      Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - xiaoyu
   type: vless
   server: 95.182.95.178
@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 03 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 04 - xiaoyu
@@ -71,7 +71,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 06 - xiaoyu
@@ -85,7 +85,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 07 - xiaoyu
@@ -102,33 +102,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 08 - xiaoyu
-  type: vless
-  server: 95.182.95.178
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 09 - xiaoyu
-  type: vless
-  server: 66.235.200.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: vms.lifetime47.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,8 +114,6 @@ proxy-groups:
   - 🇨🇿 CZ 05 - xiaoyu
   - 🇨🇿 CZ 06 - xiaoyu
   - 🇨🇿 CZ 07 - xiaoyu
-  - 🇨🇿 CZ 08 - xiaoyu
-  - 🇨🇿 CZ 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,7 +126,5 @@ proxy-groups:
   - 🇨🇿 CZ 05 - xiaoyu
   - 🇨🇿 CZ 06 - xiaoyu
   - 🇨🇿 CZ 07 - xiaoyu
-  - 🇨🇿 CZ 08 - xiaoyu
-  - 🇨🇿 CZ 09 - xiaoyu
 rules:
 - MATCH,PROXIES
