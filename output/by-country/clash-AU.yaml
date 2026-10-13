@@ -5,32 +5,92 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
-  type: vmess
-  server: 212.135.211.242
+  type: vless
+  server: 181.214.1.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  type: vless
+  server: 104.18.155.229
   port: 443
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  alterId: 0
-  cipher: auto
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aus.lovehk.xyz
+  servername: www.genflix.co.id.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /Sydney3
+    path: /au-do
     headers:
-      Host: aus.lovehk.xyz
+      Host: www.genflix.co.id.r3xxe.eu.cc
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  type: vless
+  server: 103.43.75.82
+  port: 443
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=android
+    headers:
+      Host: proxy-1cu.pages.dev
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  type: vless
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
+  type: vless
+  server: 103.43.75.82
+  port: 443
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

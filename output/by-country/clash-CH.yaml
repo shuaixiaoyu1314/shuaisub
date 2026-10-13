@@ -15,19 +15,14 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 02 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
   client-fingerprint: random
+- name: 🇨🇭 CH 02 - xiaoyu
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 - name: 🇨🇭 CH 03 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -41,32 +36,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 04 - xiaoyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 05 - xiaoyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 06 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 07 - xiaoyu
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -78,7 +47,179 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 05 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 06 - xiaoyu
+  type: vless
+  server: 129.151.64.169
+  port: 31867
+  uuid: 1bcf3083-7954-42f8-b59b-400e155beec9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇨🇭 CH 07 - xiaoyu
+  type: vless
+  server: lively-pine-093d.144-868.workers.dev
+  port: 8880
+  uuid: 2acde116-5949-48d8-a1e6-60a1d2547deb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lively-pine-093d.144-868.workers.dev
 - name: 🇨🇭 CH 08 - xiaoyu
+  type: vless
+  server: 185.159.247.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
+- name: 🇨🇭 CH 09 - xiaoyu
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 10 - xiaoyu
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
+- name: 🇨🇭 CH 11 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 12 - xiaoyu
+  type: vless
+  server: lte.homyak.app
+  port: 41826
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sweden.homyak.app
+- name: 🇨🇭 CH 13 - xiaoyu
+  type: vless
+  server: 185.18.250.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: 🇨🇭 CH 14 - xiaoyu
+  type: vless
+  server: 185.18.250.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+- name: 🇨🇭 CH 15 - xiaoyu
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 16 - xiaoyu
+  type: vless
+  server: 188.245.191.19
+  port: 2040
+  uuid: d89b1691-e1ad-47c4-8cdb-5bbfe1171a8c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+- name: 🇨🇭 CH 17 - xiaoyu
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: b4a18856-301d-4bb2-b729-6afcb700faf5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: red-flower-a2bf.363.workers.dev
+- name: 🇨🇭 CH 18 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 19 - xiaoyu
   type: vless
   server: 138.124.96.88
   port: 41826
@@ -87,6 +228,47 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: sweden.homyak.app
+- name: 🇨🇭 CH 20 - xiaoyu
+  type: vless
+  server: 128.241.25.3
+  port: 30021
+  uuid: 4380acea-9856-46d2-96dc-e841a6584814
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇨🇭 CH 21 - xiaoyu
+  type: vless
+  server: 128.241.25.11
+  port: 30021
+  uuid: 37d6fe46-0e65-4dce-9024-b13abfd50f9d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇨🇭 CH 22 - xiaoyu
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +282,20 @@ proxy-groups:
   - 🇨🇭 CH 06 - xiaoyu
   - 🇨🇭 CH 07 - xiaoyu
   - 🇨🇭 CH 08 - xiaoyu
+  - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
+  - 🇨🇭 CH 13 - xiaoyu
+  - 🇨🇭 CH 14 - xiaoyu
+  - 🇨🇭 CH 15 - xiaoyu
+  - 🇨🇭 CH 16 - xiaoyu
+  - 🇨🇭 CH 17 - xiaoyu
+  - 🇨🇭 CH 18 - xiaoyu
+  - 🇨🇭 CH 19 - xiaoyu
+  - 🇨🇭 CH 20 - xiaoyu
+  - 🇨🇭 CH 21 - xiaoyu
+  - 🇨🇭 CH 22 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,5 +309,19 @@ proxy-groups:
   - 🇨🇭 CH 06 - xiaoyu
   - 🇨🇭 CH 07 - xiaoyu
   - 🇨🇭 CH 08 - xiaoyu
+  - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
+  - 🇨🇭 CH 13 - xiaoyu
+  - 🇨🇭 CH 14 - xiaoyu
+  - 🇨🇭 CH 15 - xiaoyu
+  - 🇨🇭 CH 16 - xiaoyu
+  - 🇨🇭 CH 17 - xiaoyu
+  - 🇨🇭 CH 18 - xiaoyu
+  - 🇨🇭 CH 19 - xiaoyu
+  - 🇨🇭 CH 20 - xiaoyu
+  - 🇨🇭 CH 21 - xiaoyu
+  - 🇨🇭 CH 22 - xiaoyu
 rules:
 - MATCH,PROXIES

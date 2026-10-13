@@ -20,32 +20,32 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - xiaoyu
   type: vless
-  server: 95.182.95.178
+  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   network: ws
   ws-opts:
-    path: /fp
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 - name: 🇨🇿 CZ 03 - xiaoyu
   type: vless
-  server: 95.182.95.178
+  server: 188.114.97.6
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vl/zXLTmz3hE3szn64f?ed=2560
     headers:
-      Host: ccc.010304.xyz
+      Host: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
 - name: 🇨🇿 CZ 04 - xiaoyu
   type: vless
   server: 95.182.95.178
@@ -57,7 +57,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 05 - xiaoyu
@@ -71,7 +71,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 06 - xiaoyu
@@ -85,7 +85,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 07 - xiaoyu
@@ -99,7 +99,49 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 08 - xiaoyu
+  type: vless
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
     path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 09 - xiaoyu
+  type: vless
+  server: 172.67.155.231
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇨🇿 CZ 10 - xiaoyu
+  type: vless
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -114,6 +156,9 @@ proxy-groups:
   - 🇨🇿 CZ 05 - xiaoyu
   - 🇨🇿 CZ 06 - xiaoyu
   - 🇨🇿 CZ 07 - xiaoyu
+  - 🇨🇿 CZ 08 - xiaoyu
+  - 🇨🇿 CZ 09 - xiaoyu
+  - 🇨🇿 CZ 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +171,8 @@ proxy-groups:
   - 🇨🇿 CZ 05 - xiaoyu
   - 🇨🇿 CZ 06 - xiaoyu
   - 🇨🇿 CZ 07 - xiaoyu
+  - 🇨🇿 CZ 08 - xiaoyu
+  - 🇨🇿 CZ 09 - xiaoyu
+  - 🇨🇿 CZ 10 - xiaoyu
 rules:
 - MATCH,PROXIES
