@@ -16,39 +16,28 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 02 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
 - name: 🇮🇳 印度 (India) 04 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -106,7 +95,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 08 - xiaoyu
@@ -151,7 +140,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 11 - xiaoyu
@@ -166,7 +155,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 12 - xiaoyu
@@ -211,7 +200,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 15 - xiaoyu
@@ -241,7 +230,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 17 - xiaoyu
@@ -290,20 +279,17 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 20 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 21 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -316,7 +302,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 22 - xiaoyu
@@ -331,7 +317,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 23 - xiaoyu
@@ -376,7 +362,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 26 - xiaoyu
@@ -391,7 +377,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 27 - xiaoyu
@@ -451,7 +437,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 31 - xiaoyu
@@ -481,7 +467,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 33 - xiaoyu
@@ -515,17 +501,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 35 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 36 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -553,7 +542,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 38 - xiaoyu
@@ -568,7 +557,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 39 - xiaoyu
@@ -613,7 +602,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 42 - xiaoyu
@@ -628,7 +617,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 43 - xiaoyu
@@ -660,7 +649,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 45 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -673,7 +662,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 46 - xiaoyu
@@ -703,7 +692,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 48 - xiaoyu
@@ -748,7 +737,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 51 - xiaoyu
@@ -763,7 +752,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 52 - xiaoyu
@@ -782,13 +771,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 53 - xiaoyu
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇮🇳 印度 (India) 54 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -803,7 +785,7 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 55 - xiaoyu
+- name: 🇮🇳 印度 (India) 54 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -816,6 +798,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 55 - xiaoyu
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 56 - xiaoyu
@@ -860,7 +857,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 59 - xiaoyu
@@ -875,7 +872,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 60 - xiaoyu
@@ -905,7 +902,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 62 - xiaoyu
@@ -935,7 +932,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 64 - xiaoyu
@@ -950,7 +947,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 65 - xiaoyu
@@ -965,7 +962,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 66 - xiaoyu
@@ -982,7 +979,7 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 67 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1010,7 +1007,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 69 - xiaoyu
@@ -1055,7 +1052,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 72 - xiaoyu
@@ -1072,7 +1069,7 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 73 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1115,7 +1112,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 76 - xiaoyu
@@ -1130,7 +1127,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 77 - xiaoyu
@@ -1175,7 +1172,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 80 - xiaoyu
@@ -1190,7 +1187,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 81 - xiaoyu
@@ -1205,7 +1202,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 82 - xiaoyu
@@ -1265,7 +1262,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 86 - xiaoyu
@@ -1280,7 +1277,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 87 - xiaoyu
@@ -1295,7 +1292,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 88 - xiaoyu
@@ -1340,7 +1337,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 91 - xiaoyu
@@ -1355,7 +1352,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 92 - xiaoyu
@@ -1400,9 +1397,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 95 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1419,17 +1416,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 96 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 97 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1459,19 +1459,22 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 99 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 100 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1576,23 +1579,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 107 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 108 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -1607,6 +1595,18 @@ proxies:
     path: ''
     headers:
       Host: ''
+- name: 🇮🇳 印度 (India) 108 - xiaoyu
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 109 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1619,7 +1619,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 110 - xiaoyu
@@ -1664,7 +1664,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 113 - xiaoyu
@@ -1694,7 +1694,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 115 - xiaoyu
@@ -1724,7 +1724,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 117 - xiaoyu
@@ -1739,9 +1739,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
+      Host: 'null'
 - name: 🇮🇳 印度 (India) 118 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1799,7 +1799,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 122 - xiaoyu
@@ -1846,7 +1846,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 125 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -1859,7 +1859,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 126 - xiaoyu
@@ -1919,7 +1919,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 130 - xiaoyu
@@ -2024,7 +2024,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 137 - xiaoyu
@@ -2056,7 +2056,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 139 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2069,7 +2069,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 140 - xiaoyu
@@ -2084,7 +2084,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 141 - xiaoyu
@@ -2099,7 +2099,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 142 - xiaoyu
@@ -2129,7 +2129,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 144 - xiaoyu
@@ -2159,21 +2159,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 146 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 147 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2186,7 +2189,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 148 - xiaoyu
@@ -2216,7 +2219,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 150 - xiaoyu
@@ -2231,7 +2234,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 151 - xiaoyu
@@ -2261,7 +2264,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 153 - xiaoyu
@@ -2306,7 +2309,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 156 - xiaoyu
@@ -2351,7 +2354,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 159 - xiaoyu
@@ -2385,20 +2388,17 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 161 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 162 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2441,9 +2441,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: 'null'
+      Host: ''
 - name: 🇮🇳 印度 (India) 165 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2471,7 +2471,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 167 - xiaoyu
@@ -2546,7 +2546,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 172 - xiaoyu
@@ -2576,7 +2576,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 174 - xiaoyu
@@ -2591,7 +2591,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 175 - xiaoyu
@@ -2610,10 +2610,12 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 176 - xiaoyu
-  type: vless
-  server: 45.131.209.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -2621,7 +2623,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime04.workers.dev
+      Host: ''
 - name: 🇮🇳 印度 (India) 177 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2694,7 +2696,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 182 - xiaoyu
@@ -2739,7 +2741,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 185 - xiaoyu
@@ -2814,7 +2816,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 190 - xiaoyu
@@ -2829,7 +2831,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 191 - xiaoyu
@@ -2891,7 +2893,7 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 195 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -2919,7 +2921,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 197 - xiaoyu
@@ -2934,7 +2936,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 198 - xiaoyu
@@ -2949,7 +2951,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 199 - xiaoyu
@@ -2964,7 +2966,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 200 - xiaoyu
@@ -2994,7 +2996,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 202 - xiaoyu
@@ -3099,7 +3101,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 209 - xiaoyu
@@ -3114,7 +3116,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 210 - xiaoyu
@@ -3144,24 +3146,21 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 212 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 213 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -3189,24 +3188,25 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 215 - xiaoyu
   type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  server: 20.235.220.189
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 6jdvarazgu3qqr6q.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: 6jdvarazgu3qqr6q.v.3dns.vip
 - name: 🇮🇳 印度 (India) 216 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -3219,7 +3219,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 217 - xiaoyu
@@ -3249,7 +3249,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 219 - xiaoyu
@@ -3264,7 +3264,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 220 - xiaoyu
@@ -3294,7 +3294,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 222 - xiaoyu
@@ -3309,7 +3309,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 223 - xiaoyu
@@ -3339,7 +3339,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 225 - xiaoyu
@@ -3354,7 +3354,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 226 - xiaoyu
@@ -3369,7 +3369,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 227 - xiaoyu
@@ -3384,7 +3384,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 228 - xiaoyu
@@ -3474,7 +3474,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 234 - xiaoyu
@@ -3504,7 +3504,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 236 - xiaoyu
@@ -3534,7 +3534,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 238 - xiaoyu
@@ -3564,7 +3564,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 240 - xiaoyu
@@ -3579,7 +3579,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 241 - xiaoyu
@@ -3714,7 +3714,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 250 - xiaoyu
@@ -3759,7 +3759,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 253 - xiaoyu
@@ -3774,9 +3774,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: 152.67.8.205
+      Host: ''
 - name: 🇮🇳 印度 (India) 254 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -3804,7 +3804,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 256 - xiaoyu
@@ -3819,7 +3819,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 257 - xiaoyu
@@ -3834,7 +3834,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 258 - xiaoyu
@@ -3849,7 +3849,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 259 - xiaoyu
@@ -3864,7 +3864,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 260 - xiaoyu
@@ -3894,7 +3894,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 262 - xiaoyu
@@ -3909,7 +3909,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 263 - xiaoyu
@@ -3924,7 +3924,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 264 - xiaoyu
@@ -3939,7 +3939,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 265 - xiaoyu
@@ -4018,17 +4018,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 270 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇮🇳 印度 (India) 271 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -4042,141 +4045,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 272 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 273 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 274 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 275 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 276 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 277 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 278 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 279 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 280 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
     headers:
       Host: ''
 proxy-groups:
@@ -4455,15 +4323,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 269 - xiaoyu
   - 🇮🇳 印度 (India) 270 - xiaoyu
   - 🇮🇳 印度 (India) 271 - xiaoyu
-  - 🇮🇳 印度 (India) 272 - xiaoyu
-  - 🇮🇳 印度 (India) 273 - xiaoyu
-  - 🇮🇳 印度 (India) 274 - xiaoyu
-  - 🇮🇳 印度 (India) 275 - xiaoyu
-  - 🇮🇳 印度 (India) 276 - xiaoyu
-  - 🇮🇳 印度 (India) 277 - xiaoyu
-  - 🇮🇳 印度 (India) 278 - xiaoyu
-  - 🇮🇳 印度 (India) 279 - xiaoyu
-  - 🇮🇳 印度 (India) 280 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -4740,14 +4599,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 269 - xiaoyu
   - 🇮🇳 印度 (India) 270 - xiaoyu
   - 🇮🇳 印度 (India) 271 - xiaoyu
-  - 🇮🇳 印度 (India) 272 - xiaoyu
-  - 🇮🇳 印度 (India) 273 - xiaoyu
-  - 🇮🇳 印度 (India) 274 - xiaoyu
-  - 🇮🇳 印度 (India) 275 - xiaoyu
-  - 🇮🇳 印度 (India) 276 - xiaoyu
-  - 🇮🇳 印度 (India) 277 - xiaoyu
-  - 🇮🇳 印度 (India) 278 - xiaoyu
-  - 🇮🇳 印度 (India) 279 - xiaoyu
-  - 🇮🇳 印度 (India) 280 - xiaoyu
 rules:
 - MATCH,PROXIES

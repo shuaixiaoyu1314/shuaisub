@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇩 ID 03 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇩 ID 04 - xiaoyu
@@ -60,20 +60,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇩 ID 05 - xiaoyu
-  type: vless
-  server: 147.139.189.225
-  port: 443
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇮🇩 ID 02 - xiaoyu
   - 🇮🇩 ID 03 - xiaoyu
   - 🇮🇩 ID 04 - xiaoyu
-  - 🇮🇩 ID 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +78,5 @@ proxy-groups:
   - 🇮🇩 ID 02 - xiaoyu
   - 🇮🇩 ID 03 - xiaoyu
   - 🇮🇩 ID 04 - xiaoyu
-  - 🇮🇩 ID 05 - xiaoyu
 rules:
 - MATCH,PROXIES

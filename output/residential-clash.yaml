@@ -6,21 +6,23 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
   type: vless
-  server: 118.167.248.243
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 60.248.219.54
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.54
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   type: vless
-  server: log.bpminecraft.com
+  server: 104.16.107.139
   port: 8880
-  uuid: fba6d1fd-0dab-428d-ae71-0e64c73a6060
+  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -28,62 +30,8 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: morning-wood-0e8a.28-63e.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: empty-rain-1df4.332-633.workers.dev
-- name: 🇲🇽 MX 04 (家宽) - xiaoyu
-  type: vless
-  server: 154.83.2.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  type: vless
-  server: 59.125.69.23
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
-  type: vless
-  server: 103.148.73.173
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 103.148.73.173
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
+      Host: tiny-lake-c7f3.16-1af.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -97,26 +45,20 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇬🇧 英国 (United Kingdom) 08 (家宽) - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   type: vless
-  server: 185.225.195.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 103.148.73.173
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: vms.lifetime18.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaoyu
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
+      Host: 103.148.73.173
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,13 +66,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇲🇽 MX 04 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 08 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -138,12 +75,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  - 🇲🇽 MX 04 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 08 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
