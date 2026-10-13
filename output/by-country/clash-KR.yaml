@@ -6,30 +6,23 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaoyu
   type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 472e0fb5-3a6b-48be-8060-cfffc6335624
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: broken-grass-24c4.288-005.workers.dev
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: wandering-bonus-e035.272.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaoyu
   type: vless
   server: 34.22.111.30
@@ -44,158 +37,17 @@ proxies:
   client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaoyu
   type: vless
-  server: 104.17.178.154
-  port: 8880
-  uuid: c3f4ee0c-3c64-466d-ae14-9bcf685e1efd
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: shiny-waterfall-fa51.300-c6f.workers.dev
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 472e0fb5-3a6b-48be-8060-cfffc6335624
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: broken-grass-24c4.288-005.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 15 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 16 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 17 - xiaoyu
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -207,117 +59,24 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaoyu
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 19 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: wandering-bonus-e035.272.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaoyu
-  type: vless
-  server: wandering-bonus-e035.272.workers.dev
-  port: 8880
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: wandering-bonus-e035.272.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 22 - xiaoyu
-  type: vless
-  server: 34.22.111.30
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 23 - xiaoyu
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 24 - xiaoyu
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 25 - xiaoyu
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: e974d4c7-2376-4b65-aa40-0680961ff5e4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.kr.cmliussss.net
-    headers:
-      Host: icy-unit-58dc.157-59c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 26 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
   type: ss
   server: 141.164.45.187
-  port: 6697
+  port: 6679
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 27 - xiaoyu
-  type: vless
-  server: tiny-lake-c7f3.16-1af.workers.dev
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 28 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
   type: vless
   server: 34.22.111.30
   port: 443
@@ -329,7 +88,30 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 29 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
+  type: vmess
+  server: jp4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nat12.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /vvvvvvvvv
+    headers:
+      Host: nat12.9966338.xyz
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -344,33 +126,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 30 - xiaoyu
-  type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 31 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 32 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaoyu
   type: vless
   server: 34.22.111.30
   port: 443
@@ -382,7 +138,19 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 33 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaoyu
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -394,7 +162,19 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 34 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaoyu
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -409,45 +189,242 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 'null'
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 21 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 'null'
+- name: 🇰🇷 韩国 (South Korea) 22 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 23 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 27 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 28 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 29 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 30 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 31 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 32 - xiaoyu
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 33 - xiaoyu
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 34 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 35 - xiaoyu
   type: vless
-  server: wandering-bonus-e035.272.workers.dev
-  port: 8880
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: wandering-bonus-e035.272.workers.dev
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 36 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 37 - xiaoyu
-  type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /%2Fpyip%3DProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 38 - xiaoyu
   type: vmess
   server: 140.238.2.250
@@ -471,43 +448,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 40 - xiaoyu
-  type: vless
-  server: icy-breeze-126c.211-eb3.workers.dev
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 41 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 42 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 43 - xiaoyu
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -521,149 +461,37 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 132.145.80.230
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 41 - xiaoyu
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 42 - xiaoyu
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 43 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 44 - xiaoyu
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 45 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 46 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 47 - xiaoyu
-  type: vless
-  server: icy-breeze-126c.211-eb3.workers.dev
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 48 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 49 - xiaoyu
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 50 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇰🇷 韩国 (South Korea) 51 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 52 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 53 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 54 - xiaoyu
-  type: vless
-  server: 104.18.36.122
-  port: 8880
-  uuid: b1b99d33-8df1-4c74-b140-28941b43a4d2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: nameless-poetry-cc33.268-910.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 55 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 56 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 57 - xiaoyu
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -673,235 +501,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 58 - xiaoyu
-  type: vless
-  server: tiny-lake-c7f3.16-1af.workers.dev
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 59 - xiaoyu
-  type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 60 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 61 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 62 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 63 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 64 - xiaoyu
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 65 - xiaoyu
-  type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 66 - xiaoyu
-  type: vless
-  server: 104.17.26.45
-  port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 67 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 68 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 69 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: wandering-bonus-e035.272.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 70 - xiaoyu
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 71 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 72 - xiaoyu
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 73 - xiaoyu
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 74 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 75 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 76 - xiaoyu
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 472e0fb5-3a6b-48be-8060-cfffc6335624
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: broken-grass-24c4.288-005.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -951,38 +550,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 42 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 43 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 44 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 45 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 46 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 47 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 48 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 49 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 50 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 51 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 52 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 53 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 54 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 55 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 56 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 57 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 58 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 59 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 60 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 61 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 62 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 63 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 64 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 65 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 66 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 67 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 68 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 69 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 70 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 71 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 72 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 73 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 74 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 75 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 76 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1032,37 +599,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 42 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 43 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 44 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 45 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 46 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 47 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 48 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 49 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 50 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 51 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 52 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 53 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 54 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 55 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 56 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 57 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 58 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 59 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 60 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 61 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 62 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 63 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 64 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 65 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 66 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 67 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 68 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 69 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 70 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 71 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 72 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 73 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 74 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 75 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 76 - xiaoyu
 rules:
 - MATCH,PROXIES

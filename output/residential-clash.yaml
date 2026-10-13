@@ -18,19 +18,16 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.54
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
@@ -45,7 +42,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
   type: vless
   server: 103.148.73.173
   port: 8443
@@ -65,17 +69,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

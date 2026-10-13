@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaoyu
-  type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 4.210.66.165
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 8qKJlc2Z6lo64bUq
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇮🇪 IE 02 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -43,23 +36,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /+
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaoyu
   type: vless
-  server: 23.95.225.10
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 185.18.221.188
+  port: 443
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: rnxq-1lpi3m.linmeisoft.com
   network: ws
   ws-opts:
-    path: /
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
     headers:
-      Host: ccc.010304.xyz
+      Host: rnxq-1lpi3m.linmeisoft.com
 - name: 🇮🇪 IE 05 - xiaoyu
   type: vless
   server: 23.95.225.10
@@ -71,7 +64,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 06 - xiaoyu
@@ -99,7 +92,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 08 - xiaoyu
@@ -113,7 +106,35 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 09 - xiaoyu
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
     path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 10 - xiaoyu
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -129,6 +150,8 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
+  - 🇮🇪 IE 09 - xiaoyu
+  - 🇮🇪 IE 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +165,7 @@ proxy-groups:
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
   - 🇮🇪 IE 08 - xiaoyu
+  - 🇮🇪 IE 09 - xiaoyu
+  - 🇮🇪 IE 10 - xiaoyu
 rules:
 - MATCH,PROXIES
