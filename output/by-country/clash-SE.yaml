@@ -5,115 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: chrome
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 94.143.231.146
+  server: 732051t.se1.h1clayd.click
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  reality-opts:
+    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
+  servername: 732051t.se1.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: safari
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: sub.merky.top
+  server: 732051t.se1.h1clayd.click
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
+    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
+  servername: 732051t.se1.h1clayd.click
   client-fingerprint: random
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: ios
-- name: 🇸🇪 SE 10 - xiaoyu
+- name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -127,9 +54,82 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 11 - xiaoyu
+- name: 🇸🇪 SE 05 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: random
+- name: 🇸🇪 SE 10 - xiaoyu
   type: vless
   server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vless
+  server: sub.merky.top
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -143,33 +143,35 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 12 - xiaoyu
   type: vless
-  server: 77.110.97.245
+  server: sub.merky.top
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /merky-connect/de6/
     headers:
-      Host: ccc.010304.xyz
+      Host: sub.merky.top
 - name: 🇸🇪 SE 13 - xiaoyu
   type: vless
-  server: 732051t.se1.h1clayd.click
+  server: sub.merky.top
   port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: random
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 SE 14 - xiaoyu
   type: vless
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -197,43 +199,19 @@ proxies:
       Host: 94.143.231.146
 - name: 🇸🇪 SE 16 - xiaoyu
   type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: edge
-- name: 🇸🇪 SE 17 - xiaoyu
-  type: vless
-  server: 732051t.se1.h1clayd.click
+  server: sub.merky.top
   port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 18 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /
+    path: /merky-connect/de6/
     headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 19 - xiaoyu
+      Host: sub.merky.top
+- name: 🇸🇪 SE 17 - xiaoyu
   type: vless
   server: sub.merky.top
   port: 443
@@ -247,7 +225,7 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 20 - xiaoyu
+- name: 🇸🇪 SE 18 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -261,21 +239,52 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 21 - xiaoyu
+- name: 🇸🇪 SE 19 - xiaoyu
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: safari
+- name: 🇸🇪 SE 20 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 21 - xiaoyu
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: edge
+- name: 🇸🇪 SE 22 - xiaoyu
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /+
+    path: /merky-connect/de6/
     headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 22 - xiaoyu
+      Host: sub.merky.top
+- name: 🇸🇪 SE 23 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -289,30 +298,20 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 23 - xiaoyu
-  type: vless
-  server: 732051t.se1.h1clayd.click
-  port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
 - name: 🇸🇪 SE 24 - xiaoyu
   type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: qq
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 SE 25 - xiaoyu
   type: vless
   server: sub.merky.top
@@ -329,18 +328,6 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 26 - xiaoyu
   type: vless
-  server: se1.h1cloud.net
-  port: 26100
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-  servername: www.icloud.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 27 - xiaoyu
-  type: vless
   server: 732051t.se1.h1clayd.click
   port: 443
   uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
@@ -350,57 +337,8 @@ proxies:
   reality-opts:
     public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
   servername: 732051t.se1.h1clayd.click
-  client-fingerprint: ios
-- name: 🇸🇪 SE 28 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 29 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 30 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 31 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 32 - xiaoyu
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 27 - xiaoyu
   type: vless
   server: 94.143.231.146
   port: 443
@@ -414,7 +352,21 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: 94.143.231.146
-- name: 🇸🇪 SE 33 - xiaoyu
+- name: 🇸🇪 SE 28 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 29 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -428,48 +380,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 34 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 35 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 36 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -504,13 +414,6 @@ proxy-groups:
   - 🇸🇪 SE 27 - xiaoyu
   - 🇸🇪 SE 28 - xiaoyu
   - 🇸🇪 SE 29 - xiaoyu
-  - 🇸🇪 SE 30 - xiaoyu
-  - 🇸🇪 SE 31 - xiaoyu
-  - 🇸🇪 SE 32 - xiaoyu
-  - 🇸🇪 SE 33 - xiaoyu
-  - 🇸🇪 SE 34 - xiaoyu
-  - 🇸🇪 SE 35 - xiaoyu
-  - 🇸🇪 SE 36 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -545,12 +448,5 @@ proxy-groups:
   - 🇸🇪 SE 27 - xiaoyu
   - 🇸🇪 SE 28 - xiaoyu
   - 🇸🇪 SE 29 - xiaoyu
-  - 🇸🇪 SE 30 - xiaoyu
-  - 🇸🇪 SE 31 - xiaoyu
-  - 🇸🇪 SE 32 - xiaoyu
-  - 🇸🇪 SE 33 - xiaoyu
-  - 🇸🇪 SE 34 - xiaoyu
-  - 🇸🇪 SE 35 - xiaoyu
-  - 🇸🇪 SE 36 - xiaoyu
 rules:
 - MATCH,PROXIES
