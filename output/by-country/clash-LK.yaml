@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - xiaoyu
   type: vless
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   port: 80
   uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
@@ -19,13 +19,12 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - xiaoyu
   type: vless
-  server: centurylink.es
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -47,6 +46,112 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 04 - xiaoyu
   type: vless
+  server: free.sahanwickramasinghe.me
+  port: 2096
+  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: microsoft.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 05 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 06 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 07 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 08 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 09 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 10 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 11 - xiaoyu
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 2096
+  uuid: 13d72f62-ca03-4f06-acc4-409f5dc2f4e6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: microsoft.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 12 - xiaoyu
+  type: vless
   server: support.zoom.us
   port: 80
   uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
@@ -67,6 +172,14 @@ proxy-groups:
   - 🇱🇰 LK 02 - xiaoyu
   - 🇱🇰 LK 03 - xiaoyu
   - 🇱🇰 LK 04 - xiaoyu
+  - 🇱🇰 LK 05 - xiaoyu
+  - 🇱🇰 LK 06 - xiaoyu
+  - 🇱🇰 LK 07 - xiaoyu
+  - 🇱🇰 LK 08 - xiaoyu
+  - 🇱🇰 LK 09 - xiaoyu
+  - 🇱🇰 LK 10 - xiaoyu
+  - 🇱🇰 LK 11 - xiaoyu
+  - 🇱🇰 LK 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +189,13 @@ proxy-groups:
   - 🇱🇰 LK 02 - xiaoyu
   - 🇱🇰 LK 03 - xiaoyu
   - 🇱🇰 LK 04 - xiaoyu
+  - 🇱🇰 LK 05 - xiaoyu
+  - 🇱🇰 LK 06 - xiaoyu
+  - 🇱🇰 LK 07 - xiaoyu
+  - 🇱🇰 LK 08 - xiaoyu
+  - 🇱🇰 LK 09 - xiaoyu
+  - 🇱🇰 LK 10 - xiaoyu
+  - 🇱🇰 LK 11 - xiaoyu
+  - 🇱🇰 LK 12 - xiaoyu
 rules:
 - MATCH,PROXIES

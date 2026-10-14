@@ -25,16 +25,16 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 03 - xiaoyu
   type: vless
-  server: ch.srv.vbuste.ru
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: ch.srv.vbuste.ru
-  client-fingerprint: firefox
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 04 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -46,7 +46,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 05 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -58,7 +58,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇭 CH 06 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -71,39 +71,6 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 07 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 CH 08 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 09 - xiaoyu
-  type: vless
-  server: 138.124.96.88
-  port: 41826
-  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sweden.homyak.app
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,9 +82,6 @@ proxy-groups:
   - 🇨🇭 CH 04 - xiaoyu
   - 🇨🇭 CH 05 - xiaoyu
   - 🇨🇭 CH 06 - xiaoyu
-  - 🇨🇭 CH 07 - xiaoyu
-  - 🇨🇭 CH 08 - xiaoyu
-  - 🇨🇭 CH 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,8 +93,5 @@ proxy-groups:
   - 🇨🇭 CH 04 - xiaoyu
   - 🇨🇭 CH 05 - xiaoyu
   - 🇨🇭 CH 06 - xiaoyu
-  - 🇨🇭 CH 07 - xiaoyu
-  - 🇨🇭 CH 08 - xiaoyu
-  - 🇨🇭 CH 09 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -64,6 +64,18 @@ proxies:
     public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇧🇷 BR 06 - xiaoyu
+  type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +86,7 @@ proxy-groups:
   - 🇧🇷 BR 03 - xiaoyu
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
+  - 🇧🇷 BR 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +97,6 @@ proxy-groups:
   - 🇧🇷 BR 03 - xiaoyu
   - 🇧🇷 BR 04 - xiaoyu
   - 🇧🇷 BR 05 - xiaoyu
+  - 🇧🇷 BR 06 - xiaoyu
 rules:
 - MATCH,PROXIES
