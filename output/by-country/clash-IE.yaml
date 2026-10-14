@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /+
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 03 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /+
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 04 - xiaoyu
@@ -57,7 +57,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 05 - xiaoyu
@@ -71,7 +71,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇮🇪 IE 06 - xiaoyu
@@ -99,23 +99,9 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇪 IE 08 - xiaoyu
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,7 +114,6 @@ proxy-groups:
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
-  - 🇮🇪 IE 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,6 +126,5 @@ proxy-groups:
   - 🇮🇪 IE 05 - xiaoyu
   - 🇮🇪 IE 06 - xiaoyu
   - 🇮🇪 IE 07 - xiaoyu
-  - 🇮🇪 IE 08 - xiaoyu
 rules:
 - MATCH,PROXIES

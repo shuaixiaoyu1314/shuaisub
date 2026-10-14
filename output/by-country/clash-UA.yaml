@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaoyu
   type: vless
-  server: 91.196.163.140
-  port: 14430
-  uuid: e86a3662-9b31-4d59-bc80-9e8644749b95
+  server: 45.158.185.172
+  port: 443
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: z5n1.vpnpolar.online
   network: ws
   ws-opts:
-    path: /vless
+    path: /beeline
     headers:
-      Host: 91.196.163.140
+      Host: z5n1.vpnpolar.online
 - name: 🇺🇦 UA 02 - xiaoyu
   type: vless
   server: 45.158.185.172
