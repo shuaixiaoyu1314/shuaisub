@@ -5,18 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
-  server: es3.h1cloud.net
-  port: 25136
-  uuid: c1c13ef7-affa-47e1-8967-25cc67679c10
+  server: 185.86.145.142
+  port: 443
+  uuid: 7832b450-d561-45d6-b425-8527fa8babe0
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  servername: n2.185-86-145-142.sslip.io
+  network: ws
+  ws-opts:
+    path: /e7ws
+    headers:
+      Host: n2.185-86-145-142.sslip.io
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -28,41 +37,26 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vmess
-  server: renderer-stream-2-114.mirra.now
-  port: 443
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: ss
+  server: 194.87.196.107
+  port: 50120
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
   udp: true
-  tls: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: 77.232.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /?ed=2560
     headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-  udp: true
+      Host: vms.lifetime61.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   type: vless
   server: 45.12.75.242
@@ -76,6 +70,41 @@ proxies:
   servername: ya.ru
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 104.21.94.230
+  port: 443
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
+  network: ws
+  ws-opts:
+    path: /NmrU9ImDG7jA7oFEem+
+    headers:
+      Host: frosty-pond-7436.shhabbyat914.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   type: vmess
   server: renderer-stream-2-114.mirra.now
   port: 443
@@ -91,14 +120,23 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: vmess
+  server: renderer-stream-2-114.mirra.now
+  port: 443
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-114.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-114.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -109,7 +147,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
   servername: ya.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,6 +162,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -138,5 +179,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

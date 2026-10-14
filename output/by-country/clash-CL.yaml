@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇭 KH 01 - xiaoyu
+- name: 🇨🇱 CL 01 - xiaoyu
   type: ss
-  server: ruot.ayucloudservices.nl
-  port: 35019
-  cipher: aes-128-gcm
-  password: 9c51ca33-a332-4de5-8677-5624e940097c
+  server: 64.176.2.21
+  port: 8388
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇭 KH 01 - xiaoyu
+  - 🇨🇱 CL 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇭 KH 01 - xiaoyu
+  - 🇨🇱 CL 01 - xiaoyu
 rules:
 - MATCH,PROXIES
