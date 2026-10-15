@@ -17,62 +17,17 @@ proxies:
     path: /vless
     headers:
       Host: 45.137.43.168
-- name: 🇸🇨 SC 02 - xiaoyu
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 03 - xiaoyu
-  type: vless
-  server: 45.137.43.168
-  port: 14430
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.137.43.168
-- name: 🇸🇨 SC 04 - xiaoyu
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 05 - xiaoyu
-  type: vless
-  server: 45.137.43.168
-  port: 10443
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - xiaoyu
-  - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
-  - 🇸🇨 SC 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - xiaoyu
-  - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
-  - 🇸🇨 SC 05 - xiaoyu
 rules:
 - MATCH,PROXIES

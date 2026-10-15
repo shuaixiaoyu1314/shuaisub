@@ -30,52 +30,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 04 - xiaoyu
-  type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 05 - xiaoyu
-  type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 06 - xiaoyu
-  type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,9 +49,6 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaoyu
   - 🇧🇷 BR 02 - xiaoyu
   - 🇧🇷 BR 03 - xiaoyu
-  - 🇧🇷 BR 04 - xiaoyu
-  - 🇧🇷 BR 05 - xiaoyu
-  - 🇧🇷 BR 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,8 +57,5 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaoyu
   - 🇧🇷 BR 02 - xiaoyu
   - 🇧🇷 BR 03 - xiaoyu
-  - 🇧🇷 BR 04 - xiaoyu
-  - 🇧🇷 BR 05 - xiaoyu
-  - 🇧🇷 BR 06 - xiaoyu
 rules:
 - MATCH,PROXIES
