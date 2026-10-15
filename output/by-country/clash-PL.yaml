@@ -15,7 +15,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -24,7 +24,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 03 - xiaoyu
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xiaoyu
   type: vless
-  server: pl.flen-vpn.xyz
+  server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
@@ -42,15 +42,6 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 05 - xiaoyu
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.225.89
-- name: 🇵🇱 PL 06 - xiaoyu
-  type: vless
   server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -58,7 +49,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - xiaoyu
+- name: 🇵🇱 PL 06 - xiaoyu
   type: vless
   server: 2.26.225.89
   port: 8443
@@ -66,8 +57,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 08 - xiaoyu
+  servername: 2.26.225.89
+- name: 🇵🇱 PL 07 - xiaoyu
   type: vless
   server: pl.flen-vpn.xyz
   port: 8443
@@ -88,7 +79,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
-  - 🇵🇱 PL 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,6 +91,5 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
-  - 🇵🇱 PL 08 - xiaoyu
 rules:
 - MATCH,PROXIES

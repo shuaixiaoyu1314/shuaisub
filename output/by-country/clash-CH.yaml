@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  type: ss
+  server: 86.106.84.194
+  port: 13261
+  cipher: aes-128-gcm
+  password: 2bf536a4bd6008511734a505d248de2c
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - xiaoyu
   type: vless
   server: 208.69.78.217
@@ -29,13 +24,37 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇨🇭 CH 03 - xiaoyu
+  type: vless
+  server: ch.srv.vbuste.ru
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: ch.srv.vbuste.ru
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 04 - xiaoyu
+  type: vless
+  server: 45.133.151.186
+  port: 25393
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 05 - xiaoyu
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 04 - xiaoyu
+- name: 🇨🇭 CH 06 - xiaoyu
   type: vless
   server: 167.148.183.51
   port: 444
@@ -47,7 +66,43 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: ch.srv.vbuste.ru
   client-fingerprint: firefox
-- name: 🇨🇭 CH 05 - xiaoyu
+- name: 🇨🇭 CH 07 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - xiaoyu
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 09 - xiaoyu
+  type: vless
+  server: 45.133.151.186
+  port: 25414
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KjcB2_xuklgTEHo_L_y3YdGdQoDgA91Yaa3YgRu_Iis
+  servername: www.icloud.com
+  client-fingerprint: ios
+- name: 🇨🇭 CH 10 - xiaoyu
   type: ss
   server: 132.243.175.144
   port: 8388
@@ -64,6 +119,11 @@ proxy-groups:
   - 🇨🇭 CH 03 - xiaoyu
   - 🇨🇭 CH 04 - xiaoyu
   - 🇨🇭 CH 05 - xiaoyu
+  - 🇨🇭 CH 06 - xiaoyu
+  - 🇨🇭 CH 07 - xiaoyu
+  - 🇨🇭 CH 08 - xiaoyu
+  - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +134,10 @@ proxy-groups:
   - 🇨🇭 CH 03 - xiaoyu
   - 🇨🇭 CH 04 - xiaoyu
   - 🇨🇭 CH 05 - xiaoyu
+  - 🇨🇭 CH 06 - xiaoyu
+  - 🇨🇭 CH 07 - xiaoyu
+  - 🇨🇭 CH 08 - xiaoyu
+  - 🇨🇭 CH 09 - xiaoyu
+  - 🇨🇭 CH 10 - xiaoyu
 rules:
 - MATCH,PROXIES

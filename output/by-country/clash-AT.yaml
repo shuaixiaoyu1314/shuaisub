@@ -26,6 +26,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇦🇹 AT 04 - xiaoyu
+  type: vless
+  server: 138.124.90.177
+  port: 10443
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +42,7 @@ proxy-groups:
   - 🇦🇹 AT 01 - xiaoyu
   - 🇦🇹 AT 02 - xiaoyu
   - 🇦🇹 AT 03 - xiaoyu
+  - 🇦🇹 AT 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +51,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - xiaoyu
   - 🇦🇹 AT 02 - xiaoyu
   - 🇦🇹 AT 03 - xiaoyu
+  - 🇦🇹 AT 04 - xiaoyu
 rules:
 - MATCH,PROXIES
