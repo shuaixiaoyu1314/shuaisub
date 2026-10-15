@@ -25,6 +25,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
+- name: 🇷🇴 RO 04 - xiaoyu
+  type: vless
+  server: 45.12.30.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +46,7 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
   - 🇷🇴 RO 03 - xiaoyu
+  - 🇷🇴 RO 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +55,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - xiaoyu
   - 🇷🇴 RO 02 - xiaoyu
   - 🇷🇴 RO 03 - xiaoyu
+  - 🇷🇴 RO 04 - xiaoyu
 rules:
 - MATCH,PROXIES

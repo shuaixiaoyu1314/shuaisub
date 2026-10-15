@@ -4,25 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaoyu
+- name: 🇨🇾 CY 01 - xiaoyu
   type: vless
-  server: ir.panel.privatevip.ir
-  port: 448
-  uuid: 72f8cb98-ce2b-4697-93b7-c9766051f321
+  server: 195.85.59.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaoyu
+  - 🇨🇾 CY 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaoyu
+  - 🇨🇾 CY 01 - xiaoyu
 rules:
 - MATCH,PROXIES

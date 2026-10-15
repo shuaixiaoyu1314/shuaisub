@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  type: vmess
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fujrdt.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  type: vless
+  server: 69.63.221.116
+  port: 25517
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   type: vless
   server: 59.125.69.23
   port: 443
@@ -17,24 +47,21 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 59.125.69.23
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  type: vmess
-  server: fujrdt.d6f54hd1j.cc
-  port: 443
-  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
-  alterId: 0
-  cipher: auto
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 (家宽) - xiaoyu
+  type: vless
+  server: 23.227.39.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+      Host: vms.lifetime17.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -48,7 +75,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
   type: vless
   server: 103.148.73.173
   port: 8443
@@ -68,17 +95,21 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
