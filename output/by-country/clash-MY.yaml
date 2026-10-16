@@ -6,32 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaoyu
   type: vless
-  server: 166.88.35.245
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 02 - xiaoyu
-  type: vless
-  server: 166.88.35.245
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 03 - xiaoyu
-  type: vless
   server: 216.173.67.59
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -44,7 +18,23 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 04 - xiaoyu
+- name: 🇲🇾 MY 02 - xiaoyu
+  type: vmess
+  server: 104.21.23.80
+  port: 443
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.lovehk.xyz
+  network: ws
+  ws-opts:
+    path: /KualaLumpur1
+    headers:
+      Host: my.lovehk.xyz
+- name: 🇲🇾 MY 03 - xiaoyu
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -54,6 +44,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 04 - xiaoyu
+  type: vless
+  server: 166.88.35.245
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 05 - xiaoyu
   type: vless
   server: 216.173.67.59
@@ -84,6 +87,29 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 07 - xiaoyu
   type: vless
+  server: 166.88.35.245
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 08 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 09 - xiaoyu
+  type: vless
   server: 216.173.67.59
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -93,7 +119,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -108,6 +134,8 @@ proxy-groups:
   - 🇲🇾 MY 05 - xiaoyu
   - 🇲🇾 MY 06 - xiaoyu
   - 🇲🇾 MY 07 - xiaoyu
+  - 🇲🇾 MY 08 - xiaoyu
+  - 🇲🇾 MY 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,5 +148,7 @@ proxy-groups:
   - 🇲🇾 MY 05 - xiaoyu
   - 🇲🇾 MY 06 - xiaoyu
   - 🇲🇾 MY 07 - xiaoyu
+  - 🇲🇾 MY 08 - xiaoyu
+  - 🇲🇾 MY 09 - xiaoyu
 rules:
 - MATCH,PROXIES
