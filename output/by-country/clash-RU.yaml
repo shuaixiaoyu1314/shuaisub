@@ -5,51 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: ss
   server: 176.32.32.108
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: vless
-  server: aelix-al.safire-soleiman.ir
-  port: 6311
-  uuid: 2ffa91fe-e1cc-4c44-a90a-45002feae978
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-  servername: play.google.com
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
   server: aelix-al.safire-soleiman.ir
   port: 6311
@@ -61,12 +23,38 @@ proxies:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
   servername: play.google.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 176.32.32.108
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 3f8efdt.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: ss
   server: 194.87.196.107
   port: 18443
   cipher: aes-256-gcm
   password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -79,7 +67,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,6 +78,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 rules:
 - MATCH,PROXIES
