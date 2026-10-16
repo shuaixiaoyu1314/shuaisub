@@ -5,30 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  type: vless
-  server: 131.186.24.124
-  port: 587
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
+    path: /
     headers:
-      Host: cf3.schzyc.cc.cd
+      Host: 183.109.131.75
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
