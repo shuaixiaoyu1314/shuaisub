@@ -18,6 +18,18 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaoyu
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -29,22 +41,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 03 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 04 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -59,20 +58,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 05 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 06 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -87,7 +74,7 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 07 - xiaoyu
+- name: 🇮🇳 印度 (India) 06 - xiaoyu
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -98,15 +85,76 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 08 - xiaoyu
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 07 - xiaoyu
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 08 - xiaoyu
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 09 - xiaoyu
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 10 - xiaoyu
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
+- name: 🇮🇳 印度 (India) 11 - xiaoyu
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 12 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -121,20 +169,7 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 10 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 11 - xiaoyu
+- name: 🇮🇳 印度 (India) 13 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -148,45 +183,22 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 12 - xiaoyu
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 13 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+      Host: in-152.67.8.205-0250
 - name: 🇮🇳 印度 (India) 14 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 13.140.56.100
+      Host: ''
 - name: 🇮🇳 印度 (India) 15 - xiaoyu
   type: vless
   server: 13.140.56.100
@@ -201,21 +213,18 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 16 - xiaoyu
-  type: vmess
-  server: 20.235.220.189
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /vless
     headers:
-      Host: 6jdvarazgu3qqr6q.v.3dns.vip
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 17 - xiaoyu
   type: vmess
   server: 152.67.8.205
@@ -232,6 +241,13 @@ proxies:
     headers:
       Host: ''
 - name: 🇮🇳 印度 (India) 18 - xiaoyu
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 19 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -246,7 +262,20 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 19 - xiaoyu
+- name: 🇮🇳 印度 (India) 20 - xiaoyu
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 21 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -259,6 +288,36 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 22 - xiaoyu
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 23 - xiaoyu
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
     headers:
       Host: ''
 proxy-groups:
@@ -285,6 +344,10 @@ proxy-groups:
   - 🇮🇳 印度 (India) 17 - xiaoyu
   - 🇮🇳 印度 (India) 18 - xiaoyu
   - 🇮🇳 印度 (India) 19 - xiaoyu
+  - 🇮🇳 印度 (India) 20 - xiaoyu
+  - 🇮🇳 印度 (India) 21 - xiaoyu
+  - 🇮🇳 印度 (India) 22 - xiaoyu
+  - 🇮🇳 印度 (India) 23 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -309,5 +372,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 17 - xiaoyu
   - 🇮🇳 印度 (India) 18 - xiaoyu
   - 🇮🇳 印度 (India) 19 - xiaoyu
+  - 🇮🇳 印度 (India) 20 - xiaoyu
+  - 🇮🇳 印度 (India) 21 - xiaoyu
+  - 🇮🇳 印度 (India) 22 - xiaoyu
+  - 🇮🇳 印度 (India) 23 - xiaoyu
 rules:
 - MATCH,PROXIES

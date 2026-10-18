@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
-  server: 185.141.227.223
+  server: z1q3pv4g78.rucdncomp.pro
   port: 443
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
@@ -19,97 +19,6 @@ proxies:
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 176.32.32.108
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: ss
-  server: 176.32.32.108
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: vless
   server: aelix-al.safire-soleiman.ir
   port: 6311
@@ -120,7 +29,42 @@ proxies:
   reality-opts:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
   servername: play.google.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 185.141.227.223
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 194.87.143.165
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,12 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,11 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoyu
   type: vless
+  server: ch.srv.vbuste.ru
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: ch.srv.vbuste.ru
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 02 - xiaoyu
+  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -16,7 +28,7 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 02 - xiaoyu
+- name: 🇨🇭 CH 03 - xiaoyu
   type: vless
   server: 167.148.183.51
   port: 444
@@ -28,13 +40,6 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: ch.srv.vbuste.ru
   client-fingerprint: firefox
-- name: 🇨🇭 CH 03 - xiaoyu
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
 - name: 🇨🇭 CH 04 - xiaoyu
   type: ss
   server: 132.243.175.144
@@ -55,17 +60,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - xiaoyu
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
