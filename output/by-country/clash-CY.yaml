@@ -7,14 +7,6 @@ proxies:
 - name: 🇨🇾 CY 01 - xiaoyu
   type: vless
   server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 CY 02 - xiaoyu
-  type: vless
-  server: 5.253.29.254
   port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
@@ -25,6 +17,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
+- name: 🇨🇾 CY 02 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇾 CY 03 - xiaoyu
   type: vless
   server: 5.253.29.254
@@ -54,11 +54,16 @@ proxies:
 - name: 🇨🇾 CY 05 - xiaoyu
   type: vless
   server: 5.253.29.254
-  port: 10443
+  port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 - name: 🇨🇾 CY 06 - xiaoyu
   type: vless
   server: 5.253.29.254
@@ -72,6 +77,27 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
+- name: 🇨🇾 CY 07 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 08 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +109,8 @@ proxy-groups:
   - 🇨🇾 CY 04 - xiaoyu
   - 🇨🇾 CY 05 - xiaoyu
   - 🇨🇾 CY 06 - xiaoyu
+  - 🇨🇾 CY 07 - xiaoyu
+  - 🇨🇾 CY 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +122,7 @@ proxy-groups:
   - 🇨🇾 CY 04 - xiaoyu
   - 🇨🇾 CY 05 - xiaoyu
   - 🇨🇾 CY 06 - xiaoyu
+  - 🇨🇾 CY 07 - xiaoyu
+  - 🇨🇾 CY 08 - xiaoyu
 rules:
 - MATCH,PROXIES
