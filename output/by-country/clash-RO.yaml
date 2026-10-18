@@ -5,33 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 02 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 03 - xiaoyu
   type: ss
-  server: 154.46.31.106
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 02 - xiaoyu
-  type: vless
-  server: 45.12.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇷🇴 RO 03 - xiaoyu
-  type: vless
-  server: roxnsk.color-shop.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇷🇴 RO 04 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
@@ -49,61 +44,19 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 06 - xiaoyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - xiaoyu
   type: ss
   server: 194.68.44.42
   port: 64546
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 08 - xiaoyu
+- name: 🇷🇴 RO 07 - xiaoyu
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 09 - xiaoyu
-  type: vless
-  server: 45.12.30.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇷🇴 RO 10 - xiaoyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 11 - xiaoyu
-  type: vless
-  server: 45.12.30.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,10 +69,6 @@ proxy-groups:
   - 🇷🇴 RO 05 - xiaoyu
   - 🇷🇴 RO 06 - xiaoyu
   - 🇷🇴 RO 07 - xiaoyu
-  - 🇷🇴 RO 08 - xiaoyu
-  - 🇷🇴 RO 09 - xiaoyu
-  - 🇷🇴 RO 10 - xiaoyu
-  - 🇷🇴 RO 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,9 +81,5 @@ proxy-groups:
   - 🇷🇴 RO 05 - xiaoyu
   - 🇷🇴 RO 06 - xiaoyu
   - 🇷🇴 RO 07 - xiaoyu
-  - 🇷🇴 RO 08 - xiaoyu
-  - 🇷🇴 RO 09 - xiaoyu
-  - 🇷🇴 RO 10 - xiaoyu
-  - 🇷🇴 RO 11 - xiaoyu
 rules:
 - MATCH,PROXIES
