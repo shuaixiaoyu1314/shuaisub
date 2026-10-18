@@ -6,27 +6,58 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaoyu
   type: vless
-  server: p1real4.greewebservices.ir
-  port: 1260
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  server: 162.159.130.234
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime54.workers.dev
+- name: 🇧🇬 BG 02 - xiaoyu
+  type: vless
+  server: 104.18.37.228
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
+- name: 🇧🇬 BG 03 - xiaoyu
+  type: vless
+  server: 154.218.15.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - xiaoyu
+  - 🇧🇬 BG 02 - xiaoyu
+  - 🇧🇬 BG 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - xiaoyu
+  - 🇧🇬 BG 02 - xiaoyu
+  - 🇧🇬 BG 03 - xiaoyu
 rules:
 - MATCH,PROXIES
