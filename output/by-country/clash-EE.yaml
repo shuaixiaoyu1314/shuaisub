@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 38.180.163.250
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: vms.lifetime59.workers.dev
+      Host: lucasjow.us.ci
 - name: 🇪🇪 EE 02 - xiaoyu
   type: vmess
   server: eu3.998998.best
@@ -45,20 +46,6 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 EE 04 - xiaoyu
-  type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
-    headers:
-      Host: cf3.schzyc.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
 rules:
 - MATCH,PROXIES
