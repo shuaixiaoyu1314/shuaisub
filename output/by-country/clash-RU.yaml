@@ -12,20 +12,15 @@ proxies:
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: aelix-al.safire-soleiman.ir
-  port: 6311
-  uuid: 2ffa91fe-e1cc-4c44-a90a-45002feae978
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-  servername: play.google.com
-  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: 185.141.227.223
+  server: z1q3pv4g78.rucdncomp.pro
   port: 443
   uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
   udp: true
@@ -39,24 +34,19 @@ proxies:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   type: vless
-  server: aelix-al.safire-soleiman.ir
-  port: 6311
-  uuid: 2ffa91fe-e1cc-4c44-a90a-45002feae978
+  server: 185.141.227.223
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-  servername: play.google.com
-  client-fingerprint: chrome
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   type: vless
   server: 185.141.227.223
   port: 443
@@ -80,7 +70,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,6 +80,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

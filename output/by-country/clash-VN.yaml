@@ -34,6 +34,14 @@ proxies:
       Host: vn11vina.210z.dev
 - name: 🇻🇳 VN 03 - xiaoyu
   type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 VN 04 - xiaoyu
+  type: vless
   server: 172.67.168.158
   port: 2087
   uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
@@ -54,6 +62,7 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
+  - 🇻🇳 VN 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +71,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
+  - 🇻🇳 VN 04 - xiaoyu
 rules:
 - MATCH,PROXIES
