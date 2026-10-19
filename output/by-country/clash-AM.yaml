@@ -40,6 +40,18 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇲 AM 04 - xiaoyu
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +60,7 @@ proxy-groups:
   - 🇦🇲 AM 01 - xiaoyu
   - 🇦🇲 AM 02 - xiaoyu
   - 🇦🇲 AM 03 - xiaoyu
+  - 🇦🇲 AM 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +69,6 @@ proxy-groups:
   - 🇦🇲 AM 01 - xiaoyu
   - 🇦🇲 AM 02 - xiaoyu
   - 🇦🇲 AM 03 - xiaoyu
+  - 🇦🇲 AM 04 - xiaoyu
 rules:
 - MATCH,PROXIES

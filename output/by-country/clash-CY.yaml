@@ -19,25 +19,32 @@ proxies:
       Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - xiaoyu
   type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  server: 194.55.166.65
+  port: 2087
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇾 CY 03 - xiaoyu
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /vless
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: 5.253.29.254
+      Host: free.cndyw.ggff.net
+- name: 🇨🇾 CY 03 - xiaoyu
+  type: vless
+  server: 213.111.177.107
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
+    headers:
+      Host: vlso5.1d.mom
 - name: 🇨🇾 CY 04 - xiaoyu
   type: vless
   server: 5.253.29.254
@@ -67,17 +74,42 @@ proxies:
 - name: 🇨🇾 CY 06 - xiaoyu
   type: vless
   server: 5.253.29.254
-  port: 14430
+  port: 10443
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇾 CY 07 - xiaoyu
+  type: vless
+  server: 213.111.177.107
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
   network: ws
   ws-opts:
-    path: /vless
+    path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 07 - xiaoyu
+      Host: vlso5.1d.mom
+- name: 🇨🇾 CY 08 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 09 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 10 - xiaoyu
   type: vless
   server: 5.253.29.254
   port: 14430
@@ -90,7 +122,46 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 08 - xiaoyu
+- name: 🇨🇾 CY 11 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 12 - xiaoyu
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 13 - xiaoyu
+  type: vless
+  server: 195.85.59.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
+- name: 🇨🇾 CY 14 - xiaoyu
   type: vless
   server: 5.253.29.254
   port: 10443
@@ -111,6 +182,12 @@ proxy-groups:
   - 🇨🇾 CY 06 - xiaoyu
   - 🇨🇾 CY 07 - xiaoyu
   - 🇨🇾 CY 08 - xiaoyu
+  - 🇨🇾 CY 09 - xiaoyu
+  - 🇨🇾 CY 10 - xiaoyu
+  - 🇨🇾 CY 11 - xiaoyu
+  - 🇨🇾 CY 12 - xiaoyu
+  - 🇨🇾 CY 13 - xiaoyu
+  - 🇨🇾 CY 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,5 +201,11 @@ proxy-groups:
   - 🇨🇾 CY 06 - xiaoyu
   - 🇨🇾 CY 07 - xiaoyu
   - 🇨🇾 CY 08 - xiaoyu
+  - 🇨🇾 CY 09 - xiaoyu
+  - 🇨🇾 CY 10 - xiaoyu
+  - 🇨🇾 CY 11 - xiaoyu
+  - 🇨🇾 CY 12 - xiaoyu
+  - 🇨🇾 CY 13 - xiaoyu
+  - 🇨🇾 CY 14 - xiaoyu
 rules:
 - MATCH,PROXIES
