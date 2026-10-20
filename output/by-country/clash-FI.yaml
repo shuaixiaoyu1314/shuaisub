@@ -6,15 +6,15 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
-  server: 77.42.73.93
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-  servername: play.google.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - xiaoyu
   type: vless
@@ -30,16 +30,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -55,42 +56,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - xiaoyu
-  type: vless
-  server: 77.42.73.93
-  port: 8080
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: 77.42.73.93
-- name: 🇫🇮 FI 08 - xiaoyu
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - xiaoyu
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -103,7 +80,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 09 - xiaoyu
+- name: 🇫🇮 FI 07 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -115,6 +92,30 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: random
+- name: 🇫🇮 FI 08 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 10 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -130,46 +131,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 11 - xiaoyu
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 434f0115-bf40-44ac-cf80-5c14f4b6f6b3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.firefox.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
-- name: 🇫🇮 FI 12 - xiaoyu
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 434f0115-bf40-44ac-cf80-5c14f4b6f6b3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.firefox.com
-  network: ws
-  ws-opts:
-    path: /?ed=2056/?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
-- name: 🇫🇮 FI 13 - xiaoyu
-  type: vless
-  server: 77.42.73.93
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 14 - xiaoyu
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -181,45 +142,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 15 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 16 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 17 - xiaoyu
-  type: vless
-  server: 77.42.73.93
-  port: 8080
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 77.42.73.93
 proxy-groups:
 - name: PROXIES
   type: select
@@ -236,12 +158,6 @@ proxy-groups:
   - 🇫🇮 FI 09 - xiaoyu
   - 🇫🇮 FI 10 - xiaoyu
   - 🇫🇮 FI 11 - xiaoyu
-  - 🇫🇮 FI 12 - xiaoyu
-  - 🇫🇮 FI 13 - xiaoyu
-  - 🇫🇮 FI 14 - xiaoyu
-  - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -258,11 +174,5 @@ proxy-groups:
   - 🇫🇮 FI 09 - xiaoyu
   - 🇫🇮 FI 10 - xiaoyu
   - 🇫🇮 FI 11 - xiaoyu
-  - 🇫🇮 FI 12 - xiaoyu
-  - 🇫🇮 FI 13 - xiaoyu
-  - 🇫🇮 FI 14 - xiaoyu
-  - 🇫🇮 FI 15 - xiaoyu
-  - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
 rules:
 - MATCH,PROXIES
