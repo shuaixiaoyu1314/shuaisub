@@ -19,16 +19,6 @@ proxies:
     headers:
       Host: 103.148.73.173
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21022
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -42,16 +32,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21018
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
