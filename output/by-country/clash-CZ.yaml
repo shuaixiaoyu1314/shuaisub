@@ -5,13 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
+  type: vless
+  server: 192.0.63.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: 🇨🇿 CZ 02 - xiaoyu
   type: ss
   server: 67.159.18.34
   port: 17001
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
-- name: 🇨🇿 CZ 02 - xiaoyu
+- name: 🇨🇿 CZ 03 - xiaoyu
+  type: vless
+  server: 190.93.244.209
+  port: 443
+  uuid: 903883c7-e62f-436e-a28c-e777637bb757
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: loaD-Bal-AC000A.sTAGiNg-Api-78c1a1.WorKErs.deV
+  network: ws
+  ws-opts:
+    path: /vl/7yxyRoUx67K43EW4zOdKqawWj2mXHsfh?ed=2560
+    headers:
+      Host: LOAd-bal-Ac000a.StaGInG-aPi-78C1A1.wOrkeRs.dEV
+- name: 🇨🇿 CZ 04 - xiaoyu
   type: ss
   server: 67.159.18.34
   port: 17001
@@ -25,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
 rules:
 - MATCH,PROXIES
