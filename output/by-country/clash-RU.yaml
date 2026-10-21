@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 185.141.227.223
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
@@ -19,20 +19,47 @@ proxies:
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: ss
+  server: 46.17.44.216
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 188.114.97.6
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: ezaccess-project-f62c30.pages.dev
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+      Host: ezaccess-project-f62c30.pages.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: ss
+  server: 176.32.34.253
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   type: vless
   server: 185.141.227.223
   port: 443
@@ -46,6 +73,34 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: ss
+  server: 176.32.33.254
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +109,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +123,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,54 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaoyu
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 02 - xiaoyu
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04 - xiaoyu
   type: ss
-  server: 202.50.253.72
+  server: 202.50.253.45
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 (Italy) 02 - xiaoyu
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 04 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - xiaoyu
   type: ss
-  server: 202.50.253.99
-  port: 19999
+  server: 57.131.48.45
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 06 - xiaoyu
   type: vless
@@ -63,71 +49,56 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 07 - xiaoyu
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: gizmodo.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇮🇹 意大利 (Italy) 08 - xiaoyu
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: epam.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇮🇹 意大利 (Italy) 09 - xiaoyu
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 10 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 12 - xiaoyu
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 13 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 14 - xiaoyu
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 15 - xiaoyu
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 16 - xiaoyu
+- name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 12 - xiaoyu
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -135,21 +106,55 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 17 - xiaoyu
+- name: 🇮🇹 意大利 (Italy) 13 - xiaoyu
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 14 - xiaoyu
   type: ss
   server: 202.50.253.36
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 (Italy) 18 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 15 - xiaoyu
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
+- name: 🇮🇹 意大利 (Italy) 16 - xiaoyu
+  type: vless
+  server: help1.digikala-aparat-zula.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
   skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
+- name: 🇮🇹 意大利 (Italy) 17 - xiaoyu
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 18 - xiaoyu
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 (Italy) 19 - xiaoyu
   type: vless
   server: 204.216.216.23
@@ -159,27 +164,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 20 - xiaoyu
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 21 - xiaoyu
   type: ss
-  server: 57.131.48.45
-  port: 8388
+  server: 202.50.253.99
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 22 - xiaoyu
   type: ss
-  server: 202.50.253.36
+  server: 202.50.253.63
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -193,43 +193,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 24 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 25 - xiaoyu
   type: ss
-  server: 202.50.253.90
+  server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 (Italy) 25 - xiaoyu
+  type: vless
+  server: cloudinary.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇮🇹 意大利 (Italy) 26 - xiaoyu
   type: ss
-  server: 202.50.253.54
+  server: 202.50.253.63
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 27 - xiaoyu
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 28 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 29 - xiaoyu
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -240,66 +231,57 @@ proxies:
   reality-opts:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 28 - xiaoyu
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 29 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 30 - xiaoyu
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 31 - xiaoyu
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: lifehacker.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇮🇹 意大利 (Italy) 32 - xiaoyu
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 33 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 34 - xiaoyu
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 35 - xiaoyu
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 36 - xiaoyu
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 37 - xiaoyu
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 38 - xiaoyu
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -311,6 +293,187 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 34 - xiaoyu
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 35 - xiaoyu
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 36 - xiaoyu
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 37 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 38 - xiaoyu
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 39 - xiaoyu
+  type: vless
+  server: medium.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
+- name: 🇮🇹 意大利 (Italy) 40 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 41 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 43 - xiaoyu
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 44 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 45 - xiaoyu
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 46 - xiaoyu
+  type: vless
+  server: 45.131.209.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇮🇹 意大利 (Italy) 47 - xiaoyu
+  type: vless
+  server: nyse.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
+- name: 🇮🇹 意大利 (Italy) 48 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 49 - xiaoyu
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 50 - xiaoyu
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 51 - xiaoyu
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 52 - xiaoyu
+  type: vless
+  server: cambridge.org
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -354,6 +517,20 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 36 - xiaoyu
   - 🇮🇹 意大利 (Italy) 37 - xiaoyu
   - 🇮🇹 意大利 (Italy) 38 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 39 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 40 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 41 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 43 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 44 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 45 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 46 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 47 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 48 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 49 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 50 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 51 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 52 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -397,5 +574,19 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 36 - xiaoyu
   - 🇮🇹 意大利 (Italy) 37 - xiaoyu
   - 🇮🇹 意大利 (Italy) 38 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 39 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 40 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 41 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 42 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 43 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 44 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 45 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 46 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 47 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 48 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 49 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 50 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 51 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 52 - xiaoyu
 rules:
 - MATCH,PROXIES
