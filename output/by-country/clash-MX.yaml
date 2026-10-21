@@ -1,0 +1,51 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇽 MX 01 - xiaoyu
+  type: vmess
+  server: 131.196.252.59
+  port: 20521
+  uuid: 5809911a-a16e-43d3-90b0-2c94cfc2035e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 131.196.252.59
+- name: 🇲🇽 MX 02 - xiaoyu
+  type: vless
+  server: 131.196.253.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇽 MX 01 - xiaoyu
+  - 🇲🇽 MX 02 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇽 MX 01 - xiaoyu
+  - 🇲🇽 MX 02 - xiaoyu
+rules:
+- MATCH,PROXIES

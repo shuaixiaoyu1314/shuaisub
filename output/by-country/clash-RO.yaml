@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaoyu
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
@@ -21,19 +20,21 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - xiaoyu
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 04 - xiaoyu
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 05 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
@@ -44,25 +45,26 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 06 - xiaoyu
   type: vless
-  server: 45.12.30.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇷🇴 RO 07 - xiaoyu
-  type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 07 - xiaoyu
+  type: vless
+  server: 194.180.191.249
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
 - name: 🇷🇴 RO 08 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
