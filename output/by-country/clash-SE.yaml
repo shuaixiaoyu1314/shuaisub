@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
   server: 94.143.231.146
@@ -30,12 +30,26 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: sub.merky.top
+      Host: 94.143.231.146
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: 193.188.21.253
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vless
+  server: 5.178.109.174
   port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -43,21 +57,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -73,6 +73,19 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 06 - xiaoyu
   type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -84,7 +97,35 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 07 - xiaoyu
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromesecurity=tls
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 10 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -98,47 +139,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: ip13.shabkhosh.sbs
-  port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4ez.pages.dev
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 SE 11 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -163,7 +163,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 13 - xiaoyu
@@ -181,18 +181,18 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 14 - xiaoyu
   type: vless
-  server: patreon.com
+  server: 77.110.97.245
   port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: wallweb-4ez.pages.dev
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
-  type: vmess
-  server: eu3.998998.best
+  type: vless
+  server: 38.180.163.250
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server40.9966338.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /aiaiai
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: server40.9966338.xyz
+      Host: lucasjow.us.ci
 - name: 🇪🇪 EE 02 - xiaoyu
   type: vless
   server: 38.180.163.250
@@ -34,6 +32,20 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
+- name: 🇪🇪 EE 03 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-ee
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
+  - 🇪🇪 EE 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
+  - 🇪🇪 EE 03 - xiaoyu
 rules:
 - MATCH,PROXIES
