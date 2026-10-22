@@ -6,23 +6,9 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
-- name: 🇸🇪 SE 02 - xiaoyu
-  type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -30,21 +16,33 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - xiaoyu
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.com+
+    path: /vless
     headers:
-      Host: free.cndyw.ggff.net
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 193.188.21.253
@@ -60,40 +58,19 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 94.143.231.146
+  server: lifehacker.com
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
+  servername: wallweb-4ez.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 08 - xiaoyu
+      Host: wallweb-4ez.pages.dev
+- name: 🇸🇪 SE 06 - xiaoyu
   type: vless
   server: 94.143.231.146
   port: 443
@@ -107,20 +84,21 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 09 - xiaoyu
+- name: 🇸🇪 SE 07 - xiaoyu
   type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /fp=chromesecurity=tls
     headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 10 - xiaoyu
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 08 - xiaoyu
   type: vless
   server: sub.merky.top
   port: 443
@@ -134,20 +112,48 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 11 - xiaoyu
+- name: 🇸🇪 SE 09 - xiaoyu
   type: vless
-  server: 103.71.23.244
+  server: 77.110.97.245
   port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 10 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shin-ra.ccwu.cc
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: 94.143.231.146
 - name: 🇸🇪 SE 12 - xiaoyu
   type: vless
   server: sub.merky.top
@@ -164,6 +170,34 @@ proxies:
       Host: sub.merky.top
 - name: 🇸🇪 SE 13 - xiaoyu
   type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 15 - xiaoyu
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -175,7 +209,35 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 14 - xiaoyu
+- name: 🇸🇪 SE 16 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 17 - xiaoyu
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 18 - xiaoyu
   type: vless
   server: 94.143.231.146
   port: 443
@@ -188,61 +250,7 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: 94.143.231.146
-- name: 🇸🇪 SE 15 - xiaoyu
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4ez.pages.dev
-- name: 🇸🇪 SE 16 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 17 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 18 - xiaoyu
-  type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
-    headers:
-      Host: free.cndyw.ggff.net
+      Host: sub.merky.top
 - name: 🇸🇪 SE 19 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -258,75 +266,48 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 20 - xiaoyu
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 5.178.109.174
+      Host: shin-ra.ccwu.cc
 - name: 🇸🇪 SE 21 - xiaoyu
   type: vless
-  server: fool.com
-  port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: wallweb-4ez.pages.dev
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 22 - xiaoyu
   type: vless
-  server: cambridge.org
+  server: 103.71.23.244
   port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
+  servername: shin-ra.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: wallweb-4ez.pages.dev
+      Host: shin-ra.ccwu.cc
 - name: 🇸🇪 SE 23 - xiaoyu
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 24 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 25 - xiaoyu
-  type: vless
-  server: indiegogo.com
+  server: indeed.com
   port: 443
   uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
@@ -338,171 +319,6 @@ proxies:
     path: /
     headers:
       Host: wallweb-4ez.pages.dev
-- name: 🇸🇪 SE 26 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇸🇪 SE 27 - xiaoyu
-  type: vless
-  server: 109.120.134.243
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 🇸🇪 SE 28 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇸🇪 SE 29 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromesecurity=tls
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 30 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 31 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: 94.143.231.146
-- name: 🇸🇪 SE 32 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 33 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 34 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 35 - xiaoyu
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 36 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 37 - xiaoyu
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -531,20 +347,6 @@ proxy-groups:
   - 🇸🇪 SE 21 - xiaoyu
   - 🇸🇪 SE 22 - xiaoyu
   - 🇸🇪 SE 23 - xiaoyu
-  - 🇸🇪 SE 24 - xiaoyu
-  - 🇸🇪 SE 25 - xiaoyu
-  - 🇸🇪 SE 26 - xiaoyu
-  - 🇸🇪 SE 27 - xiaoyu
-  - 🇸🇪 SE 28 - xiaoyu
-  - 🇸🇪 SE 29 - xiaoyu
-  - 🇸🇪 SE 30 - xiaoyu
-  - 🇸🇪 SE 31 - xiaoyu
-  - 🇸🇪 SE 32 - xiaoyu
-  - 🇸🇪 SE 33 - xiaoyu
-  - 🇸🇪 SE 34 - xiaoyu
-  - 🇸🇪 SE 35 - xiaoyu
-  - 🇸🇪 SE 36 - xiaoyu
-  - 🇸🇪 SE 37 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -573,19 +375,5 @@ proxy-groups:
   - 🇸🇪 SE 21 - xiaoyu
   - 🇸🇪 SE 22 - xiaoyu
   - 🇸🇪 SE 23 - xiaoyu
-  - 🇸🇪 SE 24 - xiaoyu
-  - 🇸🇪 SE 25 - xiaoyu
-  - 🇸🇪 SE 26 - xiaoyu
-  - 🇸🇪 SE 27 - xiaoyu
-  - 🇸🇪 SE 28 - xiaoyu
-  - 🇸🇪 SE 29 - xiaoyu
-  - 🇸🇪 SE 30 - xiaoyu
-  - 🇸🇪 SE 31 - xiaoyu
-  - 🇸🇪 SE 32 - xiaoyu
-  - 🇸🇪 SE 33 - xiaoyu
-  - 🇸🇪 SE 34 - xiaoyu
-  - 🇸🇪 SE 35 - xiaoyu
-  - 🇸🇪 SE 36 - xiaoyu
-  - 🇸🇪 SE 37 - xiaoyu
 rules:
 - MATCH,PROXIES

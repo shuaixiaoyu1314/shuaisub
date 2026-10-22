@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇹 PT 01 - xiaoyu
+- name: 🇳🇿 NZ 01 - xiaoyu
   type: vless
-  server: 31.192.237.186
-  port: 2053
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  server: 114.23.136.104
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
+  servername: shin-ra.ccwu.cc
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=
+    path: /
     headers:
-      Host: wzs.echo.net.eu.org
+      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇹 PT 01 - xiaoyu
+  - 🇳🇿 NZ 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 PT 01 - xiaoyu
+  - 🇳🇿 NZ 01 - xiaoyu
 rules:
 - MATCH,PROXIES

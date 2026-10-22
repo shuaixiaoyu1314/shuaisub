@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - xiaoyu
   type: vless
-  server: 194.36.37.59
-  port: 10004
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 194.36.37.59
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: firefox
 - name: 🇦🇲 AM 02 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -52,7 +51,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 05 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -76,7 +75,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 07 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -88,7 +87,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇲 AM 08 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -124,7 +123,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇦🇲 AM 11 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -136,7 +135,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇦🇲 AM 12 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -160,7 +159,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 14 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -172,7 +171,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 15 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -184,7 +183,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 16 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -196,7 +195,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇦🇲 AM 17 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -208,7 +207,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇦🇲 AM 18 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -220,7 +219,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇲 AM 19 - xiaoyu
   type: vless
   server: 77.91.68.70
@@ -232,19 +231,7 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇦🇲 AM 20 - xiaoyu
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -269,7 +256,6 @@ proxy-groups:
   - 🇦🇲 AM 17 - xiaoyu
   - 🇦🇲 AM 18 - xiaoyu
   - 🇦🇲 AM 19 - xiaoyu
-  - 🇦🇲 AM 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -294,6 +280,5 @@ proxy-groups:
   - 🇦🇲 AM 17 - xiaoyu
   - 🇦🇲 AM 18 - xiaoyu
   - 🇦🇲 AM 19 - xiaoyu
-  - 🇦🇲 AM 20 - xiaoyu
 rules:
 - MATCH,PROXIES
