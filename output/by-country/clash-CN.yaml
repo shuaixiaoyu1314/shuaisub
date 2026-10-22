@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaoyu
   type: vless
-  server: vpn.cintaku.qzz.io
+  server: 188.114.98.0
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - xiaoyu
   type: vless
-  server: 188.114.98.0
+  server: vpn.cintaku.qzz.io
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 03 - xiaoyu
   type: vless
-  server: vpn.cintaku.qzz.io
+  server: 188.114.98.0
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -102,6 +102,76 @@ proxies:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 08 - xiaoyu
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 09 - xiaoyu
+  type: vless
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 10 - xiaoyu
+  type: vless
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 11 - xiaoyu
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 12 - xiaoyu
+  type: vless
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +184,11 @@ proxy-groups:
   - 🇨🇳 CN 05 - xiaoyu
   - 🇨🇳 CN 06 - xiaoyu
   - 🇨🇳 CN 07 - xiaoyu
+  - 🇨🇳 CN 08 - xiaoyu
+  - 🇨🇳 CN 09 - xiaoyu
+  - 🇨🇳 CN 10 - xiaoyu
+  - 🇨🇳 CN 11 - xiaoyu
+  - 🇨🇳 CN 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +201,10 @@ proxy-groups:
   - 🇨🇳 CN 05 - xiaoyu
   - 🇨🇳 CN 06 - xiaoyu
   - 🇨🇳 CN 07 - xiaoyu
+  - 🇨🇳 CN 08 - xiaoyu
+  - 🇨🇳 CN 09 - xiaoyu
+  - 🇨🇳 CN 10 - xiaoyu
+  - 🇨🇳 CN 11 - xiaoyu
+  - 🇨🇳 CN 12 - xiaoyu
 rules:
 - MATCH,PROXIES

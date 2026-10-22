@@ -6,19 +6,33 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
-  server: 177.3.208.65
+  server: 38.180.163.250
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /vless-ee
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: tgmansion.site
+      Host: lucasjow.us.ci
 - name: 🇪🇪 EE 02 - xiaoyu
+  type: vless
+  server: 38.180.163.250
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇪🇪 EE 03 - xiaoyu
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -34,20 +48,20 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 03 - xiaoyu
+- name: 🇪🇪 EE 04 - xiaoyu
   type: vless
-  server: 38.180.163.250
+  server: 177.3.208.65
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /vless-ee
     headers:
-      Host: lucasjow.us.ci
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +70,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +79,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
 rules:
 - MATCH,PROXIES
