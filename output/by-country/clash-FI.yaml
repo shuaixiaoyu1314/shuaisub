@@ -6,19 +6,30 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fi1.merky.one
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 02 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /vless
     headers:
-      Host: fi1.merky.one
-- name: 🇫🇮 FI 02 - xiaoyu
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -29,10 +40,10 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 03 - xiaoyu
+  client-fingerprint: random
+- name: 🇫🇮 FI 04 - xiaoyu
   type: vless
-  server: 2.26.106.232
+  server: finland02.azotvpn.xyz
   port: 8443
   uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
   udp: true
@@ -41,18 +52,6 @@ proxies:
   reality-opts:
     public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
   servername: finland02.azotvpn.xyz
-  client-fingerprint: random
-- name: 🇫🇮 FI 04 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
   client-fingerprint: random
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
@@ -68,7 +67,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - xiaoyu
   type: vless
-  server: 188.114.98.0
+  server: 8.6.112.0
   port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
@@ -82,6 +81,18 @@ proxies:
       Host: fi1.merky.one
 - name: 🇫🇮 FI 07 - xiaoyu
   type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 08 - xiaoyu
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -93,22 +104,10 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 08 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 09 - xiaoyu
   type: vless
-  server: 188.114.98.0
-  port: 443
+  server: 144.31.34.146
+  port: 2096
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
@@ -121,8 +120,8 @@ proxies:
       Host: fi1.merky.one
 - name: 🇫🇮 FI 10 - xiaoyu
   type: vless
-  server: 144.31.34.146
-  port: 2096
+  server: 188.114.98.0
+  port: 443
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
@@ -147,16 +146,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 12 - xiaoyu
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 13 - xiaoyu
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -169,20 +158,34 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 14 - xiaoyu
+- name: 🇫🇮 FI 13 - xiaoyu
   type: vless
-  server: uk9.998998.best
+  server: 8.6.112.0
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server8.9966338.xyz
+  servername: fi1.merky.one
   network: ws
   ws-opts:
-    path: /fdtiouasopeiyre0r95y8
+    path: /mky-ws-4f19c8a7
     headers:
-      Host: server8.9966338.xyz
+      Host: fi1.merky.one
+- name: 🇫🇮 FI 14 - xiaoyu
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fi1.merky.one
+  network: ws
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: fi1.merky.one
 - name: 🇫🇮 FI 15 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -209,94 +212,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 17 - xiaoyu
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 2.26.106.232
+  port: 8443
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: random
 - name: 🇫🇮 FI 18 - xiaoyu
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 19 - xiaoyu
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
-- name: 🇫🇮 FI 20 - xiaoyu
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
-- name: 🇫🇮 FI 21 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 22 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 23 - xiaoyu
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 24 - xiaoyu
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -308,7 +235,21 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 25 - xiaoyu
+- name: 🇫🇮 FI 19 - xiaoyu
+  type: vless
+  server: uk9.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server8.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /fdtiouasopeiyre0r95y8
+    headers:
+      Host: server8.9966338.xyz
+- name: 🇫🇮 FI 20 - xiaoyu
   type: vless
   server: 188.114.98.0
   port: 443
@@ -322,6 +263,19 @@ proxies:
     path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
       Host: server8.9966338.xyz
+- name: 🇫🇮 FI 21 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -348,10 +302,6 @@ proxy-groups:
   - 🇫🇮 FI 19 - xiaoyu
   - 🇫🇮 FI 20 - xiaoyu
   - 🇫🇮 FI 21 - xiaoyu
-  - 🇫🇮 FI 22 - xiaoyu
-  - 🇫🇮 FI 23 - xiaoyu
-  - 🇫🇮 FI 24 - xiaoyu
-  - 🇫🇮 FI 25 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -378,9 +328,5 @@ proxy-groups:
   - 🇫🇮 FI 19 - xiaoyu
   - 🇫🇮 FI 20 - xiaoyu
   - 🇫🇮 FI 21 - xiaoyu
-  - 🇫🇮 FI 22 - xiaoyu
-  - 🇫🇮 FI 23 - xiaoyu
-  - 🇫🇮 FI 24 - xiaoyu
-  - 🇫🇮 FI 25 - xiaoyu
 rules:
 - MATCH,PROXIES

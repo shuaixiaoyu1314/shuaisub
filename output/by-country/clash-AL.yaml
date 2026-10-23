@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaoyu
+- name: 🇦🇱 AL 01 - xiaoyu
   type: ss
-  server: 20.166.51.228
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: LVMlhvK82To1FGsy
+  server: 31.171.155.50
+  port: 10394
+  cipher: aes-128-gcm
+  password: 16e3d1d2200f8bb68feed164ef43a021
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇦🇱 AL 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇦🇱 AL 01 - xiaoyu
 rules:
 - MATCH,PROXIES
