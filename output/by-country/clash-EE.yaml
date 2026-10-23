@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: tgmansion.site
-- name: 🇪🇪 EE 02 - xiaoyu
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -34,7 +20,7 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 03 - xiaoyu
+- name: 🇪🇪 EE 02 - xiaoyu
   type: vless
   server: 38.180.163.250
   port: 443
@@ -48,7 +34,7 @@ proxies:
     path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: a.cwvps.eu.org
-- name: 🇪🇪 EE 04 - xiaoyu
+- name: 🇪🇪 EE 03 - xiaoyu
   type: vless
   server: 177.3.208.65
   port: 443
@@ -61,7 +47,7 @@ proxies:
   ws-opts:
     path: /vless-ee
     headers:
-      Host: 177.3.208.65
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +56,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,6 +64,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
 rules:
 - MATCH,PROXIES

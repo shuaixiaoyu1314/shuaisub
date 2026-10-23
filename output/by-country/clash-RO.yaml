@@ -6,56 +6,22 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaoyu
   type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 02 - xiaoyu
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 03 - xiaoyu
-  type: ss
   server: 194.68.44.42
   port: 64546
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 04 - xiaoyu
-  type: vless
-  server: 194.180.191.249
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - xiaoyu
-  - 🇷🇴 RO 02 - xiaoyu
-  - 🇷🇴 RO 03 - xiaoyu
-  - 🇷🇴 RO 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - xiaoyu
-  - 🇷🇴 RO 02 - xiaoyu
-  - 🇷🇴 RO 03 - xiaoyu
-  - 🇷🇴 RO 04 - xiaoyu
 rules:
 - MATCH,PROXIES
