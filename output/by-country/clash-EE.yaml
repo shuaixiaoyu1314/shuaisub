@@ -34,6 +34,38 @@ proxies:
     path: /vless-ee
     headers:
       Host: 177.3.208.65
+- name: 🇪🇪 EE 03 - xiaoyu
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 04 - xiaoyu
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +73,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
+  - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +82,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
+  - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
 rules:
 - MATCH,PROXIES
