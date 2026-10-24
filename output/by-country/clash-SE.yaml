@@ -19,19 +19,6 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - xiaoyu
-  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -44,6 +31,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: help1.digikala-aparat-zula.com
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 77.110.97.245
@@ -55,23 +56,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chromesecurity=tls
     headers:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 77.110.97.245
+  server: nyse.com
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: wallweb-4ez.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 SE 06 - xiaoyu
   type: vless
   server: 77.110.97.245
@@ -88,6 +89,74 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 07 - xiaoyu
   type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 10 - xiaoyu
+  type: vless
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 12 - xiaoyu
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -99,76 +168,49 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromesecurity=tls
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇪 SE 12 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 - name: 🇸🇪 SE 13 - xiaoyu
   type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 15 - xiaoyu
+  type: vless
+  server: 5.189.254.168
+  port: 2053
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.schzyc.cc.cd
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+- name: 🇸🇪 SE 16 - xiaoyu
+  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -181,7 +223,82 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 14 - xiaoyu
+- name: 🇸🇪 SE 17 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 18 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 19 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 20 - xiaoyu
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇸🇪 SE 21 - xiaoyu
+  type: vless
+  server: ip13.shabkhosh.sbs
+  port: 443
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-4ez.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
+- name: 🇸🇪 SE 22 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 23 - xiaoyu
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -213,6 +330,15 @@ proxy-groups:
   - 🇸🇪 SE 12 - xiaoyu
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
+  - 🇸🇪 SE 16 - xiaoyu
+  - 🇸🇪 SE 17 - xiaoyu
+  - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
+  - 🇸🇪 SE 21 - xiaoyu
+  - 🇸🇪 SE 22 - xiaoyu
+  - 🇸🇪 SE 23 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -232,5 +358,14 @@ proxy-groups:
   - 🇸🇪 SE 12 - xiaoyu
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
+  - 🇸🇪 SE 16 - xiaoyu
+  - 🇸🇪 SE 17 - xiaoyu
+  - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
+  - 🇸🇪 SE 21 - xiaoyu
+  - 🇸🇪 SE 22 - xiaoyu
+  - 🇸🇪 SE 23 - xiaoyu
 rules:
 - MATCH,PROXIES
