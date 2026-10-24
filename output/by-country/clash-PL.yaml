@@ -5,25 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
-  type: ss
-  server: 49.12.249.167
-  port: 147
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - xiaoyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
   udp: true
   tls: false
   skip-cert-verify: true
@@ -37,9 +38,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 05 - xiaoyu
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -53,19 +54,20 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 07 - xiaoyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 08 - xiaoyu
-  type: ss
-  server: 49.12.249.167
-  port: 147
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 PL 09 - xiaoyu
   type: vless
   server: site.teslamotor.site
@@ -76,9 +78,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 10 - xiaoyu
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -92,13 +94,37 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 12 - xiaoyu
   type: vless
-  server: 5.22.221.127
-  port: 443
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 13 - xiaoyu
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 14 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 15 - xiaoyu
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 16 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -124,6 +150,9 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaoyu
   - 🇵🇱 PL 12 - xiaoyu
   - 🇵🇱 PL 13 - xiaoyu
+  - 🇵🇱 PL 14 - xiaoyu
+  - 🇵🇱 PL 15 - xiaoyu
+  - 🇵🇱 PL 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +171,8 @@ proxy-groups:
   - 🇵🇱 PL 11 - xiaoyu
   - 🇵🇱 PL 12 - xiaoyu
   - 🇵🇱 PL 13 - xiaoyu
+  - 🇵🇱 PL 14 - xiaoyu
+  - 🇵🇱 PL 15 - xiaoyu
+  - 🇵🇱 PL 16 - xiaoyu
 rules:
 - MATCH,PROXIES
