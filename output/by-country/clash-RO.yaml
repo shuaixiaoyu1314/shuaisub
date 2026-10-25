@@ -21,12 +21,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - xiaoyu
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 04 - xiaoyu
   type: vless
   server: edge10.cyrionflare.com
@@ -44,12 +45,60 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 06 - xiaoyu
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 07 - xiaoyu
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
+- name: 🇷🇴 RO 08 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 09 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 10 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 11 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 12 - xiaoyu
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +110,12 @@ proxy-groups:
   - 🇷🇴 RO 04 - xiaoyu
   - 🇷🇴 RO 05 - xiaoyu
   - 🇷🇴 RO 06 - xiaoyu
+  - 🇷🇴 RO 07 - xiaoyu
+  - 🇷🇴 RO 08 - xiaoyu
+  - 🇷🇴 RO 09 - xiaoyu
+  - 🇷🇴 RO 10 - xiaoyu
+  - 🇷🇴 RO 11 - xiaoyu
+  - 🇷🇴 RO 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +127,11 @@ proxy-groups:
   - 🇷🇴 RO 04 - xiaoyu
   - 🇷🇴 RO 05 - xiaoyu
   - 🇷🇴 RO 06 - xiaoyu
+  - 🇷🇴 RO 07 - xiaoyu
+  - 🇷🇴 RO 08 - xiaoyu
+  - 🇷🇴 RO 09 - xiaoyu
+  - 🇷🇴 RO 10 - xiaoyu
+  - 🇷🇴 RO 11 - xiaoyu
+  - 🇷🇴 RO 12 - xiaoyu
 rules:
 - MATCH,PROXIES
