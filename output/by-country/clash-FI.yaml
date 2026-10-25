@@ -15,19 +15,20 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - xiaoyu
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -68,17 +69,16 @@ proxies:
   client-fingerprint: random
 - name: 🇫🇮 FI 06 - xiaoyu
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 07 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -90,20 +90,8 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 08 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 09 - xiaoyu
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -116,6 +104,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 10 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -130,20 +130,6 @@ proxies:
   client-fingerprint: firefox
 - name: 🇫🇮 FI 11 - xiaoyu
   type: vless
-  server: 65.109.212.121
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 12 - xiaoyu
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -155,6 +141,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 12 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 13 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -179,7 +177,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 15 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -194,32 +192,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 16 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 17 - xiaoyu
-  type: vless
-  server: 2.27.207.208
-  port: 8081
-  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ang-el.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ang-el.ir
-- name: 🇫🇮 FI 18 - xiaoyu
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -253,8 +225,6 @@ proxy-groups:
   - 🇫🇮 FI 14 - xiaoyu
   - 🇫🇮 FI 15 - xiaoyu
   - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
-  - 🇫🇮 FI 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -276,7 +246,5 @@ proxy-groups:
   - 🇫🇮 FI 14 - xiaoyu
   - 🇫🇮 FI 15 - xiaoyu
   - 🇫🇮 FI 16 - xiaoyu
-  - 🇫🇮 FI 17 - xiaoyu
-  - 🇫🇮 FI 18 - xiaoyu
 rules:
 - MATCH,PROXIES

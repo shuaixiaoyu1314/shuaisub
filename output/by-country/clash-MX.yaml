@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaoyu
+- name: 🇲🇽 MX 01 - xiaoyu
   type: vless
-  server: 38.180.163.250
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  server: 45.134.9.133
+  port: 8443
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: ul-mexico1.09vpn.com
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /vless/
     headers:
-      Host: a.cwvps.eu.org
+      Host: 45.134.9.133
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaoyu
+  - 🇲🇽 MX 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaoyu
+  - 🇲🇽 MX 01 - xiaoyu
 rules:
 - MATCH,PROXIES
