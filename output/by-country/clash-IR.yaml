@@ -5,39 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaoyu
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 52f10fa7-a74e-4634-8814-26a088723b05
+  type: ss
+  server: irnamh.g44mozgh.ir
+  port: 1001
+  cipher: chacha20-ietf-poly1305
+  password: cZ_BEAwsqEtHCExtItIrORFOdAwxic0G
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇮🇷 IR 02 - xiaoyu
-  type: vless
-  server: s10.redmbred.ir
-  port: 37857
-  uuid: 43d5b705-f33e-4d43-8540-b2de5f309117
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - xiaoyu
-  - 🇮🇷 IR 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - xiaoyu
-  - 🇮🇷 IR 02 - xiaoyu
 rules:
 - MATCH,PROXIES

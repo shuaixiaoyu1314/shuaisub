@@ -5,59 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /
+    path: /vless-tr
     headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
+      Host: 177.3.208.65
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 172.66.47.45
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: ezaccess-project-f62c30.pages.dev
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: ezaccess-project-f62c30.pages.dev
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: vless
   server: 46.243.142.104
   port: 443
@@ -71,56 +53,86 @@ proxies:
     path: /media/stream/qUWu2oaFgxAw
     headers:
       Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vless
+  server: 45.142.120.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime08.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  server: 195.133.23.50
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /?ed=2560
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: vms.lifetime08.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  type: ss
+  server: 46.17.43.227
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 177.3.208.65
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /vless-tr
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: tgmansion.site
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   type: vless
   server: xsru2.freeddns.org
   port: 443
@@ -134,63 +146,20 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  type: vless
-  server: 147.45.175.81
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru1.ddnsfree.com
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru1.ddnsfree.com
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: ss
-  server: 195.133.23.50
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
   type: vless
-  server: 46.243.142.104
-  port: 443
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: santehdv.site
   network: ws
   ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
+    path: /?ed=2560
     headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  type: ss
-  server: 46.17.43.227
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+      Host: vms.lifetime08.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -204,7 +173,60 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  type: vless
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime54.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -215,6 +237,131 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
+  type: vless
+  server: 45.142.120.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
+- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  type: vless
+  server: 147.45.175.81
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru1.ddnsfree.com
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
@@ -237,6 +384,17 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -259,5 +417,16 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
 rules:
 - MATCH,PROXIES
