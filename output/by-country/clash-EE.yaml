@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 02 - xiaoyu
   type: vless
   server: 177.3.208.65
   port: 443
@@ -17,20 +33,7 @@ proxies:
   ws-opts:
     path: /vless-ee
     headers:
-      Host: tgmansion.site
-- name: 🇪🇪 EE 02 - xiaoyu
-  type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
+      Host: 177.3.208.65
 - name: 🇪🇪 EE 03 - xiaoyu
   type: vmess
   server: eu3.998998.best
@@ -49,35 +52,19 @@ proxies:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 04 - xiaoyu
   type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
-    headers:
-      Host: cf3.schzyc.cc.cd
-- name: 🇪🇪 EE 05 - xiaoyu
-  type: vmess
-  server: eu3.998998.best
+  server: 38.180.163.250
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: server40.9966338.xyz
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /aiaiai
+    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 06 - xiaoyu
+      Host: a.cwvps.eu.org
+- name: 🇪🇪 EE 05 - xiaoyu
   type: vless
   server: 177.3.208.65
   port: 443
@@ -90,34 +77,8 @@ proxies:
   ws-opts:
     path: /vless-ee
     headers:
-      Host: 177.3.208.65
-- name: 🇪🇪 EE 07 - xiaoyu
-  type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇪🇪 EE 08 - xiaoyu
-  type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇪🇪 EE 09 - xiaoyu
+      Host: tgmansion.site
+- name: 🇪🇪 EE 06 - xiaoyu
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -133,19 +94,6 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 10 - xiaoyu
-  type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,10 +105,6 @@ proxy-groups:
   - 🇪🇪 EE 04 - xiaoyu
   - 🇪🇪 EE 05 - xiaoyu
   - 🇪🇪 EE 06 - xiaoyu
-  - 🇪🇪 EE 07 - xiaoyu
-  - 🇪🇪 EE 08 - xiaoyu
-  - 🇪🇪 EE 09 - xiaoyu
-  - 🇪🇪 EE 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -172,9 +116,5 @@ proxy-groups:
   - 🇪🇪 EE 04 - xiaoyu
   - 🇪🇪 EE 05 - xiaoyu
   - 🇪🇪 EE 06 - xiaoyu
-  - 🇪🇪 EE 07 - xiaoyu
-  - 🇪🇪 EE 08 - xiaoyu
-  - 🇪🇪 EE 09 - xiaoyu
-  - 🇪🇪 EE 10 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -16,35 +16,30 @@ proxies:
   ws-opts:
     path: /platform128
     headers:
-      Host: platform128.golnamakcert.top
+      Host: platform128.halalkhor.info
 - name: 🇲🇾 MY 02 - xiaoyu
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 03 - xiaoyu
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /platform128
     headers:
-      Host: ccc.010304.xyz
+      Host: platform128.halalkhor.info
 - name: 🇲🇾 MY 04 - xiaoyu
   type: vless
   server: 216.173.67.59
@@ -61,19 +56,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 05 - xiaoyu
   type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 06 - xiaoyu
-  type: vless
   server: 216.173.67.59
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -83,47 +65,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 07 - xiaoyu
-  type: vless
-  server: 111.90.143.184
-  port: 61111
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
-  servername: github.com
-  client-fingerprint: chrome
-- name: 🇲🇾 MY 08 - xiaoyu
-  type: vless
-  server: 111.90.143.184
-  port: 61111
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
-  servername: github.com
-  client-fingerprint: chrome
-- name: 🇲🇾 MY 09 - xiaoyu
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 10 - xiaoyu
+- name: 🇲🇾 MY 06 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -137,7 +82,44 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 11 - xiaoyu
+- name: 🇲🇾 MY 07 - xiaoyu
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 08 - xiaoyu
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.golnamakcert.top
+- name: 🇲🇾 MY 09 - xiaoyu
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 10 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -151,20 +133,45 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇲🇾 MY 11 - xiaoyu
+  type: vless
+  server: 111.90.143.184
+  port: 61111
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
+  servername: github.com
+  client-fingerprint: chrome
 - name: 🇲🇾 MY 12 - xiaoyu
   type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 111.90.143.184
+  port: 61111
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU
+  servername: github.com
+  client-fingerprint: chrome
+- name: 🇲🇾 MY 13 - xiaoyu
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /platform128
+    path: /
     headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 13 - xiaoyu
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 14 - xiaoyu
   type: vless
   server: 216.173.67.59
   port: 443
@@ -178,26 +185,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 14 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇲🇾 MY 15 - xiaoyu
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select

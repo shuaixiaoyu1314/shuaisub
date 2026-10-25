@@ -6,117 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - xiaoyu
   type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 02 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 03 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 04 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 05 - xiaoyu
-  type: vless
-  server: 173.245.49.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime36.workers.dev
-- name: 🇮🇱 IL 06 - xiaoyu
-  type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇮🇱 IL 07 - xiaoyu
-  type: vless
-  server: 64.177.66.9
-  port: 8443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp7.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /events/classfp=chrome
-    headers:
-      Host: vp7.1145678.xyz
-- name: 🇮🇱 IL 08 - xiaoyu
-  type: vless
-  server: 64.177.66.9
-  port: 8443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp7.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /events/classfp=chrome
-    headers:
-      Host: vp7.1145678.xyz
-- name: 🇮🇱 IL 09 - xiaoyu
-  type: vless
   server: 177.3.208.65
   port: 443
   uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
@@ -129,20 +18,20 @@ proxies:
     path: /vless-il
     headers:
       Host: tgmansion.site
-- name: 🇮🇱 IL 10 - xiaoyu
+- name: 🇮🇱 IL 02 - xiaoyu
   type: vless
-  server: 185.253.75.119
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 64.177.66.9
+  port: 8443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: vp7.1145678.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /events/classfp=chrome
     headers:
-      Host: ccc.010304.xyz
+      Host: vp7.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,14 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
-  - 🇮🇱 IL 03 - xiaoyu
-  - 🇮🇱 IL 04 - xiaoyu
-  - 🇮🇱 IL 05 - xiaoyu
-  - 🇮🇱 IL 06 - xiaoyu
-  - 🇮🇱 IL 07 - xiaoyu
-  - 🇮🇱 IL 08 - xiaoyu
-  - 🇮🇱 IL 09 - xiaoyu
-  - 🇮🇱 IL 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -165,13 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
-  - 🇮🇱 IL 03 - xiaoyu
-  - 🇮🇱 IL 04 - xiaoyu
-  - 🇮🇱 IL 05 - xiaoyu
-  - 🇮🇱 IL 06 - xiaoyu
-  - 🇮🇱 IL 07 - xiaoyu
-  - 🇮🇱 IL 08 - xiaoyu
-  - 🇮🇱 IL 09 - xiaoyu
-  - 🇮🇱 IL 10 - xiaoyu
 rules:
 - MATCH,PROXIES
