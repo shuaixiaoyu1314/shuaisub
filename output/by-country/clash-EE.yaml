@@ -6,45 +6,33 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇪🇪 EE 02 - xiaoyu
-  type: vless
-  server: 185.178.208.167
+  server: 177.3.208.65
   port: 443
-  uuid: d49f7cc7-0c15-4a49-9644-ef72e00d8e56
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dropstyle.lol
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /service/metrics/51dec2df3071/
+    path: /vless-ee
     headers:
-      Host: dropstyle.lol
-- name: 🇪🇪 EE 03 - xiaoyu
+      Host: 177.3.208.65
+- name: 🇪🇪 EE 02 - xiaoyu
   type: vless
-  server: 185.159.247.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 38.180.163.250
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: vms.lifetime59.workers.dev
-- name: 🇪🇪 EE 04 - xiaoyu
+      Host: a.cwvps.eu.org
+- name: 🇪🇪 EE 03 - xiaoyu
   type: vless
   server: 177.3.208.65
   port: 443
@@ -58,20 +46,6 @@ proxies:
     path: /vless-ee
     headers:
       Host: tgmansion.site
-- name: 🇪🇪 EE 05 - xiaoyu
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,8 +54,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
-  - 🇪🇪 EE 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,7 +62,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
-  - 🇪🇪 EE 04 - xiaoyu
-  - 🇪🇪 EE 05 - xiaoyu
 rules:
 - MATCH,PROXIES

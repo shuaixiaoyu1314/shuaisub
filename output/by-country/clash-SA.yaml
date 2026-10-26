@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - xiaoyu
+- name: 🇸🇦 SA 01 - xiaoyu
   type: vless
-  server: 37.221.210.113
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 81.208.170.142
+  port: 1500
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: /pyip=bpb.yousef.isegaro.com
-    headers:
-      Host: free.cndyw.ggff.net
+  reality-opts:
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+  servername: www.ebay.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - xiaoyu
+  - 🇸🇦 SA 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - xiaoyu
+  - 🇸🇦 SA 01 - xiaoyu
 rules:
 - MATCH,PROXIES

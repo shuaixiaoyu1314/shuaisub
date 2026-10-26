@@ -6,19 +6,20 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaoyu
   type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: ''
     headers:
-      Host: 132.145.80.230
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaoyu
   type: vless
   server: 151.245.106.49
@@ -45,8 +46,44 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: kr02.a0a.xyz
+      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -56,7 +93,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -68,38 +119,14 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
-  type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaoyu
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -110,23 +137,8 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaoyu
   type: vmess
   server: seoul02.zgjok.com
   port: 443
@@ -142,22 +154,7 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaoyu
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -172,64 +169,20 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaoyu
-  type: vless
-  server: 158.247.222.168
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 15 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 16 - xiaoyu
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  type: ss
+  server: 141.164.45.187
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 17 - xiaoyu
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 18 - xiaoyu
   type: vmess
   server: 132.145.80.230
@@ -247,81 +200,6 @@ proxies:
       Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 19 - xiaoyu
   type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaoyu
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 22 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 23 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 24 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 25 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 26 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 27 - xiaoyu
-  type: vmess
   server: seoul02.zgjok.com
   port: 443
   uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
@@ -336,6 +214,96 @@ proxies:
     path: /
     headers:
       Host: seoul02.zgjok.com
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 21 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 22 - xiaoyu
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 23 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 24 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 25 - xiaoyu
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 26 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 27 - xiaoyu
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 28 - xiaoyu
   type: vmess
   server: 140.238.2.250
@@ -347,33 +315,71 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 29 - xiaoyu
-  type: vless
-  server: 158.247.222.168
+  type: vmess
+  server: 140.238.2.250
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 30 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 31 - xiaoyu
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 32 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 33 - xiaoyu
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 30 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 31 - xiaoyu
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -410,6 +416,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 29 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 30 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 31 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 32 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 33 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -446,5 +454,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 29 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 30 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 31 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 32 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 33 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,37 +6,9 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
-  server: fans.liverpool.qzz.io
-  port: 2053
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vless
   server: 217.19.122.156
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
@@ -46,70 +18,7 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 46.17.43.227
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 194.87.143.165
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: de12b.h1cloud.net
-  port: 25172
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Xr55Hig_JTeUluiGfSnma6zMHG2Uv5Xu30ZODGF5xGA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
   server: 147.45.175.81
   port: 443
@@ -123,7 +32,39 @@ proxies:
     path: /wsru
     headers:
       Host: xsru1.ddnsfree.com
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   type: vless
   server: xsru2.freeddns.org
   port: 443
@@ -137,20 +78,19 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  server: de15.h1cloud.net
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -164,13 +104,100 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  type: ss
-  server: 195.133.23.50
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  type: vless
+  server: de12b.h1cloud.net
+  port: 25172
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Xr55Hig_JTeUluiGfSnma6zMHG2Uv5Xu30ZODGF5xGA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 194.87.143.165
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 proxy-groups:
 - name: PROXIES
   type: select
@@ -190,6 +217,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -209,5 +237,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
 rules:
 - MATCH,PROXIES
