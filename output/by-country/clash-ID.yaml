@@ -32,6 +32,20 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇩 ID 03 - xiaoyu
+  type: vless
+  server: 43.173.1.153
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - xiaoyu
   - 🇮🇩 ID 02 - xiaoyu
+  - 🇮🇩 ID 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - xiaoyu
   - 🇮🇩 ID 02 - xiaoyu
+  - 🇮🇩 ID 03 - xiaoyu
 rules:
 - MATCH,PROXIES
