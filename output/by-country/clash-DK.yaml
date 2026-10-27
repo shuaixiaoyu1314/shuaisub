@@ -4,32 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - xiaoyu
+- name: 🇩🇰 DK 01 - xiaoyu
   type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16305
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - xiaoyu
+  - 🇩🇰 DK 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - xiaoyu
+  - 🇩🇰 DK 01 - xiaoyu
 rules:
 - MATCH,PROXIES
