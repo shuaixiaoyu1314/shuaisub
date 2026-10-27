@@ -28,18 +28,6 @@ proxies:
     public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇺 LU 03 - xiaoyu
-  type: vless
-  server: 107.189.7.176
-  port: 32752
-  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇱🇺 LU 01 - xiaoyu
   - 🇱🇺 LU 02 - xiaoyu
-  - 🇱🇺 LU 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇱🇺 LU 01 - xiaoyu
   - 🇱🇺 LU 02 - xiaoyu
-  - 🇱🇺 LU 03 - xiaoyu
 rules:
 - MATCH,PROXIES

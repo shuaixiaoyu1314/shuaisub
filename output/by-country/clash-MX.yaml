@@ -15,7 +15,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 02 - xiaoyu
   type: vless
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -24,18 +24,13 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 03 - xiaoyu
   type: vless
-  server: 45.134.9.133
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ul-mexico1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 45.134.9.133
+  servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 04 - xiaoyu
   type: vless
   server: mx001.zestapp778.com
@@ -47,22 +42,32 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 05 - xiaoyu
   type: vless
-  server: mx001.zestapp778.com
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: 131.196.253.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
 - name: 🇲🇽 MX 06 - xiaoyu
   type: vless
-  server: 149.104.90.21
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: 131.196.253.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mx001.zestapp778.com
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
 - name: 🇲🇽 MX 07 - xiaoyu
   type: vless
   server: 149.104.90.21
@@ -74,7 +79,7 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 08 - xiaoyu
   type: vless
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -83,13 +88,18 @@ proxies:
   servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 09 - xiaoyu
   type: vless
-  server: 149.104.90.21
-  port: 19167
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: 131.196.253.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 149.104.90.21
+  servername: kclx.eu.org
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
 proxy-groups:
 - name: PROXIES
   type: select

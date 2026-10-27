@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chromesecurity=tls
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   type: vless
   server: 155.103.71.142
@@ -27,35 +29,37 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  type: vless
-  server: 177.3.208.65
+  server: 155.103.71.142
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /
     headers:
-      Host: tgmansion.site
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  type: vless
+  server: 203.202.232.110
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -69,30 +73,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  type: ss
+  server: location8.cpanel-host10.ir
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
   type: vless
   server: 155.103.71.142
   port: 443
@@ -103,40 +90,40 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chromesecurity=tls
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  type: ss
+  server: 87.236.166.217
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  type: ss
+  server: 87.236.166.49
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
   type: vless
-  server: 177.3.208.65
+  server: 155.103.71.142
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /fp=chrome
     headers:
-      Host: 177.3.208.65
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
   type: ss
-  server: 87.236.166.88
+  server: 87.236.166.81
   port: 56134
   cipher: chacha20-ietf-poly1305
   password: uvKNudV-N8AUCrykPiyznA
@@ -157,76 +144,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
   type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
-  type: ss
-  server: 87.236.166.49
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
-  type: ss
-  server: location8.cpanel-host10.ir
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
-  type: ss
-  server: 87.236.166.100
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
-  type: ss
-  server: location15.cpanel-host16.ir
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
-  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -236,35 +153,15 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 21 - xiaoyu
-  type: vless
-  server: tr.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
+  type: ss
+  server: 87.236.166.88
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tr.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /TR1
-    headers:
-      Host: tr.pad-service.com
-- name: 🇹🇷 土耳其 (Turkey) 22 - xiaoyu
-  type: vless
-  server: helixgaming.ir
-  port: 80
-  uuid: fdaedc78-af7c-4b75-abf9-ba162321ddd9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 23 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   type: vless
   server: 177.3.208.65
   port: 443
@@ -278,20 +175,117 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 24 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
   type: vless
-  server: 177.3.208.65
+  server: 155.103.71.142
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /fp=chromefp=chrome
     headers:
-      Host: tgmansion.site
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
+  type: vless
+  server: 203.202.232.110
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇹🇷 土耳其 (Turkey) 21 - xiaoyu
+  type: ss
+  server: 87.236.166.220
+  port: 56137
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 22 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 23 - xiaoyu
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 24 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 25 - xiaoyu
   type: vless
   server: 177.3.208.65
@@ -305,63 +299,56 @@ proxies:
   ws-opts:
     path: /vless-tr
     headers:
-      Host: 177.3.208.65
+      Host: tgmansion.site
 - name: 🇹🇷 土耳其 (Turkey) 26 - xiaoyu
   type: vless
-  server: 155.103.71.142
+  server: 177.3.208.65
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /vless-tr
     headers:
-      Host: ccc.010304.xyz
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 27 - xiaoyu
   type: vless
-  server: 155.103.71.142
+  server: 203.202.232.110
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: vlso5.1d.mom
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
     headers:
-      Host: ccc.010304.xyz
+      Host: vlso5.1d.mom
 - name: 🇹🇷 土耳其 (Turkey) 28 - xiaoyu
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: ss
+  server: 87.236.166.215
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 29 - xiaoyu
   type: vless
-  server: 155.103.71.142
+  server: 177.3.208.65
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless-tr
     headers:
-      Host: ccc.010304.xyz
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 30 - xiaoyu
   type: vless
   server: 155.103.71.142
@@ -377,19 +364,12 @@ proxies:
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 31 - xiaoyu
-  type: vless
-  server: 132.243.173.195
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  type: ss
+  server: 87.236.166.178
+  port: 56137
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tr.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /TR1
-    headers:
-      Host: tr.pad-service.com
 - name: 🇹🇷 土耳其 (Turkey) 32 - xiaoyu
   type: ss
   server: location8.cpanel-host10.ir
@@ -398,12 +378,33 @@ proxies:
   password: uvKNudV-N8AUCrykPiyznA
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 33 - xiaoyu
-  type: ss
-  server: 87.236.166.217
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 34 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
@@ -442,6 +443,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 31 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 32 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 33 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 34 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -480,5 +482,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 31 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 32 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 33 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 34 - xiaoyu
 rules:
 - MATCH,PROXIES
