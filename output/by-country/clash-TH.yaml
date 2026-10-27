@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
   type: vless
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -24,7 +24,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 03 - xiaoyu
   type: vless
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 04 - xiaoyu
   type: vless
-  server: 38.60.254.50
+  server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -42,7 +42,25 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 05 - xiaoyu
   type: vless
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 06 - xiaoyu
+  type: vless
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 07 - xiaoyu
+  type: vless
+  server: 103.86.49.57
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -52,8 +70,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 TH 06 - xiaoyu
+      Host: 103.86.49.57
+- name: 🇹🇭 TH 08 - xiaoyu
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -66,32 +84,9 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 07 - xiaoyu
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 08 - xiaoyu
-  type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 09 - xiaoyu
   type: vless
-  server: 103.86.49.57
+  server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -101,16 +96,15 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 TH 10 - xiaoyu
   type: vless
-  server: 104.16.10.185
-  port: 443
+  server: v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
@@ -128,10 +122,24 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 12 - xiaoyu
   type: vless
-  server: v2ray.simspeedup.com
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 13 - xiaoyu
+  type: vless
+  server: 103.86.49.57
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -141,38 +149,23 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 13 - xiaoyu
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
 - name: 🇹🇭 TH 14 - xiaoyu
   type: vless
-  server: 104.16.10.2
-  port: 443
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 TH 15 - xiaoyu
   type: vless
-  server: 104.16.10.185
+  server: 104.16.111.193
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -186,7 +179,60 @@ proxies:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 16 - xiaoyu
   type: vless
-  server: 104.16.10.2
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 17 - xiaoyu
+  type: vless
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 18 - xiaoyu
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 19 - xiaoyu
+  type: vless
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 20 - xiaoyu
+  type: vless
+  server: 104.16.111.193
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -219,6 +265,10 @@ proxy-groups:
   - 🇹🇭 TH 14 - xiaoyu
   - 🇹🇭 TH 15 - xiaoyu
   - 🇹🇭 TH 16 - xiaoyu
+  - 🇹🇭 TH 17 - xiaoyu
+  - 🇹🇭 TH 18 - xiaoyu
+  - 🇹🇭 TH 19 - xiaoyu
+  - 🇹🇭 TH 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -240,5 +290,9 @@ proxy-groups:
   - 🇹🇭 TH 14 - xiaoyu
   - 🇹🇭 TH 15 - xiaoyu
   - 🇹🇭 TH 16 - xiaoyu
+  - 🇹🇭 TH 17 - xiaoyu
+  - 🇹🇭 TH 18 - xiaoyu
+  - 🇹🇭 TH 19 - xiaoyu
+  - 🇹🇭 TH 20 - xiaoyu
 rules:
 - MATCH,PROXIES

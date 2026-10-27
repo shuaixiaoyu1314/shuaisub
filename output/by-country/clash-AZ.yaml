@@ -15,6 +15,18 @@ proxies:
   reality-opts:
     public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
   servername: eu63.cdn77.icu
+  client-fingerprint: firefox
+- name: 🇦🇿 AZ 02 - xiaoyu
+  type: vless
+  server: 94.20.141.53
+  port: 443
+  uuid: f439e4fe-139b-4882-ad8b-a16176d09c88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+  servername: eu63.cdn77.icu
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -22,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇿 AZ 01 - xiaoyu
+  - 🇦🇿 AZ 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇿 AZ 01 - xiaoyu
+  - 🇦🇿 AZ 02 - xiaoyu
 rules:
 - MATCH,PROXIES

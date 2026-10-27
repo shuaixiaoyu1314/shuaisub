@@ -17,18 +17,30 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 59.125.69.23
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  type: vmess
+  server: dog-tw.kunlun01dns.com
+  port: 21035
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
