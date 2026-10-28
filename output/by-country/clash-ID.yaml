@@ -34,13 +34,18 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇮🇩 ID 03 - xiaoyu
   type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: 43.173.1.153
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: in001.zestapp778.com
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇮🇩 ID 04 - xiaoyu
   type: vless
   server: 130.94.95.198
@@ -61,7 +66,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 06 - xiaoyu
   type: vless
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -70,7 +75,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 07 - xiaoyu
   type: vless
-  server: in001.zestapp778.com
+  server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -80,6 +85,24 @@ proxies:
 - name: 🇮🇩 ID 08 - xiaoyu
   type: vless
   server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 09 - xiaoyu
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 10 - xiaoyu
+  type: vless
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -99,6 +122,8 @@ proxy-groups:
   - 🇮🇩 ID 06 - xiaoyu
   - 🇮🇩 ID 07 - xiaoyu
   - 🇮🇩 ID 08 - xiaoyu
+  - 🇮🇩 ID 09 - xiaoyu
+  - 🇮🇩 ID 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +137,7 @@ proxy-groups:
   - 🇮🇩 ID 06 - xiaoyu
   - 🇮🇩 ID 07 - xiaoyu
   - 🇮🇩 ID 08 - xiaoyu
+  - 🇮🇩 ID 09 - xiaoyu
+  - 🇮🇩 ID 10 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -19,9 +19,9 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,12 +29,12 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -42,7 +42,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 191.44.114.154
@@ -59,9 +59,23 @@ proxies:
       Host: st5ff8a.rumedia-cdn.com
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 193.188.21.253
+  server: 191.44.114.179
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st33614.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 5.178.109.174
   port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -69,21 +83,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 07 - xiaoyu
   type: vless
   server: 193.188.21.253
@@ -99,18 +99,17 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 08 - xiaoyu
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless
     headers:
-      Host: ccc.010304.xyz
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 09 - xiaoyu
   type: vless
   server: 193.188.21.253
@@ -126,9 +125,9 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 10 - xiaoyu
   type: vless
-  server: 5.178.109.174
+  server: 193.188.21.253
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
   tls: false
   skip-cert-verify: true
@@ -136,7 +135,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 11 - xiaoyu
   type: vless
   server: 77.110.97.245
@@ -148,10 +147,23 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromesecurity=tls
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 12 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 13 - xiaoyu
   type: vless
   server: 77.110.97.245
   port: 443
@@ -165,7 +177,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 13 - xiaoyu
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 15 - xiaoyu
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -178,20 +203,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 14 - xiaoyu
-  type: vless
-  server: 191.44.114.179
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st33614.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -211,6 +222,7 @@ proxy-groups:
   - 🇸🇪 SE 12 - xiaoyu
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -230,5 +242,6 @@ proxy-groups:
   - 🇸🇪 SE 12 - xiaoyu
   - 🇸🇪 SE 13 - xiaoyu
   - 🇸🇪 SE 14 - xiaoyu
+  - 🇸🇪 SE 15 - xiaoyu
 rules:
 - MATCH,PROXIES
