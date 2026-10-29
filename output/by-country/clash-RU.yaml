@@ -5,65 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: ss
   server: 159.194.251.76
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: MODziWLa9qMuW-4yPa0rfw
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
   server: 217.19.122.156
   port: 443
@@ -77,30 +25,33 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: ss
-  server: 46.17.41.61
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: vless
+  server: 147.45.175.81
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  type: ss
-  server: 195.58.49.167
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  tls: true
+  skip-cert-verify: true
+  servername: xsru1.ddnsfree.com
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -111,21 +62,14 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: ss
+  server: 185.22.155.121
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
   server: z1q3pv4g78.rucdncomp.pro
   port: 443
@@ -139,7 +83,7 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -153,19 +97,33 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   type: vless
-  server: pl1.h1cloud.net
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: vless
   server: xsru2.freeddns.org
   port: 443
@@ -179,9 +137,9 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: 217.19.122.156
   port: 443
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
@@ -193,18 +151,6 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  type: vless
-  server: a0688bt.us4.h1clayd.click
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-  servername: a0688bt.us4.h1clayd.click
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -222,12 +168,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -245,11 +185,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 rules:
 - MATCH,PROXIES
