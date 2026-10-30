@@ -20,6 +20,48 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 02 - xiaoyu
   type: vless
+  server: fans.liverpool.qzz.io
+  port: 2053
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fans.liverpool.qzz.io
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
+- name: 🇨🇿 CZ 03 - xiaoyu
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 04 - xiaoyu
+  type: vless
+  server: 155.212.240.10
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 05 - xiaoyu
+  type: vless
   server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
@@ -39,6 +81,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +91,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
   - 🇨🇿 CZ 02 - xiaoyu
+  - 🇨🇿 CZ 03 - xiaoyu
+  - 🇨🇿 CZ 04 - xiaoyu
+  - 🇨🇿 CZ 05 - xiaoyu
 rules:
 - MATCH,PROXIES
