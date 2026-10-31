@@ -27,18 +27,6 @@ proxies:
   reality-opts:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
-  client-fingerprint: chrome
-- name: 🇱🇻 LV 03 - xiaoyu
-  type: vless
-  server: 45.38.143.210
-  port: 30584
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-  servername: m.vk.com
   client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
@@ -47,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
   - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
   - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
 rules:
 - MATCH,PROXIES

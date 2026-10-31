@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - xiaoyu
   type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  server: 64.177.66.9
+  port: 8443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: vp7.1145678.xyz
   network: ws
   ws-opts:
-    path: /vless-il
+    path: /
     headers:
-      Host: tgmansion.site
+      Host: vp7.1145678.xyz
 - name: 🇮🇱 IL 02 - xiaoyu
   type: vless
   server: 177.3.208.65
@@ -32,6 +32,20 @@ proxies:
     path: /vless-il
     headers:
       Host: 177.3.208.65
+- name: 🇮🇱 IL 03 - xiaoyu
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
+  - 🇮🇱 IL 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇮🇱 IL 01 - xiaoyu
   - 🇮🇱 IL 02 - xiaoyu
+  - 🇮🇱 IL 03 - xiaoyu
 rules:
 - MATCH,PROXIES

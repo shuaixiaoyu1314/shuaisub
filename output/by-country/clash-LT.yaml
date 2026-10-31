@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=unsafe
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - xiaoyu
@@ -48,18 +48,18 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 04 - xiaoyu
   type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 5.1.40.6
+  port: 2083
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: speedtestmark.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless-ws
     headers:
-      Host: ccc.010304.xyz
+      Host: 5.1.40.6
 - name: 🇱🇹 LT 05 - xiaoyu
   type: vless
   server: 88.216.69.253
@@ -71,7 +71,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=unsafe
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 06 - xiaoyu
@@ -85,7 +85,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 07 - xiaoyu
@@ -99,7 +99,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 08 - xiaoyu
@@ -130,6 +130,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇱🇹 LT 10 - xiaoyu
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +158,7 @@ proxy-groups:
   - 🇱🇹 LT 07 - xiaoyu
   - 🇱🇹 LT 08 - xiaoyu
   - 🇱🇹 LT 09 - xiaoyu
+  - 🇱🇹 LT 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +173,6 @@ proxy-groups:
   - 🇱🇹 LT 07 - xiaoyu
   - 🇱🇹 LT 08 - xiaoyu
   - 🇱🇹 LT 09 - xiaoyu
+  - 🇱🇹 LT 10 - xiaoyu
 rules:
 - MATCH,PROXIES

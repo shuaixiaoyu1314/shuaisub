@@ -18,6 +18,34 @@ proxies:
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
+- name: 🇸🇨 SC 03 - xiaoyu
+  type: vless
+  server: 154.211.8.18
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless2-8vx.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
+- name: 🇸🇨 SC 04 - xiaoyu
+  type: vless
+  server: 154.218.15.198
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vless2-8vx.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
+  - 🇸🇨 SC 03 - xiaoyu
+  - 🇸🇨 SC 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
+  - 🇸🇨 SC 03 - xiaoyu
+  - 🇸🇨 SC 04 - xiaoyu
 rules:
 - MATCH,PROXIES
