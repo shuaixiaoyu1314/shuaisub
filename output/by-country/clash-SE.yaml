@@ -45,96 +45,13 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
-  server: substack.com
-  port: 443
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  server: 179.253.179.109
+  port: 54083
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wallweb-4ez.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4ez.pages.dev
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: 177.3.215.54
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,12 +61,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
-  - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
-  - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,11 +70,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
-  - 🇸🇪 SE 05 - xiaoyu
-  - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
-  - 🇸🇪 SE 08 - xiaoyu
-  - 🇸🇪 SE 09 - xiaoyu
-  - 🇸🇪 SE 10 - xiaoyu
 rules:
 - MATCH,PROXIES

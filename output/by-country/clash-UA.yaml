@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaoyu
   type: vless
-  server: netx.smrtai.top
+  server: 31.222.235.81
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   udp: true
@@ -18,45 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇺🇦 UA 02 - xiaoyu
   type: ss
-  server: staging.lastilhame.monster
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
-- name: 🇺🇦 UA 03 - xiaoyu
-  type: ss
   server: 104.253.216.227
-  port: 49917
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  udp: true
-- name: 🇺🇦 UA 04 - xiaoyu
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 05 - xiaoyu
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇺🇦 UA 06 - xiaoyu
-  type: ss
-  server: staging.lastilhame.monster
   port: 49917
   cipher: chacha20-ietf-poly1305
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
@@ -68,10 +30,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaoyu
   - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
-  - 🇺🇦 UA 04 - xiaoyu
-  - 🇺🇦 UA 05 - xiaoyu
-  - 🇺🇦 UA 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,9 +37,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaoyu
   - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
-  - 🇺🇦 UA 04 - xiaoyu
-  - 🇺🇦 UA 05 - xiaoyu
-  - 🇺🇦 UA 06 - xiaoyu
 rules:
 - MATCH,PROXIES

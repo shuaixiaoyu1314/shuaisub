@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 02 - xiaoyu
@@ -43,7 +43,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 04 - xiaoyu
@@ -60,76 +60,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇱🇹 LT 05 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 06 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 07 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 08 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 09 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,11 +69,6 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaoyu
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
-  - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
-  - 🇱🇹 LT 07 - xiaoyu
-  - 🇱🇹 LT 08 - xiaoyu
-  - 🇱🇹 LT 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,10 +78,5 @@ proxy-groups:
   - 🇱🇹 LT 02 - xiaoyu
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
-  - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
-  - 🇱🇹 LT 07 - xiaoyu
-  - 🇱🇹 LT 08 - xiaoyu
-  - 🇱🇹 LT 09 - xiaoyu
 rules:
 - MATCH,PROXIES
