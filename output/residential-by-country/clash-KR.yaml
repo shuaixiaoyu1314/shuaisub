@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp18.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /img/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFBRBl0PDF1XAUpYElFeVhQDWV0SQwEWQlpGWRoNC1wYSw==
-    headers:
-      Host: vp18.1145678.xyz
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  type: vless
   server: 112.169.175.199
   port: 31157
   uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
@@ -32,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

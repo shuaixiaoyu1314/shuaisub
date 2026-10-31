@@ -13,100 +13,111 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: chrome
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: 91.185.83.45
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
+  servername: 194.87.143.165
   network: ws
   ws-opts:
-    path: /service/telemetry/0294da469190/
+    path: /
     headers:
-      Host: nguyxejonb.rucdncomp.pro
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 185.22.155.121
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  server: 147.45.175.81
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  server: 87.120.166.160
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: lvi.su
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
     headers:
-      Host: 194.87.143.165
+      Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: ss
-  server: 130.49.189.54
+  server: alb.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: hTTg7lwQMzpaF7KXpY3A8w
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  type: ss
-  server: msk2.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wsru1.wba-pn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
 - name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -122,48 +133,34 @@ proxies:
     headers:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  type: ss
-  server: alb.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 194.87.143.165
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: ss
-  server: msk2.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 194.87.143.165
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 194.87.143.165
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
   type: vless
   server: 186.246.9.29
   port: 443
@@ -175,29 +172,62 @@ proxies:
     public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
   servername: wordpress.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   type: vless
-  server: 87.120.166.160
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lvi.su
+  servername: wsru1.wba-pn.ru
   network: ws
   ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    path: /
     headers:
-      Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
   type: vless
-  server: 87.242.119.253
-  port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
+  servername: 194.87.143.165
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wsru1.wba-pn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -211,7 +241,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: wsru1.wba-pn.ru
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -225,10 +255,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 194.87.143.165
+      Host: wsru1.wba-pn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
   type: vless
-  server: 87.120.166.160
+  server: lvi.su
   port: 443
   uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
   udp: true
@@ -242,46 +272,6 @@ proxies:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
   type: vless
-  server: wsru1.wba-pn.ru
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wsru1.wba-pn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
-  type: vless
-  server: 186.246.9.29
-  port: 443
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-  servername: wordpress.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
-  type: vless
   server: 147.45.175.81
   port: 443
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
@@ -294,18 +284,7 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
-  type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -319,7 +298,28 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  type: vless
+  server: 87.242.119.253
+  port: 443
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hvtlr-ru-47sb.fade.mom
+- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  type: vless
+  server: 87.228.92.104
+  port: 443
+  uuid: 01a8c896-1abd-425d-bf75-b0b355754cc1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: JpBC1XkdycLVlXlt2oe-pMVLYlI83WEurSPA8fPkPiE
+  servername: 9fd04ct.fi4.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -333,18 +333,46 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
   type: vless
-  server: 46.254.19.164
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wsru1.wba-pn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+  type: vless
+  server: 186.246.9.29
   port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-  servername: wtb.tems.bet
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+  servername: wordpress.com
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaoyu
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ara.rtkdvbr.cc
+  network: ws
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
 - name: 🇷🇺 俄罗斯 (Russia) 30 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -361,16 +389,18 @@ proxies:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 31 - xiaoyu
   type: vless
-  server: 186.246.9.29
-  port: 443
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-  servername: wordpress.com
-  client-fingerprint: chrome
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wsru1.wba-pn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 32 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -386,31 +416,26 @@ proxies:
     headers:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 33 - xiaoyu
-  type: vless
-  server: 147.45.175.81
-  port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  type: ss
+  server: 185.22.155.121
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xsru1.ddnsfree.com
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru1.ddnsfree.com
 - name: 🇷🇺 俄罗斯 (Russia) 34 - xiaoyu
   type: vless
-  server: 45.133.151.170
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-  servername: a0688bt.us4.h1clayd.click
-  client-fingerprint: firefox
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 35 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -424,17 +449,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: wsru1.wba-pn.ru
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 36 - xiaoyu
-  type: vless
-  server: 87.242.119.253
-  port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 37 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -448,20 +464,24 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 37 - xiaoyu
+  type: ss
+  server: msk2.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 38 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wsru1.wba-pn.ru
+  servername: ''
 - name: 🇷🇺 俄罗斯 (Russia) 39 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -470,7 +490,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.87.143.165
+  servername: wsru1.wba-pn.ru
   network: ws
   ws-opts:
     path: /
@@ -478,16 +498,18 @@ proxies:
       Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 40 - xiaoyu
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-  servername: ya.ru
-  client-fingerprint: random
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
 - name: 🇷🇺 俄罗斯 (Russia) 41 - xiaoyu
   type: vless
   server: 194.87.143.165
@@ -501,38 +523,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 194.87.143.165
+      Host: wsru1.wba-pn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 42 - xiaoyu
   type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 43 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 44 - xiaoyu
-  type: vless
-  server: 194.87.143.165
+  server: wsru1.wba-pn.ru
   port: 8443
   uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   udp: true
@@ -544,7 +538,38 @@ proxies:
     path: /
     headers:
       Host: wsru1.wba-pn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 43 - xiaoyu
+  type: ss
+  server: 159.194.251.76
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 44 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 45 - xiaoyu
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 46 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -558,7 +583,16 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 46 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 47 - xiaoyu
+  type: vless
+  server: 87.242.119.253
+  port: 443
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hvtlr-ru-47sb.fade.mom
+- name: 🇷🇺 俄罗斯 (Russia) 48 - xiaoyu
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -572,41 +606,6 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 47 - xiaoyu
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wsru1.wba-pn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 48 - xiaoyu
-  type: vless
-  server: lvi.su
-  port: 443
-  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lvi.su
-  network: ws
-  ws-opts:
-    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
-    headers:
-      Host: lvi.su
-- name: 🇷🇺 俄罗斯 (Russia) 49 - xiaoyu
-  type: ss
-  server: 185.22.155.121
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -660,7 +659,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 46 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 47 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 48 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 49 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -714,6 +712,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 46 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 47 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 48 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 49 - xiaoyu
 rules:
 - MATCH,PROXIES

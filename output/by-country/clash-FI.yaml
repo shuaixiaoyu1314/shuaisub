@@ -6,29 +6,30 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
   type: vless
-  server: 87.228.92.104
-  port: 443
-  uuid: 01a8c896-1abd-425d-bf75-b0b355754cc1
+  server: 65.109.210.221
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 02 - xiaoyu
+  type: vless
+  server: 78.17.27.137
+  port: 8443
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: JpBC1XkdycLVlXlt2oe-pMVLYlI83WEurSPA8fPkPiE
-  servername: 9fd04ct.fi4.h1clayd.click
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+  servername: www.aalto.fi
   client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -57,7 +58,7 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
-  server: hw3.divarkhaghazi.com
+  server: 65.109.210.221
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -71,16 +72,17 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 06 - xiaoyu
   type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - xiaoyu
   type: vless
   server: 3f8efdt.fi1.h1clayd.click
@@ -92,22 +94,58 @@ proxies:
   reality-opts:
     public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
   servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 08 - xiaoyu
   type: vless
-  server: 199.232.239.239
+  server: 3f8efdt.fi1.h1clayd.click
   port: 443
-  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 09 - xiaoyu
+  type: vless
+  server: 78.17.27.137
+  port: 8443
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+  servername: www.aalto.fi
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 10 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    path: /vless
     headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 09 - xiaoyu
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 11 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 12 - xiaoyu
   type: vless
   server: hw3.divarkhaghazi.com
   port: 465
@@ -121,114 +159,71 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 10 - xiaoyu
-  type: vless
-  server: 78.17.27.137
-  port: 8443
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-  servername: www.aalto.fi
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 11 - xiaoyu
-  type: vless
-  server: 78.17.27.137
-  port: 8443
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-  servername: www.aalto.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 12 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 13 - xiaoyu
   type: vless
-  server: 65.109.210.221
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 3f8efdt.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: ios
 - name: 🇫🇮 FI 14 - xiaoyu
   type: vless
-  server: 65.109.211.81
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  server: 3f8efdt.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: qq
 - name: 🇫🇮 FI 15 - xiaoyu
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 16 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 17 - xiaoyu
-  type: vless
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 3f8efdt.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 16 - xiaoyu
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
-      Host: hw3.divarkhaghazi.com.
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 17 - xiaoyu
+  type: vless
+  server: 196.196.204.180
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
 - name: 🇫🇮 FI 18 - xiaoyu
   type: vless
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -269,28 +264,31 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 21 - xiaoyu
   type: vless
-  server: 78.17.27.137
-  port: 8443
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  server: 65.109.210.221
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-  servername: www.aalto.fi
-  client-fingerprint: firefox
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 22 - xiaoyu
   type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 23 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -306,30 +304,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 24 - xiaoyu
   type: vless
-  server: 196.196.204.180
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
-- name: 🇫🇮 FI 25 - xiaoyu
-  type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 26 - xiaoyu
-  type: vless
   server: 78.17.27.137
   port: 8443
   uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
@@ -339,7 +313,33 @@ proxies:
   reality-opts:
     public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
   servername: www.aalto.fi
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 25 - xiaoyu
+  type: vless
+  server: 65.109.211.81
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 26 - xiaoyu
+  type: vless
+  server: 196.196.204.180
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
