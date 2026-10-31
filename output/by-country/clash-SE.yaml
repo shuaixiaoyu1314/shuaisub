@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -32,6 +26,15 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
+  server: 179.253.179.109
+  port: 54083
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 177.3.215.54
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -43,15 +46,19 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - xiaoyu
+- name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: 179.253.179.109
-  port: 54083
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 177.3.215.54
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +68,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
+  - 🇸🇪 SE 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +78,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaoyu
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
+  - 🇸🇪 SE 05 - xiaoyu
 rules:
 - MATCH,PROXIES

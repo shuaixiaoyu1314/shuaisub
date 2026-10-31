@@ -33,6 +33,15 @@ proxies:
     path: /game/resources
     headers:
       Host: az-1.linkaa.xyz
+- name: 🇮🇩 ID 03 - xiaoyu
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - xiaoyu
   - 🇮🇩 ID 02 - xiaoyu
+  - 🇮🇩 ID 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - xiaoyu
   - 🇮🇩 ID 02 - xiaoyu
+  - 🇮🇩 ID 03 - xiaoyu
 rules:
 - MATCH,PROXIES
