@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xiaoyu
   type: vless
+  server: 179.253.179.109
+  port: 57043
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 87.121.86.24
+- name: 🇪🇪 EE 02 - xiaoyu
+  type: vless
   server: ee.h1cloud.net
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
@@ -16,7 +25,20 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 EE 02 - xiaoyu
+- name: 🇪🇪 EE 03 - xiaoyu
+  type: vless
+  server: 185.159.247.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
+- name: 🇪🇪 EE 04 - xiaoyu
   type: vless
   server: 179.253.179.109
   port: 57043
@@ -25,7 +47,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 87.121.86.24
-- name: 🇪🇪 EE 03 - xiaoyu
+- name: 🇪🇪 EE 05 - xiaoyu
   type: vless
   server: ee.h1cloud.net
   port: 25895
@@ -45,6 +67,8 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
+  - 🇪🇪 EE 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +77,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - xiaoyu
   - 🇪🇪 EE 02 - xiaoyu
   - 🇪🇪 EE 03 - xiaoyu
+  - 🇪🇪 EE 04 - xiaoyu
+  - 🇪🇪 EE 05 - xiaoyu
 rules:
 - MATCH,PROXIES

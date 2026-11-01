@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaoyu
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 02 - xiaoyu
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -15,56 +22,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 02 - xiaoyu
-  type: vless
-  server: 161.97.66.16
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 03 - xiaoyu
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 04 - xiaoyu
   type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - xiaoyu
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 06 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.95.65.9
-- name: 🇫🇷 法国 (France) 07 - xiaoyu
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 04 - xiaoyu
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -77,33 +44,7 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 08 - xiaoyu
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 09 - xiaoyu
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 10 - xiaoyu
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 11 - xiaoyu
+- name: 🇫🇷 法国 (France) 05 - xiaoyu
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -114,15 +55,19 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 12 - xiaoyu
-  type: ss
-  server: 77.216.2.178
-  port: 30
-  cipher: chacha20-ietf-poly1305
-  password: BHxDn8Z67zuaoQsjHqSAMQQs8Dz1CGqJ
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 06 - xiaoyu
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇫🇷 法国 (France) 13 - xiaoyu
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 07 - xiaoyu
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -134,33 +79,86 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 14 - xiaoyu
+- name: 🇫🇷 法国 (France) 08 - xiaoyu
   type: vless
-  server: OV-France1.09vpn.com
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-France1.09vpn.com
-- name: 🇫🇷 法国 (France) 15 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 09 - xiaoyu
+  type: vless
+  server: 104.239.72.227
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ccc0e8cd3a83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/ccc0e8cd3a83
+    headers:
+      Host: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+- name: 🇫🇷 法国 (France) 10 - xiaoyu
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 11 - xiaoyu
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 12 - xiaoyu
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 13 - xiaoyu
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - xiaoyu
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 15 - xiaoyu
+  type: ss
+  server: 51.75.118.5
+  port: 20222
+  cipher: aes-256-gcm
+  password: lF3nRjH58koKTe-_VtABbg
+  udp: true
 - name: 🇫🇷 法国 (France) 16 - xiaoyu
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -180,66 +178,10 @@ proxies:
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 18 - xiaoyu
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 19 - xiaoyu
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 20 - xiaoyu
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 21 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 22 - xiaoyu
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 23 - xiaoyu
+- name: 🇫🇷 法国 (France) 18 - xiaoyu
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -248,25 +190,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 24 - xiaoyu
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 25 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 26 - xiaoyu
+- name: 🇫🇷 法国 (France) 19 - xiaoyu
   type: vless
   server: 152.228.162.19
   port: 80
@@ -279,51 +203,7 @@ proxies:
     path: /vless/
     headers:
       Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 27 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 28 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 29 - xiaoyu
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 30 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 31 - xiaoyu
+- name: 🇫🇷 法国 (France) 20 - xiaoyu
   type: vless
   server: 15.236.109.186
   port: 2053
@@ -332,14 +212,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 32 - xiaoyu
+- name: 🇫🇷 法国 (France) 21 - xiaoyu
   type: ss
-  server: 45.92.218.120
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: QqFA4xtnfv6GpaC5gy5LW27nCHh9U9qK
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-- name: 🇫🇷 法国 (France) 33 - xiaoyu
+- name: 🇫🇷 法国 (France) 22 - xiaoyu
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 23 - xiaoyu
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -352,7 +239,7 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 34 - xiaoyu
+- name: 🇫🇷 法国 (France) 24 - xiaoyu
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -363,16 +250,139 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 35 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 25 - xiaoyu
   type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  server: 104.24.210.142
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ccc0e8cd3a83
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: w.geogame.ir
+  servername: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/ccc0e8cd3a83
+    headers:
+      Host: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+- name: 🇫🇷 法国 (France) 26 - xiaoyu
+  type: vless
+  server: 104.20.45.141
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7e7818beb9aa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: razk50e1uvss.amirhoseyn-meshki.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/7e7818beb9aa
+    headers:
+      Host: razk50e1uvss.amirhoseyn-meshki.workers.dev
+- name: 🇫🇷 法国 (France) 27 - xiaoyu
+  type: ss
+  server: 51.75.118.5
+  port: 20222
+  cipher: aes-256-gcm
+  password: lF3nRjH58koKTe-_VtABbg
+  udp: true
+- name: 🇫🇷 法国 (France) 28 - xiaoyu
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 29 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 30 - xiaoyu
+  type: vless
+  server: 104.20.45.141
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-7e7818beb9aa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: razk50e1uvss.amirhoseyn-meshki.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/7e7818beb9aa
+    headers:
+      Host: razk50e1uvss.amirhoseyn-meshki.workers.dev
+- name: 🇫🇷 法国 (France) 31 - xiaoyu
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 32 - xiaoyu
+  type: ss
+  server: 185.4.115.147
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V
+  udp: true
+- name: 🇫🇷 法国 (France) 33 - xiaoyu
+  type: vless
+  server: 161.97.66.16
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 34 - xiaoyu
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 35 - xiaoyu
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 49e29dba-814a-50b0-b4a9-deffe26ae624
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
 - name: 🇫🇷 法国 (France) 36 - xiaoyu
   type: vmess
   server: www.ubuntuupdates.com
@@ -397,6 +407,221 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 38 - xiaoyu
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 39 - xiaoyu
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 40 - xiaoyu
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 41 - xiaoyu
+  type: ss
+  server: 77.216.2.178
+  port: 30
+  cipher: chacha20-ietf-poly1305
+  password: BHxDn8Z67zuaoQsjHqSAMQQs8Dz1CGqJ
+  udp: true
+- name: 🇫🇷 法国 (France) 42 - xiaoyu
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 43 - xiaoyu
+  type: vless
+  server: 178.104.70.11
+  port: 443
+  uuid: 64726966-0000-4000-8000-740000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇫🇷 法国 (France) 44 - xiaoyu
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 45 - xiaoyu
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 46 - xiaoyu
+  type: vless
+  server: 45.12.30.196
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ccc0e8cd3a83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/ccc0e8cd3a83
+    headers:
+      Host: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+- name: 🇫🇷 法国 (France) 47 - xiaoyu
+  type: vless
+  server: 92.53.190.167
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ccc0e8cd3a83
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/ccc0e8cd3a83
+    headers:
+      Host: fgzb39ezu86s.ycz7syeeu3is.workers.dev
+- name: 🇫🇷 法国 (France) 48 - xiaoyu
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 49 - xiaoyu
+  type: ss
+  server: 45.92.218.120
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: QqFA4xtnfv6GpaC5gy5LW27nCHh9U9qK
+  udp: true
+- name: 🇫🇷 法国 (France) 50 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 51 - xiaoyu
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.95.65.9
+- name: 🇫🇷 法国 (France) 52 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 53 - xiaoyu
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 54 - xiaoyu
+  type: vmess
+  server: www.ubuntuupdates.com
+  port: 443
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.ubuntuupdates.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 55 - xiaoyu
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -439,6 +664,24 @@ proxy-groups:
   - 🇫🇷 法国 (France) 35 - xiaoyu
   - 🇫🇷 法国 (France) 36 - xiaoyu
   - 🇫🇷 法国 (France) 37 - xiaoyu
+  - 🇫🇷 法国 (France) 38 - xiaoyu
+  - 🇫🇷 法国 (France) 39 - xiaoyu
+  - 🇫🇷 法国 (France) 40 - xiaoyu
+  - 🇫🇷 法国 (France) 41 - xiaoyu
+  - 🇫🇷 法国 (France) 42 - xiaoyu
+  - 🇫🇷 法国 (France) 43 - xiaoyu
+  - 🇫🇷 法国 (France) 44 - xiaoyu
+  - 🇫🇷 法国 (France) 45 - xiaoyu
+  - 🇫🇷 法国 (France) 46 - xiaoyu
+  - 🇫🇷 法国 (France) 47 - xiaoyu
+  - 🇫🇷 法国 (France) 48 - xiaoyu
+  - 🇫🇷 法国 (France) 49 - xiaoyu
+  - 🇫🇷 法国 (France) 50 - xiaoyu
+  - 🇫🇷 法国 (France) 51 - xiaoyu
+  - 🇫🇷 法国 (France) 52 - xiaoyu
+  - 🇫🇷 法国 (France) 53 - xiaoyu
+  - 🇫🇷 法国 (France) 54 - xiaoyu
+  - 🇫🇷 法国 (France) 55 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -481,5 +724,23 @@ proxy-groups:
   - 🇫🇷 法国 (France) 35 - xiaoyu
   - 🇫🇷 法国 (France) 36 - xiaoyu
   - 🇫🇷 法国 (France) 37 - xiaoyu
+  - 🇫🇷 法国 (France) 38 - xiaoyu
+  - 🇫🇷 法国 (France) 39 - xiaoyu
+  - 🇫🇷 法国 (France) 40 - xiaoyu
+  - 🇫🇷 法国 (France) 41 - xiaoyu
+  - 🇫🇷 法国 (France) 42 - xiaoyu
+  - 🇫🇷 法国 (France) 43 - xiaoyu
+  - 🇫🇷 法国 (France) 44 - xiaoyu
+  - 🇫🇷 法国 (France) 45 - xiaoyu
+  - 🇫🇷 法国 (France) 46 - xiaoyu
+  - 🇫🇷 法国 (France) 47 - xiaoyu
+  - 🇫🇷 法国 (France) 48 - xiaoyu
+  - 🇫🇷 法国 (France) 49 - xiaoyu
+  - 🇫🇷 法国 (France) 50 - xiaoyu
+  - 🇫🇷 法国 (France) 51 - xiaoyu
+  - 🇫🇷 法国 (France) 52 - xiaoyu
+  - 🇫🇷 法国 (France) 53 - xiaoyu
+  - 🇫🇷 法国 (France) 54 - xiaoyu
+  - 🇫🇷 法国 (France) 55 - xiaoyu
 rules:
 - MATCH,PROXIES
