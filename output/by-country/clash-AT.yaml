@@ -11,17 +11,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇦🇹 AT 02 - xiaoyu
+  type: vless
+  server: 85.192.42.198
+  port: 443
+  uuid: 2c9fdcf7-339b-4a31-9585-930f0bcbb0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jyfrj1cims.dev.onappjet.com
+  network: ws
+  ws-opts:
+    path: /jx-o4e0xzvx0107se?ed=2560
+    headers:
+      Host: jyfrj1cims.dev.onappjet.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇹 AT 01 - xiaoyu
+  - 🇦🇹 AT 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 AT 01 - xiaoyu
+  - 🇦🇹 AT 02 - xiaoyu
 rules:
 - MATCH,PROXIES

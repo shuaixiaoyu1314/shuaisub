@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoyu
   type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
+  type: vless
   server: 157.90.175.178
   port: 1222
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
@@ -15,10 +29,17 @@ proxies:
   reality-opts:
     public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
   servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
   type: vless
-  server: 91.107.247.173
+  server: sino.bestsellers1.site
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
@@ -29,22 +50,29 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
   type: vless
   server: 179.253.179.109
   port: 63080
@@ -53,67 +81,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: de2.derevohom.xyz
-- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
-  type: vless
-  server: de15.h1cloud.net
-  port: 25362
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-  servername: www.chip.de
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 08 - xiaoyu
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
-  type: vless
-  server: 148-253-210-191.sslip.io
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -127,134 +95,7 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
-  type: vless
-  server: 148-253-210-191.sslip.io
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
-  type: ss
-  server: gr1s.sublinkplas.ir
-  port: 53731
-  cipher: chacha20-ietf-poly1305
-  password: xsGZ98ayLTT3OriEB1tKoPMz6YuxQQ4X
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
-  type: vmess
-  server: www.gptcloudai.com
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.gptcloudai.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
-  type: vless
-  server: 87.236.38.39
-  port: 2084
-  uuid: 42ff4e55-0214-45db-a2a7-02d81afa13e5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ar.vipsharifi.ir
-  network: ws
-  ws-opts:
-    path: Ed/
-    headers:
-      Host: ar.vipsharifi.ir
-- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
-  type: vless
-  server: 148.253.210.191
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
-  type: vless
-  server: de15.h1cloud.net
-  port: 25362
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-  servername: www.chip.de
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 21 - xiaoyu
-  type: vmess
-  server: www.gptcloudai.com
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.gptcloudai.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
   type: vless
   server: 57.129.41.216
   port: 80
@@ -267,21 +108,37 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
-  type: vless
-  server: 148.253.210.191
+- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+  type: vmess
+  server: www.gptcloudai.com
   port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
+  servername: www.gptcloudai.com
   network: ws
   ws-opts:
-    path: /test-ws
+    path: /truth
     headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
   type: vless
   server: 195.141.65.98
   port: 443
@@ -295,86 +152,21 @@ proxies:
     path: /test-ws
     headers:
       Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 25 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 26 - xiaoyu
-  type: vless
-  server: free.sahanwickramasinghe.com
-  port: 2096
-  uuid: 20d04f6e-797b-4814-b60a-3882be3b101b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: microsoft.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: microsoft.com
-- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 28 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
-  type: vless
-  server: 151.91.39.191
+  server: 146.75.57.238
   port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  uuid: 31edfa90-bc81-4534-9066-322dbf52dcef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
+  servername: cdn.akamai.steamstatic.com
   network: ws
   ws-opts:
-    path: /test-ws
+    path: /
     headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
-  type: vless
-  server: 179.253.179.109
-  port: 63053
-  uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de2.derevohom.xyz
-- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
+      Host: azadi-gk-nasim.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
   type: vless
   server: 148.253.210.191
   port: 443
@@ -388,32 +180,25 @@ proxies:
     path: /test-ws
     headers:
       Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
-  type: vless
-  server: 179.253.179.109
-  port: 63053
-  uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
+- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: de2.derevohom.xyz
-- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: www.gptcloudai.com
   network: ws
   ws-opts:
-    path: /
+    path: /truth
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
   type: vless
-  server: ov-germany1.09vpn.com
+  server: 57.129.41.216
   port: 80
   uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
@@ -424,21 +209,74 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
   type: vless
-  server: 148-253-210-191.sslip.io
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  server: hw14.roghanmo.com
+  port: 465
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
+  servername: hw14.roghanmo.com.
   network: ws
   ws-opts:
-    path: /test-ws
+    path: /
     headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
+  type: vless
+  server: 179.253.179.109
+  port: 63053
+  uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de2.derevohom.xyz
+- name: 🇩🇪 德国 (Germany) 21 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+  type: vless
+  server: 79.182.39.236
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
+  type: vless
+  server: de15.h1cloud.net
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -452,11 +290,63 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 25 - xiaoyu
   type: vless
-  server: ov-germany1.09vpn.com
+  server: 148-253-210-191.sslip.io
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 26 - xiaoyu
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
+  type: vless
+  server: 193.148.253.132
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 28 - xiaoyu
+  type: vless
+  server: mci.amir12.ir
+  port: 2112
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
+  type: vless
+  server: 57.129.41.216
   port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
@@ -464,21 +354,135 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
   type: vless
-  server: 188.114.97.6
+  server: 148-253-210-191.sslip.io
   port: 443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: 148-253-210-191.sslip.io
   network: ws
   ws-opts:
-    path: /9BozNyvQ8VdRvsYX?ed=2560
+    path: /test-ws
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+  type: vless
+  server: hw5.roghanmo.com
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
+  type: vless
+  server: 193.148.253.194
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
+  type: vless
+  server: 79.182.39.75
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
+  type: vless
+  server: 91.107.243.131
+  port: 465
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw14.roghanmo.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+  type: vless
+  server: 148.253.210.191
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
 - name: 🇩🇪 德国 (Germany) 40 - xiaoyu
   type: vmess
   server: www.gptcloudai.com
@@ -496,37 +500,126 @@ proxies:
     headers:
       Host: www.gptcloudai.com
 - name: 🇩🇪 德国 (Germany) 41 - xiaoyu
-  type: vless
-  server: 178.83.45.226
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
-  type: vless
-  server: hw14.roghanmo.com
-  port: 465
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw14.roghanmo.com.
+  servername: www.gptcloudai.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
+  type: vless
+  server: 148.253.210.191
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 43 - xiaoyu
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 43 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
+      Host: free.sahanwickramasinghe.com
 - name: 🇩🇪 德国 (Germany) 44 - xiaoyu
   type: vless
-  server: 57.129.41.216
+  server: 151.91.39.191
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 45 - xiaoyu
+  type: vless
+  server: de15.h1cloud.net
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+  servername: www.chip.de
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
+  type: vless
+  server: 195.141.65.98
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 49 - xiaoyu
+  type: vless
+  server: 45.88.12.157
+  port: 2083
+  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: crt.onecloudstream.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 45.88.12.157
+- name: 🇩🇪 德国 (Germany) 50 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
@@ -536,76 +629,23 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 45 - xiaoyu
-  type: vless
-  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 51 - xiaoyu
+  type: vmess
+  server: 172.67.156.121
   port: 443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: www.gptcloudai.com
   network: ws
   ws-opts:
-    path: /
+    path: /truth
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 49 - xiaoyu
-  type: vless
-  server: 216.24.57.15
-  port: 443
-  uuid: 2ee0d2aa-867e-a77e-9538-2edfc0b242aa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: four04-rd37.onrender.com
-  network: ws
-  ws-opts:
-    path: /ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefoxfp=chrome
-    headers:
-      Host: four04-rd37.onrender.com
+      Host: www.gptcloudai.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -660,6 +700,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 47 - xiaoyu
   - 🇩🇪 德国 (Germany) 48 - xiaoyu
   - 🇩🇪 德国 (Germany) 49 - xiaoyu
+  - 🇩🇪 德国 (Germany) 50 - xiaoyu
+  - 🇩🇪 德国 (Germany) 51 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -714,5 +756,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 47 - xiaoyu
   - 🇩🇪 德国 (Germany) 48 - xiaoyu
   - 🇩🇪 德国 (Germany) 49 - xiaoyu
+  - 🇩🇪 德国 (Germany) 50 - xiaoyu
+  - 🇩🇪 德国 (Germany) 51 - xiaoyu
 rules:
 - MATCH,PROXIES
