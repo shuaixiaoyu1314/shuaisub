@@ -18,33 +18,17 @@ proxies:
     path: /sync
     headers:
       Host: smart-edge-424.arti98399-1905.workers.dev
-- name: 🇭🇺 HU 02 - xiaoyu
-  type: vless
-  server: 37.221.210.113
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.cndyw.ggff.net
-  network: ws
-  ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: free.cndyw.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇺 HU 01 - xiaoyu
-  - 🇭🇺 HU 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇺 HU 01 - xiaoyu
-  - 🇭🇺 HU 02 - xiaoyu
 rules:
 - MATCH,PROXIES

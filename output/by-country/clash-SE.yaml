@@ -19,38 +19,6 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 179.253.179.109
-  port: 54083
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 177.3.215.54
-- name: 🇸🇪 SE 03 - xiaoyu
-  type: vless
-  server: static.fatcutecat.net
-  port: 443
-  uuid: b95eb0b3-a8dc-41ce-8bc0-888f81731e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: static.fatcutecat.net
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -62,6 +30,38 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vless
+  server: 179.253.179.109
+  port: 54083
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 177.3.215.54
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vless
+  server: 179.253.179.109
+  port: 54443
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 177.3.215.54
+- name: 🇸🇪 SE 05 - xiaoyu
+  type: vless
+  server: 185.184.122.157
+  port: 443
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
 - name: 🇸🇪 SE 06 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -75,20 +75,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
-  server: 103.71.23.244
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,7 +86,6 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
   - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,6 +97,5 @@ proxy-groups:
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
   - 🇸🇪 SE 06 - xiaoyu
-  - 🇸🇪 SE 07 - xiaoyu
 rules:
 - MATCH,PROXIES
