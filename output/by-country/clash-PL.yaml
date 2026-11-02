@@ -6,17 +6,28 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 79.182.39.37
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: 145.63.143.205
+  port: 8444
+  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl1.meshbeat.online
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
+- name: 🇵🇱 PL 03 - xiaoyu
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -25,7 +36,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - xiaoyu
+- name: 🇵🇱 PL 04 - xiaoyu
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -42,6 +53,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +62,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
-  type: ss
-  server: b2friday.buzrel.ir
-  port: 443
-  cipher: aes-256-gcm
-  password: 6lb9wr4ibspbl022
+  type: vless
+  server: 153.76.190.31
+  port: 2083
+  uuid: d6eb8a46-e6a4-4891-b22e-dfaa609c6afd
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 153.76.190.31
 proxy-groups:
 - name: PROXIES
   type: select

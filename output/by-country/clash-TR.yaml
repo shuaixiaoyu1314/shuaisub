@@ -29,7 +29,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   type: vless
   server: 151.241.226.201
@@ -41,8 +41,20 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   type: vless
   server: 155.103.71.142
   port: 443
@@ -56,25 +68,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  type: ss
-  server: h.novexora.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Ymyji11eZzSzl5AYw9HyjAQd7djfKppb
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,7 +78,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,6 +88,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
