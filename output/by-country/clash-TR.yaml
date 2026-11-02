@@ -68,6 +68,13 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  type: ss
+  server: h.novexora.ir
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: Ymyji11eZzSzl5AYw9HyjAQd7djfKppb
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +85,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +96,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

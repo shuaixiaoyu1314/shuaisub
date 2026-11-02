@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
   type: vless
-  server: 31.56.27.50
-  port: 10464
-  uuid: ab4e24ea-92ee-43eb-aadd-62cac4b2f6fe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 31.56.27.50
-- name: 🇱🇻 LV 02 - xiaoyu
-  type: vless
   server: 45.38.143.210
   port: 30584
   uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
@@ -31,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
-  - 🇱🇻 LV 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
-  - 🇱🇻 LV 02 - xiaoyu
 rules:
 - MATCH,PROXIES
