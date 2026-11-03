@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 84.23.52.120
+  port: 28449
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
   server: 2.26.6.1
@@ -24,13 +29,18 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaoyu
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 84.23.52.120
+  port: 28453
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
 - name: 🇵🇱 PL 04 - xiaoyu
   type: vless
   server: 2.26.6.1
@@ -42,6 +52,34 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - xiaoyu
   type: vless
+  server: 84.23.52.120
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 06 - xiaoyu
+  type: vless
+  server: 84.23.52.120
+  port: 28448
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 07 - xiaoyu
+  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -49,7 +87,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 06 - xiaoyu
+- name: 🇵🇱 PL 08 - xiaoyu
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 09 - xiaoyu
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -69,6 +116,9 @@ proxy-groups:
   - 🇵🇱 PL 04 - xiaoyu
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
+  - 🇵🇱 PL 07 - xiaoyu
+  - 🇵🇱 PL 08 - xiaoyu
+  - 🇵🇱 PL 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +130,8 @@ proxy-groups:
   - 🇵🇱 PL 04 - xiaoyu
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
+  - 🇵🇱 PL 07 - xiaoyu
+  - 🇵🇱 PL 08 - xiaoyu
+  - 🇵🇱 PL 09 - xiaoyu
 rules:
 - MATCH,PROXIES

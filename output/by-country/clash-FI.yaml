@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
-  type: ss
-  server: 185.4.115.149
-  port: 1346
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -38,31 +44,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: 185.4.115.149
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -76,6 +70,31 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 08 - xiaoyu
+  type: vless
+  server: areal1.greewebservices.ir
+  port: 2425
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +106,8 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
+  - 🇫🇮 FI 07 - xiaoyu
+  - 🇫🇮 FI 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +119,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
+  - 🇫🇮 FI 07 - xiaoyu
+  - 🇫🇮 FI 08 - xiaoyu
 rules:
 - MATCH,PROXIES
