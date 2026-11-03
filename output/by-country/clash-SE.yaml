@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 5.178.109.174
+      Host: shin-ra.ccwu.cc
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -32,17 +33,13 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 194.104.94.141
@@ -54,13 +51,31 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
-  server: se3.shtil.io
+  server: 185.58.207.112
   port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: se3.shtil.io
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3 @VPNine1fp=chrome
+    headers:
+      Host: vp58.cc.cd
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +86,7 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
+  - 🇸🇪 SE 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +97,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - xiaoyu
   - 🇸🇪 SE 04 - xiaoyu
   - 🇸🇪 SE 05 - xiaoyu
+  - 🇸🇪 SE 06 - xiaoyu
 rules:
 - MATCH,PROXIES
