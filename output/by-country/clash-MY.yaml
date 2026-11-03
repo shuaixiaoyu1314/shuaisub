@@ -29,12 +29,19 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 03 - xiaoyu
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 04 - xiaoyu
   type: ss
   server: 58.152.58.193
@@ -43,6 +50,13 @@ proxies:
   password: 28789988-887e-4e41-83cd-27bbfb7999ad
   udp: true
 - name: 🇲🇾 MY 05 - xiaoyu
+  type: ss
+  server: xunlinknode.csdjhajkshdjkas.com
+  port: 40006
+  cipher: chacha20-ietf-poly1305
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  udp: true
+- name: 🇲🇾 MY 06 - xiaoyu
   type: ss
   server: 130.94.69.15
   port: 7001
@@ -59,6 +73,7 @@ proxy-groups:
   - 🇲🇾 MY 03 - xiaoyu
   - 🇲🇾 MY 04 - xiaoyu
   - 🇲🇾 MY 05 - xiaoyu
+  - 🇲🇾 MY 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +84,6 @@ proxy-groups:
   - 🇲🇾 MY 03 - xiaoyu
   - 🇲🇾 MY 04 - xiaoyu
   - 🇲🇾 MY 05 - xiaoyu
+  - 🇲🇾 MY 06 - xiaoyu
 rules:
 - MATCH,PROXIES

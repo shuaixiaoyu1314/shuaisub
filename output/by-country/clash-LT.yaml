@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - xiaoyu
@@ -57,63 +57,11 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 05 - xiaoyu
   type: vless
-  server: 89.117.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇱🇹 LT 06 - xiaoyu
-  type: vless
-  server: 88.216.67.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime05.workers.dev
-- name: 🇱🇹 LT 07 - xiaoyu
-  type: vless
-  server: 89.117.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 🇱🇹 LT 08 - xiaoyu
-  type: vless
-  server: 88.216.67.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime05.workers.dev
-- name: 🇱🇹 LT 09 - xiaoyu
-  type: vless
   server: 88.216.69.253
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -126,59 +74,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇱🇹 LT 10 - xiaoyu
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇱🇹 LT 11 - xiaoyu
-  type: vless
-  server: 88.216.67.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime05.workers.dev
-- name: 🇱🇹 LT 12 - xiaoyu
-  type: vless
-  server: 88.216.66.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇱🇹 LT 13 - xiaoyu
-  type: vless
-  server: 89.117.112.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -189,14 +84,6 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
   - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
-  - 🇱🇹 LT 07 - xiaoyu
-  - 🇱🇹 LT 08 - xiaoyu
-  - 🇱🇹 LT 09 - xiaoyu
-  - 🇱🇹 LT 10 - xiaoyu
-  - 🇱🇹 LT 11 - xiaoyu
-  - 🇱🇹 LT 12 - xiaoyu
-  - 🇱🇹 LT 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -207,13 +94,5 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
   - 🇱🇹 LT 05 - xiaoyu
-  - 🇱🇹 LT 06 - xiaoyu
-  - 🇱🇹 LT 07 - xiaoyu
-  - 🇱🇹 LT 08 - xiaoyu
-  - 🇱🇹 LT 09 - xiaoyu
-  - 🇱🇹 LT 10 - xiaoyu
-  - 🇱🇹 LT 11 - xiaoyu
-  - 🇱🇹 LT 12 - xiaoyu
-  - 🇱🇹 LT 13 - xiaoyu
 rules:
 - MATCH,PROXIES
