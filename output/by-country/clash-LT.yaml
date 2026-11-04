@@ -34,18 +34,17 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇱🇹 LT 03 - xiaoyu
   type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 88.216.66.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: vms.lifetime04.workers.dev
 - name: 🇱🇹 LT 04 - xiaoyu
   type: vless
   server: 88.216.69.253
@@ -74,6 +73,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇱🇹 LT 06 - xiaoyu
+  type: vless
+  server: 88.216.69.253
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +97,7 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
   - 🇱🇹 LT 05 - xiaoyu
+  - 🇱🇹 LT 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +108,6 @@ proxy-groups:
   - 🇱🇹 LT 03 - xiaoyu
   - 🇱🇹 LT 04 - xiaoyu
   - 🇱🇹 LT 05 - xiaoyu
+  - 🇱🇹 LT 06 - xiaoyu
 rules:
 - MATCH,PROXIES

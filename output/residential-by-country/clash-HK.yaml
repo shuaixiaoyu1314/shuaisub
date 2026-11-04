@@ -16,31 +16,17 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  type: vless
-  server: 210.0.244.227
-  port: 443
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
