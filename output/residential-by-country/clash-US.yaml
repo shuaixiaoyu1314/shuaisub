@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   type: vless
-  server: 47.251.95.178
-  port: 443
-  uuid: 70756c73-0000-4000-8000-650000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parsa-panel-u48we.wotic15356.workers.dev
-  network: ws
-  ws-opts:
-    path: /pulse
-    headers:
-      Host: parsa-panel-u48we.wotic15356.workers.dev
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
-  type: vless
   server: 169.128.83.4
   port: 57259
   uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
@@ -32,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

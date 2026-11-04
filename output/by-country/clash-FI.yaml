@@ -18,26 +18,31 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaoyu
-  type: ss
-  server: 185.4.115.149
-  port: 1346
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: 🇫🇮 FI 03 - xiaoyu
   type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /vless
     headers:
-      Host: nl2.574ck.xyz
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaoyu
   type: vless
   server: 95.216.27.15
@@ -52,7 +57,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - xiaoyu
   type: ss
-  server: dns22.m3hrzd.ir
+  server: 185.4.115.149
   port: 1346
   cipher: chacha20-ietf-poly1305
   password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
@@ -72,30 +77,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - xiaoyu
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: nl2.574ck.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /574ck-finland
     headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 08 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,7 +101,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
   - 🇫🇮 FI 07 - xiaoyu
-  - 🇫🇮 FI 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,6 +113,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
   - 🇫🇮 FI 07 - xiaoyu
-  - 🇫🇮 FI 08 - xiaoyu
 rules:
 - MATCH,PROXIES
