@@ -32,51 +32,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaoyu
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - xiaoyu
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - xiaoyu
-  type: ss
-  server: 185.4.115.149
-  port: 1346
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: 🇫🇮 FI 06 - xiaoyu
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - xiaoyu
-  type: vless
   server: 146.103.118.189
   port: 443
   uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
@@ -89,6 +44,44 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 04 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - xiaoyu
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - xiaoyu
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,7 +93,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
-  - 🇫🇮 FI 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,6 +104,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
-  - 🇫🇮 FI 07 - xiaoyu
 rules:
 - MATCH,PROXIES
