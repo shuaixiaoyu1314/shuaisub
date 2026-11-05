@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 03 - xiaoyu
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -15,40 +41,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 02 - xiaoyu
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 03 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaoyu
   type: vless
   server: 194.104.94.141
   port: 443
@@ -56,8 +49,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 06 - xiaoyu
+  servername: 194.104.94.141
+- name: 🇸🇪 SE 05 - xiaoyu
   type: vless
   server: se3.shtil.io
   port: 443
@@ -66,7 +59,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: se3.shtil.io
+- name: 🇸🇪 SE 06 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 07 - xiaoyu
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 08 - xiaoyu
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -91,6 +104,7 @@ proxy-groups:
   - 🇸🇪 SE 05 - xiaoyu
   - 🇸🇪 SE 06 - xiaoyu
   - 🇸🇪 SE 07 - xiaoyu
+  - 🇸🇪 SE 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,5 +117,6 @@ proxy-groups:
   - 🇸🇪 SE 05 - xiaoyu
   - 🇸🇪 SE 06 - xiaoyu
   - 🇸🇪 SE 07 - xiaoyu
+  - 🇸🇪 SE 08 - xiaoyu
 rules:
 - MATCH,PROXIES

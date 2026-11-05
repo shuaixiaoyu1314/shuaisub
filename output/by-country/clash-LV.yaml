@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
-  type: vmess
-  server: 95.182.115.178
-  port: 443
-  uuid: db753334-5fd1-472b-b3e0-458bc2189c58
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 45.38.143.210
+  port: 30584
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+  servername: m.vk.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -15,37 +15,14 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
-  server: 84.23.52.120
-  port: 28453
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.sparxiecn.com
-  network: ws
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: 84.23.52.120
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 05 - xiaoyu
   type: vless
   server: 145.63.143.205
   port: 8444
@@ -59,6 +36,29 @@ proxies:
     path: /api/v1/devices/10be32b380/telemetry
     headers:
       Host: pl1.meshbeat.online
+- name: 🇵🇱 PL 04 - xiaoyu
+  type: vless
+  server: 84.23.52.120
+  port: 28449
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 05 - xiaoyu
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - xiaoyu
   type: vless
   server: 84.23.52.120
@@ -76,7 +76,7 @@ proxies:
 - name: 🇵🇱 PL 07 - xiaoyu
   type: vless
   server: 84.23.52.120
-  port: 28449
+  port: 28453
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
