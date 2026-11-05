@@ -5,53 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  type: vless
-  server: 103.247.28.203
-  port: 443
-  uuid: 64726966-0000-4000-8000-740000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
   type: vmess
   server: dog-hk.kunlun01dns.com
-  port: 21019
+  port: 21041
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  type: vless
-  server: 210.0.244.227
-  port: 443
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  type: vless
-  server: 210.0.244.157
-  port: 443
-  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
-  servername: cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

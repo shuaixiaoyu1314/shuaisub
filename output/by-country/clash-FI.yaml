@@ -44,19 +44,15 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - xiaoyu
-  type: vless
-  server: latvia.zovip2.ir
-  port: 443
-  uuid: 2a6ac8b1-a485-49d2-97be-20d2759312e2
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: tr7.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: tr7.zovip2.ir
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
   server: 45.144.234.157

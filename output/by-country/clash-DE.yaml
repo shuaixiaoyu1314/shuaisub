@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoyu
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
   type: vmess
   server: www.gptcloudai.com
   port: 443
@@ -48,34 +20,215 @@ proxies:
     path: /truth
     headers:
       Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
   type: vmess
-  server: de.zhou-yufan.com
+  server: 172.67.156.121
   port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
+  servername: www.gptcloudai.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
   type: ss
-  server: 57.129.83.85
+  server: 193.108.119.83
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 07 - xiaoyu
   type: ss
-  server: 213.202.208.199
-  port: 7001
+  server: 193.108.119.3
+  port: 19999
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 08 - xiaoyu
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
+  type: vmess
+  server: 172.67.156.121
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.gptcloudai.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
+  type: vmess
+  server: 2.26.99.150
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+    headers:
+      Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
   type: vless
-  server: 104.16.0.1
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
+  type: ss
+  server: 193.108.118.247
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
+  type: vless
+  server: 91.107.243.131
+  port: 465
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw14.roghanmo.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 21 - xiaoyu
+  type: vless
+  server: 172.64.229.129
   port: 2052
   uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   udp: true
@@ -86,21 +239,23 @@ proxies:
     path: /rain1226
     headers:
       Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
+  servername: www.gptcloudai.com
   network: ws
   ws-opts:
-    path: /
+    path: /truth
     headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
   type: vless
   server: 91.107.244.35
   port: 465
@@ -114,145 +269,13 @@ proxies:
     path: /
     headers:
       Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
-  type: vless
-  server: hw5.roghanmo.com
-  port: 465
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw5.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
-  type: ss
-  server: 193.108.119.83
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
-  type: ss
-  server: 193.108.116.98
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
-  type: vless
-  server: 172.64.229.129
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
-  type: vless
-  server: 104.18.0.181
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
-  type: vless
-  server: 51.75.67.209
-  port: 2096
-  uuid: 20d04f6e-797b-4814-b60a-3882be3b101b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: microsoft.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: microsoft.com
-- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaoyu
-  type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: 82382a00-3784-41e3-85d6-37f626263944
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vpn.574ck.xyz
-- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
   type: ss
   server: 193.108.117.111
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
-  type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
-  type: vmess
-  server: 2.26.54.200
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
 - name: 🇩🇪 德国 (Germany) 25 - xiaoyu
   type: vmess
   server: 2.26.54.200
@@ -269,10 +292,17 @@ proxies:
     headers:
       Host: None
 - name: 🇩🇪 德国 (Germany) 26 - xiaoyu
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
   type: vless
-  server: OV-Germany1.09vpn.com
+  server: 57.129.41.216
   port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
@@ -281,35 +311,29 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
-  type: vless
-  server: 91.107.243.131
-  port: 465
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw14.roghanmo.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw14.roghanmo.com
 - name: 🇩🇪 德国 (Germany) 28 - xiaoyu
-  type: vless
-  server: 51.75.67.209
-  port: 8443
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
+- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
+  type: vmess
+  server: 2.26.54.200
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: zoom.us
   network: ws
   ws-opts:
-    path: /
+    path: /websocket/transfer/gayporn
     headers:
-      Host: 51.75.67.209
-- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
+      Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
   type: vless
   server: 91.107.244.35
   port: 465
@@ -317,13 +341,46 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw5.roghanmo.com
+  servername: hw5.roghanmo.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
+      Host: hw5.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
+  type: ss
+  server: 193.108.117.84
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+  type: vmess
+  server: d2.anonix.cloud
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+    headers:
+      Host: None
+- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
   type: vmess
   server: www.gptcloudai.com
   port: 443
@@ -339,43 +396,9 @@ proxies:
     path: /truth
     headers:
       Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
-  type: ss
-  server: 193.108.117.84
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 35 - xiaoyu
   type: vmess
-  server: 172.67.156.121
+  server: www.gptcloudai.com
   port: 443
   uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
   alterId: 0
@@ -390,29 +413,82 @@ proxies:
     headers:
       Host: www.gptcloudai.com
 - name: 🇩🇪 德国 (Germany) 36 - xiaoyu
-  type: vmess
-  server: getnet.serversubasli.top
-  port: 8080
-  uuid: d2b67e48-c341-47ba-8caa-5658df693ac4
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: hw5.roghanmo.com
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: hw5.roghanmo.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: hw5.roghanmo.com
 - name: 🇩🇪 德国 (Germany) 37 - xiaoyu
-  type: ss
-  server: 193.108.118.247
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: eu02.123450908.xyz
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
 - name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+  type: vless
+  server: 91.107.244.35
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.244.35
+- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
+  type: vmess
+  server: 2.26.54.200
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+    headers:
+      Host: None
+- name: 🇩🇪 德国 (Germany) 41 - xiaoyu
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
   type: vless
   server: 91.107.243.131
   port: 465
@@ -426,35 +502,108 @@ proxies:
     path: /
     headers:
       Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
-  type: vmess
-  server: d2.anonix.cloud
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 43 - xiaoyu
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 44 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 45 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /websocket/transfer/gayporn
+    path: /vless/
     headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
   type: vless
-  server: 104.21.5.204
+  server: 146.103.118.189
   port: 443
-  uuid: d3ff89d7-9590-4f07-bad7-40d4b8298754
+  uuid: 82382a00-3784-41e3-85d6-37f626263944
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: node-link-ac43ef-gw.aareshayad.workers.dev
+  servername: vpn.574ck.xyz
   network: ws
   ws-opts:
-    path: /44d863a24d2cc665?ed=2560
+    path: /ws
     headers:
-      Host: node-link-ac43ef-gw.aareshayad.workers.dev
+      Host: vpn.574ck.xyz
+- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 49 - xiaoyu
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 50 - xiaoyu
+  type: vmess
+  server: 193.108.119.87
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 51 - xiaoyu
+  type: vmess
+  server: de.zhou-yufan.com
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de.zhou-yufan.com
+- name: 🇩🇪 德国 (Germany) 52 - xiaoyu
+  type: vmess
+  server: de.zhou-yufan.com
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de.zhou-yufan.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -500,6 +649,18 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 38 - xiaoyu
   - 🇩🇪 德国 (Germany) 39 - xiaoyu
   - 🇩🇪 德国 (Germany) 40 - xiaoyu
+  - 🇩🇪 德国 (Germany) 41 - xiaoyu
+  - 🇩🇪 德国 (Germany) 42 - xiaoyu
+  - 🇩🇪 德国 (Germany) 43 - xiaoyu
+  - 🇩🇪 德国 (Germany) 44 - xiaoyu
+  - 🇩🇪 德国 (Germany) 45 - xiaoyu
+  - 🇩🇪 德国 (Germany) 46 - xiaoyu
+  - 🇩🇪 德国 (Germany) 47 - xiaoyu
+  - 🇩🇪 德国 (Germany) 48 - xiaoyu
+  - 🇩🇪 德国 (Germany) 49 - xiaoyu
+  - 🇩🇪 德国 (Germany) 50 - xiaoyu
+  - 🇩🇪 德国 (Germany) 51 - xiaoyu
+  - 🇩🇪 德国 (Germany) 52 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -545,5 +706,17 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 38 - xiaoyu
   - 🇩🇪 德国 (Germany) 39 - xiaoyu
   - 🇩🇪 德国 (Germany) 40 - xiaoyu
+  - 🇩🇪 德国 (Germany) 41 - xiaoyu
+  - 🇩🇪 德国 (Germany) 42 - xiaoyu
+  - 🇩🇪 德国 (Germany) 43 - xiaoyu
+  - 🇩🇪 德国 (Germany) 44 - xiaoyu
+  - 🇩🇪 德国 (Germany) 45 - xiaoyu
+  - 🇩🇪 德国 (Germany) 46 - xiaoyu
+  - 🇩🇪 德国 (Germany) 47 - xiaoyu
+  - 🇩🇪 德国 (Germany) 48 - xiaoyu
+  - 🇩🇪 德国 (Germany) 49 - xiaoyu
+  - 🇩🇪 德国 (Germany) 50 - xiaoyu
+  - 🇩🇪 德国 (Germany) 51 - xiaoyu
+  - 🇩🇪 德国 (Germany) 52 - xiaoyu
 rules:
 - MATCH,PROXIES
