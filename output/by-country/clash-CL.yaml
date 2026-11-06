@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaoyu
-  type: vless
-  server: 104.25.0.1
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 🇨🇱 CL 01 - xiaoyu
+  type: vmess
+  server: 170.239.86.176
+  port: 40708
+  uuid: 53005ac8-eed1-4e32-8183-7152e099877a
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /arki?ed=2048
     headers:
-      Host: vms.lifetime39.workers.dev
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaoyu
+  - 🇨🇱 CL 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaoyu
+  - 🇨🇱 CL 01 - xiaoyu
 rules:
 - MATCH,PROXIES
