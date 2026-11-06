@@ -5,26 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
 - name: 🇸🇪 SE 02 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 03 - xiaoyu
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -37,15 +24,26 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - xiaoyu
+- name: 🇸🇪 SE 03 - xiaoyu
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
   tls: true
   skip-cert-verify: true
   servername: se3.shtil.io
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -61,15 +59,6 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 06 - xiaoyu
   type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -81,17 +70,24 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 09 - xiaoyu
   type: vless
   server: 194.104.94.141
@@ -102,6 +98,33 @@ proxies:
   skip-cert-verify: true
   servername: se3.shtil.io
 - name: 🇸🇪 SE 10 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 12 - xiaoyu
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 13 - xiaoyu
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -114,22 +137,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 12 - xiaoyu
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,6 +154,7 @@ proxy-groups:
   - 🇸🇪 SE 10 - xiaoyu
   - 🇸🇪 SE 11 - xiaoyu
   - 🇸🇪 SE 12 - xiaoyu
+  - 🇸🇪 SE 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +172,6 @@ proxy-groups:
   - 🇸🇪 SE 10 - xiaoyu
   - 🇸🇪 SE 11 - xiaoyu
   - 🇸🇪 SE 12 - xiaoyu
+  - 🇸🇪 SE 13 - xiaoyu
 rules:
 - MATCH,PROXIES
