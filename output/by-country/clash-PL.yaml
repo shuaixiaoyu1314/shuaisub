@@ -15,6 +15,38 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 03 - xiaoyu
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 04 - xiaoyu
+  type: vless
+  server: 72.56.233.10
+  port: 8443
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lte-v2-ws.gacvpn.site
+  network: ws
+  ws-opts:
+    path: /static/js/runtime.9d03c7.js
+    headers:
+      Host: 72.56.233.10
+- name: 🇵🇱 PL 05 - xiaoyu
+  type: vless
   server: 145.63.143.205
   port: 8444
   uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
@@ -27,33 +59,6 @@ proxies:
     path: /api/v1/devices/10be32b380/telemetry
     headers:
       Host: pl1.meshbeat.online
-- name: 🇵🇱 PL 03 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 05 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - xiaoyu
   type: vless
   server: 2.26.6.1
@@ -64,6 +69,15 @@ proxies:
   skip-cert-verify: true
   servername: 2.26.6.1
 - name: 🇵🇱 PL 07 - xiaoyu
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 08 - xiaoyu
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
+  - 🇵🇱 PL 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +111,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - xiaoyu
   - 🇵🇱 PL 06 - xiaoyu
   - 🇵🇱 PL 07 - xiaoyu
+  - 🇵🇱 PL 08 - xiaoyu
 rules:
 - MATCH,PROXIES

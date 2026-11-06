@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 181.214.1.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: vms.lifetime39.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   type: vless
   server: 95.174.68.188
@@ -31,27 +31,66 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   type: ss
   server: 151.241.19.29
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   type: vless
+  server: 185.225.195.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime18.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -63,37 +102,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  type: vmess
-  server: 151.241.19.44
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
-  type: ss
-  server: 151.241.19.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
   type: vless
   server: uae.unixzone.us
@@ -109,45 +117,59 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  type: ss
+  server: 38.180.11.182
+  port: 12146
+  cipher: aes-128-gcm
+  password: 37a7c5fb6a3109207a0860d30bedb37c
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
   type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
+  type: ss
+  server: 151.241.19.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
+  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -159,32 +181,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 16 - xiaoyu
   type: vless
   server: 95.174.68.188
@@ -199,6 +195,17 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 17 - xiaoyu
+  type: vmess
+  server: 151.241.19.44
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇦🇪 阿联酋 (UAE) 18 - xiaoyu
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -211,19 +218,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 18 - xiaoyu
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 19 - xiaoyu
   type: vless
   server: 95.174.68.188
@@ -237,6 +231,33 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 20 - xiaoyu
+  type: vless
+  server: 84.22.150.39
+  port: 7443
+  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 21 - xiaoyu
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,6 +282,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 17 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 18 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 19 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 20 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -285,5 +308,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 17 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 18 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 19 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 20 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 21 - xiaoyu
 rules:
 - MATCH,PROXIES
