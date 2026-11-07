@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
-  type: ss
-  server: fn1s.sublinkplas.ir
-  port: 53731
-  cipher: chacha20-ietf-poly1305
-  password: tztS0JGqX91pDVi5g8QyffaUPJlPUnWm
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -52,17 +58,16 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - xiaoyu
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - xiaoyu
   type: vless
   server: 45.144.234.157
@@ -76,6 +81,16 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - xiaoyu
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 18f60a4c-ad76-4157-8ecb-661974f02f30
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +102,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
+  - 🇫🇮 FI 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +114,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaoyu
   - 🇫🇮 FI 05 - xiaoyu
   - 🇫🇮 FI 06 - xiaoyu
+  - 🇫🇮 FI 07 - xiaoyu
 rules:
 - MATCH,PROXIES
