@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - xiaoyu
+- name: 🇧🇬 BG 01 - xiaoyu
   type: vless
-  server: 64.177.66.9
-  port: 8443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  server: p2real4.greewebservices.ir
+  port: 1340
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp7.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /events/classfp=chrome
-    headers:
-      Host: vp7.1145678.xyz
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - xiaoyu
+  - 🇧🇬 BG 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - xiaoyu
+  - 🇧🇬 BG 01 - xiaoyu
 rules:
 - MATCH,PROXIES
