@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   type: ss
-  server: 83.141.92.138
-  port: 1080
+  server: 115.161.136.145
+  port: 10099
   cipher: chacha20-ietf-poly1305
-  password: WkKqrNHRxQXA-bkL2ztAylXw8mE_BYYs
+  password: '12242'
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
