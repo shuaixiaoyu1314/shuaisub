@@ -13,17 +13,31 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
+- name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: 83.171.241.153
+  port: 443
+  uuid: bda6e235-c778-4e57-bfcd-5a9026fec8c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+  servername: d58daft.plp1.h1cloud.net
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
 rules:
 - MATCH,PROXIES
