@@ -12,48 +12,6 @@ proxies:
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
 - name: 🇳🇴 NO 02 - xiaoyu
-  type: vless
-  server: 185.14.97.242
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇳🇴 NO 03 - xiaoyu
-  type: vless
-  server: 185.14.97.242
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇳🇴 NO 04 - xiaoyu
-  type: vless
-  server: 185.14.97.242
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇳🇴 NO 05 - xiaoyu
   type: ss
   server: 185.213.23.63
   port: 990
@@ -67,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇳🇴 NO 01 - xiaoyu
   - 🇳🇴 NO 02 - xiaoyu
-  - 🇳🇴 NO 03 - xiaoyu
-  - 🇳🇴 NO 04 - xiaoyu
-  - 🇳🇴 NO 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇳🇴 NO 01 - xiaoyu
   - 🇳🇴 NO 02 - xiaoyu
-  - 🇳🇴 NO 03 - xiaoyu
-  - 🇳🇴 NO 04 - xiaoyu
-  - 🇳🇴 NO 05 - xiaoyu
 rules:
 - MATCH,PROXIES

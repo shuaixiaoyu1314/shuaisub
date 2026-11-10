@@ -28,16 +28,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇽 MX 04 - xiaoyu
-  type: vmess
-  server: 38.60.224.173
-  port: 32153
-  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +36,6 @@ proxy-groups:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
   - 🇲🇽 MX 03 - xiaoyu
-  - 🇲🇽 MX 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,6 +44,5 @@ proxy-groups:
   - 🇲🇽 MX 01 - xiaoyu
   - 🇲🇽 MX 02 - xiaoyu
   - 🇲🇽 MX 03 - xiaoyu
-  - 🇲🇽 MX 04 - xiaoyu
 rules:
 - MATCH,PROXIES

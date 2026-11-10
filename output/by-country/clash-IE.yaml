@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaoyu
-  type: vless
-  server: 5.157.30.3
-  port: 8443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  type: ss
+  server: 20.166.20.135
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: G2shlbeRXdE45aVA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp6.1145678.xyz
-  network: ws
-  ws-opts:
-    path: /docs
-    headers:
-      Host: vp6.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
