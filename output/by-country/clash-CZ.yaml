@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaoyu
-  type: vless
-  server: 188.137.178.174
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇨🇿 CZ 02 - xiaoyu
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaoyu
-  - 🇨🇿 CZ 02 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu
   type: vless
-  server: 83.147.13.74
-  port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
-  type: vless
   server: 60.248.219.53
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
@@ -30,6 +18,18 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
+  type: vless
+  server: 83.147.13.74
+  port: 8443
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+  servername: github.githubassets.com
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
   type: vless
   server: 60.248.219.78
@@ -45,19 +45,12 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  type: ss
+  server: amasoid.ddns.net
+  port: 14514
+  cipher: 2022-blake3-aes-128-gcm
+  password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
   type: vless
   server: 60.248.219.78
@@ -66,19 +59,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: 60.248.219.78
   network: ws
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaoyu
-  type: ss
-  server: amasoid.ddns.net
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
-  udp: true
+      Host: 60.248.219.78
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,7 +75,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,6 +85,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,24 +5,10 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaoyu
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 02 - xiaoyu
   type: vmess
-  server: 154.201.73.153
-  port: 45654
-  uuid: cd1106bc-1b71-4f11-8d29-d8870099adc6
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
   alterId: 0
   cipher: auto
   udp: true
@@ -30,54 +16,20 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cd1106bc-1b71-4f11-8d29-d8870099adc6-vm
-    headers:
-      Host: www.bing.com
-- name: 🇸🇨 SC 03 - xiaoyu
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 04 - xiaoyu
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - xiaoyu
-  - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - xiaoyu
-  - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
 rules:
 - MATCH,PROXIES
