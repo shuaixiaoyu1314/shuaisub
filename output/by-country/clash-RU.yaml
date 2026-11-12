@@ -6,41 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
-  server: 188.225.37.175
-  port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cryptoventura.online
-  network: ws
-  ws-opts:
-    path: /api/de3/live
-    headers:
-      Host: cryptoventura.online
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
   server: 185.178.208.167
   port: 443
   uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
@@ -53,6 +18,34 @@ proxies:
     path: /session
     headers:
       Host: mbr.rkn-pediki.site
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: vless
+  server: mbr.rkn-pediki.site
+  port: 443
+  uuid: 2b5962e8-1ec2-0001-bdab-cefa57555d2a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: ss
+  server: 46.17.47.58
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: ss
   server: 46.17.47.58
@@ -69,10 +62,10 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  server: 38.60.223.125
+  port: 13108
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   type: ss
@@ -82,107 +75,44 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: ss
-  server: 46.17.47.58
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vless
+  server: 176.108.245.237
+  port: 443
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tfusq-ru-40sb.fade.mom
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  type: vless
-  server: mbr.rkn-pediki.site
-  port: 443
-  uuid: 2b5962e8-1ec2-0001-bdab-cefa57555d2a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  type: vless
-  server: cryptoventura.online
-  port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cryptoventura.online
-  network: ws
-  ws-opts:
-    path: /api/de3/live
-    headers:
-      Host: cryptoventura.online
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  type: vless
-  server: 176.108.245.237
-  port: 443
-  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tfusq-ru-40sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  type: ss
-  server: 185.22.153.117
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  type: vless
-  server: 176.108.245.237
-  port: 443
-  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tfusq-ru-40sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   type: ss
   server: 38.60.223.125
   port: 13108
   cipher: aes-128-gcm
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  type: ss
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   type: vless
-  server: 188.225.37.175
+  server: 176.108.245.237
   port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cryptoventura.online
-  network: ws
-  ws-opts:
-    path: /api/de3/live
-    headers:
-      Host: cryptoventura.online
+  servername: tfusq-ru-40sb.fade.mom
 proxy-groups:
 - name: PROXIES
   type: select
@@ -201,11 +131,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -224,10 +149,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -21,7 +21,7 @@ proxies:
       Host: ''
 - name: 🇰🇿 KZ 02 - xiaoyu
   type: vless
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 8443
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
@@ -32,7 +32,7 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 38.107.234.57
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 03 - xiaoyu
   type: vless
   server: 109.248.170.119
@@ -47,17 +47,33 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 04 - xiaoyu
   type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  server: 38.107.234.57
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 05 - xiaoyu
+  type: vless
+  server: 38.107.234.57
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 KZ 06 - xiaoyu
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -71,35 +87,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 KZ 06 - xiaoyu
-  type: vless
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 07 - xiaoyu
-  type: vless
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,7 +99,6 @@ proxy-groups:
   - 🇰🇿 KZ 04 - xiaoyu
   - 🇰🇿 KZ 05 - xiaoyu
   - 🇰🇿 KZ 06 - xiaoyu
-  - 🇰🇿 KZ 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -123,6 +110,5 @@ proxy-groups:
   - 🇰🇿 KZ 04 - xiaoyu
   - 🇰🇿 KZ 05 - xiaoyu
   - 🇰🇿 KZ 06 - xiaoyu
-  - 🇰🇿 KZ 07 - xiaoyu
 rules:
 - MATCH,PROXIES
