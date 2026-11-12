@@ -35,20 +35,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 TH 04 - xiaoyu
-  type: vmess
-  server: 8.213.209.1
-  port: 18918
-  uuid: 6d64789a-4d5e-4ef7-c9ac-0fc543b4e635
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 103.114.203.189
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vp4.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp4.1145678.xyz
 - name: 🇹🇭 TH 05 - xiaoyu
   type: vmess
   server: 119.46.51.45
   port: 37515
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 06 - xiaoyu
+  type: vmess
+  server: 8.213.209.1
+  port: 18918
+  uuid: 6d64789a-4d5e-4ef7-c9ac-0fc543b4e635
   alterId: 0
   cipher: auto
   udp: true
@@ -64,6 +78,7 @@ proxy-groups:
   - 🇹🇭 TH 03 - xiaoyu
   - 🇹🇭 TH 04 - xiaoyu
   - 🇹🇭 TH 05 - xiaoyu
+  - 🇹🇭 TH 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +89,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - xiaoyu
   - 🇹🇭 TH 04 - xiaoyu
   - 🇹🇭 TH 05 - xiaoyu
+  - 🇹🇭 TH 06 - xiaoyu
 rules:
 - MATCH,PROXIES
