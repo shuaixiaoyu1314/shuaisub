@@ -34,34 +34,6 @@ proxies:
       Host: fs.qicai99.com
 - name: 🇬🇷 GR 03 - xiaoyu
   type: vless
-  server: 85.90.197.159
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇬🇷 GR 04 - xiaoyu
-  type: vless
-  server: 85.90.197.158
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: fs.qicai99.com
-- name: 🇬🇷 GR 05 - xiaoyu
-  type: vless
   server: 85.90.197.158
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
@@ -82,8 +54,6 @@ proxy-groups:
   - 🇬🇷 GR 01 - xiaoyu
   - 🇬🇷 GR 02 - xiaoyu
   - 🇬🇷 GR 03 - xiaoyu
-  - 🇬🇷 GR 04 - xiaoyu
-  - 🇬🇷 GR 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +62,5 @@ proxy-groups:
   - 🇬🇷 GR 01 - xiaoyu
   - 🇬🇷 GR 02 - xiaoyu
   - 🇬🇷 GR 03 - xiaoyu
-  - 🇬🇷 GR 04 - xiaoyu
-  - 🇬🇷 GR 05 - xiaoyu
 rules:
 - MATCH,PROXIES
