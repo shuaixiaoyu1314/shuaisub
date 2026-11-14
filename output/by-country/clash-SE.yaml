@@ -5,23 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 138.199.55.230
-- name: 🇸🇪 SE 02 - xiaoyu
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
+- name: 🇸🇪 SE 02 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -45,21 +47,27 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 138.199.55.230
 - name: 🇸🇪 SE 05 - xiaoyu
   type: ss
-  server: 138.199.55.243
-  port: 19999
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 06 - xiaoyu
-  type: ss
-  server: 194.59.250.52
-  port: 18501
-  cipher: aes-128-gcm
-  password: 517403753b63fd4fac88986bf98b11e0
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 07 - xiaoyu
   type: vless
   server: 5.178.109.174
@@ -74,70 +82,27 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 08 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 62.93.166.184
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 10 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 138.199.55.230
-- name: 🇸🇪 SE 11 - xiaoyu
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 12 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 62.93.166.184
-- name: 🇸🇪 SE 13 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇸🇪 SE 10 - xiaoyu
+  type: ss
+  server: 194.59.250.52
+  port: 18501
+  cipher: aes-128-gcm
+  password: 517403753b63fd4fac88986bf98b11e0
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 14 - xiaoyu
+- name: 🇸🇪 SE 11 - xiaoyu
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -150,7 +115,14 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 15 - xiaoyu
+- name: 🇸🇪 SE 12 - xiaoyu
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 13 - xiaoyu
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -161,20 +133,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 138.199.55.230
-- name: 🇸🇪 SE 16 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 17 - xiaoyu
+  servername: 138.199.55.230
+- name: 🇸🇪 SE 15 - xiaoyu
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -185,13 +155,57 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 62.93.166.184
+- name: 🇸🇪 SE 16 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 62.93.166.184
+- name: 🇸🇪 SE 17 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 18 - xiaoyu
   type: ss
-  server: 70.34.212.124
+  server: 62.182.193.228
   port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
+- name: 🇸🇪 SE 19 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 20 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 62.93.166.184
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,6 +229,8 @@ proxy-groups:
   - 🇸🇪 SE 16 - xiaoyu
   - 🇸🇪 SE 17 - xiaoyu
   - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -238,5 +254,7 @@ proxy-groups:
   - 🇸🇪 SE 16 - xiaoyu
   - 🇸🇪 SE 17 - xiaoyu
   - 🇸🇪 SE 18 - xiaoyu
+  - 🇸🇪 SE 19 - xiaoyu
+  - 🇸🇪 SE 20 - xiaoyu
 rules:
 - MATCH,PROXIES

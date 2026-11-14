@@ -43,15 +43,6 @@ proxies:
     public-key: qVU44SZtoG7cKR3ZCg4Ipf5rPefL5cbrto2OpzZNoU8
   servername: instance-103.nolimited.space
   client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +52,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
   - 🇵🇱 PL 04 - xiaoyu
-  - 🇵🇱 PL 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +61,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
   - 🇵🇱 PL 04 - xiaoyu
-  - 🇵🇱 PL 05 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -18,8 +18,23 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: 156.239.224.107
 - name: 🇸🇨 SC 02 - xiaoyu
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇸🇨 SC 03 - xiaoyu
   type: vless
   server: 196.196.149.80
   port: 443
@@ -38,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
+  - 🇸🇨 SC 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
+  - 🇸🇨 SC 03 - xiaoyu
 rules:
 - MATCH,PROXIES

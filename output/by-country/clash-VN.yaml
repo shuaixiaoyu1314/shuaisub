@@ -22,18 +22,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇻🇳 VN 03 - xiaoyu
   type: vless
-  server: 163.61.182.194
-  port: 34646
-  uuid: 5407a1c6-fbbf-417a-864d-48563da8e454
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
-  servername: api.receptivity.io
-  client-fingerprint: chrome
-- name: 🇻🇳 VN 04 - xiaoyu
-  type: vless
   server: 150.95.109.109
   port: 2086
   uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
@@ -48,7 +36,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
-  - 🇻🇳 VN 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,6 +44,5 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
-  - 🇻🇳 VN 04 - xiaoyu
 rules:
 - MATCH,PROXIES
