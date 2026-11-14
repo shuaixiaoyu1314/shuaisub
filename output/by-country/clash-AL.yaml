@@ -6,13 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - xiaoyu
   type: ss
-  server: 185.4.115.149
-  port: 1348
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
-- name: 🇦🇱 AL 02 - xiaoyu
-  type: ss
   server: dns22.m3hrzd.ir
   port: 1348
   cipher: chacha20-ietf-poly1305
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇱 AL 01 - xiaoyu
-  - 🇦🇱 AL 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL 01 - xiaoyu
-  - 🇦🇱 AL 02 - xiaoyu
 rules:
 - MATCH,PROXIES
