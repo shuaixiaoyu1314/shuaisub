@@ -9,9 +9,30 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: ss
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
+  type: ss
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: vless
   server: 193.228.128.230
   port: 443
@@ -23,42 +44,7 @@ proxies:
     public-key: rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY
   servername: ch.primarymaster.online
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: 4eebdec5-08eb-4772-a0e6-35fec4c91cb0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwugirl.dev
-  network: ws
-  ws-opts:
-    path: /player/collect/9c8514f9552d/
-    headers:
-      Host: speakpro.lol
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  type: ss
-  server: 185.22.153.117
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: ss
-  server: 185.22.153.117
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
   server: 45.151.70.116
   port: 443
@@ -70,13 +56,27 @@ proxies:
     public-key: O-B_Lb2sUV9VaUIv0_d6gVMA20oSKEd1wwyZ5vJYvh8
   servername: www.amd.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: ss
-  server: 130.49.189.158
-  port: 43558
+  server: 90.156.203.62
+  port: 5112
   cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  password: VVlAff77CnAU43Aoc5j15Y
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: my.nehtar.ru
+  port: 443
+  uuid: fe1988d0-077c-4865-8b03-ffde242a109f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: my.nehtar.ru
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a10af91503cf8cbe55f42a7e5264c498
+    headers:
+      Host: my.nehtar.ru
 proxy-groups:
 - name: PROXIES
   type: select
