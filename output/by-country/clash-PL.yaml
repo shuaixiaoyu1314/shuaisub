@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 02 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - xiaoyu
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - xiaoyu
-  type: vless
   server: 81.90.20.203
   port: 443
   uuid: f37d32d0-ca5a-464f-8c32-92dc33f71408
@@ -43,6 +16,18 @@ proxies:
     public-key: qVU44SZtoG7cKR3ZCg4Ipf5rPefL5cbrto2OpzZNoU8
   servername: instance-103.nolimited.space
   client-fingerprint: firefox
+- name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: d58daft.plp1.h1cloud.net
+  port: 443
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+  servername: d58daft.plp1.h1cloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
-  - 🇵🇱 PL 03 - xiaoyu
-  - 🇵🇱 PL 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
-  - 🇵🇱 PL 03 - xiaoyu
-  - 🇵🇱 PL 04 - xiaoyu
 rules:
 - MATCH,PROXIES

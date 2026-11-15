@@ -6,29 +6,36 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
   type: vless
-  server: 59.125.69.22
+  server: 60.248.219.78
   port: 443
   uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tse1.mm.bing.net
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: tse1.mm.bing.net
-- name: 🇲🇾 MY 02 (家宽) - xiaoyu
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
   type: vmess
-  server: 192.228.145.118
-  port: 10086
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  server: dog-hk.kunlun01dns.com
+  port: 21018
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   type: vmess
   server: dog-hk.kunlun01dns.com
   port: 21041
@@ -38,30 +45,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
-  type: ss
-  server: 115.161.136.145
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇲🇾 MY 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
-  - 🇲🇾 MY 02 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

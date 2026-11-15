@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaoyu
   type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -14,18 +14,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 103.88.232.55
+  servername: 103.14.27.207
 - name: 🇧🇷 BR 02 - xiaoyu
-  type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 146.235.59.153
+  port: 2053
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 103.88.232.55
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vmess
   server: 103.88.232.55
@@ -36,7 +39,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
+  servername: 103.88.232.55
 - name: 🇧🇷 BR 04 - xiaoyu
   type: vmess
   server: 103.14.27.207
@@ -58,7 +61,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 103.14.27.207
+  servername: None
 - name: 🇧🇷 BR 06 - xiaoyu
   type: vmess
   server: 103.88.232.55
@@ -72,7 +75,7 @@ proxies:
   servername: 103.88.232.55
 - name: 🇧🇷 BR 07 - xiaoyu
   type: vmess
-  server: 103.14.27.207
+  server: 103.88.232.55
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -81,6 +84,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: None
+- name: 🇧🇷 BR 08 - xiaoyu
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 103.88.232.55
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +107,7 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +120,6 @@ proxy-groups:
   - 🇧🇷 BR 05 - xiaoyu
   - 🇧🇷 BR 06 - xiaoyu
   - 🇧🇷 BR 07 - xiaoyu
+  - 🇧🇷 BR 08 - xiaoyu
 rules:
 - MATCH,PROXIES
