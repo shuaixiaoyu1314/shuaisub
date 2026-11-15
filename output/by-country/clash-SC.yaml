@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaoyu
-  type: vless
-  server: 196.245.52.188
-  port: 443
-  uuid: 747db87a-0cf6-4ea7-ae6b-3293afe2cef6
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: UTK3fM9wiII4uIcBYUYJwppN1HezxBPhxPfIxDHZqj4
-  servername: 62981et.us11.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇸🇨 SC 02 - xiaoyu
   type: vmess
   server: 156.239.224.107
@@ -31,21 +34,6 @@ proxies:
     path: /
     headers:
       Host: 156.239.224.107
-- name: 🇸🇨 SC 03 - xiaoyu
-  type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
-  - 🇸🇨 SC 03 - xiaoyu
 rules:
 - MATCH,PROXIES

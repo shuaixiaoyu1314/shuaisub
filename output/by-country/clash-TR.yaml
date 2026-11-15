@@ -17,30 +17,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  type: ss
+  server: 206.1.103.22
+  port: 46382
+  cipher: 2022-blake3-aes-256-gcm
+  password: gFpTQ78gzoU2n9z856azv7cSdalPDP1XQUgR6KhQ6G4=:502YR7R1FZAJQxDpNry1EhFD59+ybyYnN5tAU2jzQYU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   type: vless
   server: 185.39.204.117
   port: 10002
@@ -53,7 +36,31 @@ proxies:
   ws-opts:
     path: /vpnjantit
     headers:
-      Host: 185.39.204.117
+      Host: tr2.vpnjantit.com
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +70,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +80,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

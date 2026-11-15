@@ -6,39 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
   type: vless
-  server: 99.86.77.123
-  port: 80
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
-- name: 🇹🇭 TH 02 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 03 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 04 - xiaoyu
-  type: vless
   server: www.true.th
   port: 80
   uuid: f4c5605a-8424-441e-b23d-d6384d012c28
@@ -50,9 +17,45 @@ proxies:
     path: /
     headers:
       Host: dcm4kwis2exkw.cloudfront.net
-- name: 🇹🇭 TH 05 - xiaoyu
+- name: 🇹🇭 TH 02 - xiaoyu
+  type: vless
+  server: 99.86.77.123
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 03 - xiaoyu
   type: vless
   server: 99.86.77.43
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 04 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 05 - xiaoyu
+  type: vless
+  server: www.true.th
   port: 80
   uuid: f4c5605a-8424-441e-b23d-d6384d012c28
   udp: true
@@ -74,16 +77,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇭 TH 07 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 08 - xiaoyu
   type: vless
   server: assets.opensignal.com
   port: 80
@@ -108,7 +101,6 @@ proxy-groups:
   - 🇹🇭 TH 05 - xiaoyu
   - 🇹🇭 TH 06 - xiaoyu
   - 🇹🇭 TH 07 - xiaoyu
-  - 🇹🇭 TH 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,6 +113,5 @@ proxy-groups:
   - 🇹🇭 TH 05 - xiaoyu
   - 🇹🇭 TH 06 - xiaoyu
   - 🇹🇭 TH 07 - xiaoyu
-  - 🇹🇭 TH 08 - xiaoyu
 rules:
 - MATCH,PROXIES
