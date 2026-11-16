@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaoyu
+- name: 🇲🇩 MD 01 - xiaoyu
   type: vless
-  server: 230b29t.es8.h1clayd.click
+  server: 176.123.11.43
   port: 443
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  uuid: c1208c5a-2350-4506-affd-fc41b4319286
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: JvnTbjxkV9nXKoDRA_tmeY6aeOTnJXSBU3yNp9ZUnH0
-  servername: 230b29t.es8.h1clayd.click
-  client-fingerprint: firefox
+  servername: bundledispatch.ratethatrestaurant.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 176.123.11.43
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaoyu
+  - 🇲🇩 MD 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaoyu
+  - 🇲🇩 MD 01 - xiaoyu
 rules:
 - MATCH,PROXIES
