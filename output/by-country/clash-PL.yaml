@@ -6,27 +6,69 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 136.148.208.218
+  server: 557e58g.pl8.h1clayd.click
   port: 443
-  uuid: bda6e235-c778-4e57-bfcd-5a9026fec8c9
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ms5yeTlBCbAEEeWIbn_bV72Q9SQfpcJz6_VqNgF7ABY
+  servername: 557e58g.pl8.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: 201.58.139.178
+  port: 443
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ms5yeTlBCbAEEeWIbn_bV72Q9SQfpcJz6_VqNgF7ABY
+  servername: 557e58g.pl8.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 03 - xiaoyu
+  type: vless
+  server: 80.47.10.106
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: pl8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 04 - xiaoyu
+  type: vless
+  server: d58daft.plp1.h1cloud.net
+  port: 443
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
   servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
+  - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
+  - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
 rules:
 - MATCH,PROXIES
