@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
   type: vmess
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -17,9 +17,43 @@ proxies:
   servername: ''
 - name: 🇸🇪 SE 02 - xiaoyu
   type: vless
-  server: 193.188.21.253
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: ios
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 138.199.55.230
+- name: 🇸🇪 SE 04 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 05 - xiaoyu
+  type: vless
+  server: 5.178.109.174
   port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -27,58 +61,49 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - xiaoyu
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 06 - xiaoyu
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaoyu
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 06 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 - name: 🇸🇪 SE 07 - xiaoyu
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: ios
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 62.93.166.184
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 10 - xiaoyu
   type: vless
   server: 362c1eg.se1.h1clayd.click
   port: 443
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  uuid: 3ede439b-410f-4eae-b449-4e15064c0706
   udp: true
   tls: true
   skip-cert-verify: true
@@ -86,46 +111,25 @@ proxies:
     public-key: BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY
   servername: 362c1eg.se1.h1clayd.click
   client-fingerprint: firefox
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 89.110.127.54
-  port: 443
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY
-  servername: 362c1eg.se1.h1clayd.click
-  client-fingerprint: ios
-- name: 🇸🇪 SE 10 - xiaoyu
+- name: 🇸🇪 SE 11 - xiaoyu
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
 - name: 🇸🇪 SE 12 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 13 - xiaoyu
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -138,7 +142,20 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 13 - xiaoyu
+- name: 🇸🇪 SE 14 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 15 - xiaoyu
   type: vless
   server: 88.216.214.159
   port: 443
@@ -150,64 +167,27 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
-- name: 🇸🇪 SE 14 - xiaoyu
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
-- name: 🇸🇪 SE 15 - xiaoyu
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
 - name: 🇸🇪 SE 16 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
 - name: 🇸🇪 SE 17 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 18 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 138.199.55.230
-- name: 🇸🇪 SE 19 - xiaoyu
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -218,16 +198,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 62.93.166.184
-- name: 🇸🇪 SE 20 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 SE 19 - xiaoyu
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 20 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 21 - xiaoyu
   type: vmess
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -237,6 +234,19 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 22 - xiaoyu
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 23 - xiaoyu
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -247,36 +257,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 138.199.55.230
-- name: 🇸🇪 SE 23 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 62.93.166.184
-- name: 🇸🇪 SE 24 - xiaoyu
-  type: vless
-  server: 132.243.67.225
-  port: 443
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY
-  servername: 362c1eg.se1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 25 - xiaoyu
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -305,8 +285,6 @@ proxy-groups:
   - 🇸🇪 SE 21 - xiaoyu
   - 🇸🇪 SE 22 - xiaoyu
   - 🇸🇪 SE 23 - xiaoyu
-  - 🇸🇪 SE 24 - xiaoyu
-  - 🇸🇪 SE 25 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -335,7 +313,5 @@ proxy-groups:
   - 🇸🇪 SE 21 - xiaoyu
   - 🇸🇪 SE 22 - xiaoyu
   - 🇸🇪 SE 23 - xiaoyu
-  - 🇸🇪 SE 24 - xiaoyu
-  - 🇸🇪 SE 25 - xiaoyu
 rules:
 - MATCH,PROXIES

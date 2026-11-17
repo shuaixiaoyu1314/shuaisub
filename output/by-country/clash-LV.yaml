@@ -16,17 +16,33 @@ proxies:
     public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
   servername: m.vk.com
   client-fingerprint: chrome
+- name: 🇱🇻 LV 02 - xiaoyu
+  type: vless
+  server: 46.8.64.51
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
+  - 🇱🇻 LV 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
+  - 🇱🇻 LV 02 - xiaoyu
 rules:
 - MATCH,PROXIES
