@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 195.3.223.125
+  server: 80.47.10.106
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
@@ -14,9 +14,23 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-net-ctl.galioncc.com
-  client-fingerprint: firefox
+  servername: pl8.galioncc.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: 185.253.7.22
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- name: 🇵🇱 PL 03 - xiaoyu
   type: vless
   server: 80.47.10.106
   port: 443
@@ -35,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
+  - 🇵🇱 PL 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
+  - 🇵🇱 PL 03 - xiaoyu
 rules:
 - MATCH,PROXIES

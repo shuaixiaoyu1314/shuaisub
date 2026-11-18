@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
+  type: vless
+  server: 43.229.148.249
+  port: 443
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v5-4b5.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v5-4b5.pages.dev
+- name: 🇹🇭 TH 02 - xiaoyu
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -14,7 +28,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇭 TH 02 - xiaoyu
+- name: 🇹🇭 TH 03 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 04 - xiaoyu
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -31,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 rules:
 - MATCH,PROXIES
