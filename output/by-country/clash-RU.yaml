@@ -5,33 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
+  type: vless
+  server: 186.243.218.221
+  port: 8443
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloudehouse24.ru
+  network: ws
+  ws-opts:
+    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
+    headers:
+      Host: cloudehouse24.ru
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: 188.114.97.3
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: f0d7aft.nl17.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  type: ss
-  server: 46.17.47.194
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+  servername: f0d7aft.nl17.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   type: ss
   server: 130.49.189.158
@@ -40,6 +45,27 @@ proxies:
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  type: ss
+  server: 46.17.47.194
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 186.243.218.221
+  port: 8443
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloudehouse24.ru
+  network: ws
+  ws-opts:
+    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
+    headers:
+      Host: cloudehouse24.ru
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   type: vless
   server: 94.139.250.226
   port: 443
@@ -61,6 +87,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +99,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 (家宽) - xiaoyu
+- name: 🇪🇬 EG 01 - xiaoyu
   type: vless
-  server: 188.114.97.6
+  server: 48.103.120.22
   port: 443
-  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
+  uuid: a30903dc-1bf0-0003-8b1b-603a3a56211c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: investor.fb.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: investor.fb.com.r3xxe.eu.cc
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: svc-net-ctl.galioncc.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 (家宽) - xiaoyu
+  - 🇪🇬 EG 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 (家宽) - xiaoyu
+  - 🇪🇬 EG 01 - xiaoyu
 rules:
 - MATCH,PROXIES
