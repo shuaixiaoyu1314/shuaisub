@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: pl8.galioncc.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 02 - xiaoyu
   type: vless
   server: 80.47.10.106
@@ -39,6 +39,30 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: pl8.galioncc.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 04 - xiaoyu
+  type: vless
+  server: 80.47.10.106
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: pl8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 05 - xiaoyu
+  type: vless
+  server: 80.47.10.106
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: pl8.galioncc.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -48,6 +72,8 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
+  - 🇵🇱 PL 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +82,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
   - 🇵🇱 PL 03 - xiaoyu
+  - 🇵🇱 PL 04 - xiaoyu
+  - 🇵🇱 PL 05 - xiaoyu
 rules:
 - MATCH,PROXIES

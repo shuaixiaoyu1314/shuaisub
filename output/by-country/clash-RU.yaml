@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
-  type: vless
-  server: 186.243.218.221
-  port: 8443
-  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloudehouse24.ru
-  network: ws
-  ws-opts:
-    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
-    headers:
-      Host: cloudehouse24.ru
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   type: ss
   server: 130.49.189.158
@@ -27,56 +20,25 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
-  server: f0d7aft.nl17.h1clayd.click
+  server: 172.67.235.78
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 775c9d67-2ef3-47e8-8e23-656b68333da8
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-  servername: f0d7aft.nl17.h1clayd.click
-  client-fingerprint: firefox
+  servername: web-flow-263808-gw.poryya22o.workers.dev
+  network: ws
+  ws-opts:
+    path: /1e0b190b5bbf9d36?ed=2560
+    headers:
+      Host: web-flow-263808-gw.poryya22o.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: ss
   server: 46.17.47.194
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: vless
-  server: 186.243.218.221
-  port: 8443
-  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cloudehouse24.ru
-  network: ws
-  ws-opts:
-    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
-    headers:
-      Host: cloudehouse24.ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: vless
-  server: 94.139.250.226
-  port: 443
-  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: net-api-ctl.galioncc.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,9 +48,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,8 +57,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

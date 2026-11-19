@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.17.147.208
+  port: 443
+  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: b.rack.sxsc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: b.rack.sxsc.dpdns.org
 - name: 🇹🇭 TH 02 - xiaoyu
   type: vmess
   server: 119.46.51.45
@@ -34,6 +38,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇭 TH 04 - xiaoyu
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +56,7 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
   - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +65,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
   - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 rules:
 - MATCH,PROXIES
