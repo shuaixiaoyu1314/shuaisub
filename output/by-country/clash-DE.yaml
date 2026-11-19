@@ -5,19 +5,76 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoyu
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
+  server: 172.64.229.129
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /rain1226
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 02 - xiaoyu
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
+  type: ss
+  server: 51.38.127.93
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 03y5gbnyl4o1hc2n
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
+  type: vless
+  server: 104.26.0.1
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
+  type: ss
+  server: 193.108.119.83
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - xiaoyu
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
   type: vless
   server: ov-germany1.09vpn.com
   port: 80
@@ -29,51 +86,35 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 03 - xiaoyu
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
   type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 05 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
-  type: ss
-  server: 193.108.116.98
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  server: 185.65.202.122
+  port: 10004
+  uuid: 836c4d68-e086-11f1-aabc-67841df8a6f9
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vpnjantit
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 08 - xiaoyu
+      Host: 185.65.202.122
+- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
   type: vless
   server: 194.60.228.97
   port: 443
@@ -82,53 +123,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 09 - xiaoyu
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10 - xiaoyu
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - xiaoyu
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: c2f1f999-365f-42a7-87e7-726cbd0753ae
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: auth-api-8be4aa-gw.prod-relay-110934.workers.dev
-  network: ws
-  ws-opts:
-    path: /294dd38929bdec5b?ed=2560
-    headers:
-      Host: auth-api-8be4aa-gw.prod-relay-110934.workers.dev
-- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
-  type: vless
-  server: 179.254.115.200
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 14 - xiaoyu
   type: ss
   server: 57.129.83.85
@@ -138,38 +132,50 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 15 - xiaoyu
   type: ss
-  server: 185.176.204.18
+  server: 193.108.118.247
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 16 - xiaoyu
   type: ss
-  server: 57.129.83.85
-  port: 19999
+  server: 185.226.172.8
+  port: 8008
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: XKFKl2rULjIp74
   udp: true
 - name: 🇩🇪 德国 (Germany) 17 - xiaoyu
   type: vless
-  server: 88.216.211.36
+  server: 217.69.174.175
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: de8.galioncc.com
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+  servername: 04535dt.us8.h1clayd.click
   client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+  type: vless
+  server: 188.225.57.185
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4JggwEKhrkrIjQjO8kRX6iGvHQJixIFkiDOnE7zd3xE
+  servername: flintstack.dev
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
   type: ss
-  server: 57.129.76.233
+  server: 23.157.88.43
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
   type: vmess
   server: 185.177.229.95
   port: 1270
@@ -179,45 +185,35 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  servername: 185.177.229.95
 - name: 🇩🇪 德国 (Germany) 21 - xiaoyu
   type: ss
-  server: 193.108.119.83
+  server: 145.79.177.201
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+  type: ss
+  server: 193.108.116.98
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
   type: vless
-  server: 93.123.85.103
+  server: 194.60.228.97
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-  servername: f0d7aft.nl17.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 24 - xiaoyu
   type: vless
   server: OV-Germany1.09vpn.com
   port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
@@ -227,77 +223,18 @@ proxies:
     headers:
       Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 25 - xiaoyu
-  type: vmess
-  server: 193.108.119.87
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 26 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
-  type: ss
-  server: 193.108.117.84
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 28 - xiaoyu
   type: vless
-  server: 45.131.65.105
+  server: 179.254.115.111
   port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: K41mxSIT1WcM8QEiZQxs7n_qOroaPucFMHamzWICKVQ
-  servername: playza-app.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
-  type: ss
-  server: 51.38.127.93
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 03y5gbnyl4o1hc2n
-  udp: true
-- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 26 - xiaoyu
   type: vless
   server: ov-germany1.09vpn.com
   port: 80
@@ -310,76 +247,40 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
-  type: ss
-  server: 47.254.175.2
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
-  type: ss
-  server: 193.108.117.111
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 185.177.229.95
-- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
   type: vless
-  server: 87.242.94.42
+  server: quay.gerqix.online
   port: 443
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 87.242.94.42
+  servername: quay.gerqix.online
   network: ws
   ws-opts:
-    path: /cart/sync/iJa-_8Pi4FjK
+    path: /api/de2/stream
     headers:
-      Host: 87.242.94.42
-- name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+      Host: quay.gerqix.online
+- name: 🇩🇪 德国 (Germany) 28 - xiaoyu
   type: vless
-  server: 87.248.149.50
+  server: 153.56.229.218
   port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
   type: ss
-  server: 193.108.118.247
-  port: 19999
+  server: 185.226.172.8
+  port: 8008
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
-  type: ss
-  server: 47.254.169.3
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 41 - xiaoyu
-  type: ss
-  server: 145.79.177.201
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
   type: vmess
   server: 193.108.119.87
   port: 1270
@@ -389,7 +290,112 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 193.108.119.87
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
+  type: vless
+  server: 170.114.45.6
+  port: 80
+  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+  type: ss
+  server: 193.108.117.84
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
+  type: ss
+  server: 47.254.143.251
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 35 - xiaoyu
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 36 - xiaoyu
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 37 - xiaoyu
+  type: vless
+  server: 170.114.46.6
+  port: 80
+  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 38 - xiaoyu
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 39 - xiaoyu
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 40 - xiaoyu
+  type: ss
+  server: 144.31.217.18
+  port: 1883
+  cipher: 2022-blake3-aes-256-gcm
+  password: dfINKWLXoOgH3Ox72CAmkCvWmDlP+idaTuu/DdDG4FU=:V9v8Fd5AvDk3+nyah0WxCeqzv8Q5+cMXUj7WjVCgQz0=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 41 - xiaoyu
+  type: ss
+  server: 193.108.117.111
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 42 - xiaoyu
+  type: vless
+  server: 88.216.211.36
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: de8.galioncc.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 43 - xiaoyu
   type: vless
   server: 91.107.188.129
@@ -405,253 +411,34 @@ proxies:
     headers:
       Host: 91.107.188.129
 - name: 🇩🇪 德国 (Germany) 44 - xiaoyu
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 45 - xiaoyu
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
-  type: ss
-  server: 47.85.162.44
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
-  type: vless
-  server: 185.65.202.122
-  port: 10004
-  uuid: 836c4d68-e086-11f1-aabc-67841df8a6f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 185.65.202.122
-- name: 🇩🇪 德国 (Germany) 49 - xiaoyu
-  type: ss
-  server: 178.162.254.38
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇩🇪 德国 (Germany) 50 - xiaoyu
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 51 - xiaoyu
-  type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 52 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 53 - xiaoyu
-  type: vless
-  server: 170.114.46.6
-  port: 80
-  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 54 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 55 - xiaoyu
-  type: vless
-  server: 93.123.85.103
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-  servername: f0d7aft.nl17.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 56 - xiaoyu
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 57 - xiaoyu
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 185.177.229.95
-- name: 🇩🇪 德国 (Germany) 58 - xiaoyu
-  type: vless
-  server: 170.114.45.6
-  port: 80
-  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 59 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 60 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 61 - xiaoyu
-  type: vless
-  server: 179.254.115.111
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 62 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 63 - xiaoyu
-  type: vless
-  server: 172.64.88.98
-  port: 443
-  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
-  network: ws
-  ws-opts:
-    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
-    headers:
-      Host: 1v5vp5jsq611a5dsm.pages.dev
-- name: 🇩🇪 德国 (Germany) 64 - xiaoyu
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 193.108.117.61
-- name: 🇩🇪 德国 (Germany) 65 - xiaoyu
   type: ss
   server: 47.254.169.3
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 66 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 45 - xiaoyu
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 46 - xiaoyu
   type: ss
   server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 67 - xiaoyu
-  type: vless
-  server: 185.65.202.122
-  port: 10004
-  uuid: 836c4d68-e086-11f1-aabc-67841df8a6f9
+- name: 🇩🇪 德国 (Germany) 47 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: 185.65.202.122
-- name: 🇩🇪 德国 (Germany) 68 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 48 - xiaoyu
   type: vless
   server: 46.243.205.192
   port: 443
@@ -665,31 +452,131 @@ proxies:
     path: /catalog/feed/H9eui7WsW3xS
     headers:
       Host: 46.243.205.192
-- name: 🇩🇪 德国 (Germany) 69 - xiaoyu
-  type: vmess
-  server: 193.108.119.87
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 193.108.119.87
-- name: 🇩🇪 德国 (Germany) 70 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 49 - xiaoyu
   type: vless
-  server: support.zoom.us
+  server: 57.129.41.216
   port: 80
-  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 71 - xiaoyu
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 50 - xiaoyu
+  type: ss
+  server: 130.61.145.251
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: uou5NTq+xna9PBIG+8jtSSyQ6idxiXZgeK+Uw52qopY=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 51 - xiaoyu
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 52 - xiaoyu
+  type: ss
+  server: 47.85.162.44
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 53 - xiaoyu
+  type: ss
+  server: 130.61.145.251
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: uou5NTq+xna9PBIG+8jtSSyQ6idxiXZgeK+Uw52qopY=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 54 - xiaoyu
+  type: vless
+  server: 83.243.86.129
+  port: 443
+  uuid: 5dca5180-7c50-4b91-b21c-be8bfc769141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr6.sky-vault.top
+  network: ws
+  ws-opts:
+    path: /ws-89a4f2
+    headers:
+      Host: 83.243.86.129
+- name: 🇩🇪 德国 (Germany) 55 - xiaoyu
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 56 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 57 - xiaoyu
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 58 - xiaoyu
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 59 - xiaoyu
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 60 - xiaoyu
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 61 - xiaoyu
+  type: ss
+  server: 193.108.117.84
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 62 - xiaoyu
   type: vless
   server: OV-Germany1.09vpn.com
   port: 80
@@ -702,7 +589,104 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 63 - xiaoyu
+  type: vless
+  server: 179.254.115.200
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 64 - xiaoyu
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 65 - xiaoyu
+  type: vless
+  server: 153.56.229.218
+  port: 443
+  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 66 - xiaoyu
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 67 - xiaoyu
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 68 - xiaoyu
+  type: vless
+  server: 88.216.211.36
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: de8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 69 - xiaoyu
+  type: ss
+  server: 47.254.175.2
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 70 - xiaoyu
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 71 - xiaoyu
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 72 - xiaoyu
+  type: ss
+  server: 178.162.254.38
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇩🇪 德国 (Germany) 73 - xiaoyu
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -716,18 +700,6 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 73 - xiaoyu
-  type: vless
-  server: 46.247.109.32
-  port: 443
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: K41mxSIT1WcM8QEiZQxs7n_qOroaPucFMHamzWICKVQ
-  servername: graff.cosmograff.com
-  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 74 - xiaoyu
   type: vless
   server: 194.60.228.97
@@ -739,71 +711,26 @@ proxies:
   servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 75 - xiaoyu
   type: vless
-  server: 37.9.4.62
+  server: 46.243.205.192
   port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: vP4XeQ-z8LYtkSz1SCAxRMAEPreaHspoXm2nt0okQVw
-  servername: 360.yandex.ru
-  client-fingerprint: chrome
+  servername: 46.243.205.192
+  network: ws
+  ws-opts:
+    path: /catalog/feed/H9eui7WsW3xS
+    headers:
+      Host: 46.243.205.192
 - name: 🇩🇪 德国 (Germany) 76 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 77 - xiaoyu
-  type: vless
-  server: 88.216.211.36
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: de8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 78 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 79 - xiaoyu
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 80 - xiaoyu
   type: ss
   server: 47.85.162.44
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   udp: true
-- name: 🇩🇪 德国 (Germany) 81 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 77 - xiaoyu
   type: vless
   server: 167.233.129.126
   port: 2474
@@ -811,97 +738,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 82 - xiaoyu
-  type: vmess
-  server: 193.108.119.87
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 193.108.119.87
-- name: 🇩🇪 德国 (Germany) 83 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 78 - xiaoyu
   type: vless
-  server: 88.216.211.36
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: de8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 84 - xiaoyu
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 193.108.117.61
-- name: 🇩🇪 德国 (Germany) 85 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 86 - xiaoyu
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 87 - xiaoyu
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 88 - xiaoyu
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 193.108.117.61
-- name: 🇩🇪 德国 (Germany) 89 - xiaoyu
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 185.177.229.95
-- name: 🇩🇪 德国 (Germany) 90 - xiaoyu
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 91 - xiaoyu
-  type: vless
-  server: 57.129.41.216
+  server: ov-germany1.09vpn.com
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
@@ -911,22 +750,42 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 92 - xiaoyu
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 79 - xiaoyu
   type: vless
-  server: 167.233.129.126
-  port: 2474
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  server: support.zoom.us
+  port: 80
+  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 93 - xiaoyu
-  type: ss
-  server: 144.31.217.18
-  port: 1883
-  cipher: 2022-blake3-aes-256-gcm
-  password: dfINKWLXoOgH3Ox72CAmkCvWmDlP+idaTuu/DdDG4FU=:V9v8Fd5AvDk3+nyah0WxCeqzv8Q5+cMXUj7WjVCgQz0=
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 80 - xiaoyu
+  type: vmess
+  server: 193.108.117.61
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 81 - xiaoyu
+  type: vmess
+  server: 193.108.117.61
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 193.108.117.61
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1013,18 +872,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 79 - xiaoyu
   - 🇩🇪 德国 (Germany) 80 - xiaoyu
   - 🇩🇪 德国 (Germany) 81 - xiaoyu
-  - 🇩🇪 德国 (Germany) 82 - xiaoyu
-  - 🇩🇪 德国 (Germany) 83 - xiaoyu
-  - 🇩🇪 德国 (Germany) 84 - xiaoyu
-  - 🇩🇪 德国 (Germany) 85 - xiaoyu
-  - 🇩🇪 德国 (Germany) 86 - xiaoyu
-  - 🇩🇪 德国 (Germany) 87 - xiaoyu
-  - 🇩🇪 德国 (Germany) 88 - xiaoyu
-  - 🇩🇪 德国 (Germany) 89 - xiaoyu
-  - 🇩🇪 德国 (Germany) 90 - xiaoyu
-  - 🇩🇪 德国 (Germany) 91 - xiaoyu
-  - 🇩🇪 德国 (Germany) 92 - xiaoyu
-  - 🇩🇪 德国 (Germany) 93 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1111,17 +958,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 79 - xiaoyu
   - 🇩🇪 德国 (Germany) 80 - xiaoyu
   - 🇩🇪 德国 (Germany) 81 - xiaoyu
-  - 🇩🇪 德国 (Germany) 82 - xiaoyu
-  - 🇩🇪 德国 (Germany) 83 - xiaoyu
-  - 🇩🇪 德国 (Germany) 84 - xiaoyu
-  - 🇩🇪 德国 (Germany) 85 - xiaoyu
-  - 🇩🇪 德国 (Germany) 86 - xiaoyu
-  - 🇩🇪 德国 (Germany) 87 - xiaoyu
-  - 🇩🇪 德国 (Germany) 88 - xiaoyu
-  - 🇩🇪 德国 (Germany) 89 - xiaoyu
-  - 🇩🇪 德国 (Germany) 90 - xiaoyu
-  - 🇩🇪 德国 (Germany) 91 - xiaoyu
-  - 🇩🇪 德国 (Germany) 92 - xiaoyu
-  - 🇩🇪 德国 (Germany) 93 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,22 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaoyu
   type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 02 - xiaoyu
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 03 - xiaoyu
-  type: vless
   server: 31.222.235.81
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
@@ -38,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - xiaoyu
-  - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - xiaoyu
-  - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
 rules:
 - MATCH,PROXIES
