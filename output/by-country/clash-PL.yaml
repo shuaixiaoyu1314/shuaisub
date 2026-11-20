@@ -6,65 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoyu
   type: vless
-  server: 80.47.10.106
+  server: 13.143.239.94
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+  servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - xiaoyu
-  type: vless
-  server: f0d7aft.nl13.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-  servername: f0d7aft.nl13.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - xiaoyu
-  type: vless
-  server: 80.47.10.106
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 04 - xiaoyu
-  type: vless
-  server: f0d7aft.nl13.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-  servername: f0d7aft.nl13.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 05 - xiaoyu
-  type: vless
-  server: 80.47.10.106
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 06 - xiaoyu
   type: vless
   server: 143.246.41.214
   port: 443
@@ -76,18 +28,6 @@ proxies:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
   client-fingerprint: edge
-- name: 🇵🇱 PL 07 - xiaoyu
-  type: vless
-  server: 80.47.10.106
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: pl8.galioncc.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,11 +35,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
-  - 🇵🇱 PL 03 - xiaoyu
-  - 🇵🇱 PL 04 - xiaoyu
-  - 🇵🇱 PL 05 - xiaoyu
-  - 🇵🇱 PL 06 - xiaoyu
-  - 🇵🇱 PL 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,10 +42,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
   - 🇵🇱 PL 02 - xiaoyu
-  - 🇵🇱 PL 03 - xiaoyu
-  - 🇵🇱 PL 04 - xiaoyu
-  - 🇵🇱 PL 05 - xiaoyu
-  - 🇵🇱 PL 06 - xiaoyu
-  - 🇵🇱 PL 07 - xiaoyu
 rules:
 - MATCH,PROXIES
