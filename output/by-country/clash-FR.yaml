@@ -5,21 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaoyu
-  type: vless
-  server: OV-France1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-France1.09vpn.com
 - name: 🇫🇷 法国 (France) 02 - xiaoyu
   type: vmess
-  server: 162.19.82.57
+  server: 79.137.99.183
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -27,10 +21,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 162.19.82.57
+  servername: 79.137.99.183
 - name: 🇫🇷 法国 (France) 03 - xiaoyu
   type: ss
-  server: 79.137.99.183
+  server: 23.162.152.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -43,180 +37,8 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 05 - xiaoyu
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 06 - xiaoyu
   type: vless
-  server: 158.220.113.176
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 07 - xiaoyu
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 08 - xiaoyu
-  type: vless
-  server: suh.cryptofront.uk
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 09 - xiaoyu
-  type: vless
-  server: leviko-fr5882.shopingggg.ir
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 10 - xiaoyu
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 11 - xiaoyu
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 12 - xiaoyu
-  type: vless
-  server: 147.135.213.72
-  port: 20089
-  uuid: 2dd94f74-6010-49a8-90ca-6a3f511ec0fa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 147.135.213.72
-- name: 🇫🇷 法国 (France) 13 - xiaoyu
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 14 - xiaoyu
-  type: ss
-  server: 51.77.144.182
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: x19py0a8ipglqkbe
-  udp: true
-- name: 🇫🇷 法国 (France) 15 - xiaoyu
-  type: ss
-  server: 51.83.61.102
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 29irqk0paakcx19v
-  udp: true
-- name: 🇫🇷 法国 (France) 16 - xiaoyu
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 17 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 18 - xiaoyu
-  type: vmess
-  server: 162.19.82.57
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 162.19.82.57
-- name: 🇫🇷 法国 (France) 19 - xiaoyu
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 20 - xiaoyu
-  type: ss
-  server: 51.83.61.102
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 29irqk0paakcx19v
-  udp: true
-- name: 🇫🇷 法国 (France) 21 - xiaoyu
-  type: vless
-  server: ai.smrtai.top
+  server: 161.97.66.16
   port: 443
   uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
   udp: true
@@ -226,20 +48,14 @@ proxies:
     public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+- name: 🇫🇷 法国 (France) 06 - xiaoyu
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 23 - xiaoyu
+- name: 🇫🇷 法国 (France) 07 - xiaoyu
   type: vmess
   server: 46.105.222.157
   port: 1270
@@ -250,7 +66,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 46.105.222.157
-- name: 🇫🇷 法国 (France) 24 - xiaoyu
+- name: 🇫🇷 法国 (France) 08 - xiaoyu
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇫🇷 法国 (France) 09 - xiaoyu
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -265,14 +92,94 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 25 - xiaoyu
+- name: 🇫🇷 法国 (France) 10 - xiaoyu
   type: ss
-  server: 172.99.189.142
+  server: 51.83.61.102
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
+  udp: true
+- name: 🇫🇷 法国 (France) 11 - xiaoyu
+  type: ss
+  server: 51.77.144.182
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: x19py0a8ipglqkbe
+  udp: true
+- name: 🇫🇷 法国 (France) 12 - xiaoyu
+  type: ss
+  server: 167.17.64.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 26 - xiaoyu
+- name: 🇫🇷 法国 (France) 13 - xiaoyu
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 14 - xiaoyu
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 15 - xiaoyu
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 16 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 17 - xiaoyu
+  type: vless
+  server: 147.135.213.72
+  port: 20089
+  uuid: 2dd94f74-6010-49a8-90ca-6a3f511ec0fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 147.135.213.72
+- name: 🇫🇷 法国 (France) 18 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 19 - xiaoyu
   type: vless
   server: 161.97.66.16
   port: 443
@@ -284,7 +191,47 @@ proxies:
     public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 27 - xiaoyu
+- name: 🇫🇷 法国 (France) 20 - xiaoyu
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 21 - xiaoyu
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 22 - xiaoyu
+  type: ss
+  server: 79.137.99.183
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 23 - xiaoyu
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 24 - xiaoyu
   type: vmess
   server: 91.134.35.72
   port: 1270
@@ -295,9 +242,34 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 25 - xiaoyu
+  type: ss
+  server: 107.161.160.28
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 26 - xiaoyu
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 27 - xiaoyu
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇫🇷 法国 (France) 28 - xiaoyu
   type: ss
-  server: 38.109.228.110
+  server: 172.99.189.142
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -314,39 +286,8 @@ proxies:
   skip-cert-verify: true
   servername: 79.137.99.183
 - name: 🇫🇷 法国 (France) 30 - xiaoyu
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 31 - xiaoyu
   type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 32 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 33 - xiaoyu
-  type: vmess
-  server: 91.134.35.72
+  server: 46.105.222.155
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -354,8 +295,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 34 - xiaoyu
+  servername: 46.105.222.155
+- name: 🇫🇷 法国 (France) 31 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 32 - xiaoyu
+  type: ss
+  server: 51.83.61.102
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
+  udp: true
+- name: 🇫🇷 法国 (France) 33 - xiaoyu
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -365,63 +326,42 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 35 - xiaoyu
+  servername: 141.95.65.9
+- name: 🇫🇷 法国 (France) 34 - xiaoyu
   type: ss
-  server: 167.17.64.175
+  server: 38.109.228.110
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇫🇷 法国 (France) 35 - xiaoyu
+  type: vless
+  server: 147.135.213.72
+  port: 20089
+  uuid: 2dd94f74-6010-49a8-90ca-6a3f511ec0fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 147.135.213.72
 - name: 🇫🇷 法国 (France) 36 - xiaoyu
   type: ss
-  server: 107.161.160.28
-  port: 8388
+  server: leviko-fr8064.shopingggg.ir
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 37 - xiaoyu
-  type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 38 - xiaoyu
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 39 - xiaoyu
-  type: vless
-  server: suh.cryptofront.uk
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 40 - xiaoyu
   type: vless
   server: 152.228.162.19
   port: 80
@@ -434,14 +374,48 @@ proxies:
     path: /vless/
     headers:
       Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 39 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 40 - xiaoyu
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 41 - xiaoyu
   type: ss
-  server: 167.17.64.175
+  server: 79.137.99.183
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 42 - xiaoyu
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 43 - xiaoyu
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -456,17 +430,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 43 - xiaoyu
-  type: vmess
-  server: 46.105.222.157
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.157
 - name: 🇫🇷 法国 (France) 44 - xiaoyu
   type: vmess
   server: 54.37.131.126
@@ -483,26 +446,10 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 45 - xiaoyu
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 46 - xiaoyu
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 47 - xiaoyu
-  type: vmess
-  server: 54.37.131.126
+  type: vless
+  server: leviko-fr5882.shopingggg.ir
   port: 80
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  alterId: 0
-  cipher: auto
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
   udp: true
   tls: false
   skip-cert-verify: true
@@ -510,10 +457,23 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 48 - xiaoyu
+      Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 46 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 47 - xiaoyu
   type: vmess
-  server: 46.105.222.155
+  server: 162.19.82.57
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -521,8 +481,32 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 46.105.222.155
+  servername: 162.19.82.57
+- name: 🇫🇷 法国 (France) 48 - xiaoyu
+  type: vmess
+  server: 162.19.82.57
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 162.19.82.57
 - name: 🇫🇷 法国 (France) 49 - xiaoyu
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 50 - xiaoyu
   type: vmess
   server: 91.134.35.72
   port: 1270
@@ -533,143 +517,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 50 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.95.65.9
 - name: 🇫🇷 法国 (France) 51 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 52 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 53 - xiaoyu
-  type: ss
-  server: 79.137.99.183
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 54 - xiaoyu
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 55 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 56 - xiaoyu
-  type: vless
-  server: ai.smrtai.top
-  port: 443
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 57 - xiaoyu
-  type: vmess
-  server: 79.137.99.183
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 79.137.99.183
-- name: 🇫🇷 法国 (France) 58 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 59 - xiaoyu
-  type: vmess
-  server: 46.105.222.155
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.155
-- name: 🇫🇷 法国 (France) 60 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 61 - xiaoyu
-  type: vmess
-  server: 79.137.99.183
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 79.137.99.183
-- name: 🇫🇷 法国 (France) 62 - xiaoyu
-  type: vmess
-  server: 23.162.152.127
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 63 - xiaoyu
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -684,6 +532,89 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 52 - xiaoyu
+  type: vless
+  server: ai.smrtai.top
+  port: 443
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 53 - xiaoyu
+  type: vless
+  server: 158.220.113.176
+  port: 80
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 54 - xiaoyu
+  type: vmess
+  server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 79.137.99.183
+- name: 🇫🇷 法国 (France) 55 - xiaoyu
+  type: vmess
+  server: 23.162.152.127
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 56 - xiaoyu
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.155
+- name: 🇫🇷 法国 (France) 57 - xiaoyu
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 58 - xiaoyu
+  type: ss
+  server: 51.83.61.102
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
+  udp: true
+- name: 🇫🇷 法国 (France) 59 - xiaoyu
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -748,10 +679,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 57 - xiaoyu
   - 🇫🇷 法国 (France) 58 - xiaoyu
   - 🇫🇷 法国 (France) 59 - xiaoyu
-  - 🇫🇷 法国 (France) 60 - xiaoyu
-  - 🇫🇷 法国 (France) 61 - xiaoyu
-  - 🇫🇷 法国 (France) 62 - xiaoyu
-  - 🇫🇷 法国 (France) 63 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -816,9 +743,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 57 - xiaoyu
   - 🇫🇷 法国 (France) 58 - xiaoyu
   - 🇫🇷 法国 (France) 59 - xiaoyu
-  - 🇫🇷 法国 (France) 60 - xiaoyu
-  - 🇫🇷 法国 (France) 61 - xiaoyu
-  - 🇫🇷 法国 (France) 62 - xiaoyu
-  - 🇫🇷 法国 (France) 63 - xiaoyu
 rules:
 - MATCH,PROXIES
