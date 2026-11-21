@@ -5,42 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaoyu
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇸🇨 SC 02 - xiaoyu
   type: vless
-  server: 196.196.148.85
+  server: 196.196.149.80
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇸🇨 SC 03 - xiaoyu
-  type: vless
-  server: 196.245.52.187
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-  servername: 04535dt.us8.h1clayd.click
+    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
+  servername: b3cd32g.es1.h1clayd.click
   client-fingerprint: firefox
-- name: 🇸🇨 SC 04 - xiaoyu
+- name: 🇸🇨 SC 03 - xiaoyu
   type: vless
   server: 196.196.148.85
   port: 443
@@ -60,7 +51,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
   - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,6 +59,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaoyu
   - 🇸🇨 SC 02 - xiaoyu
   - 🇸🇨 SC 03 - xiaoyu
-  - 🇸🇨 SC 04 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇧🇾 BY 01 - xiaoyu
   type: vless
-  server: 178.172.227.228
+  server: 178.172.227.124
   port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,20 +16,15 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 178.172.227.228
+      Host: 178.172.227.124
 - name: 🇧🇾 BY 02 - xiaoyu
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
 - name: 🇧🇾 BY 03 - xiaoyu
   type: vless
   server: 178.172.227.124
@@ -39,30 +34,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇧🇾 BY 04 - xiaoyu
-  type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇧🇾 BY 05 - xiaoyu
-  type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇧🇾 BY 06 - xiaoyu
-  type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇧🇾 BY 07 - xiaoyu
   type: vless
   server: 178.172.227.124
   port: 14430
@@ -75,7 +46,7 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 BY 08 - xiaoyu
+- name: 🇧🇾 BY 05 - xiaoyu
   type: vless
   server: 178.172.227.124
   port: 10443
@@ -83,6 +54,45 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇧🇾 BY 06 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 07 - xiaoyu
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
+- name: 🇧🇾 BY 08 - xiaoyu
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 - name: 🇧🇾 BY 09 - xiaoyu
   type: vless
   server: 178.172.227.228
@@ -96,6 +106,64 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
+- name: 🇧🇾 BY 10 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇾 BY 11 - xiaoyu
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
+- name: 🇧🇾 BY 12 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇾 BY 13 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇧🇾 BY 14 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 15 - xiaoyu
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +178,12 @@ proxy-groups:
   - 🇧🇾 BY 07 - xiaoyu
   - 🇧🇾 BY 08 - xiaoyu
   - 🇧🇾 BY 09 - xiaoyu
+  - 🇧🇾 BY 10 - xiaoyu
+  - 🇧🇾 BY 11 - xiaoyu
+  - 🇧🇾 BY 12 - xiaoyu
+  - 🇧🇾 BY 13 - xiaoyu
+  - 🇧🇾 BY 14 - xiaoyu
+  - 🇧🇾 BY 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,5 +198,11 @@ proxy-groups:
   - 🇧🇾 BY 07 - xiaoyu
   - 🇧🇾 BY 08 - xiaoyu
   - 🇧🇾 BY 09 - xiaoyu
+  - 🇧🇾 BY 10 - xiaoyu
+  - 🇧🇾 BY 11 - xiaoyu
+  - 🇧🇾 BY 12 - xiaoyu
+  - 🇧🇾 BY 13 - xiaoyu
+  - 🇧🇾 BY 14 - xiaoyu
+  - 🇧🇾 BY 15 - xiaoyu
 rules:
 - MATCH,PROXIES
