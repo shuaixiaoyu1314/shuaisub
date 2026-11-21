@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  type: ss
-  server: 64.49.13.12
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  type: vless
+  server: 194.135.34.118
+  port: 8443
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web.hosttcp.fun
+  network: ws
+  ws-opts:
+    path: /api/v4/media/session
+    headers:
+      Host: 194.135.34.118
 proxy-groups:
 - name: PROXIES
   type: select

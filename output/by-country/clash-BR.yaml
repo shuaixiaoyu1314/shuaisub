@@ -30,7 +30,29 @@ proxies:
   servername: ''
 - name: 🇧🇷 BR 03 - xiaoyu
   type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 04 - xiaoyu
+  type: vmess
   server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇧🇷 BR 05 - xiaoyu
+  type: vmess
+  server: leviko-br6188.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -47,6 +69,8 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaoyu
   - 🇧🇷 BR 02 - xiaoyu
   - 🇧🇷 BR 03 - xiaoyu
+  - 🇧🇷 BR 04 - xiaoyu
+  - 🇧🇷 BR 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +79,7 @@ proxy-groups:
   - 🇧🇷 BR 01 - xiaoyu
   - 🇧🇷 BR 02 - xiaoyu
   - 🇧🇷 BR 03 - xiaoyu
+  - 🇧🇷 BR 04 - xiaoyu
+  - 🇧🇷 BR 05 - xiaoyu
 rules:
 - MATCH,PROXIES
