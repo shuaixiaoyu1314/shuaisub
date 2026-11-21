@@ -6,6 +6,22 @@ log-level: info
 proxies:
 - name: 🇻🇳 VN 01 - xiaoyu
   type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 VN 02 - xiaoyu
+  type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇻🇳 VN 03 - xiaoyu
+  type: vless
   server: 103.163.24.22
   port: 56026
   uuid: a1f0cbb8-c74a-4c27-b881-7b14d96aece1
@@ -15,8 +31,8 @@ proxies:
   reality-opts:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇻🇳 VN 02 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇻🇳 VN 04 - xiaoyu
   type: vless
   server: kir3.crackerbinam.org
   port: 56026
@@ -28,14 +44,6 @@ proxies:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇻🇳 VN 03 - xiaoyu
-  type: vless
-  server: 150.95.109.109
-  port: 2086
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +52,7 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
+  - 🇻🇳 VN 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +61,6 @@ proxy-groups:
   - 🇻🇳 VN 01 - xiaoyu
   - 🇻🇳 VN 02 - xiaoyu
   - 🇻🇳 VN 03 - xiaoyu
+  - 🇻🇳 VN 04 - xiaoyu
 rules:
 - MATCH,PROXIES

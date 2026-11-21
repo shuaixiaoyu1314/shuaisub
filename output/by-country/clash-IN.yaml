@@ -6,59 +6,17 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaoyu
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  server: 178.212.35.198
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 04 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 05 - xiaoyu
   type: vless
   server: in.smrtai.top
   port: 443
@@ -70,7 +28,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 06 - xiaoyu
+- name: 🇮🇳 印度 (India) 03 - xiaoyu
   type: vless
   server: 13.140.253.35
   port: 443
@@ -84,7 +42,7 @@ proxies:
     path: /0175469f14317d82
     headers:
       Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 07 - xiaoyu
+- name: 🇮🇳 印度 (India) 04 - xiaoyu
   type: vless
   server: in.smrtai.top
   port: 443
@@ -96,86 +54,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 08 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 09 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 10 - xiaoyu
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 11 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 12 - xiaoyu
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 13 - xiaoyu
-  type: vless
-  server: in.smrtai.top
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 14 - xiaoyu
+- name: 🇮🇳 印度 (India) 05 - xiaoyu
   type: vless
   server: xray-dmr3b3hy-calm-maple-7.cloady.io
   port: 443
@@ -189,59 +68,14 @@ proxies:
     path: /0175469f14317d82
     headers:
       Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 15 - xiaoyu
-  type: vless
-  server: 13.140.253.35
-  port: 443
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+- name: 🇮🇳 印度 (India) 06 - xiaoyu
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
-  network: ws
-  ws-opts:
-    path: /0175469f14317d82
-    headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 16 - xiaoyu
-  type: vless
-  server: 178.212.35.198
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 17 - xiaoyu
-  type: vless
-  server: 178.212.35.198
-  port: 443
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 18 - xiaoyu
-  type: vless
-  server: 13.140.253.35
-  port: 443
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
-  network: ws
-  ws-opts:
-    path: /0175469f14317d82
-    headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 19 - xiaoyu
+- name: 🇮🇳 印度 (India) 07 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -256,7 +90,19 @@ proxies:
     path: /
     headers:
       Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 20 - xiaoyu
+- name: 🇮🇳 印度 (India) 08 - xiaoyu
+  type: vless
+  server: in.smrtai.top
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 09 - xiaoyu
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -270,20 +116,33 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: in-152.67.8.205-0204
-- name: 🇮🇳 印度 (India) 21 - xiaoyu
+      Host: 152.67.8.205
+- name: 🇮🇳 印度 (India) 10 - xiaoyu
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  server: 13.140.253.35
+  port: 443
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
   network: ws
   ws-opts:
-    path: /vless
+    path: /0175469f14317d82
     headers:
-      Host: 13.140.56.100
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+- name: 🇮🇳 印度 (India) 11 - xiaoyu
+  type: vless
+  server: 178.212.35.198
+  port: 443
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -300,16 +159,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 09 - xiaoyu
   - 🇮🇳 印度 (India) 10 - xiaoyu
   - 🇮🇳 印度 (India) 11 - xiaoyu
-  - 🇮🇳 印度 (India) 12 - xiaoyu
-  - 🇮🇳 印度 (India) 13 - xiaoyu
-  - 🇮🇳 印度 (India) 14 - xiaoyu
-  - 🇮🇳 印度 (India) 15 - xiaoyu
-  - 🇮🇳 印度 (India) 16 - xiaoyu
-  - 🇮🇳 印度 (India) 17 - xiaoyu
-  - 🇮🇳 印度 (India) 18 - xiaoyu
-  - 🇮🇳 印度 (India) 19 - xiaoyu
-  - 🇮🇳 印度 (India) 20 - xiaoyu
-  - 🇮🇳 印度 (India) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -326,15 +175,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 09 - xiaoyu
   - 🇮🇳 印度 (India) 10 - xiaoyu
   - 🇮🇳 印度 (India) 11 - xiaoyu
-  - 🇮🇳 印度 (India) 12 - xiaoyu
-  - 🇮🇳 印度 (India) 13 - xiaoyu
-  - 🇮🇳 印度 (India) 14 - xiaoyu
-  - 🇮🇳 印度 (India) 15 - xiaoyu
-  - 🇮🇳 印度 (India) 16 - xiaoyu
-  - 🇮🇳 印度 (India) 17 - xiaoyu
-  - 🇮🇳 印度 (India) 18 - xiaoyu
-  - 🇮🇳 印度 (India) 19 - xiaoyu
-  - 🇮🇳 印度 (India) 20 - xiaoyu
-  - 🇮🇳 印度 (India) 21 - xiaoyu
 rules:
 - MATCH,PROXIES

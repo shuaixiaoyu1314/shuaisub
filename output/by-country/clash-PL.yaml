@@ -16,17 +16,31 @@ proxies:
     public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
   servername: 702e56t.pl5.h1clayd.click
   client-fingerprint: chrome
+- name: 🇵🇱 PL 02 - xiaoyu
+  type: vless
+  server: 85.192.30.88
+  port: 443
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+  servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaoyu
+  - 🇵🇱 PL 02 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,20 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaoyu
   type: ss
-  server: 198.244.202.215
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 82.38.31.193
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
-  type: ss
-  server: 142.202.51.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: node-uk.connectsuite.org
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-uk.connectsuite.org
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
   type: ss
   server: 185.176.206.9
@@ -27,73 +29,19 @@ proxies:
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
   type: ss
-  server: 141.98.101.178
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 198.244.202.215
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaoyu
   type: ss
-  server: 185.176.206.9
+  server: 142.202.51.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaoyu
-  type: vmess
-  server: 149.7.16.228
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 149.7.16.228
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
-  type: ss
-  server: 198.244.201.129
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
-  type: ss
-  server: 38.114.120.221
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
-  type: ss
-  server: 38.114.120.221
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
-  type: ss
-  server: 198.244.201.129
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
   type: vless
   server: 57.129.132.223
   port: 80
@@ -106,7 +54,199 @@ proxies:
     path: /vless/
     headers:
       Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
+  type: vless
+  server: uk1.connectsuite.org
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers:
+      Host: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
+  type: ss
+  server: 142.202.51.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+  type: vmess
+  server: 142.202.51.42
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
+  type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/?ed#
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
+  type: vless
+  server: 57.129.132.223
+  port: 80
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.132.223
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  type: ss
+  server: 198.244.201.129
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  type: ss
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  type: ss
+  server: 178.83.185.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  type: ss
+  server: 82.38.31.213
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - xiaoyu
+  type: ss
+  server: 82.38.31.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 24 - xiaoyu
+  type: ss
+  server: 198.244.201.129
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
+  type: vmess
+  server: 149.7.16.228
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
+  type: vless
+  server: 51.38.71.147
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-uk.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 28 - xiaoyu
+  type: vless
+  server: 51.38.71.147
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers:
+      Host: 51.38.71.147
+- name: 🇬🇧 英国 (United Kingdom) 29 - xiaoyu
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -121,23 +261,23 @@ proxies:
     path: /vmess/?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
-  type: ss
-  server: 142.202.51.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 30 - xiaoyu
+  type: vless
+  server: 51.38.71.147
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  tls: true
+  skip-cert-verify: true
+  servername: uk1.connectsuite.org
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+    headers:
+      Host: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 31 - xiaoyu
   type: vmess
-  server: 142.202.51.42
+  server: 149.7.16.228
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -145,8 +285,43 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
-- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  servername: 149.7.16.228
+- name: 🇬🇧 英国 (United Kingdom) 32 - xiaoyu
+  type: ss
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 33 - xiaoyu
+  type: ss
+  server: 54.37.240.40
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 8rmgmhjcl644vdnh
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 34 - xiaoyu
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 35 - xiaoyu
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 36 - xiaoyu
+  type: ss
+  server: 38.114.120.221
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 37 - xiaoyu
   type: vless
   server: 51.38.71.147
   port: 443
@@ -160,74 +335,36 @@ proxies:
     path: /cdn-cgi/ws
     headers:
       Host: 51.38.71.147
-- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 38 - xiaoyu
   type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 39 - xiaoyu
+  type: ss
+  server: 82.38.31.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 40 - xiaoyu
   type: vmess
-  server: 149.7.16.228
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
-  type: vless
-  server: 51.38.71.147
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node-uk.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
-  type: ss
-  server: 141.98.101.178
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vmess/
     headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 23 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.132.223
-- name: 🇬🇧 英国 (United Kingdom) 24 - xiaoyu
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 41 - xiaoyu
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -242,26 +379,6 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
-  type: ss
-  server: 158.173.24.73
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -294,6 +411,20 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 28 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 29 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 30 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 31 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 32 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 33 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 34 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 35 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 36 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 37 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 38 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 39 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 40 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 41 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -326,5 +457,19 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 26 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 27 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 28 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 29 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 30 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 31 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 32 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 33 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 34 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 35 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 36 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 37 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 38 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 39 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 40 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 41 - xiaoyu
 rules:
 - MATCH,PROXIES

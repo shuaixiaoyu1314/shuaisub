@@ -11,26 +11,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
   udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  type: ss
-  server: tr.subscriptionservice.ir
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
 rules:
 - MATCH,PROXIES
