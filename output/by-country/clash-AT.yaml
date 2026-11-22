@@ -6,17 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaoyu
   type: vmess
-  server: leviko-at9167.shopingggg.ir
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇦🇹 AT 02 - xiaoyu
-  type: vmess
   server: 154.47.19.225
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -26,6 +15,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
+- name: 🇦🇹 AT 02 - xiaoyu
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇦🇹 AT 03 - xiaoyu
   type: ss
   server: 82.110.60.9
@@ -35,7 +31,7 @@ proxies:
   udp: true
 - name: 🇦🇹 AT 04 - xiaoyu
   type: vmess
-  server: leviko-at5072.shopingggg.ir
+  server: leviko-at9167.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -79,17 +75,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: 154.47.19.225
 - name: 🇦🇹 AT 09 - xiaoyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 10 - xiaoyu
   type: vmess
-  server: 154.47.19.225
+  server: leviko-at8016.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -97,10 +86,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 154.47.19.225
+  servername: ''
+- name: 🇦🇹 AT 10 - xiaoyu
+  type: vmess
+  server: leviko-at5072.shopingggg.ir
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 11 - xiaoyu
   type: vmess
-  server: leviko-at8016.shopingggg.ir
+  server: 154.47.19.225
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -120,6 +120,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
+- name: 🇦🇹 AT 13 - xiaoyu
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,6 +148,7 @@ proxy-groups:
   - 🇦🇹 AT 10 - xiaoyu
   - 🇦🇹 AT 11 - xiaoyu
   - 🇦🇹 AT 12 - xiaoyu
+  - 🇦🇹 AT 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +166,6 @@ proxy-groups:
   - 🇦🇹 AT 10 - xiaoyu
   - 🇦🇹 AT 11 - xiaoyu
   - 🇦🇹 AT 12 - xiaoyu
+  - 🇦🇹 AT 13 - xiaoyu
 rules:
 - MATCH,PROXIES

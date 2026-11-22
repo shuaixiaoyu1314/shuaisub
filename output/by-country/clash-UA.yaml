@@ -6,22 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaoyu
   type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 02 - xiaoyu
-  type: vless
-  server: 87.76.154.28
-  port: 57231
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇦 UA 03 - xiaoyu
-  type: vless
   server: 31.222.235.81
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
@@ -32,19 +16,7 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 UA 04 - xiaoyu
-  type: vless
-  server: netx.smrtai.top
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇦 UA 05 - xiaoyu
+- name: 🇺🇦 UA 02 - xiaoyu
   type: vless
   server: 31.222.235.81
   port: 443
@@ -63,9 +35,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - xiaoyu
   - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
-  - 🇺🇦 UA 04 - xiaoyu
-  - 🇺🇦 UA 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,8 +42,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - xiaoyu
   - 🇺🇦 UA 02 - xiaoyu
-  - 🇺🇦 UA 03 - xiaoyu
-  - 🇺🇦 UA 04 - xiaoyu
-  - 🇺🇦 UA 05 - xiaoyu
 rules:
 - MATCH,PROXIES
