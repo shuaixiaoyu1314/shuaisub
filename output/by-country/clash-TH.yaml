@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
+  type: vless
+  server: 45.133.73.167
+  port: 443
+  uuid: 0fc0ded7-32b3-4e36-a623-6e7670225247
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zmxoo.de5.net
+  network: ws
+  ws-opts:
+    path: /html/order/torrentfp=chrome
+    headers:
+      Host: zmxoo.de5.net
+- name: 🇹🇭 TH 02 - xiaoyu
+  type: vless
+  server: 45.133.73.167
+  port: 443
+  uuid: 0fc0ded7-32b3-4e36-a623-6e7670225247
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zmxoo.de5.net
+  network: ws
+  ws-opts:
+    path: /html/order/torrentfp=chrome
+    headers:
+      Host: zmxoo.de5.net
+- name: 🇹🇭 TH 03 - xiaoyu
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -20,11 +48,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 TH 01 - xiaoyu
+  - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 TH 01 - xiaoyu
+  - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
 rules:
 - MATCH,PROXIES
