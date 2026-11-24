@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaoyu
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇺🇦 UA 02 - xiaoyu
   type: vless
   server: 31.222.235.81

@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoyu
   type: ss
-  server: 23.166.88.189
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 02 - xiaoyu
   type: ss
-  server: 79.127.184.104
+  server: 23.166.88.127
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -26,13 +26,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 04 - xiaoyu
-  type: ss
-  server: 23.166.88.127
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 05 - xiaoyu
   type: vmess
   server: 186.190.215.4
   port: 1270
@@ -43,9 +36,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇨🇭 CH 06 - xiaoyu
+- name: 🇨🇭 CH 05 - xiaoyu
   type: ss
   server: 79.127.184.104
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 06 - xiaoyu
+  type: ss
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -65,15 +65,33 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 09 - xiaoyu
+  type: vmess
+  server: 186.190.215.4
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇨🇭 CH 10 - xiaoyu
+  type: ss
+  server: leviko-ch9924.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 11 - xiaoyu
   type: ss
   server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇨🇭 CH 10 - xiaoyu
+- name: 🇨🇭 CH 12 - xiaoyu
   type: ss
-  server: leviko-ch9924.shopingggg.ir
+  server: leviko-ch7709.shopingggg.ir
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -93,6 +111,8 @@ proxy-groups:
   - 🇨🇭 CH 08 - xiaoyu
   - 🇨🇭 CH 09 - xiaoyu
   - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,5 +128,7 @@ proxy-groups:
   - 🇨🇭 CH 08 - xiaoyu
   - 🇨🇭 CH 09 - xiaoyu
   - 🇨🇭 CH 10 - xiaoyu
+  - 🇨🇭 CH 11 - xiaoyu
+  - 🇨🇭 CH 12 - xiaoyu
 rules:
 - MATCH,PROXIES

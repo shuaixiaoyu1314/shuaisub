@@ -5,40 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoyu
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - xiaoyu
   type: vless
-  server: 196.196.204.137
+  server: 196.245.217.58
   port: 443
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: chrome
+    public-key: 43bHrvqzL5Sw8lvtDSE3LAlp_0WbixVc7nYcAf17bhg
+  servername: 8ba6c3t.nl24.h1clayd.shop
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - xiaoyu
-  - 🇫🇮 FI 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - xiaoyu
-  - 🇫🇮 FI 02 - xiaoyu
 rules:
 - MATCH,PROXIES
