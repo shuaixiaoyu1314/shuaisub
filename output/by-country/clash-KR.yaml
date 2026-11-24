@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaoyu
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -27,6 +17,16 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaoyu
   type: vless
   server: 152.69.226.63
@@ -41,18 +41,20 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaoyu
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: 152.69.226.63
+      Host: 'null'
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaoyu
   type: vless
   server: 152.69.226.63
@@ -68,19 +70,14 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
   type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
   type: vless
   server: 152.69.226.63
@@ -95,15 +92,18 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
   type: vless
   server: 152.69.226.63
@@ -131,6 +131,16 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaoyu
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -143,6 +153,16 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaoyu
+  type: vmess
+  server: dog-kr.kunlun01dns.com
+  port: 21004
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -159,6 +179,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 10 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 11 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 12 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,5 +197,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 10 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 11 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 12 - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 13 - xiaoyu
 rules:
 - MATCH,PROXIES

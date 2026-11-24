@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaoyu
+- name: 🇸🇰 SK 01 - xiaoyu
   type: vless
-  server: 89.125.234.20
+  server: 196.245.153.104
   port: 443
-  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: yELja29OBDJ2V0qacVXg_5NDN7uNk1YQVMgGKN9Kc2g
-  servername: af48d6t.pl10.h1clayd.shop
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaoyu
+  - 🇸🇰 SK 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaoyu
+  - 🇸🇰 SK 01 - xiaoyu
 rules:
 - MATCH,PROXIES
