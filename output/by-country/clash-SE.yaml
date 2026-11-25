@@ -5,18 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaoyu
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: chrome
+  servername: 62.93.166.184
 - name: 🇸🇪 SE 02 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 62.93.166.184
+- name: 🇸🇪 SE 03 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 138.199.55.230
+- name: 🇸🇪 SE 04 - xiaoyu
   type: vless
   server: 88.216.60.73
   port: 443
@@ -28,28 +49,6 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: ns-api-gw.galioncc.com
   client-fingerprint: firefox
-- name: 🇸🇪 SE 03 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 04 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 138.199.55.230
 - name: 🇸🇪 SE 05 - xiaoyu
   type: vmess
   server: 62.93.166.184
@@ -60,53 +59,19 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇸🇪 SE 06 - xiaoyu
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 07 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 08 - xiaoyu
-  type: vless
-  server: 88.216.60.73
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 09 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 10 - xiaoyu
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 07 - xiaoyu
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -117,19 +82,42 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 138.199.55.230
-- name: 🇸🇪 SE 11 - xiaoyu
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+- name: 🇸🇪 SE 08 - xiaoyu
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
+- name: 🇸🇪 SE 09 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: ''
+- name: 🇸🇪 SE 10 - xiaoyu
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 11 - xiaoyu
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 138.199.55.230
 - name: 🇸🇪 SE 12 - xiaoyu
   type: vless
   server: 88.216.60.73
@@ -141,18 +129,19 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 13 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 62.93.166.184
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: chrome
 - name: 🇸🇪 SE 14 - xiaoyu
   type: vless
   server: 88.216.60.73
@@ -166,36 +155,6 @@ proxies:
   servername: ns-api-gw.galioncc.com
   client-fingerprint: firefox
 - name: 🇸🇪 SE 15 - xiaoyu
-  type: vless
-  server: 136.148.216.115
-  port: 443
-  uuid: 57a3fb3c-5788-4777-933e-882dd22f5b82
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _c33IsYcvvy4t95zq8ydgtQ3pXpOK7eLdQqK3O7c2Ao
-  servername: ba0648t.se1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 16 - xiaoyu
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 62.93.166.184
-- name: 🇸🇪 SE 17 - xiaoyu
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 18 - xiaoyu
   type: vmess
   server: leviko-se4660.shopingggg.ir
   port: 1270
@@ -206,7 +165,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 19 - xiaoyu
+- name: 🇸🇪 SE 16 - xiaoyu
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -219,40 +178,7 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 20 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 21 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 138.199.55.230
-- name: 🇸🇪 SE 22 - xiaoyu
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 23 - xiaoyu
+- name: 🇸🇪 SE 17 - xiaoyu
   type: vless
   server: 88.216.60.73
   port: 443
@@ -263,7 +189,18 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
   servername: ns-api-gw.galioncc.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
+- name: 🇸🇪 SE 18 - xiaoyu
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -287,11 +224,6 @@ proxy-groups:
   - 🇸🇪 SE 16 - xiaoyu
   - 🇸🇪 SE 17 - xiaoyu
   - 🇸🇪 SE 18 - xiaoyu
-  - 🇸🇪 SE 19 - xiaoyu
-  - 🇸🇪 SE 20 - xiaoyu
-  - 🇸🇪 SE 21 - xiaoyu
-  - 🇸🇪 SE 22 - xiaoyu
-  - 🇸🇪 SE 23 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -315,10 +247,5 @@ proxy-groups:
   - 🇸🇪 SE 16 - xiaoyu
   - 🇸🇪 SE 17 - xiaoyu
   - 🇸🇪 SE 18 - xiaoyu
-  - 🇸🇪 SE 19 - xiaoyu
-  - 🇸🇪 SE 20 - xiaoyu
-  - 🇸🇪 SE 21 - xiaoyu
-  - 🇸🇪 SE 22 - xiaoyu
-  - 🇸🇪 SE 23 - xiaoyu
 rules:
 - MATCH,PROXIES

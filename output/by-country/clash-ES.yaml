@@ -6,39 +6,63 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaoyu
   type: ss
-  server: 62.93.179.97
+  server: 79.127.139.242
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
   type: ss
-  server: 62.93.179.117
+  server: 79.127.139.242
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
   type: ss
-  server: 62.93.179.97
+  server: 62.93.179.117
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
-  type: ss
-  server: 79.127.139.242
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 13.143.239.66
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
+  servername: b3cd32g.es9.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   type: ss
-  server: 79.127.139.242
+  server: 62.93.179.97
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
+  type: ss
+  server: 62.93.179.97
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
+  servername: b3cd32g.es1.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +73,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 04 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 05 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 06 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +85,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 04 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 05 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 06 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 - xiaoyu
+- name: 🇸🇰 SK 01 - xiaoyu
   type: vless
-  server: kozel.cc.cd
+  server: 196.245.153.111
   port: 443
-  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kozel.cc.cd
-  network: ws
-  ws-opts:
-    path: /118.151.222.66=17317fp=chrome
-    headers:
-      Host: kozel.cc.cd
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+  servername: 76574ct.nl8.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 - xiaoyu
+  - 🇸🇰 SK 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 - xiaoyu
+  - 🇸🇰 SK 01 - xiaoyu
 rules:
 - MATCH,PROXIES
