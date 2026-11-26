@@ -6,33 +6,17 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
   type: vless
-  server: 77.73.71.200
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  server: 45.38.143.210
+  port: 30584
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: accessfooter.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: accessfooter.cleanfoodshop.org
+  reality-opts:
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+  servername: m.vk.com
+  client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - xiaoyu
-  type: vless
-  server: 213.183.45.23
-  port: 8450
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fonts.plumstatic.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 213.183.45.23
-- name: 🇱🇻 LV 03 - xiaoyu
   type: vless
   server: 213.183.45.23
   port: 8450
@@ -53,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - xiaoyu
   - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - xiaoyu
   - 🇱🇻 LV 02 - xiaoyu
-  - 🇱🇻 LV 03 - xiaoyu
 rules:
 - MATCH,PROXIES
