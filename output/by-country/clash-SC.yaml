@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇸🇨 SC 03 - xiaoyu
   type: vless
   server: 196.196.148.85
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇸🇨 SC 04 - xiaoyu
   type: vless
   server: 196.196.148.85
@@ -76,6 +76,18 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
+- name: 🇸🇨 SC 07 - xiaoyu
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +99,7 @@ proxy-groups:
   - 🇸🇨 SC 04 - xiaoyu
   - 🇸🇨 SC 05 - xiaoyu
   - 🇸🇨 SC 06 - xiaoyu
+  - 🇸🇨 SC 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +111,6 @@ proxy-groups:
   - 🇸🇨 SC 04 - xiaoyu
   - 🇸🇨 SC 05 - xiaoyu
   - 🇸🇨 SC 06 - xiaoyu
+  - 🇸🇨 SC 07 - xiaoyu
 rules:
 - MATCH,PROXIES

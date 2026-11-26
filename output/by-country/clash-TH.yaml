@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoyu
   type: vmess
-  server: 47.87.64.133
+  server: 47.81.36.173
   port: 18565
   uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
   alterId: 0
@@ -24,6 +24,56 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇭 TH 03 - xiaoyu
+  type: vmess
+  server: 8.213.211.160
+  port: 18565
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 04 - xiaoyu
+  type: vmess
+  server: 8.213.211.160
+  port: 18565
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 05 - xiaoyu
+  type: vmess
+  server: 47.87.64.133
+  port: 18565
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 06 - xiaoyu
+  type: vmess
+  server: 8.213.211.160
+  port: 18565
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 07 - xiaoyu
+  type: vmess
+  server: 8.213.211.160
+  port: 18565
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +81,11 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
+  - 🇹🇭 TH 05 - xiaoyu
+  - 🇹🇭 TH 06 - xiaoyu
+  - 🇹🇭 TH 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +93,10 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
+  - 🇹🇭 TH 05 - xiaoyu
+  - 🇹🇭 TH 06 - xiaoyu
+  - 🇹🇭 TH 07 - xiaoyu
 rules:
 - MATCH,PROXIES

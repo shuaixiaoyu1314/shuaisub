@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoyu
   type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
+  type: vless
   server: 136.148.83.71
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
@@ -13,20 +22,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
-  type: vless
-  server: 72.56.238.135
-  port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: inlay.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de3/stream
-    headers:
-      Host: 72.56.238.135
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
   type: vless
   server: 136.148.83.69
@@ -37,65 +32,174 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
   type: vless
-  server: 136.148.83.70
+  server: 164.37.224.51
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
+  type: vless
+  server: 5d0319t.nl7.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  type: vless
+  server: 147.45.126.206
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: accessfooter.cleanfoodshop.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: accessfooter.cleanfoodshop.org
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  type: vless
+  server: 195.206.235.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  type: vless
+  server: 136.148.83.71
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  type: vless
-  server: 188.225.33.67
-  port: 443
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e2.cdnwh.icu
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  type: ss
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  type: vless
+  server: 79.182.70.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  type: ss
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  type: vless
+  server: 195.206.235.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  type: vless
+  server: 196.245.153.104
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  type: vless
+  server: 201.8.64.254
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
   type: vless
   server: 147.45.221.225
   port: 443
@@ -109,7 +213,37 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  type: vless
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  type: ss
+  server: 91.206.92.158
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
   type: vless
   server: 136.148.83.70
   port: 443
@@ -118,7 +252,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
   type: vless
   server: 136.148.83.69
   port: 443
@@ -127,13 +270,62 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  type: ss
-  server: 91.206.92.158
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  type: vless
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 29 - xiaoyu
+  type: vless
+  server: 79.182.70.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 30 - xiaoyu
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 31 - xiaoyu
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,6 +344,24 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 29 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 30 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 31 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,5 +380,23 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 22 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 23 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 24 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 25 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 26 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 27 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 28 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 29 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 30 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 31 - xiaoyu
 rules:
 - MATCH,PROXIES
