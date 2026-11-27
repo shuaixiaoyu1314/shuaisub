@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
   type: vless
-  server: devcdn.icu
+  server: 172.64.88.98
   port: 443
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: devcdn.icu
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
   network: ws
   ws-opts:
-    path: /edge/chunk/b2265efffa29/
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560fp=chrome
     headers:
-      Host: devcdn.icu
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaoyu
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaoyu
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

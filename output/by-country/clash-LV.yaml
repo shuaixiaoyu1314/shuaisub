@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaoyu
   type: vless
-  server: 45.38.143.210
-  port: 30584
-  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
+  server: 213.183.45.23
+  port: 8450
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
-  servername: m.vk.com
-  client-fingerprint: chrome
+  servername: fonts.plumstatic.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 213.183.45.23
 - name: 🇱🇻 LV 02 - xiaoyu
   type: vless
   server: 213.183.45.23
