@@ -6,6 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaoyu
   type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 02 - xiaoyu
+  type: vmess
   server: 46.105.222.155
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
@@ -15,31 +26,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 46.105.222.155
-- name: 🇫🇷 法国 (France) 02 - xiaoyu
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇫🇷 法国 (France) 03 - xiaoyu
   type: vmess
-  server: 141.95.65.9
-  port: 1234
+  server: 46.105.222.157
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: None
 - name: 🇫🇷 法国 (France) 04 - xiaoyu
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
 - name: 🇫🇷 法国 (France) 05 - xiaoyu
   type: ss
   server: 167.17.64.22
@@ -48,17 +56,35 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 06 - xiaoyu
+  type: ss
+  server: 31.57.108.24
+  port: 154
+  cipher: chacha20-ietf-poly1305
+  password: eCUs1n3b2Fh9b6WATvkNILLBzYbruQ_X
+  udp: true
+- name: 🇫🇷 法国 (France) 07 - xiaoyu
   type: vmess
-  server: 141.95.65.9
-  port: 1234
+  server: 46.105.222.155
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - xiaoyu
+  servername: 46.105.222.155
+- name: 🇫🇷 法国 (France) 08 - xiaoyu
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 09 - xiaoyu
   type: vless
   server: 152.228.162.19
   port: 80
@@ -71,65 +97,46 @@ proxies:
     path: /vless/
     headers:
       Host: akamaized.net
-- name: 🇫🇷 法国 (France) 08 - xiaoyu
+- name: 🇫🇷 法国 (France) 10 - xiaoyu
   type: ss
-  server: 79.137.99.183
+  server: 167.17.64.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 09 - xiaoyu
+- name: 🇫🇷 法国 (France) 11 - xiaoyu
   type: ss
   server: 172.99.189.142
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 10 - xiaoyu
+- name: 🇫🇷 法国 (France) 12 - xiaoyu
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - xiaoyu
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - xiaoyu
   type: vmess
-  server: 162.19.204.71
-  port: 1234
+  server: 46.105.222.153
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 162.19.204.71
-- name: 🇫🇷 法国 (France) 11 - xiaoyu
-  type: ss
-  server: 167.17.64.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 12 - xiaoyu
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 13 - xiaoyu
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 14 - xiaoyu
+  servername: 46.105.222.153
+- name: 🇫🇷 法国 (France) 15 - xiaoyu
   type: vmess
   server: 23.162.152.127
   port: 1270
@@ -140,44 +147,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 15 - xiaoyu
-  type: vless
-  server: 188.114.99.137
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
 - name: 🇫🇷 法国 (France) 16 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 79.137.99.183
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 17 - xiaoyu
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 18 - xiaoyu
   type: vmess
-  server: 46.105.222.155
+  server: 46.105.222.156
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -185,29 +171,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 46.105.222.155
+  servername: 46.105.222.156
 - name: 🇫🇷 法国 (France) 19 - xiaoyu
-  type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 20 - xiaoyu
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 21 - xiaoyu
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 22 - xiaoyu
   type: vmess
   server: 79.137.99.183
   port: 1270
@@ -218,9 +183,122 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 79.137.99.183
+- name: 🇫🇷 法国 (France) 20 - xiaoyu
+  type: vmess
+  server: 91.134.35.72
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 21 - xiaoyu
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 22 - xiaoyu
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.155
 - name: 🇫🇷 法国 (France) 23 - xiaoyu
+  type: vmess
+  server: 46.105.222.153
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.153
+- name: 🇫🇷 法国 (France) 24 - xiaoyu
+  type: ss
+  server: 38.109.228.110
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 25 - xiaoyu
+  type: vmess
+  server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 79.137.99.183
+- name: 🇫🇷 法国 (France) 26 - xiaoyu
+  type: vmess
+  server: 46.105.222.156
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.156
+- name: 🇫🇷 法国 (France) 27 - xiaoyu
+  type: vmess
+  server: 162.19.82.57
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 162.19.82.57
+- name: 🇫🇷 法国 (France) 28 - xiaoyu
   type: vless
-  server: 152.228.162.19
+  server: 88.151.197.87
+  port: 2025
+  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 88.151.197.87
+- name: 🇫🇷 法国 (France) 29 - xiaoyu
+  type: vless
+  server: 88.151.197.87
+  port: 2025
+  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 88.151.197.87
+- name: 🇫🇷 法国 (France) 30 - xiaoyu
+  type: ss
+  server: leviko-fr5418.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 31 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
   port: 80
   uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   udp: true
@@ -230,53 +308,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 24 - xiaoyu
-  type: vless
-  server: suh.cryptofront.uk
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 25 - xiaoyu
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 26 - xiaoyu
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 27 - xiaoyu
-  type: vmess
-  server: 46.105.222.157
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.157
-- name: 🇫🇷 法国 (France) 28 - xiaoyu
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 29 - xiaoyu
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 32 - xiaoyu
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -289,58 +322,20 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 30 - xiaoyu
-  type: vmess
-  server: 162.19.82.57
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 162.19.82.57
-- name: 🇫🇷 法国 (France) 31 - xiaoyu
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 32 - xiaoyu
-  type: vmess
-  server: 46.105.222.153
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.153
 - name: 🇫🇷 法国 (France) 33 - xiaoyu
-  type: vmess
-  server: 46.105.222.155
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 46.105.222.155
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 34 - xiaoyu
-  type: vmess
-  server: 79.137.99.183
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 79.137.99.183
-- name: 🇫🇷 法国 (France) 35 - xiaoyu
   type: vmess
   server: 91.134.35.72
   port: 1270
@@ -351,6 +346,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 91.134.35.72
+- name: 🇫🇷 法国 (France) 35 - xiaoyu
+  type: vmess
+  server: 46.105.222.153
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.153
 - name: 🇫🇷 法国 (France) 36 - xiaoyu
   type: vmess
   server: 162.19.82.57
@@ -364,7 +370,7 @@ proxies:
   servername: 162.19.82.57
 - name: 🇫🇷 法国 (France) 37 - xiaoyu
   type: vmess
-  server: 46.105.222.157
+  server: 162.19.82.57
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -372,15 +378,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 46.105.222.157
+  servername: 162.19.82.57
 - name: 🇫🇷 法国 (France) 38 - xiaoyu
-  type: ss
-  server: 51.195.248.85
-  port: 14114
-  cipher: aes-128-gcm
-  password: 8bc8CZHJUuNcD6pI66wcSxXhYWB4iORQ
-  udp: true
-- name: 🇫🇷 法国 (France) 39 - xiaoyu
   type: vless
   server: 158.220.113.176
   port: 80
@@ -393,47 +392,14 @@ proxies:
     path: /
     headers:
       Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 40 - xiaoyu
-  type: vmess
-  server: 162.19.82.57
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 162.19.82.57
-- name: 🇫🇷 法国 (France) 41 - xiaoyu
-  type: vmess
-  server: 91.134.35.72
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 42 - xiaoyu
+- name: 🇫🇷 法国 (France) 39 - xiaoyu
   type: ss
-  server: leviko-fr5418.shopingggg.ir
+  server: 167.17.64.175
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇫🇷 法国 (France) 43 - xiaoyu
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 44 - xiaoyu
+- name: 🇫🇷 法国 (France) 40 - xiaoyu
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -446,17 +412,59 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 45 - xiaoyu
+- name: 🇫🇷 法国 (France) 41 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 42 - xiaoyu
   type: ss
+  server: 23.162.152.245
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ySGkGhr2sKHV
+  udp: true
+- name: 🇫🇷 法国 (France) 43 - xiaoyu
+  type: vmess
   server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 79.137.99.183
+- name: 🇫🇷 法国 (France) 44 - xiaoyu
+  type: ss
+  server: 23.162.152.22
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇫🇷 法国 (France) 45 - xiaoyu
+  type: vmess
+  server: 172.99.189.239
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 46 - xiaoyu
   type: vmess
-  server: 162.19.204.71
-  port: 1234
+  server: 172.99.189.239
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
@@ -474,17 +482,10 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 172.99.189.239
 - name: 🇫🇷 法国 (France) 48 - xiaoyu
-  type: ss
-  server: 23.162.152.245
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ySGkGhr2sKHV
-  udp: true
-- name: 🇫🇷 法国 (France) 49 - xiaoyu
   type: vmess
-  server: 46.105.222.157
+  server: 46.105.222.153
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -492,157 +493,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: None
+- name: 🇫🇷 法国 (France) 49 - xiaoyu
+  type: ss
+  server: uk.fusetea.ir
+  port: 154
+  cipher: chacha20-ietf-poly1305
+  password: eCUs1n3b2Fh9b6WATvkNILLBzYbruQ_X
+  udp: true
 - name: 🇫🇷 法国 (France) 50 - xiaoyu
   type: vmess
-  server: 141.95.65.9
-  port: 1234
+  server: 162.19.82.57
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 162.19.82.57
 - name: 🇫🇷 法国 (France) 51 - xiaoyu
-  type: vmess
-  server: 79.137.99.183
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 79.137.99.183
-- name: 🇫🇷 法国 (France) 52 - xiaoyu
-  type: vmess
-  server: 23.162.152.127
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 53 - xiaoyu
-  type: vmess
-  server: 46.105.222.156
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 46.105.222.156
-- name: 🇫🇷 法国 (France) 54 - xiaoyu
-  type: vmess
-  server: 91.134.35.72
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 55 - xiaoyu
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 56 - xiaoyu
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 57 - xiaoyu
-  type: vmess
-  server: 91.134.35.72
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 91.134.35.72
-- name: 🇫🇷 法国 (France) 58 - xiaoyu
-  type: vmess
-  server: 23.162.152.127
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 23.162.152.127
-- name: 🇫🇷 法国 (France) 59 - xiaoyu
-  type: vmess
-  server: 172.99.189.239
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 60 - xiaoyu
-  type: vmess
-  server: 23.162.152.127
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 23.162.152.127
-- name: 🇫🇷 法国 (France) 61 - xiaoyu
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 62 - xiaoyu
-  type: vmess
-  server: 79.137.99.183
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 79.137.99.183
-- name: 🇫🇷 法国 (France) 63 - xiaoyu
   type: vless
   server: suh.cryptofront.uk
   port: 80
@@ -655,6 +525,291 @@ proxies:
     path: /
     headers:
       Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 52 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 53 - xiaoyu
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 54 - xiaoyu
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 55 - xiaoyu
+  type: vmess
+  server: 79.137.99.183
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 56 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 57 - xiaoyu
+  type: vmess
+  server: 46.105.222.153
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.153
+- name: 🇫🇷 法国 (France) 58 - xiaoyu
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 59 - xiaoyu
+  type: vless
+  server: suh.cryptofront.uk
+  port: 80
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 60 - xiaoyu
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 61 - xiaoyu
+  type: vmess
+  server: 172.99.189.239
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 172.99.189.239
+- name: 🇫🇷 法国 (France) 62 - xiaoyu
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.157
+- name: 🇫🇷 法国 (France) 63 - xiaoyu
+  type: ss
+  server: 79.137.99.183
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 64 - xiaoyu
+  type: vless
+  server: 178.104.70.11
+  port: 443
+  uuid: 64726966-0000-4000-8000-740000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇫🇷 法国 (France) 65 - xiaoyu
+  type: vless
+  server: 188.114.99.137
+  port: 80
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 66 - xiaoyu
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.157
+- name: 🇫🇷 法国 (France) 67 - xiaoyu
+  type: vmess
+  server: 46.105.222.156
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.156
+- name: 🇫🇷 法国 (France) 68 - xiaoyu
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.157
+- name: 🇫🇷 法国 (France) 69 - xiaoyu
+  type: vless
+  server: 51.75.118.17
+  port: 20127
+  uuid: 3451126e-39f7-4d26-9907-cb5986ffdbd2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /mb-vless
+    headers:
+      Host: 51.75.118.17
+- name: 🇫🇷 法国 (France) 70 - xiaoyu
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 71 - xiaoyu
+  type: vmess
+  server: 23.162.152.127
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 23.162.152.127
+- name: 🇫🇷 法国 (France) 72 - xiaoyu
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 73 - xiaoyu
+  type: vmess
+  server: 46.105.222.156
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 74 - xiaoyu
+  type: vmess
+  server: 23.162.152.127
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 75 - xiaoyu
+  type: vless
+  server: 147.45.42.73
+  port: 20443
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇫🇷 法国 (France) 76 - xiaoyu
+  type: vmess
+  server: 46.105.222.155
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 46.105.222.155
 proxy-groups:
 - name: PROXIES
   type: select
@@ -723,6 +878,19 @@ proxy-groups:
   - 🇫🇷 法国 (France) 61 - xiaoyu
   - 🇫🇷 法国 (France) 62 - xiaoyu
   - 🇫🇷 法国 (France) 63 - xiaoyu
+  - 🇫🇷 法国 (France) 64 - xiaoyu
+  - 🇫🇷 法国 (France) 65 - xiaoyu
+  - 🇫🇷 法国 (France) 66 - xiaoyu
+  - 🇫🇷 法国 (France) 67 - xiaoyu
+  - 🇫🇷 法国 (France) 68 - xiaoyu
+  - 🇫🇷 法国 (France) 69 - xiaoyu
+  - 🇫🇷 法国 (France) 70 - xiaoyu
+  - 🇫🇷 法国 (France) 71 - xiaoyu
+  - 🇫🇷 法国 (France) 72 - xiaoyu
+  - 🇫🇷 法国 (France) 73 - xiaoyu
+  - 🇫🇷 法国 (France) 74 - xiaoyu
+  - 🇫🇷 法国 (France) 75 - xiaoyu
+  - 🇫🇷 法国 (France) 76 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -791,5 +959,18 @@ proxy-groups:
   - 🇫🇷 法国 (France) 61 - xiaoyu
   - 🇫🇷 法国 (France) 62 - xiaoyu
   - 🇫🇷 法国 (France) 63 - xiaoyu
+  - 🇫🇷 法国 (France) 64 - xiaoyu
+  - 🇫🇷 法国 (France) 65 - xiaoyu
+  - 🇫🇷 法国 (France) 66 - xiaoyu
+  - 🇫🇷 法国 (France) 67 - xiaoyu
+  - 🇫🇷 法国 (France) 68 - xiaoyu
+  - 🇫🇷 法国 (France) 69 - xiaoyu
+  - 🇫🇷 法国 (France) 70 - xiaoyu
+  - 🇫🇷 法国 (France) 71 - xiaoyu
+  - 🇫🇷 法国 (France) 72 - xiaoyu
+  - 🇫🇷 法国 (France) 73 - xiaoyu
+  - 🇫🇷 法国 (France) 74 - xiaoyu
+  - 🇫🇷 法国 (France) 75 - xiaoyu
+  - 🇫🇷 法国 (France) 76 - xiaoyu
 rules:
 - MATCH,PROXIES

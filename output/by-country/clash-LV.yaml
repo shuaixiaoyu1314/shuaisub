@@ -17,12 +17,19 @@ proxies:
   servername: m.vk.com
   client-fingerprint: chrome
 - name: 🇱🇻 LV 02 - xiaoyu
-  type: ss
-  server: 109.248.148.141
-  port: 11471
-  cipher: aes-128-gcm
-  password: EE2VWeKohIwTx6HGOo1X2p1jjNAUfRWS
+  type: vless
+  server: 185.237.219.224
+  port: 8443
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v5-4b5.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v5-4b5.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select

@@ -24,6 +24,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇭 TH 03 - xiaoyu
+  type: vless
+  server: 108.138.26.63
+  port: 80
+  uuid: 05f53797-bd04-4006-8a78-41c071e67837
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tikvpn2/
+    headers:
+      Host: d27g7kjkk3cw22.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
+  - 🇹🇭 TH 03 - xiaoyu
 rules:
 - MATCH,PROXIES
