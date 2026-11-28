@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  type: ss
-  server: tr.subscriptionservice.ir
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  type: vless
+  server: v2new.nimbaha9.ir
+  port: 8080
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select

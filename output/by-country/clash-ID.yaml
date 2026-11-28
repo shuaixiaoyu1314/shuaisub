@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇴 DO 01 - xiaoyu
+- name: 🇮🇩 ID 01 - xiaoyu
   type: vless
-  server: 181.36.229.212
+  server: 130.94.95.126
   port: 443
-  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 1.proxy2.us.ci.
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 1.proxy2.us.ci.
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇴 DO 01 - xiaoyu
+  - 🇮🇩 ID 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇴 DO 01 - xiaoyu
+  - 🇮🇩 ID 01 - xiaoyu
 rules:
 - MATCH,PROXIES

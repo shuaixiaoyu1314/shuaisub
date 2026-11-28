@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaoyu
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 02 - xiaoyu
+  type: vless
+  server: 45.151.183.22
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-eefd05ea62b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: etzgote4ubxs.ulzzygequ8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/eefd05ea62b0
+    headers:
+      Host: etzgote4ubxs.ulzzygequ8es.workers.dev
+- name: 🇦🇹 AT 03 - xiaoyu
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 04 - xiaoyu
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -15,21 +43,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 154.47.19.225
-- name: 🇦🇹 AT 02 - xiaoyu
+- name: 🇦🇹 AT 05 - xiaoyu
   type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 03 - xiaoyu
+- name: 🇦🇹 AT 06 - xiaoyu
   type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 152.53.1.57
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 04 - xiaoyu
+- name: 🇦🇹 AT 07 - xiaoyu
   type: vmess
   server: leviko-at0752.shopingggg.ir
   port: 1270
@@ -40,7 +68,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇦🇹 AT 05 - xiaoyu
+- name: 🇦🇹 AT 08 - xiaoyu
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -51,34 +79,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇦🇹 AT 06 - xiaoyu
-  type: vless
-  server: 185.175.58.196
-  port: 443
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v5-4b5.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v5-4b5.pages.dev
-- name: 🇦🇹 AT 07 - xiaoyu
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇦🇹 AT 08 - xiaoyu
-  type: ss
-  server: 152.53.1.57
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select

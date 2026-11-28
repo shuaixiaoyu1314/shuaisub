@@ -37,6 +37,18 @@ proxies:
     path: /tikvpn2/
     headers:
       Host: d27g7kjkk3cw22.cloudfront.net
+- name: 🇹🇭 TH 04 - xiaoyu
+  type: vless
+  server: 130.94.25.12
+  port: 443
+  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +57,7 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
   - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +66,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - xiaoyu
   - 🇹🇭 TH 02 - xiaoyu
   - 🇹🇭 TH 03 - xiaoyu
+  - 🇹🇭 TH 04 - xiaoyu
 rules:
 - MATCH,PROXIES
